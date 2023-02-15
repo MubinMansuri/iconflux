@@ -1,0 +1,80 @@
+/* Fonts */
+:root {
+    --white: var(--bs-white);
+    --black: var(--bs-black);
+
+
+    --font-family-inter: 'Inter', sans-serif;
+    --font-family-manrope: 'Manrope', sans-serif;
+    
+    --swiper-pagination-color: #232323;
+    --swiper-pagination-bullet-inactive-color: #5c5c5c;
+}
+
+/* common css */ 
+body {font-family: var(--font-family-inter) !important;}
+.font-manrope, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {font-family: var(--font-family-manrope) !important;}
+.font-inter {font-family: var(--font-family-inter) !important;}
+.fs-120{font-size: calc(4.5rem + 1.5vw);}.fs-18{font-size: calc(1rem + .5rem);}
+@media(min-width:1200px){
+    .fs-120{font-size: 7.5rem;}
+    .fs-18{font-size: 1.125rem;}
+}
+.space-y{height: var(--space-y);}
+/* common css end */
+
+
+
+.ioc_01 .content{
+    padding-top: 3.625rem;
+    padding-bottom: 2.5rem;
+}
+.keywords .d-flex .flex-item:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0px;
+    right: -14px;
+    height: 4px;
+    width: 4px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 4 4'%3E%3Ccircle cx='2' cy='2' r='2' fill='%23134EF4'/%3E%3C/svg%3E");
+    background-size: 4px;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+.yoe .d-flex .flex-item:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0px;
+    right: -74px;
+    height: 1px;
+    width: 94px;
+    background-color: #EEEEEE;
+    pointer-events: none;
+    transform: rotate(90deg);
+}
+.ioc_01 .bannerSlider{
+    background-color: #134EF4;
+    backdrop-filter: blur(54px);
+    height: 100%;
+    min-height: 737px;
+}
+
+
+/*---------------------- Media Query start here ( Max width queries ) ----------------------*/
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    .container {
+        --bs-gutter-x: 3rem;
+    }
+}
+
+@media (max-width: 476px) {}
