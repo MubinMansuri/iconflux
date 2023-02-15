@@ -20,7 +20,7 @@ body {font-family: var(--font-family-inter) !important;}
     .fs-120{font-size: 7.5rem;}
     .fs-18{font-size: 1.125rem;}
 }
-.space-y{height: var(--space-y);}
+.space-y{height: var(--space-y);}.ls-tighter{letter-spacing: -0.05em;}.ls-tight{letter-spacing: -0.025em;}.ls-normal{letter-spacing: 0em;}.ls-wide{letter-spacing: 0.025em;}.ls-wider{letter-spacing: 0.05em;}.ls-widest{letter-spacing: 0.1em;}
 /* common css end */
 
 
@@ -57,10 +57,36 @@ body {font-family: var(--font-family-inter) !important;}
     transform: rotate(90deg);
 }
 .ioc_01 .bannerSlider{
+    position: relative;
     background-color: #134EF4;
     backdrop-filter: blur(54px);
     height: 100%;
     min-height: 737px;
+    clip-path: polygon(100% 0px, 0px 0px, 0px 100%, 100% 92%);
+}
+.ioc_01 .bannerSlider::after{
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 187px;
+    background-color: #31E7B6;
+    backdrop-filter: blur(54px);
+    clip-path: polygon(100% 0px, 0px 80%, 0px 100%, 100% 92%);
+}
+.ioc_01 .bannerSlider::before{
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: 25px;
+    left: 0px;
+    width: 100%;
+    height: 337px;
+    background-color: #2417C0;
+    backdrop-filter: blur(54px);
+    clip-path: polygon(100% 30%, 0px 0%, 0px 100%, 100% 92%);
 }
 
 
