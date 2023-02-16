@@ -88,6 +88,25 @@ body {font-family: var(--font-family-inter) !important;}
     backdrop-filter: blur(54px);
     clip-path: polygon(100% 30%, 0px 0%, 0px 100%, 100% 92%);
 }
+.ioc_01 .bannerSlider .carousel-control-next,
+.ioc_01 .bannerSlider .carousel-control-prev {
+    height: auto;
+    top: auto;
+    background: #fff;
+    opacity: 1;
+    width: auto;
+    color: #000;
+    width: 56px;
+    height: 56px;
+    z-index: 4;
+}
+.ioc_01 .bannerSlider .carousel-control-prev{
+    left: 60px;
+}
+.ioc_01 .bannerSlider .carousel-control-next{
+    right: auto;
+    left: 136px;
+}
 
 
 /*---------------------- Media Query start here ( Max width queries ) ----------------------*/

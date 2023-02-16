@@ -4,13 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     smooth: true,
   });
   
-  /** START -- for stikcy header  **/
-  let navbarMain = document.querySelector(".site-header");
+// banner slider 
 
-  window.addEventListener("scroll", function () {
-    navbarMain.classList.toggle("header-sticky", window.scrollY > 100);
-  });
-  /** END -- for stikcy header **/
+
+// end here
 
 
 
