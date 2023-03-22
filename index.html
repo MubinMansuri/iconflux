@@ -19,6 +19,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
 
+    <!-- scripts -->
+    <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- IE support -->
+    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+    <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> -->
+    
+
 
 </head>
 
@@ -91,7 +102,7 @@
             </nav>
         </header>
         <main class="site-content" data-scroll-container>
-            <div class="ico_01 position-relative z-2" data-scroll-section id="pin">
+            <div class="ico_01 position-relative z-2" data-scroll-section id="pin" data-scroll-repeat="true">
                 <div class="container-fluid px-0">
                     <div class="row gx-0 align-content-stretch justify-content-between">
                         <div class="col-12 col-lg-1 col-xxl-auto d-none d-lg-block"><div class="space-w" style="--space-w:10vw;"></div></div>
@@ -118,7 +129,7 @@
                                         <p class="text-secondary text-capitalize mb-4 pb-md-2">Delivering on-demand mobile app experiences<br class="d-none d-lg-block" /> for startups and enterprise clients by leveraging<br class="d-none d-lg-block" /> the latest technologies.</p>
                                     </div>
                                     <div class="actionBtn mb-4 pb-3" data-scroll data-scroll-speed="-0.5">
-                                        <a href="#" class="btn btn-yellow">
+                                        <a href="#" class="btn btn-theme-yellow">
                                             <span class="text">Schedule Demo</span>
                                             <span class="icon align-middle">
                                                 <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
@@ -141,7 +152,7 @@
                         <div class="col-12 col-lg-6 col-xxl-6">
                             <div class="col-wrap">
                                 <div class="bannerSlider d-flex align-items-end justify-content-center">
-                                    <div id="carouselExampleIndicators" class="carousel slide carousel-dark w-100 mb-5 pb-3">
+                                    <div id="carouselExampleIndicators" class="carousel slide carousel-light w-100 mb-5 pb-3">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                                                 aria-current="true" aria-label="Slide 1"></button>
@@ -179,7 +190,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_02 position-relative" data-scroll-section>
+            <div class="ico_02 position-relative disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-10">
@@ -208,7 +219,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_03 position-relative bg-theme-light" data-scroll-section data-scroll-direction="vertical">
+            <div class="ico_03 position-relative bg-theme-light disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-5">
@@ -224,20 +235,29 @@
                                 <div class="expert mb-4" data-scroll data-scroll-speed="-0.5">
                                     <p class="text-secondary text-capitalize">The top-notch and preeminent Web and Mobile App Development Company</p>
                                 </div>
-                                <div class="actionBtn" data-scroll data-scroll-speed="-0.5">
-                                    <a href="#" class="btn text-black ps-0 fw-bold">
-                                        <span class="text">Know More About us </span>
-                                        <span class="icon align-middle d-inline-block bg-black ms-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
-                                        </span>
-                                    </a>
+                                <div class="tabs">
+                                    <div class="badge text-black fs-5 active">
+                                        <span class="text-uppercase">Android</span>
+                                    </div>
+                                    <div class="badge text-black fs-5">
+                                        <span class="text-uppercase">iOS</span>
+                                    </div>
+                                    <div class="badge text-black fs-5">
+                                        <span class="text-uppercase">Cross platform</span>
+                                    </div>
+                                    <div class="badge text-black fs-5">
+                                        <span class="text-uppercase">Database</span>
+                                    </div>
+                                    <div class="badge text-black fs-5">
+                                        <span class="text-uppercase">Design Tools</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="ico_04 position-relative bg-theme-primary py-100" data-scroll-section data-scroll-direction="vertical">
+            <div class="ico_04 position-relative bg-theme-primary py-100 disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-5">
@@ -268,7 +288,7 @@
             </div>
             
             
-            <div class="ico_07 position-relative py-100" data-scroll-section data-scroll-direction="vertical">
+            <div class="ico_07 position-relative py-100 disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-10 col-lg-9">
@@ -304,14 +324,6 @@
     </div>
 
     <!-- script files  -->
-    <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script defer src="./assets/js/swiper-bundle.min.js"></script>
-    <!-- IE support -->
-    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
-    <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     
     <script defer src="./assets/js/main.js"></script>
 
