@@ -324,14 +324,27 @@
     background-color: #2417c0;
     clip-path: polygon(100% 30%, 0px 0%, 0px 100%, 100% 92%)
 }
-.large{
-    transform: scale(0.5);
-}
+.ico_03 .badge.active{background: #1A49BA;color: var(--white) !important;border-radius: 0px;}
+.ico_03 .tab-content .tech_lang{position: absolute;height: 5rem;width: 5rem;transition: .3s ease-in-out all}
+.ico_03 .tab-content .tech_lang.large{transform: scale(1.575);}
+.ico_03 .tab-content .tech_lang:nth-child(1){top:289px;left:82px;}
+.ico_03 .tab-content .tech_lang:nth-child(2){top:0px;left:397px;}
+.ico_03 .tab-content .tech_lang:nth-child(3){top:300px;left:260px;}
+.ico_03 .tab-content .tech_lang:nth-child(4){top:267px;left:369px;}
+.ico_03 .tab-content .tech_lang:nth-child(5){top:0px;left:106px;}
+.ico_03 .tab-content .tech_lang:nth-child(6){top:110px;left:213px;}
+.ico_03 .tab-content .tech_lang:nth-child(7){top:107px;left:0px;}
+.pointer{cursor: pointer;}
+
+
+
 
 /*---------------------- Media Query start here ( Max width queries ) ----------------------*/
 @media (max-width: 1280px) {.ico_04::before{background-size: cover;}}
 @media (max-width: 1024px) {.disappear{opacity: 1;}.ico_04::before{z-index: auto;}.ico_06 .figure.position-absolute.end-0{right: -120px !important;}}
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    .ico_03 .tab-content{height: 400px;width: 100%;}
+}
 @media (max-width: 768px) {
     .ico_06{padding-bottom: calc(20rem + 1.125vw) !important;}
 }

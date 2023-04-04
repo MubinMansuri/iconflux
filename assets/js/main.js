@@ -23,15 +23,23 @@ document.addEventListener("DOMContentLoaded", function () {
   singeSlideSwiper(".caseStudy");
   singeSlideSwiper2(".testimonial");
 
-  [...document.querySelectorAll('.ico_03 .tabs .badge.android')].forEach(faq => faq.addEventListener('click', () => [...document.querySelectorAll('.tech_lang.android')].forEach(tech => tech.classList.toggle('large'))));
-  
-  [...document.querySelectorAll('.ico_03 .tabs .badge.iOS')].forEach(faq => faq.addEventListener('click', () => [...document.querySelectorAll('.tech_lang.iOS')].forEach(tech => tech.classList.toggle('large'))));
-  
-  [...document.querySelectorAll('.ico_03 .tabs .badge.crossPlatform')].forEach(faq => faq.addEventListener('click', () => [...document.querySelectorAll('.tech_lang.crossPlatform')].forEach(tech => tech.classList.toggle('large'))));
-  
-  [...document.querySelectorAll('.ico_03 .tabs .badge.db')].forEach(faq => faq.addEventListener('click', () => [...document.querySelectorAll('.tech_lang.db')].forEach(tech => tech.classList.toggle('large'))));
-  
-  [...document.querySelectorAll('.ico_03 .tabs .badge.designTools')].forEach(faq => faq.addEventListener('click', () => [...document.querySelectorAll('.tech_lang.designTools')].forEach(tech => tech.classList.toggle('large'))));
+  var badges = document.querySelectorAll('.ico_03 .tabs .badge');
+var badgesVal = document.querySelectorAll('.ico_03 .tech_lang');
+badges.forEach(function(badge) {
+  badge.addEventListener('click', function() {
+    badges.forEach(function(badge) {
+      badge.classList.remove('active');
+    });
+    this.classList.add('active');
+    badgesVal.forEach(function(badgeVal) {
+      badgeVal.classList.remove('large');
+    });
+    var dataCls = this.getAttribute('data-tech');
+    document.querySelectorAll('.ico_03 .tech_lang.' + dataCls).forEach(function(badgeVal) {
+      badgeVal.classList.add('large');
+    });
+  });
+});
 
 });
 // DOMContentLoaded  end
@@ -71,18 +79,17 @@ function singeSlideSwiper2(e){
     },
   });
 }
-function addClassToDivs(elem) {
-  const tech_img = [...document.querySelectorAll('.tech_lang')]
-  tech_img.forEach((tech) => {
-    if (tech.getAttribute("[data-tech = 'android']") === null && elem.classList.contains("android"))  {
-      this.classList.toggle('large');
-    }
-    if (tech.getAttribute("iOS") === null && elem.classList.contains("iOS"))  {
-        this.classList.toggle('large');
-    }
-  });
-}
-// for jQuery
-(function () {})(
 
-);
+// for jQuery
+(function () {
+  // var badges = $(".ico_03 .tabs .badge");
+  // var badgesVal = $(".ico_03 .tech_lang");
+  // badges.click(function(){
+  //   badges.removeClass("active");
+  //   $(this).addClass("active");
+
+  //   badgesVal.removeClass("large");
+  //   var dataCls = $(this).attr('data-tech'); 
+  //   $(".ico_03 .tech_lang."+dataCls).addClass("large");
+  // });
+})();

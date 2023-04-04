@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
 
     <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script defer src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
     <script defer src="./assets/js/swiper-bundle.min.js"></script>
@@ -230,7 +231,7 @@
                                     <h6 class="small text-uppercase fw-semibold ls-wider font-inter mb-4">WE ARE CREATIVE THINKERS</h6>
                                 </div>
                                 <div class="heading text-black mb-1" data-scroll data-scroll-speed="1">
-                                    <h2 class="display-5 fw-semibold mb-4 lh-sm">
+                                    <h2 class="fs-44 text-capitalize fw-semibold mb-4 lh-sm">
                                         <span>Technologies platform for all types</span>
                                     </h2>
                                 </div>
@@ -238,34 +239,35 @@
                                     <p class="text-secondary text-capitalize">The top-notch and preeminent Web and Mobile App Development Company</p>
                                 </div>
                                 <div class="tabs">
-                                    <div class="badge text-black fs-5 text-bg-primary android" data-tech="android">
-                                        <span class="text-uppercase">Android</span>
+                                    <div class="badge pointer text-black fs-5 android active" data-tech="android">
+                                        <span class="text-uppercase pe-none">Android</span>
                                     </div>
-                                    <div class="badge text-black fs-5 iOS">
-                                        <span class="text-uppercase">iOS</span>
+                                    <div class="badge pointer text-black fs-5 iOS" data-tech="iOS">
+                                        <span class="text-uppercase pe-none">iOS</span>
                                     </div>
-                                    <div class="badge text-black fs-5 crossPlatform">
-                                        <span class="text-uppercase">Cross platform</span>
+                                    <div class="badge pointer text-black fs-5 crossPlatform" data-tech="crossPlatform">
+                                        <span class="text-uppercase pe-none">Cross platform</span>
                                     </div>
-                                    <div class="badge text-black fs-5 db">
-                                        <span class="text-uppercase">Database</span>
+                                    <div class="badge pointer text-black fs-5 db" data-tech="db">
+                                        <span class="text-uppercase pe-none">Database</span>
                                     </div>
-                                    <div class="badge text-black fs-5 designTools">
-                                        <span class="text-uppercase">Design Tools</span>
+                                    <div class="badge pointer text-black fs-5 designTools" data-tech="designTools">
+                                        <span class="text-uppercase pe-none">Design Tools</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-12 col-lg-7">
+                        <div class="col-12 col-md-12 col-lg-1 d-none d-lg-block"></div>
+                        <div class="col-12 col-md-12 col-lg-6">
                             <div class="col-wrap text-center text-lg-end">
                                 <figure class="figure position-relative">
-                                    <img src="./assets/images/tech_icon/full_tech.png" alt="video-thumbnail" class="img-fluid" />
+                                    <!-- <img src="./assets/images/tech_icon/full_tech.png" alt="video-thumbnail" class="img-fluid" /> -->
                                 </figure>
-                                <div class="tab-content d-none">
+                                <div class="tab-content position-relative">
                                     <div class="tech_lang swift iOS">
                                         <img src="./assets/images/tech_icon/swift.svg" alt="swift" class="img-fluid" />
                                     </div>
-                                    <div class="tech_lang android">
+                                    <div class="tech_lang android large">
                                         <img src="./assets/images/tech_icon/android.svg" alt="android" class="img-fluid" />
                                     </div>
                                     <div class="tech_lang html5 db designTools">
@@ -277,7 +279,7 @@
                                     <div class="tech_lang js crossPlatform">
                                         <img src="./assets/images/tech_icon/js.svg" alt="js" class="img-fluid" />
                                     </div>
-                                    <div class="tech_lang kotline android">
+                                    <div class="tech_lang kotline android large">
                                         <img src="./assets/images/tech_icon/kotline.svg" alt="kotline" class="img-fluid" />
                                     </div>
                                     <div class="tech_lang reactjs iOS crossPlatform">
@@ -456,7 +458,7 @@
                         </div>
                         <div class="col-12 col-md-4 col-lg-4">
                             <div class="col-wrap">
-                                <nav>
+                                <nav class="mb-5 mb-md-0">
                                     <div class="nav nav-tabs list-group border-0" id="nav-tab" role="tablist">
                                         <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
                                             <span class="text flex-grow-1">
@@ -755,7 +757,7 @@
                     <div class="row">
                         <div class="col-12 col-md-3 col-lg-2">
                             <div class="col-wrap">
-                                <nav>
+                                <nav class="mb-5 mb-md-0">
                                     <div class="nav nav-tabs list-group border-0" id="nav-tab" role="tablist">
                                         <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
                                             <span class="icon align-middle me-2">
