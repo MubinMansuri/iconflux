@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +16,6 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
 
     <!-- scripts -->
@@ -25,21 +23,14 @@
     <script defer src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
     <script defer src="./assets/js/swiper-bundle.min.js"></script>
-    <!-- IE support -->
-    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
-    <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
-    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> -->
     
-
-
 </head>
-
 <body>
-
-    <div class="site-wrapper">
-        <header class="site-header position-relative z-3" data-scroll-class data-scroll-sticky>
+    <div class="site-wrapper position-relative">
+        <header class="site-header position-sticky top-0 z-3">
             <nav class="navbar navbar-expand-lg bg-white">
                 <div class="container">
                     <a class="navbar-brand" href="./index.html">
@@ -69,7 +60,8 @@
                                         aria-expanded="false">
                                         Service
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu ">
+                                        <div class="dropdown-menu-bg"></div>
                                         <li><a class="dropdown-item" href="#">Action</a></li>
                                         <li><a class="dropdown-item" href="#">Another action</a></li>
                                         <li>
@@ -104,23 +96,23 @@
                 </div>
             </nav>
         </header>
-        <main class="site-content" data-scroll-container>
-            <div class="ico_01 position-relative z-2" data-scroll-section id="pin" data-scroll-repeat="true" data-scroll-call="true">
-                <div class="container-fluid px-0">
-                    <div class="row gx-0 align-content-stretch justify-content-between">
-                        <div class="col-12 col-xl-1 col-xxl-auto d-none d-xl-block"><div class="space-w" style="--space-w:10vw;"></div></div>
-                        <div class="col-12 col-lg-5 col-xxl-4">
-                            <div class="col-wrap ps-md-5 ps-xl-0">
+        <main class="site-content">
+            <div class="ico_01 position-relative z-2 overflow-hidden">
+                <div class="container">
+                    <div class="row gx-xl-0 align-content-stretch justify-content-between">
+                        <!-- <div class="col-12 col-xl-1 col-xxl-auto d-none d-xl-block"><div class="space-w" style="--space-w:6vw;"></div></div> -->
+                        <div class="col-12 col-lg-5 col-xxl-5">
+                            <div class="col-wrap">
                                 <div class="content px-3 px-sm-0" data-scroll data-scroll-sticky data-scroll-target="#pin">
-                                    <div class="eyebrow text-black" data-scroll data-scroll-speed="1">
+                                    <div class="eyebrow text-black">
                                         <h6 class="small text-uppercase fw-bold ls-wider font-inter mb-4">Hire India’s top talent</h6>
                                     </div>
-                                    <div class="heading text-black mb-1" data-scroll data-scroll-speed="1">
+                                    <div class="heading text-black mb-1">
                                         <h1 class="display-3 fw-semibold mb-3 lh-sm">
                                             <span>Mobile App Development Company</span>
                                         </h1>
                                     </div>
-                                    <div class="keywords text-black" data-scroll data-scroll-speed="1">
+                                    <div class="keywords text-black">
                                         <div class="d-flex align-items-center flex-wrap gap-4 mb-4">
                                             <div class="flex-item position-relative">Gateway</div>
                                             <div class="flex-item position-relative">Risk engine</div>
@@ -128,10 +120,10 @@
                                             <div class="flex-item position-relative">Acquirer</div>
                                         </div>
                                     </div>
-                                    <div class="expert" data-scroll data-scroll-speed="1">
+                                    <div class="expert">
                                         <p class="text-secondary text-capitalize mb-4 pb-md-2">Delivering on-demand mobile app experiences<br class="d-none d-lg-block" /> for startups and enterprise clients by leveraging<br class="d-none d-lg-block" /> the latest technologies.</p>
                                     </div>
-                                    <div class="actionBtn mb-4 pb-3" data-scroll data-scroll-speed="1">
+                                    <div class="actionBtn mb-4 pb-3">
                                         <a href="#" class="btn btn-theme-yellow">
                                             <span class="text">Schedule Demo</span>
                                             <span class="icon align-middle">
@@ -139,7 +131,7 @@
                                             </span>
                                         </a>
                                     </div>
-                                    <div class="yoe" data-scroll data-scroll-speed="1">
+                                    <div class="yoe">
                                         <div class="d-flex align-items-center gap-5">
                                             <div class="flex-item position-relative">
                                                 <h4 class="fs-120 fw-medium text-secondary mb-0">12+</h4>
@@ -165,14 +157,24 @@
                                                 aria-label="Slide 3"></button>
                                         </div>
                                         <div class="carousel-inner">
-                                            <div class="carousel-item active text-center">
-                                                <img src="./assets/images/banner_slide_01.png" class="img-fluid" alt="bannerSlide">
+                                            <div class="carousel-item active position-relative">
+                                                <h5 class="fs-18 fw-medium text-capitalize text-white mb-0 ms-5 caption-top">Virtual Reality, 
+                                                    <br /> the technology of <br />  the future</h5>
+                                                <div class="w-100 text-center">
+                                                    <img src="./assets/images/banner_slide_01.png" class="img-fluid" alt="bannerSlide">
+                                                </div>
                                             </div>
-                                            <div class="carousel-item text-center">
-                                                <img src="./assets/images/banner_slide_01.png" class="img-fluid" alt="bannerSlide">
+                                            <div class="carousel-item position-relative">
+                                                <h5 class="fs-18 fw-medium text-capitalize text-white mb-0 ms-5 caption-top">Producing<br />  relevant designs<br />  experience</h5>
+                                                <div class="w-100 text-center">
+                                                    <img src="./assets/images/banner_slide_01.png" class="img-fluid" alt="bannerSlide">
+                                                </div>
                                             </div>
-                                            <div class="carousel-item text-center">
-                                                <img src="./assets/images/banner_slide_01.png" class="img-fluid" alt="bannerSlide">
+                                            <div class="carousel-item position-relative">
+                                                <h5 class="fs-18 fw-medium text-capitalize text-white mb-0 ms-5 caption-top">Producing<br />  relevant designs<br />  experience</h5>
+                                                <div class="w-100 text-center">
+                                                    <img src="./assets/images/banner_slide_01.png" class="img-fluid" alt="bannerSlide">
+                                                </div>
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -193,23 +195,23 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_02 position-relative disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_02 position-relative ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-10">
                             <div class="col-wrap">
-                                <div class="eyebrow text-secondary" data-scroll data-scroll-speed="1">
+                                <div class="eyebrow text-secondary">
                                     <h6 class="small text-uppercase fw-semibold ls-wider font-inter mb-4">WE ARE CREATIVE THINKERS</h6>
                                 </div>
-                                <div class="heading text-black mb-1" data-scroll data-scroll-speed="1">
+                                <div class="heading text-black mb-1">
                                     <h2 class="display-5 fw-semibold mb-4 lh-sm">
                                         <span>We deliver ingenious design &<br /> eCommerce solutions!</span>
                                     </h2>
                                 </div>
-                                <div class="expert pe-lg-5 mb-4" data-scroll data-scroll-speed="1">
+                                <div class="expert pe-lg-5 mb-4">
                                     <p class="text-secondary text-capitalize">We are result driven, customer oriented digital media agency with years of combined digital experience. We mainly focus on clients and their unique requirements. We combine data, insights, designs, culture behaviors, and a creative vision to craft a unique brand for customers. </p>
                                 </div>
-                                <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                <div class="actionBtn">
                                     <a href="#" class="btn text-black ps-0 fw-bold">
                                         <span class="text">Know More About us </span>
                                         <span class="icon align-middle d-inline-block bg-black ms-2">
@@ -222,20 +224,20 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_03 position-relative bg-theme-light disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_03 position-relative bg-theme-light ">
                 <div class="container">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
                             <div class="col-wrap">
-                                <div class="eyebrow text-secondary" data-scroll data-scroll-speed="1">
+                                <div class="eyebrow text-secondary">
                                     <h6 class="small text-uppercase fw-semibold ls-wider font-inter mb-4">WE ARE CREATIVE THINKERS</h6>
                                 </div>
-                                <div class="heading text-black mb-1" data-scroll data-scroll-speed="1">
+                                <div class="heading text-black mb-1">
                                     <h2 class="fs-44 text-capitalize fw-semibold mb-4 lh-sm">
                                         <span>Technologies platform for all types</span>
                                     </h2>
                                 </div>
-                                <div class="expert mb-4" data-scroll data-scroll-speed="1">
+                                <div class="expert mb-4">
                                     <p class="text-secondary text-capitalize">The top-notch and preeminent Web and Mobile App Development Company</p>
                                 </div>
                                 <div class="tabs">
@@ -291,23 +293,23 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_04 position-relative bg-theme-primary py-100 disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_04 position-relative bg-theme-primary py-100 ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
                             <div class="col-wrap position-relative">
-                                <div class="eyebrow text-white" data-scroll data-scroll-speed="1">
+                                <div class="eyebrow text-white">
                                     <h6 class="small text-uppercase fw-semibold ls-wider font-inter mb-4">Team we have</h6>
                                 </div>
-                                <div class="heading text-white mb-1" data-scroll data-scroll-speed="1">
+                                <div class="heading text-white mb-1">
                                     <h2 class="display-5 fw-semibold mb-4 lh-sm">
                                         <span>One team, one love - Innovation</span>
                                     </h2>
                                 </div>
-                                <div class="expert mb-5" data-scroll data-scroll-speed="1">
+                                <div class="expert mb-5">
                                     <p class="text-white text-capitalize">With sheer customer satisfaction in mind, we are profoundly dedicated to developing highly </p>
                                 </div>
-                                <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                <div class="actionBtn">
                                     <a href="#" class="btn btn-theme-white rounded-0">
                                         <span class="text">Get  a Quote</span>
                                         <span class="icon align-middle d-inline-block bg-black ms-2">
@@ -353,12 +355,12 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_05 position-relative py-66" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_05 position-relative py-66 overflow-hidden">
                 <div class="container-fluid px-0">
                     <div class="row gx-0">
                         <div class="col-12 col-md-12 col-lg-12">
                             <div class="col-wrap">
-                                <marquee direction="right" class="marque-tool" scrollamount="20">
+                                <!-- <marquee direction="right" class="marque-tool" scrollamount="20">
                                     <ul class="list-group list-group-horizontal list-inline">
                                         <li class="fw-normal position-relative display-3 px-5">Fuel your growth</li>
                                         <li class="fw-normal position-relative display-3 px-5">Get deserve</li>
@@ -367,26 +369,42 @@
                                         <li class="fw-normal position-relative display-3 px-5">Interactive</li>
                                         <li class="fw-normal position-relative display-3 px-5">Experiential</li>
                                     </ul>
-                                </marquee>
+                                </marquee> -->
+                                <h2 class="o-big-title display-4" data-is-init="true"><span class="o-big-title__inner d-flex text-nowrap"><span class="o-big-title__txt o-big-title__txt--default">
+                                            <div style="position: relative; display: inline-block; opacity: 1;" class="o-big-title__char">Sales</div>
+                                            <div style="position: relative; display: inline-block; opacity: 1;" class="o-big-title__char">Teams,</div>
+                                            <div style="position: relative; display: inline-block; opacity: 1;" class="o-big-title__char">Reimagined.
+                                            </div>
+                                        </span><span class="o-big-title__txt o-big-title__txt--clone">
+                                            <div style="position: relative; display: inline-block; opacity: 1;" class="o-big-title__char">Sales</div>
+                                            <div style="position: relative; display: inline-block; opacity: 1;" class="o-big-title__char">Teams,</div>
+                                            <div style="position: relative; display: inline-block; opacity: 1;" class="o-big-title__char">Reimagined.
+                                            </div>
+                                        </span><span class="o-big-title__txt o-big-title__txt--clone">
+                                            <div style="position: relative; display: inline-block; opacity: 1;" class="o-big-title__char">Sales</div>
+                                            <div style="position: relative; display: inline-block; opacity: 1;" class="o-big-title__char">Teams,</div>
+                                            <div style="position: relative; display: inline-block; opacity: 1;" class="o-big-title__char">Reimagined.
+                                            </div>
+                                        </span></span></h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="ico_06 position-relative bg-theme-primary-light disappear py-5 overflow-hidden" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_06 position-relative bg-theme-primary-light  py-5 overflow-hidden">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-6">
                             <div class="col-wrap">
-                                <div class="heading text-black mb-1" data-scroll data-scroll-speed="1">
+                                <div class="heading text-black mb-1">
                                     <h2 class="fs-35 fw-semibold mb-4 lh-sm text-white text-capitalize">
                                         <span>You have a vision. We have a way to get you there</span>
                                     </h2>
                                 </div>
-                                <div class="expert mb-4" data-scroll data-scroll-speed="1">
+                                <div class="expert mb-4">
                                     <p class="text-secondary text-capitalize fw-light text-white">Global Leader in new age digital product development</p>
                                 </div>
-                                <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                <div class="actionBtn">
                                     <a href="#" class="btn btn-theme-white rounded-0">
                                         <span class="text">Schedule Demo</span>
                                         <span class="icon align-middle d-inline-block bg-black ms-2">
@@ -406,20 +424,20 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_07 position-relative py-100 disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_07 position-relative py-100 ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-9">
                             <div class="col-wrap">
-                                <div class="eyebrow text-secondary" data-scroll data-scroll-speed="1">
+                                <div class="eyebrow text-secondary">
                                     <h6 class="small text-uppercase fw-semibold ls-wider font-inter mb-4">Team we have</h6>
                                 </div>
-                                <div class="heading text-black mb-1" data-scroll data-scroll-speed="1">
+                                <div class="heading text-black mb-1">
                                     <h2 class="display-5 fw-semibold mb-4 lh-sm">
                                         <span>Your digital partner to create  solution for Web, Mobile & Cloud.</span>
                                     </h2>
                                 </div>
-                                <div class="expert mb-5" data-scroll data-scroll-speed="1">
+                                <div class="expert mb-5">
                                     <p class="text-secondary text-capitalize col-lg-7">With sheer customer satisfaction in mind, we are profoundly dedicated to developing highly </p>
                                 </div>
                             </div>
@@ -437,21 +455,21 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_08 position-relative py-100 bg-theme-primary-dark disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_08 position-relative py-100 bg-theme-primary-dark ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12">
                             <div class="col-wrap">
-                                <div class="eyebrow text-white" data-scroll data-scroll-speed="1">
+                                <div class="eyebrow text-white">
                                     <h6 class="small text-uppercase fw-semibold ls-wider font-inter mb-4">We got your back</h6>
                                 </div>
-                                <div class="heading text-white mb-1" data-scroll data-scroll-speed="1">
+                                <div class="heading text-white mb-1">
                                     <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
                                         <span>The perfect Company for any </span>
                                         <span class="text-theme-yellow">UI/UX Design</span>
                                     </h2>
                                 </div>
-                                <div class="expert mb-5" data-scroll data-scroll-speed="1">
+                                <div class="expert mb-5">
                                     <p class="text-white text-capitalize fw-light col-lg-7">From virtual cards to payment processing, pick your products and build your own frictionless, The top-notch and preeminent </p>
                                 </div>
                             </div>
@@ -676,17 +694,17 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_09 position-relative py-100 disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_09 position-relative py-100 ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-10 col-lg-12 mb-4 mb-md-0">
                             <div class="col-wrap">
-                                <div class="heading text-black mb-1" data-scroll data-scroll-speed="1">
+                                <div class="heading text-black mb-1">
                                     <h2 class="display-5 fw-semibold mb-4 lh-sm">
                                         <span>Dedicate Hire Program</span>
                                     </h2>
                                 </div>
-                                <div class="expert mb-5" data-scroll data-scroll-speed="1">
+                                <div class="expert mb-5">
                                     <p class="text-secondary text-capitalize">Fraudulent activity by referring to the single accurate and complete data source</p>
                                 </div>
                             </div>
@@ -698,7 +716,7 @@
                                         <img src="./assets/images/globe-y.png" alt="globe" class="img-fluid mb-4 pb-lg-1" />
                                         <h4 class="card-title text-black fw-semibold">Hire Dedicated Developer</h4>
                                         <p class="card-text mb-4">From biotech to breweries, we’re on a mission to democratize the R&D tax credit. We’re here to </p>
-                                        <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                        <div class="actionBtn">
                                             <a href="#" class="btn text-black ps-0 fw-bold">
                                                 <span class="text">Learn More </span>
                                                 <span class="icon align-middle d-inline-block bg-black ms-2">
@@ -717,7 +735,7 @@
                                         <img src="./assets/images/globe-b.png" alt="globe" class="img-fluid mb-4 pb-lg-1" />
                                         <h4 class="card-title text-black fw-semibold">Hire Dedicated Developer</h4>
                                         <p class="card-text mb-4">From biotech to breweries, we’re on a mission to democratize the R&D tax credit. We’re here to </p>
-                                        <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                        <div class="actionBtn">
                                             <a href="#" class="btn text-black ps-0 fw-bold">
                                                 <span class="text">Learn More </span>
                                                 <span class="icon align-middle d-inline-block bg-black ms-2">
@@ -736,7 +754,7 @@
                                         <img src="./assets/images/globe-bd.png" alt="globe" class="img-fluid mb-4 pb-lg-1" />
                                         <h4 class="card-title text-black fw-semibold">Hire Dedicated Developer</h4>
                                         <p class="card-text mb-4">From biotech to breweries, we’re on a mission to democratize the R&D tax credit. We’re here to </p>
-                                        <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                        <div class="actionBtn">
                                             <a href="#" class="btn text-black ps-0 fw-bold">
                                                 <span class="text">Learn More </span>
                                                 <span class="icon align-middle d-inline-block bg-black ms-2">
@@ -751,8 +769,7 @@
                     </div>
                 </div>
             </div>
-            <!-- ico 10 pending -->
-            <div class="ico_10 position-relative py-100 bg-theme-primary disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_10 position-relative py-100 bg-theme-primary ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-3 col-lg-2">
@@ -844,7 +861,7 @@
                                                     <div class="expert mb-4">
                                                         <p class="text-white text-capitalize">Decade-long experience in UI/UX designing, our creative team of designers The top-notch Preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice </p>
                                                     </div>
-                                                    <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                                    <div class="actionBtn">
                                                         <a href="#" class="btn text-white ps-0 fw-bold">
                                                             <span class="text">Learn More</span>
                                                             <span class="icon align-middle d-inline-block bg-white ms-2">
@@ -905,7 +922,7 @@
                                                     <div class="expert mb-4">
                                                         <p class="text-white text-capitalize">Decade-long experience in UI/UX designing, our creative team of designers The top-notch Preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice </p>
                                                     </div>
-                                                    <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                                    <div class="actionBtn">
                                                         <a href="#" class="btn text-white ps-0 fw-bold">
                                                             <span class="text">Learn More</span>
                                                             <span class="icon align-middle d-inline-block bg-white ms-2">
@@ -965,7 +982,7 @@
                                                     <div class="expert mb-4">
                                                         <p class="text-white text-capitalize">Decade-long experience in UI/UX designing, our creative team of designers The top-notch Preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice </p>
                                                     </div>
-                                                    <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                                    <div class="actionBtn">
                                                         <a href="#" class="btn text-white ps-0 fw-bold">
                                                             <span class="text">Learn More</span>
                                                             <span class="icon align-middle d-inline-block bg-white ms-2">
@@ -1025,7 +1042,7 @@
                                                     <div class="expert mb-4">
                                                         <p class="text-white text-capitalize">Decade-long experience in UI/UX designing, our creative team of designers The top-notch Preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice </p>
                                                     </div>
-                                                    <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                                    <div class="actionBtn">
                                                         <a href="#" class="btn text-white ps-0 fw-bold">
                                                             <span class="text">Learn More</span>
                                                             <span class="icon align-middle d-inline-block bg-white ms-2">
@@ -1046,17 +1063,17 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_11 position-relative bg-theme-light-300 py-100 disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_11 position-relative bg-theme-light-300 py-100 ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12 mb-4 mb-md-0">
                             <div class="col-wrap text-center">
-                                <div class="heading text-black mb-1" data-scroll data-scroll-speed="1">
+                                <div class="heading text-black mb-1">
                                     <h2 class="h1 fw-semibold mb-4 lh-sm">
                                         <span>Why choose IConflux for <br class="d-none d-md-block" />your next project</span>
                                     </h2>
                                 </div>
-                                <div class="expert mb-5" data-scroll data-scroll-speed="1">
+                                <div class="expert mb-5">
                                     <p class="text-secondary text-capitalize">Fraudulent activity by referring to the single accurate and complete data source</p>
                                 </div>
                             </div>
@@ -1114,7 +1131,7 @@
                         </div>
                         <div class="col-12">
                             <div class="col-wrap">
-                                <div class="actionBtn text-center" data-scroll data-scroll-speed="1">
+                                <div class="actionBtn text-center">
                                     <a href="#" class="btn text-black ps-0 fw-bold">
                                         <span class="text">Get a Free Quote </span>
                                         <span class="icon align-middle d-inline-block bg-black ms-2">
@@ -1128,7 +1145,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_12 position-relative bg-theme-primary disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_12 position-relative bg-theme-primary ">
                 <div class="swiper caseStudy pt-5">
                     <div class="swiper-wrapper pt-5">
                         <!-- slide start -->
@@ -1138,20 +1155,20 @@
                                     <div class="col-12 col-lg-5">
                                         <div class="col-wrap">
                                             <div class="slide-content py-80">
-                                                <div class="expert" data-scroll data-scroll-speed="1">
+                                                <div class="expert">
                                                     <h5 class="h5 text-white text-capitalize m-1">Developing ERP Solution for </h5>
                                                 </div>
-                                                <div class="heading" data-scroll data-scroll-speed="1">
+                                                <div class="heading">
                                                     <h2 class="h1 text-white fw-bold mb-4 pb-lg-3 lh-sm">
                                                         <span>World's Largest Retailer</span>
                                                     </h2>
                                                 </div>
-                                                <div class="heading" data-scroll data-scroll-speed="1">
+                                                <div class="heading">
                                                     <h2 class="display-4 text-white fw-bold mb-4 pb-lg-3 lh-sm">
                                                         <span>IKEA</span>
                                                     </h2>
                                                 </div>
-                                                <div class="expert" data-scroll data-scroll-speed="1">
+                                                <div class="expert">
                                                     <p class="text-white text-capitalize  mb-4 pb-2">Melltoo, the App of the Year 2016, is UAE’s top classified ads platform that serves you with options for finding buyer/seller,</p>
                                                 </div>
                                                 <div class="actionBtn is-inview" data-scroll="" data-scroll-speed="1">
@@ -1181,20 +1198,20 @@
                                     <div class="col-12 col-lg-5">
                                         <div class="col-wrap">
                                             <div class="slide-content py-80">
-                                                <div class="expert" data-scroll data-scroll-speed="1">
+                                                <div class="expert">
                                                     <h5 class="h5 text-white text-capitalize m-1">Developing ERP Solution for </h5>
                                                 </div>
-                                                <div class="heading" data-scroll data-scroll-speed="1">
+                                                <div class="heading">
                                                     <h2 class="h1 text-white fw-bold mb-4 pb-lg-3 lh-sm">
                                                         <span>World's Largest Retailer</span>
                                                     </h2>
                                                 </div>
-                                                <div class="heading" data-scroll data-scroll-speed="1">
+                                                <div class="heading">
                                                     <h2 class="display-4 text-white fw-bold mb-4 pb-lg-3 lh-sm">
                                                         <span>IKEA</span>
                                                     </h2>
                                                 </div>
-                                                <div class="expert" data-scroll data-scroll-speed="1">
+                                                <div class="expert">
                                                     <p class="text-white text-capitalize  mb-4 pb-2">Melltoo, the App of the Year 2016, is UAE’s top classified ads platform that serves you with options for finding buyer/seller,</p>
                                                 </div>
                                                 <div class="actionBtn is-inview" data-scroll="" data-scroll-speed="1">
@@ -1224,20 +1241,20 @@
                                     <div class="col-12 col-lg-5">
                                         <div class="col-wrap">
                                             <div class="slide-content py-80">
-                                                <div class="expert" data-scroll data-scroll-speed="1">
+                                                <div class="expert">
                                                     <h5 class="h5 text-white text-capitalize m-1">Developing ERP Solution for </h5>
                                                 </div>
-                                                <div class="heading" data-scroll data-scroll-speed="1">
+                                                <div class="heading">
                                                     <h2 class="h1 text-white fw-bold mb-4 pb-lg-3 lh-sm">
                                                         <span>World's Largest Retailer</span>
                                                     </h2>
                                                 </div>
-                                                <div class="heading" data-scroll data-scroll-speed="1">
+                                                <div class="heading">
                                                     <h2 class="display-4 text-white fw-bold mb-4 pb-lg-3 lh-sm">
                                                         <span>IKEA</span>
                                                     </h2>
                                                 </div>
-                                                <div class="expert" data-scroll data-scroll-speed="1">
+                                                <div class="expert">
                                                     <p class="text-white text-capitalize  mb-4 pb-2">Melltoo, the App of the Year 2016, is UAE’s top classified ads platform that serves you with options for finding buyer/seller,</p>
                                                 </div>
                                                 <div class="actionBtn is-inview" data-scroll="" data-scroll-speed="1">
@@ -1269,7 +1286,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <div class="ico_13 position-relative disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_13 position-relative ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-11 col-lg-10 col-xl-10 col-xxl-10 mx-auto">
@@ -1284,10 +1301,10 @@
                                         <!-- slide start -->
                                         <div class="swiper-slide">
                                             <div class="slide-content">
-                                                <div class="expert" data-scroll data-scroll-speed="1">
+                                                <div class="expert">
                                                     <p class="text-muted text-capitalize fw-light mb-4 mb-md-5 pb-md-2 fs-26">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
                                                 </div>
-                                                <div class="expert" data-scroll data-scroll-speed="1">
+                                                <div class="expert">
                                                     <p class="text-black text-capitalize d-inline-block mb-0 fw-medium me-3">Aurélien de Meaux</p>
                                                     <p class="text-muted fw-light text-capitalize d-inline-block mb-0">CEO and Co-founder @ Cheerz</p>
                                                 </div>
@@ -1295,10 +1312,10 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="slide-content">
-                                                <div class="expert" data-scroll data-scroll-speed="1">
+                                                <div class="expert">
                                                     <p class="text-muted text-capitalize fw-light mb-4 mb-md-5 pb-md-2 fs-26">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
                                                 </div>
-                                                <div class="expert" data-scroll data-scroll-speed="1">
+                                                <div class="expert">
                                                     <p class="text-black text-capitalize d-inline-block mb-0 fw-medium me-3">Aurélien de Meaux</p>
                                                     <p class="text-muted fw-light text-capitalize d-inline-block mb-0">CEO and Co-founder @ Cheerz</p>
                                                 </div>
@@ -1306,10 +1323,10 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="slide-content">
-                                                <div class="expert" data-scroll data-scroll-speed="1">
+                                                <div class="expert">
                                                     <p class="text-muted text-capitalize fw-light mb-4 mb-md-5 pb-md-2 fs-26">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
                                                 </div>
-                                                <div class="expert" data-scroll data-scroll-speed="1">
+                                                <div class="expert">
                                                     <p class="text-black text-capitalize d-inline-block mb-0 fw-medium me-3">Aurélien de Meaux</p>
                                                     <p class="text-muted fw-light text-capitalize d-inline-block mb-0">CEO and Co-founder @ Cheerz</p>
                                                 </div>
@@ -1334,7 +1351,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_14 position-relative py-80 disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_14 position-relative py-80 ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12 mb-4 mb-md-0">
@@ -1366,17 +1383,17 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_15 position-relative py-80 disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_15 position-relative py-80 ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-10 col-lg-10 col-xl-6">
                             <div class="col-wrap">
-                                <div class="heading text-white mb-1" data-scroll data-scroll-speed="1">
+                                <div class="heading text-white mb-1">
                                     <h4 class="fs-35 fw-semibold mb-4 lh-sm">
                                         <span>Want to learn more about our global payments solution?</span>
                                     </h4>
                                 </div>
-                                <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                <div class="actionBtn">
                                     <a href="#" class="btn btn-theme-white rounded-0">
                                         <span class="text">Schedule Demo</span>
                                         <span class="icon align-middle d-inline-block bg-black ms-2">
@@ -1390,12 +1407,12 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_16 position-relative py-100 disappear" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_16 position-relative py-100 ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-10 col-lg-12 mb-4 mb-md-0">
                             <div class="col-wrap">
-                                <div class="heading text-black mb-1" data-scroll data-scroll-speed="1">
+                                <div class="heading text-black mb-1">
                                     <h2 class="h1 fw-semibold mb-5 lh-sm">
                                         <span>Resources for growing your product</span>
                                     </h2>
@@ -1409,7 +1426,7 @@
                                     <div class="card-body p-md-0 pe-md-4">
                                         <h4 class="card-title text-black fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
                                         <p class="card-text mb-4">We offer a three-tier user-friendly and all device responsive...</p>
-                                        <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                        <div class="actionBtn">
                                             <a href="#" class="btn text-black ps-0 fw-bold">
                                                 <span class="text">Read Article </span>
                                                 <span class="icon align-middle d-inline-block bg-black ms-2">
@@ -1428,7 +1445,7 @@
                                     <div class="card-body p-md-0 pe-md-4">
                                         <h4 class="card-title text-black fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
                                         <p class="card-text mb-4">We offer a three-tier user-friendly and all device responsive...</p>
-                                        <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                        <div class="actionBtn">
                                             <a href="#" class="btn text-black ps-0 fw-bold">
                                                 <span class="text">Read Article </span>
                                                 <span class="icon align-middle d-inline-block bg-black ms-2">
@@ -1447,7 +1464,7 @@
                                     <div class="card-body p-md-0 pe-md-4">
                                         <h4 class="card-title text-black fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
                                         <p class="card-text mb-4">We offer a three-tier user-friendly and all device responsive...</p>
-                                        <div class="actionBtn" data-scroll data-scroll-speed="1">
+                                        <div class="actionBtn">
                                             <a href="#" class="btn text-black ps-0 fw-bold">
                                                 <span class="text">Read Article </span>
                                                 <span class="icon align-middle d-inline-block bg-black ms-2">
@@ -1462,17 +1479,17 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_17 position-relative py-100" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_17 position-relative py-100">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
                             <div class="col-wrap">
-                                <div class="heading text-black pt-4" data-scroll data-scroll-speed="1">
+                                <div class="heading text-black pt-4">
                                     <h2 class="h1 fw-semibold mb-5 lh-sm">
                                         <span>Let's Talk Business!</span>
                                     </h2>
                                 </div>
-                                <div class="expert mb-5" data-scroll data-scroll-speed="1">
+                                <div class="expert mb-5">
                                     <p class="fs-18 text-secondary text-capitalize">Have questions about your idea? </p>
                                     <p class="fs-18 text-secondary text-capitalize">Drop in your details to discuss with our solution consultants. We look forward to hear from you.</p>
                                 </div>
@@ -1525,12 +1542,12 @@
                         <div class="col-12 col-md-6 col-lg-7 ">
                             <div class="col-wrap ps-lg-5">
                                 <div class="form-wrapper card-form bg-light">
-                                    <div class="heading text-black mb-1" data-scroll data-scroll-speed="1">
+                                    <div class="heading text-black mb-1">
                                         <h2 class="h1 fw-semibold mb-5 lh-sm">
                                             <span>Get A Free Quote</span>
                                         </h2>
                                     </div>
-                                    <div class="expert mb-5" data-scroll data-scroll-speed="1">
+                                    <div class="expert mb-5">
                                         <p class="fs-18 text-secondary text-capitalize">Contact us to discover how we can help you succeed</p>
                                     </div>
                                     <form action="#" method="post">
@@ -1581,7 +1598,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_18 position-relative pb-5 mb-5" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <div class="ico_18 position-relative pb-5 mb-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 ">
@@ -1603,13 +1620,13 @@
                     </div>
                 </div>
             </div>
-            <footer class="site-footer" data-scroll-section data-scroll-class="appear" data-scroll-repeat="true" data-scroll-call="true">
+            <footer class="site-footer">
                 <div class="presence position-relative">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
                                 <div class="col-wrap">
-                                    <div class="heading text-white text-center" data-scroll data-scroll-speed="1">
+                                    <div class="heading text-white text-center">
                                         <h2 class="h1 fw-medium mb-5 lh-sm">
                                             <span>Our Presence</span>
                                         </h2>
@@ -1839,7 +1856,7 @@
                             </div>
                             <div class="12">
                                 <div class="col-wrap">
-                                    <div class="d-flex gap-2 flex-wrap align-items-center">
+                                    <div class="d-flex gap-2 flex-wrap align-items-center my-4 pb-md-2 mt-md-5">
                                         <div class=""><img src="./assets/images/iso.png" alt="copyright" class="img-fluid" /></div>
                                         <div class=""><img src="./assets/images/dmca.png" alt="copyright" class="img-fluid" /></div>
                                         <div class=""><img src="./assets/images/copyscape.png" alt="copyright" class="img-fluid" /></div>
@@ -1865,16 +1882,11 @@
                     </div>
                 </div>
             </footer>
-            <div class="space-y d-none d-xl-block" style="--space-y:2.125rem"></div>
         </main>
-        <div class="space-y d-none d-xl-block" style="--space-y:10rem"></div>
     </div>
 
+
     <!-- script files  -->
-    
     <script defer src="./assets/js/main.js"></script>
-
-
 </body>
-
 </html>

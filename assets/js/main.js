@@ -1,18 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let scrollContainer = document.querySelector("[data-scroll-container]");
-  var scroll;
-  scroll = new LocomotiveScroll({
-    el: scrollContainer,
-    smooth: true,
-    getSpeed: true,
-    getDirection: true,
-    offset:["15%",0],
-    scrollFromAnywhere:true,
-    reloadOnContextChange:true,
-  });
-  /* update scroll (height) when all images are loaded */
+  let scrollContainer = document.querySelector("body");
   imagesLoaded(scrollContainer, { background: true }, () => {
-    scroll.update();
     document.body.classList.add('img_loaded');
   });
   
@@ -24,22 +12,78 @@ document.addEventListener("DOMContentLoaded", function () {
   singeSlideSwiper2(".testimonial");
 
   var badges = document.querySelectorAll('.ico_03 .tabs .badge');
-var badgesVal = document.querySelectorAll('.ico_03 .tech_lang');
-badges.forEach(function(badge) {
-  badge.addEventListener('click', function() {
-    badges.forEach(function(badge) {
-      badge.classList.remove('active');
-    });
-    this.classList.add('active');
-    badgesVal.forEach(function(badgeVal) {
-      badgeVal.classList.remove('large');
-    });
-    var dataCls = this.getAttribute('data-tech');
-    document.querySelectorAll('.ico_03 .tech_lang.' + dataCls).forEach(function(badgeVal) {
-      badgeVal.classList.add('large');
+  var badgesVal = document.querySelectorAll('.ico_03 .tech_lang');
+  badges.forEach(function(badge) {
+    badge.addEventListener('click', function() {
+      badges.forEach(function(badge) {
+        badge.classList.remove('active');
+      });
+      this.classList.add('active');
+      badgesVal.forEach(function(badgeVal) {
+        badgeVal.classList.remove('large');
+      });
+      var dataCls = this.getAttribute('data-tech');
+      document.querySelectorAll('.ico_03 .tech_lang.' + dataCls).forEach(function(badgeVal) {
+        badgeVal.classList.add('large');
+      });
     });
   });
-});
+
+
+  // text scrolling
+  gsap.registerPlugin(ScrollTrigger);
+
+    const additionalX = { val: 0 };
+    let additionalXAnim;
+    let offset = 0;
+    let originalImages = gsap.utils.toArray(".o-big-title .o-big-title__inner .o-big-title__txt");
+    const container = document.querySelector(".o-big-title .o-big-title__inner");
+    const sliderWidth = container.offsetWidth;
+
+    // DUPLICATE IMAGES FOR LOOP
+    originalImages.forEach((image) => {
+      var clone = image.cloneNode(true);
+      container.appendChild(clone);
+    });
+
+    let images = gsap.utils.toArray(".o-big-title .o-big-title__inner .o-big-title__txt");
+
+    // SET ANIMATION
+    images.forEach((item) => {
+      gsap.to(item, {
+        x: "-=" + Number(sliderWidth / 2),
+        duration: 30,
+        repeat: -1,
+        ease: "none",
+        modifiers: {
+          x: gsap.utils.unitize((x) => {
+            offset += additionalX.val;
+            x = (parseFloat(x) + offset) % -Number(sliderWidth * 0.5);
+            return x;
+          })
+        }
+      });
+    });
+
+    const imagesScrollerTrigger = ScrollTrigger.create({
+      trigger: '.ico_05',
+      start: "top 50%",
+      end: "bottom 50%",
+      onUpdate: function (self) {
+        const velocity = self.getVelocity();
+        if (velocity > 0) {
+          if (additionalXAnim) additionalXAnim.kill();
+          additionalX.val = -velocity / 4000;
+          additionalXAnim = gsap.to(additionalX, { val: 0 });
+        }
+        if (velocity < 0) {
+          if (additionalXAnim) additionalXAnim.kill();
+          additionalX.val = -velocity / 4000;
+          additionalXAnim = gsap.to(additionalX, { val: 0 });
+        }
+      }
+    });
+
 
 });
 // DOMContentLoaded  end
@@ -82,14 +126,5 @@ function singeSlideSwiper2(e){
 
 // for jQuery
 (function () {
-  // var badges = $(".ico_03 .tabs .badge");
-  // var badgesVal = $(".ico_03 .tech_lang");
-  // badges.click(function(){
-  //   badges.removeClass("active");
-  //   $(this).addClass("active");
-
-  //   badgesVal.removeClass("large");
-  //   var dataCls = $(this).attr('data-tech'); 
-  //   $(".ico_03 .tech_lang."+dataCls).addClass("large");
-  // });
+  // add Jquery code here
 })();
