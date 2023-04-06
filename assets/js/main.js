@@ -67,8 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const imagesScrollerTrigger = ScrollTrigger.create({
       trigger: '.ico_05',
-      start: "top 50%",
-      end: "bottom 50%",
+      start: "top 100%",
+      end: "bottom",
+      markers:true,
       onUpdate: function (self) {
         const velocity = self.getVelocity();
         if (velocity > 0) {
