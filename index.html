@@ -12,12 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope&display=swap" rel="stylesheet" />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" /> -->
-    
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    
+    
     <link rel="stylesheet" href="./assets/css/main.css" />
-
+    
     <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script defer src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
@@ -25,6 +28,7 @@
     <script defer src="./assets/js/swiper-bundle.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script defer src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
     
 </head>
@@ -101,27 +105,29 @@
                 <div class="container">
                     <div class="row gx-xl-0 align-content-stretch justify-content-between">
                         <!-- <div class="col-12 col-xl-1 col-xxl-auto d-none d-xl-block"><div class="space-w" style="--space-w:6vw;"></div></div> -->
-                        <div class="col-12 col-lg-5 col-xxl-5">
+                        <div class="col-12 col-lg-5 col-xxl-6">
                             <div class="col-wrap">
-                                <div class="content px-3 px-sm-0" data-scroll data-scroll-sticky data-scroll-target="#pin">
+                                <div class="content px-3 px-sm-0">
                                     <div class="eyebrow text-black">
-                                        <h6 class="small text-uppercase fw-bold ls-wider font-inter mb-4">Hire India’s top talent</h6>
+                                        <h6 class="small text-uppercase fw-bold ls-wider font-inter mb-4">Work with Growth Experts</h6>
                                     </div>
                                     <div class="heading text-black mb-1">
                                         <h1 class="display-3 fw-semibold mb-3 lh-sm">
-                                            <span>Mobile App Development Company</span>
+                                            <span>Intelligent Development,<br class="d-none d-lg-block" />New Experiences.</span>
                                         </h1>
                                     </div>
-                                    <div class="keywords text-black">
-                                        <div class="d-flex align-items-center flex-wrap gap-4 mb-4">
-                                            <div class="flex-item position-relative">Gateway</div>
-                                            <div class="flex-item position-relative">Risk engine</div>
-                                            <div class="flex-item position-relative">Processor</div>
-                                            <div class="flex-item position-relative">Acquirer</div>
-                                        </div>
+                                    <!-- <div class="d-flex align-items-center flex-wrap gap-4 mb-4 typeWriter" data-splitting>
+                                        <div class="flex-item position-relative">Mobile</div>
+                                        <div class="flex-item position-relative">Cloud</div>
+                                        <div class="flex-item position-relative">Web</div>
+                                    </div> -->
+                                    <div class="keywords text-black d-flex gap-4 mb-4" id="keywordsType" data-splitting>
+                                        <span class="flex-item position-relative">Mobile</span>
+                                        <span class="flex-item position-relative">Cloud</span>
+                                        <span class="flex-item position-relative">Web</span>
                                     </div>
                                     <div class="expert">
-                                        <p class="text-secondary text-capitalize mb-4 pb-md-2">Delivering on-demand mobile app experiences<br class="d-none d-lg-block" /> for startups and enterprise clients by leveraging<br class="d-none d-lg-block" /> the latest technologies.</p>
+                                        <p class="text-secondary text-capitalize mb-4 pb-md-2">We help companies grow with mobile, web,<br class="d-none d-lg-block" /> and cloud solutions built on the latest<br class="d-none d-lg-block" /> technologies with agile approaches. </p>
                                     </div>
                                     <div class="actionBtn mb-4 pb-3">
                                         <a href="#" class="btn btn-theme-yellow">
@@ -134,10 +140,10 @@
                                     <div class="yoe">
                                         <div class="d-flex align-items-center gap-5">
                                             <div class="flex-item position-relative">
-                                                <h4 class="fs-120 fw-medium text-secondary mb-0">12+</h4>
+                                                <h4 class="fs-120 fw-medium text-secondary mb-0">11+</h4>
                                             </div>
                                             <div class="flex-item position-relative ms-3">
-                                                <h5 class="fs-18 fw-medium text-capitalize text-secondary mb-0">Producing<br />  relevant designs<br />  experience</h5>
+                                                <h5 class="fs-18 fw-medium text-secondary mb-0">Empowering <br />New Connections <br />and Experiences</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -205,16 +211,16 @@
                                 </div>
                                 <div class="heading text-black mb-1">
                                     <h2 class="display-5 fw-semibold mb-4 lh-sm">
-                                        <span>We deliver ingenious design &<br /> eCommerce solutions!</span>
+                                        <span>Hola! We are IConflux</span>
                                     </h2>
                                 </div>
                                 <div class="expert pe-lg-5 mb-4">
-                                    <p class="text-secondary text-capitalize">We are result driven, customer oriented digital media agency with years of combined digital experience. We mainly focus on clients and their unique requirements. We combine data, insights, designs, culture behaviors, and a creative vision to craft a unique brand for customers. </p>
+                                    <p class="text-secondary text-capitalize">IConflux is a mobile, web, and cloud application development company. We are shaping the future of businesses and integrating the latest technologies into their workings. We are the leading <b>mobile app development company</b> in India and transform businesses while allowing them to harness the capabilities of customer-friendly design and agile development.</p>
                                 </div>
                                 <div class="actionBtn">
-                                    <a href="#" class="btn text-black ps-0 fw-bold">
+                                    <a href="#" class="btn text-black btn-link ps-0 fw-bold">
                                         <span class="text">Know More About us </span>
-                                        <span class="icon align-middle d-inline-block bg-black ms-2">
+                                        <span class="icon align-middle d-inline-block ms-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
                                         </span>
                                     </a>
@@ -234,11 +240,11 @@
                                 </div>
                                 <div class="heading text-black mb-1">
                                     <h2 class="fs-44 text-capitalize fw-semibold mb-4 lh-sm">
-                                        <span>Technologies platform for all types</span>
+                                        <span>Harnessing the Power of the Best Technologies</span>
                                     </h2>
                                 </div>
                                 <div class="expert mb-4">
-                                    <p class="text-secondary text-capitalize">The top-notch and preeminent Web and Mobile App Development Company</p>
+                                    <p class="text-secondary text-capitalize">iConfulx is a top <b>web and mobile app development company</b> using the best-fit technologies for every project.</p>
                                 </div>
                                 <div class="tabs">
                                     <div class="badge pointer text-black fs-5 android active" data-tech="android">
@@ -295,24 +301,24 @@
             </div>
             <div class="ico_04 position-relative bg-theme-primary py-100 ">
                 <div class="container">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
                             <div class="col-wrap position-relative">
                                 <div class="eyebrow text-white">
-                                    <h6 class="small text-uppercase fw-semibold ls-wider font-inter mb-4">Team we have</h6>
+                                    <h6 class="small text-uppercase fw-semibold ls-wider font-inter mb-4">The A- Team</h6>
                                 </div>
                                 <div class="heading text-white mb-1">
                                     <h2 class="display-5 fw-semibold mb-4 lh-sm">
-                                        <span>One team, one love - Innovation</span>
+                                        <span>A Pack of Growth-Hungry Innovators</span>
                                     </h2>
                                 </div>
                                 <div class="expert mb-5">
-                                    <p class="text-white text-capitalize">With sheer customer satisfaction in mind, we are profoundly dedicated to developing highly </p>
+                                    <p class="text-white text-capitalize">Certified and experienced professionals hustling to engineer the next-best solution for our clients. We are IConflux!</p>
                                 </div>
                                 <div class="actionBtn">
                                     <a href="#" class="btn btn-theme-white rounded-0">
                                         <span class="text">Get  a Quote</span>
-                                        <span class="icon align-middle d-inline-block bg-black ms-2">
+                                        <span class="icon align-middle d-inline-block ms-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
                                         </span>
                                     </a>
@@ -327,8 +333,8 @@
                                             <div class="flex-col">
                                                 <div class="icon"><img src="./assets/images/star_01.svg" alt="star" class="img-fluid" /></div>
                                             </div>
-                                            <div class="flex-col flex-grow-1"><h2 class="display-4 fw-semibold text-black m-0">1000+</h2></div>
-                                            <div class="flex-col flex-grow-1"><h6 class="fw-bold text-muted m-0">Profucts (apps)<br class="" />Delivered</h6></div>
+                                            <div class="flex-col flex-grow-1"><h2 class="display-4 fw-semibold text-black m-0">260+</h2></div>
+                                            <div class="flex-col flex-grow-1"><h6 class="fw-bold text-muted m-0">Happy<br class="" />Clients</h6></div>
                                         </div>
                                     </div>
                                     <div class="card rounded-pill p-3 mb-3">
@@ -336,8 +342,17 @@
                                             <div class="flex-col">
                                                 <div class="icon"><img src="./assets/images/search_01.svg" alt="star" class="img-fluid" /></div>
                                             </div>
-                                            <div class="flex-col flex-grow-1"><h2 class="display-4 fw-semibold text-black m-0">80+</h2></div>
-                                            <div class="flex-col flex-grow-1"><h6 class="fw-bold text-muted m-0">creative nerds<br class="" /> under one roof</h6></div>
+                                            <div class="flex-col flex-grow-1"><h2 class="display-4 fw-semibold text-black m-0">500+</h2></div>
+                                            <div class="flex-col flex-grow-1"><h6 class="fw-bold text-muted m-0">Finished<br class="" />Projects</h6></div>
+                                        </div>
+                                    </div>
+                                    <div class="card rounded-pill p-3 mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col">
+                                                <div class="icon"><img src="./assets/images/alert_01.svg" alt="star" class="img-fluid" /></div>
+                                            </div>
+                                            <div class="flex-col flex-grow-1"><h2 class="display-4 fw-semibold text-black m-0">50,000+</h2></div>
+                                            <div class="flex-col flex-grow-1"><h6 class="fw-bold text-muted m-0">Hours<br class="" />of Work</h6></div>
                                         </div>
                                     </div>
                                     <div class="card rounded-pill p-3">
@@ -345,8 +360,8 @@
                                             <div class="flex-col">
                                                 <div class="icon"><img src="./assets/images/alert_01.svg" alt="star" class="img-fluid" /></div>
                                             </div>
-                                            <div class="flex-col flex-grow-1"><h2 class="display-4 fw-semibold text-black m-0">$950+</h2></div>
-                                            <div class="flex-col flex-grow-1"><h6 class="fw-bold text-muted m-0">Investment  Raised <br class="" />for startups</h6></div>
+                                            <div class="flex-col flex-grow-1"><h2 class="display-4 fw-semibold text-black m-0">$50</h2></div>
+                                            <div class="flex-col flex-grow-1"><h6 class="fw-bold text-muted m-0">Million investment<br class="" />Raised for Startups</h6></div>
                                         </div>
                                     </div>
                                 </div>
@@ -355,7 +370,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_05 position-relative py-66 overflow-hidden">
+            <!-- <div class="ico_05 position-relative py-66 overflow-hidden">
                 <div class="container-fluid px-0">
                     <div class="row gx-0">
                         <div class="col-12 col-md-12 col-lg-12">
@@ -393,7 +408,7 @@
                                 <div class="actionBtn">
                                     <a href="#" class="btn btn-theme-white rounded-0">
                                         <span class="text">Schedule Demo</span>
-                                        <span class="icon align-middle d-inline-block bg-black ms-2">
+                                        <span class="icon align-middle d-inline-block ms-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
                                         </span>
                                     </a>
@@ -409,7 +424,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="ico_07 position-relative py-100 ">
                 <div class="container">
                     <div class="row">
@@ -420,11 +435,11 @@
                                 </div>
                                 <div class="heading text-black mb-1">
                                     <h2 class="display-5 fw-semibold mb-4 lh-sm">
-                                        <span>Your digital partner to create  solution for Web, Mobile & Cloud.</span>
+                                        <span>You Have A Vision. We Have A Way To Get You There</span>
                                     </h2>
                                 </div>
                                 <div class="expert mb-5">
-                                    <p class="text-secondary text-capitalize col-lg-7">With sheer customer satisfaction in mind, we are profoundly dedicated to developing highly </p>
+                                    <p class="text-secondary text-capitalize col-lg-7">Global Leader in new-age digital product development</p>
                                 </div>
                             </div>
                         </div>
@@ -447,16 +462,16 @@
                         <div class="col-12 col-md-12 col-lg-12">
                             <div class="col-wrap">
                                 <div class="eyebrow text-white">
-                                    <h6 class="small text-uppercase fw-semibold ls-wider font-inter mb-4">We got your back</h6>
+                                    <h6 class="small text-uppercase fw-semibold ls-wider font-inter mb-4">A One-Stop Development Company</h6>
                                 </div>
                                 <div class="heading text-white mb-1">
                                     <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
-                                        <span>The perfect Company for any </span>
-                                        <span class="text-theme-yellow">UI/UX Design</span>
+                                        <span>A Mobile App Development Company You Can Trust for Web and Cloud-Based Solutions</span>
+                                        <!-- <span class="text-theme-yellow">UI/UX Design</span> -->
                                     </h2>
                                 </div>
                                 <div class="expert mb-5">
-                                    <p class="text-white text-capitalize fw-light col-lg-7">From virtual cards to payment processing, pick your products and build your own frictionless, The top-notch and preeminent </p>
+                                    <p class="text-white text-capitalize fw-light col-lg-7">IConflux is more than an average team of developers; we are visionaries working together to create awesomeness and the WOW! effect for your business.</p>
                                 </div>
                             </div>
                         </div>
@@ -466,7 +481,7 @@
                                     <div class="nav nav-tabs list-group border-0" id="nav-tab" role="tablist">
                                         <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
                                             <span class="text flex-grow-1">
-                                                UI/UX & Graphics Design
+                                                Mobile Application Development
                                             </span>
                                             <span class="icon align-middle">
                                                 <svg xmlns="http://www.w3.org/2000/svg" height="17px" width="17px" fill="none" viewBox="0 0 17 17"><path fill="#000" d="M12.688 7.0653 7.0966 1.474 8.5706 0l8.1077 8.1077-8.1077 8.1078-1.474-1.4739 5.5914-5.5915H0V7.0654h12.688Z"/></svg>
@@ -474,7 +489,7 @@
                                         </button>
                                         <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
                                             <span class="text flex-grow-1">
-                                                UI/UX & Graphics Design
+                                                Custom Software Development
                                             </span>
                                             <span class="icon align-middle">
                                                 <svg xmlns="http://www.w3.org/2000/svg" height="17px" width="17px" fill="none" viewBox="0 0 17 17"><path fill="#000" d="M12.688 7.0653 7.0966 1.474 8.5706 0l8.1077 8.1077-8.1077 8.1078-1.474-1.4739 5.5914-5.5915H0V7.0654h12.688Z"/></svg>
@@ -482,7 +497,7 @@
                                         </button>
                                         <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
                                             <span class="text flex-grow-1">
-                                                UI/UX & Graphics Design
+                                                Software Product Development
                                             </span>
                                             <span class="icon align-middle">
                                                 <svg xmlns="http://www.w3.org/2000/svg" height="17px" width="17px" fill="none" viewBox="0 0 17 17"><path fill="#000" d="M12.688 7.0653 7.0966 1.474 8.5706 0l8.1077 8.1077-8.1077 8.1078-1.474-1.4739 5.5914-5.5915H0V7.0654h12.688Z"/></svg>
@@ -490,7 +505,23 @@
                                         </button>
                                         <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">
                                             <span class="text flex-grow-1">
-                                                UI/UX & Graphics Design
+                                                Web Application Development
+                                            </span>
+                                            <span class="icon align-middle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="17px" width="17px" fill="none" viewBox="0 0 17 17"><path fill="#000" d="M12.688 7.0653 7.0966 1.474 8.5706 0l8.1077 8.1077-8.1077 8.1078-1.474-1.4739 5.5914-5.5915H0V7.0654h12.688Z"/></svg>
+                                            </span>
+                                        </button>
+                                        <button class="nav-link" id="nav-ddt-tab" data-bs-toggle="tab" data-bs-target="#nav-ddt" type="button" role="tab" aria-controls="nav-ddt" aria-selected="false">
+                                            <span class="text flex-grow-1">
+                                                Dedicated Development Team
+                                            </span>
+                                            <span class="icon align-middle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="17px" width="17px" fill="none" viewBox="0 0 17 17"><path fill="#000" d="M12.688 7.0653 7.0966 1.474 8.5706 0l8.1077 8.1077-8.1077 8.1078-1.474-1.4739 5.5914-5.5915H0V7.0654h12.688Z"/></svg>
+                                            </span>
+                                        </button>
+                                        <button class="nav-link" id="nav-cd-tab" data-bs-toggle="tab" data-bs-target="#nav-cd" type="button" role="tab" aria-controls="nav-cd" aria-selected="false">
+                                            <span class="text flex-grow-1">
+                                                Cloud & DevOps
                                             </span>
                                             <span class="icon align-middle">
                                                 <svg xmlns="http://www.w3.org/2000/svg" height="17px" width="17px" fill="none" viewBox="0 0 17 17"><path fill="#000" d="M12.688 7.0653 7.0966 1.474 8.5706 0l8.1077 8.1077-8.1077 8.1078-1.474-1.4739 5.5914-5.5915H0V7.0654h12.688Z"/></svg>
@@ -504,174 +535,239 @@
                         <div class="col-12 col-md-8 col-lg-6">
                             <div class="col-wrap">
                                 <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                    <div class="tab-pane show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                                         <div class="heading text-white mb-1">
                                             <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
-                                                <span>UI/UX & Graphics Design</span>
+                                                <span>Mobile Application Development</span>
                                             </h2>
                                         </div>
                                         <div class="expert mb-5">
-                                            <p class="text-white text-capitalize fs-18">With a decade-long experience in UI/UX designing, our creative team of designers</p>
-                                            <p class="text-white text-capitalize fs-18 fw-light">The top-notch and preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice</p>
+                                            <p class="text-white text-capitalize fs-18">We find the most suitable solution for your business, customers, and their preferences. </p>
+                                            <p class="text-white text-capitalize fs-18 fw-light">Our mobile developers work together with business analysts and data scientists to add pertinent features, using the latest technologies to build apps. </p>
                                         </div>
                                         <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
                                             <li class="list-group-item bg-transparent border-0">
                                                 <span class="ico align-middle">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                 </span>
-                                                <span class="text text-white-50">We'll provide a fully signed </span>
+                                                <span class="text text-white-50">Award-Winning Apps</span>
                                             </li>
                                             <li class="list-group-item bg-transparent border-0">
                                                 <span class="icon align-middle">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                 </span>
-                                                <span class="text text-white-50">We'll provide a fully signed </span>
+                                                <span class="text text-white-50">Agile Development</span>
                                             </li>
                                             <li class="list-group-item bg-transparent border-0">
                                                 <span class="icon align-middle">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                 </span>
-                                                <span class="text text-white-50">We'll provide a fully signed </span>
+                                                <span class="text text-white-50">Native and Cross-Platform</span>
                                             </li>
                                         </ul>
                                         <div class="actionBtn is-inview mb-5 pb-lg-2">
                                             <a href="#" class="btn btn-theme-white rounded-0">
                                                 <span class="text">Get a Quote</span>
                                                 <span class="icon align-middle d-inline-block ms-2">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
                                                 </span>
                                             </a>
                                         </div>
-                                        <figure class="figure mb-0">
-                                            <img src="./assets/images/uiux-apps.svg" alt="uiux-apps" class="img-fluid" />
-                                        </figure>
-
                                     </div>
-                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                    <div class="tab-pane" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
                                         <div class="heading text-white mb-1">
                                             <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
-                                                <span>UI/UX & Graphics Design</span>
+                                                <span>Custom Software Development</span>
                                             </h2>
                                         </div>
                                         <div class="expert mb-5">
-                                            <p class="text-white text-capitalize fs-18">With a decade-long experience in UI/UX designing, our creative team of designers</p>
-                                            <p class="text-white text-capitalize fs-18 fw-light">The top-notch and preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice</p>
+                                            <p class="text-white text-capitalize fs-18">Improve your business performance parameters by bringing bespoke features and functions with scalable and agile software. </p>
+                                            <p class="text-white text-capitalize fs-18 fw-light">We design and build performant software for your business while taking into account the specific users who will benefit from the software. We build software that can address all your requirements with a single solution. </p>
                                         </div>
                                         <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
                                             <li class="list-group-item bg-transparent border-0">
                                                 <span class="ico align-middle">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                 </span>
-                                                <span class="text text-white-50">We'll provide a fully signed </span>
+                                                <span class="text text-white-50">Goal-Focussed</span>
                                             </li>
                                             <li class="list-group-item bg-transparent border-0">
                                                 <span class="icon align-middle">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                 </span>
-                                                <span class="text text-white-50">We'll provide a fully signed </span>
+                                                <span class="text text-white-50">Intuitive Interface</span>
                                             </li>
                                             <li class="list-group-item bg-transparent border-0">
                                                 <span class="icon align-middle">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                 </span>
-                                                <span class="text text-white-50">We'll provide a fully signed </span>
+                                                <span class="text text-white-50">Fast Performance</span>
                                             </li>
                                         </ul>
                                         <div class="actionBtn is-inview mb-5 pb-lg-2">
                                             <a href="#" class="btn btn-theme-white rounded-0">
                                                 <span class="text">Get a Quote</span>
                                                 <span class="icon align-middle d-inline-block ms-2">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
                                                 </span>
                                             </a>
                                         </div>
-                                        <figure class="figure mb-0">
-                                            <img src="./assets/images/uiux-apps.svg" alt="uiux-apps" class="img-fluid" />
-                                        </figure>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                                    <div class="tab-pane" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
                                         <div class="heading text-white mb-1">
                                             <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
-                                                <span>UI/UX & Graphics Design</span>
+                                                <span>Software Product Development</span>
                                             </h2>
                                         </div>
                                         <div class="expert mb-5">
-                                            <p class="text-white text-capitalize fs-18">With a decade-long experience in UI/UX designing, our creative team of designers</p>
-                                            <p class="text-white text-capitalize fs-18 fw-light">The top-notch and preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice</p>
+                                            <p class="text-white text-capitalize fs-18">Let’s carve your unique image in the market with a customized software product and gain a competitive advantage. </p>
+                                            <p class="text-white text-capitalize fs-18 fw-light">IConflux designs, develops and deploys customized software with the latest technologies. We create marketable products tailored to your end users and designed to bring the best user experience. </p>
                                         </div>
                                         <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
                                             <li class="list-group-item bg-transparent border-0">
                                                 <span class="ico align-middle">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                 </span>
-                                                <span class="text text-white-50">We'll provide a fully signed </span>
+                                                <span class="text text-white-50">Smart Idea Implementation</span>
                                             </li>
                                             <li class="list-group-item bg-transparent border-0">
                                                 <span class="icon align-middle">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                 </span>
-                                                <span class="text text-white-50">We'll provide a fully signed </span>
+                                                <span class="text text-white-50">Brand Image Transformation</span>
                                             </li>
                                             <li class="list-group-item bg-transparent border-0">
                                                 <span class="icon align-middle">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                 </span>
-                                                <span class="text text-white-50">We'll provide a fully signed </span>
+                                                <span class="text text-white-50">Scalable Product</span>
                                             </li>
                                         </ul>
                                         <div class="actionBtn is-inview mb-5 pb-lg-2">
                                             <a href="#" class="btn btn-theme-white rounded-0">
                                                 <span class="text">Get a Quote</span>
                                                 <span class="icon align-middle d-inline-block ms-2">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
                                                 </span>
                                             </a>
                                         </div>
-                                        <figure class="figure mb-0">
-                                            <img src="./assets/images/uiux-apps.svg" alt="uiux-apps" class="img-fluid" />
-                                        </figure>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                                    <div class="tab-pane" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
                                         <div class="heading text-white mb-1">
                                             <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
-                                                <span>UI/UX & Graphics Design</span>
+                                                <span>Web Application Development</span>
                                             </h2>
                                         </div>
                                         <div class="expert mb-5">
-                                            <p class="text-white text-capitalize fs-18">With a decade-long experience in UI/UX designing, our creative team of designers</p>
-                                            <p class="text-white text-capitalize fs-18 fw-light">The top-notch and preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice</p>
+                                            <p class="text-white text-capitalize fs-18">IConflux is a leading <b>web and mobile app development company</b> building secure and scalable web applications. </p>
+                                            <p class="text-white text-capitalize fs-18 fw-light">We understand your business goals and build intuitive eCommerce portals, CMS platforms, web applications, and enterprise-scale solutions with the best technologies.</p>
                                         </div>
                                         <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
                                             <li class="list-group-item bg-transparent border-0">
                                                 <span class="ico align-middle">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                 </span>
-                                                <span class="text text-white-50">We'll provide a fully signed </span>
+                                                <span class="text text-white-50">On-Time Delivery</span>
                                             </li>
                                             <li class="list-group-item bg-transparent border-0">
                                                 <span class="icon align-middle">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                 </span>
-                                                <span class="text text-white-50">We'll provide a fully signed </span>
+                                                <span class="text text-white-50">Experienced Team</span>
                                             </li>
                                             <li class="list-group-item bg-transparent border-0">
                                                 <span class="icon align-middle">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                 </span>
-                                                <span class="text text-white-50">We'll provide a fully signed </span>
+                                                <span class="text text-white-50">MEAN, MERN, and Full Stack</span>
                                             </li>
                                         </ul>
                                         <div class="actionBtn is-inview mb-5 pb-lg-2">
                                             <a href="#" class="btn btn-theme-white rounded-0">
                                                 <span class="text">Get a Quote</span>
                                                 <span class="icon align-middle d-inline-block ms-2">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
                                                 </span>
                                             </a>
                                         </div>
-                                        <figure class="figure mb-0">
-                                            <img src="./assets/images/uiux-apps.svg" alt="uiux-apps" class="img-fluid" />
-                                        </figure>
+                                    </div>
+                                    <div class="tab-pane" id="nav-ddt" role="tabpanel" aria-labelledby="nav-ddt-tab" tabindex="0">
+                                        <div class="heading text-white mb-1">
+                                            <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
+                                                <span>Dedicated Development Team</span>
+                                            </h2>
+                                        </div>
+                                        <div class="expert mb-5">
+                                            <p class="text-white text-capitalize fs-18">Hire dedicated, passionate, and intelligent developers for your projects from IConflux development agency. Delegate complex tasks to a focused and passionate team of developers. </p>
+                                            <p class="text-white text-capitalize fs-18 fw-light">Our development team follows the best development practices and approaches while staying within the budget without compromising on technological excellence.</p>
+                                        </div>
+                                        <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
+                                            <li class="list-group-item bg-transparent border-0">
+                                                <span class="ico align-middle">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                </span>
+                                                <span class="text text-white-50">Extensive Development Knowledge</span>
+                                            </li>
+                                            <li class="list-group-item bg-transparent border-0">
+                                                <span class="icon align-middle">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                </span>
+                                                <span class="text text-white-50">Quick Onboarding</span>
+                                            </li>
+                                            <li class="list-group-item bg-transparent border-0">
+                                                <span class="icon align-middle">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                </span>
+                                                <span class="text text-white-50">Problem Solvers</span>
+                                            </li>
+                                        </ul>
+                                        <div class="actionBtn is-inview mb-5 pb-lg-2">
+                                            <a href="#" class="btn btn-theme-white rounded-0">
+                                                <span class="text">Get a Quote</span>
+                                                <span class="icon align-middle d-inline-block ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="nav-cd" role="tabpanel" aria-labelledby="nav-cd-tab" tabindex="0">
+                                        <div class="heading text-white mb-1">
+                                            <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
+                                                <span>Cloud & DevOps</span>
+                                            </h2>
+                                        </div>
+                                        <div class="expert mb-5">
+                                            <p class="text-white text-capitalize fs-18">Build and launch your products with better agility and a shorter time to market with our cloud and DevOps development approaches.</p>
+                                            <p class="text-white text-capitalize fs-18 fw-light">IConflux has expertise in cloud computing and DevOps implementation. We leverage the best infrastructure, digital solutions, and practices to build and launch a robust application.</p>
+                                        </div>
+                                        <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
+                                            <li class="list-group-item bg-transparent border-0">
+                                                <span class="ico align-middle">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                </span>
+                                                <span class="text text-white-50">Automate Business Operations</span>
+                                            </li>
+                                            <li class="list-group-item bg-transparent border-0">
+                                                <span class="icon align-middle">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                </span>
+                                                <span class="text text-white-50">Affordable Technologies</span>
+                                            </li>
+                                            <li class="list-group-item bg-transparent border-0">
+                                                <span class="icon align-middle">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#fff" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#2417C0" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                </span>
+                                                <span class="text text-white-50">Process Improvement</span>
+                                            </li>
+                                        </ul>
+                                        <div class="actionBtn is-inview mb-5 pb-lg-2">
+                                            <a href="#" class="btn btn-theme-white rounded-0">
+                                                <span class="text">Get a Quote</span>
+                                                <span class="icon align-middle d-inline-block ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                                </span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -687,11 +783,11 @@
                             <div class="col-wrap">
                                 <div class="heading text-black mb-1">
                                     <h2 class="display-5 fw-semibold mb-4 lh-sm">
-                                        <span>Dedicate Hire Program</span>
+                                        <span>Why Choose IConflux for Your Business?</span>
                                     </h2>
                                 </div>
                                 <div class="expert mb-5">
-                                    <p class="text-secondary text-capitalize">Fraudulent activity by referring to the single accurate and complete data source</p>
+                                    <p class="text-secondary text-capitalize">We bring project consulting, convenience, expertise, and efficiency under one contract.</p>
                                 </div>
                             </div>
                         </div>
@@ -700,12 +796,12 @@
                                 <div class="card bg-transparent border-0">
                                     <div class="card-body p-md-0 pe-xl-4">
                                         <img src="./assets/images/globe-y.png" alt="globe" class="img-fluid mb-4 pb-lg-1" />
-                                        <h4 class="card-title text-black fw-semibold">Hire Dedicated Developer</h4>
-                                        <p class="card-text mb-4">From biotech to breweries, we’re on a mission to democratize the R&D tax credit. We’re here to </p>
+                                        <h4 class="card-title text-black fw-semibold">Hire Top 1% Talent</h4>
+                                        <p class="card-text mb-4">Hire creative professionals who bring creativity, agility, and innovativeness to their work so that you can reap the benefits of a great product.</p>
                                         <div class="actionBtn">
-                                            <a href="#" class="btn text-black ps-0 fw-bold">
+                                            <a href="#" class="btn text-black btn-link ps-0 fw-bold">
                                                 <span class="text">Learn More </span>
-                                                <span class="icon align-middle d-inline-block bg-black ms-2">
+                                                <span class="icon align-middle d-inline-block ms-2">
                                                     <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
                                                 </span>
                                             </a>
@@ -719,12 +815,12 @@
                                 <div class="card bg-transparent border-0">
                                     <div class="card-body p-md-0 pe-xl-4">
                                         <img src="./assets/images/globe-b.png" alt="globe" class="img-fluid mb-4 pb-lg-1" />
-                                        <h4 class="card-title text-black fw-semibold">Hire Dedicated Developer</h4>
-                                        <p class="card-text mb-4">From biotech to breweries, we’re on a mission to democratize the R&D tax credit. We’re here to </p>
+                                        <h4 class="card-title text-black fw-semibold">Timezone Aligned</h4>
+                                        <p class="card-text mb-4">As the top mobile app development company, we maintain constant communique with clients irrespective of their time zones.</p>
                                         <div class="actionBtn">
-                                            <a href="#" class="btn text-black ps-0 fw-bold">
+                                            <a href="#" class="btn text-black btn-link ps-0 fw-bold">
                                                 <span class="text">Learn More </span>
-                                                <span class="icon align-middle d-inline-block bg-black ms-2">
+                                                <span class="icon align-middle d-inline-block ms-2">
                                                     <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
                                                 </span>
                                             </a>
@@ -738,12 +834,12 @@
                                 <div class="card bg-transparent border-0">
                                     <div class="card-body p-md-0 pe-xl-4">
                                         <img src="./assets/images/globe-bd.png" alt="globe" class="img-fluid mb-4 pb-lg-1" />
-                                        <h4 class="card-title text-black fw-semibold">Hire Dedicated Developer</h4>
-                                        <p class="card-text mb-4">From biotech to breweries, we’re on a mission to democratize the R&D tax credit. We’re here to </p>
+                                        <h4 class="card-title text-black fw-semibold">Certified Experienced Engineers’ Team</h4>
+                                        <p class="card-text mb-4">You can trust us to add an amazing value to your project and team’s efforts towards building a unique product.</p>
                                         <div class="actionBtn">
-                                            <a href="#" class="btn text-black ps-0 fw-bold">
+                                            <a href="#" class="btn text-black btn-link ps-0 fw-bold">
                                                 <span class="text">Learn More </span>
-                                                <span class="icon align-middle d-inline-block bg-black ms-2">
+                                                <span class="icon align-middle d-inline-block ms-2">
                                                     <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
                                                 </span>
                                             </a>
@@ -762,36 +858,76 @@
                             <div class="col-wrap">
                                 <nav class="mb-5 mb-md-0">
                                     <div class="nav nav-tabs list-group border-0" id="nav-tab" role="tablist">
-                                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                        <button class="nav-link active" id="nav-eCommerce-tab" data-bs-toggle="tab" data-bs-target="#nav-eCommerce" type="button" role="tab" aria-controls="nav-eCommerce" aria-selected="true">
                                             <span class="icon align-middle me-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="19px" width="19px" viewBox="0 0 19 19"><g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4074"><path d="M.7031 9.4994a8.796 8.796 0 0 0 12.1625 8.1267 8.794 8.794 0 0 0 2.8537-1.9068 8.7952 8.7952 0 0 0 1.9068-9.586A8.7963 8.7963 0 0 0 .7031 9.4994Zm.7032-3.1634h16.1851M1.4063 12.6641h16.1851"/><path d="M9.1469.7031C7.3073 3.3416 6.332 6.3893 6.332 9.4994s.9753 6.1578 2.8149 8.7963M9.8516.7031c1.8395 2.6385 2.8148 5.6862 2.8148 8.7963s-.9753 6.1578-2.8148 8.7963"/></g></svg>
                                             </span>
                                             <span class="text flex-grow-1">
-                                                Fintech
+                                                E-commerce
                                             </span>
                                         </button>
-                                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                        <button class="nav-link" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="false">
                                             <span class="icon align-middle me-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="19px" width="19px" viewBox="0 0 19 19"><g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4074"><path d="M.7031 9.4994a8.796 8.796 0 0 0 12.1625 8.1267 8.794 8.794 0 0 0 2.8537-1.9068 8.7952 8.7952 0 0 0 1.9068-9.586A8.7963 8.7963 0 0 0 .7031 9.4994Zm.7032-3.1634h16.1851M1.4063 12.6641h16.1851"/><path d="M9.1469.7031C7.3073 3.3416 6.332 6.3893 6.332 9.4994s.9753 6.1578 2.8149 8.7963M9.8516.7031c1.8395 2.6385 2.8148 5.6862 2.8148 8.7963s-.9753 6.1578-2.8148 8.7963"/></g></svg>
                                             </span>
                                             <span class="text flex-grow-1">
-                                                E-Commerce
+                                                Education
                                             </span>
                                         </button>
-                                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                        <button class="nav-link" id="nav-finance-tab" data-bs-toggle="tab" data-bs-target="#nav-finance" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
                                             <span class="icon align-middle me-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="19px" width="19px" viewBox="0 0 19 19"><g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4074"><path d="M.7031 9.4994a8.796 8.796 0 0 0 12.1625 8.1267 8.794 8.794 0 0 0 2.8537-1.9068 8.7952 8.7952 0 0 0 1.9068-9.586A8.7963 8.7963 0 0 0 .7031 9.4994Zm.7032-3.1634h16.1851M1.4063 12.6641h16.1851"/><path d="M9.1469.7031C7.3073 3.3416 6.332 6.3893 6.332 9.4994s.9753 6.1578 2.8149 8.7963M9.8516.7031c1.8395 2.6385 2.8148 5.6862 2.8148 8.7963s-.9753 6.1578-2.8148 8.7963"/></g></svg>
                                             </span>
                                             <span class="text flex-grow-1">
-                                                UI/UX & Graphics Design
+                                                Finance
                                             </span>
                                         </button>
-                                        <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">
+                                        <button class="nav-link" id="nav-forex-tab" data-bs-toggle="tab" data-bs-target="#nav-forex" type="button" role="tab" aria-controls="nav-forex" aria-selected="false">
                                             <span class="icon align-middle me-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="19px" width="19px" viewBox="0 0 19 19"><g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4074"><path d="M.7031 9.4994a8.796 8.796 0 0 0 12.1625 8.1267 8.794 8.794 0 0 0 2.8537-1.9068 8.7952 8.7952 0 0 0 1.9068-9.586A8.7963 8.7963 0 0 0 .7031 9.4994Zm.7032-3.1634h16.1851M1.4063 12.6641h16.1851"/><path d="M9.1469.7031C7.3073 3.3416 6.332 6.3893 6.332 9.4994s.9753 6.1578 2.8149 8.7963M9.8516.7031c1.8395 2.6385 2.8148 5.6862 2.8148 8.7963s-.9753 6.1578-2.8148 8.7963"/></g></svg>
                                             </span>
                                             <span class="text flex-grow-1">
-                                                UI/UX & Graphics Design
+                                                Forex
+                                            </span>
+                                        </button>
+                                        <button class="nav-link" id="nav-entertainment-tab" data-bs-toggle="tab" data-bs-target="#nav-entertainment" type="button" role="tab" aria-controls="nav-entertainment" aria-selected="false">
+                                            <span class="icon align-middle me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="19px" width="19px" viewBox="0 0 19 19"><g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4074"><path d="M.7031 9.4994a8.796 8.796 0 0 0 12.1625 8.1267 8.794 8.794 0 0 0 2.8537-1.9068 8.7952 8.7952 0 0 0 1.9068-9.586A8.7963 8.7963 0 0 0 .7031 9.4994Zm.7032-3.1634h16.1851M1.4063 12.6641h16.1851"/><path d="M9.1469.7031C7.3073 3.3416 6.332 6.3893 6.332 9.4994s.9753 6.1578 2.8149 8.7963M9.8516.7031c1.8395 2.6385 2.8148 5.6862 2.8148 8.7963s-.9753 6.1578-2.8148 8.7963"/></g></svg>
+                                            </span>
+                                            <span class="text flex-grow-1">
+                                                Entertainment
+                                            </span>
+                                        </button>
+                                        <button class="nav-link" id="nav-fantasyGame-tab" data-bs-toggle="tab" data-bs-target="#nav-fantasyGame" type="button" role="tab" aria-controls="nav-fantasyGame" aria-selected="false">
+                                            <span class="icon align-middle me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="19px" width="19px" viewBox="0 0 19 19"><g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4074"><path d="M.7031 9.4994a8.796 8.796 0 0 0 12.1625 8.1267 8.794 8.794 0 0 0 2.8537-1.9068 8.7952 8.7952 0 0 0 1.9068-9.586A8.7963 8.7963 0 0 0 .7031 9.4994Zm.7032-3.1634h16.1851M1.4063 12.6641h16.1851"/><path d="M9.1469.7031C7.3073 3.3416 6.332 6.3893 6.332 9.4994s.9753 6.1578 2.8149 8.7963M9.8516.7031c1.8395 2.6385 2.8148 5.6862 2.8148 8.7963s-.9753 6.1578-2.8148 8.7963"/></g></svg>
+                                            </span>
+                                            <span class="text flex-grow-1">
+                                                Fantasy Game
+                                            </span>
+                                        </button>
+                                        <button class="nav-link" id="nav-restaurant-tab" data-bs-toggle="tab" data-bs-target="#nav-restaurant" type="button" role="tab" aria-controls="nav-restaurant" aria-selected="false">
+                                            <span class="icon align-middle me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="19px" width="19px" viewBox="0 0 19 19"><g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4074"><path d="M.7031 9.4994a8.796 8.796 0 0 0 12.1625 8.1267 8.794 8.794 0 0 0 2.8537-1.9068 8.7952 8.7952 0 0 0 1.9068-9.586A8.7963 8.7963 0 0 0 .7031 9.4994Zm.7032-3.1634h16.1851M1.4063 12.6641h16.1851"/><path d="M9.1469.7031C7.3073 3.3416 6.332 6.3893 6.332 9.4994s.9753 6.1578 2.8149 8.7963M9.8516.7031c1.8395 2.6385 2.8148 5.6862 2.8148 8.7963s-.9753 6.1578-2.8148 8.7963"/></g></svg>
+                                            </span>
+                                            <span class="text flex-grow-1">
+                                                Restaurant
+                                            </span>
+                                        </button>
+                                        <button class="nav-link" id="nav-manufacturing-tab" data-bs-toggle="tab" data-bs-target="#nav-manufacturing" type="button" role="tab" aria-controls="nav-manufacturing" aria-selected="false">
+                                            <span class="icon align-middle me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="19px" width="19px" viewBox="0 0 19 19"><g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4074"><path d="M.7031 9.4994a8.796 8.796 0 0 0 12.1625 8.1267 8.794 8.794 0 0 0 2.8537-1.9068 8.7952 8.7952 0 0 0 1.9068-9.586A8.7963 8.7963 0 0 0 .7031 9.4994Zm.7032-3.1634h16.1851M1.4063 12.6641h16.1851"/><path d="M9.1469.7031C7.3073 3.3416 6.332 6.3893 6.332 9.4994s.9753 6.1578 2.8149 8.7963M9.8516.7031c1.8395 2.6385 2.8148 5.6862 2.8148 8.7963s-.9753 6.1578-2.8148 8.7963"/></g></svg>
+                                            </span>
+                                            <span class="text flex-grow-1">
+                                                Manufacturing
+                                            </span>
+                                        </button>
+                                        <button class="nav-link" id="nav-banking-tab" data-bs-toggle="tab" data-bs-target="#nav-banking" type="button" role="tab" aria-controls="nav-banking" aria-selected="false">
+                                            <span class="icon align-middle me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="19px" width="19px" viewBox="0 0 19 19"><g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4074"><path d="M.7031 9.4994a8.796 8.796 0 0 0 12.1625 8.1267 8.794 8.794 0 0 0 2.8537-1.9068 8.7952 8.7952 0 0 0 1.9068-9.586A8.7963 8.7963 0 0 0 .7031 9.4994Zm.7032-3.1634h16.1851M1.4063 12.6641h16.1851"/><path d="M9.1469.7031C7.3073 3.3416 6.332 6.3893 6.332 9.4994s.9753 6.1578 2.8149 8.7963M9.8516.7031c1.8395 2.6385 2.8148 5.6862 2.8148 8.7963s-.9753 6.1578-2.8148 8.7963"/></g></svg>
+                                            </span>
+                                            <span class="text flex-grow-1">
+                                                Banking
                                             </span>
                                         </button>
                                     </div>
@@ -802,21 +938,21 @@
                         <div class="col-12 col-md-9 col-lg-9">
                             <div class="col-wrap">
                                 <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                    <div class="tab-pane show active" id="nav-eCommerce" role="tabpanel" aria-labelledby="nav-eCommerce-tab" tabindex="0">
                                         <div class="heading text-white mb-1">
                                             <h2 class="display-5 text-capitalize fw-medium mb-3 lh-sm">
-                                                <span>Payment orchestration platformfor all types of business</span>
+                                                <span>Solutions for Every Industry and Vertical built with Expertise</span>
                                             </h2>
                                         </div>
                                         <div class="expert mb-5">
-                                            <p class="text-white text-capitalize fs-20">With sheer customer satisfaction in mind, we are profoundly dedicated to developing highly </p>
+                                            <p class="text-white text-capitalize fs-20">We rely on the industry’s best practices, growth strategies, and customer behavior to build relevant and performant solutions. </p>
                                         </div>
                                         <div class="row align-items-center">
                                             <div class="col-12 col-md-6 col-lg-4">
                                                 <div class="col-wrap">
                                                     <div class="heading text-white mb-1">
                                                         <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
-                                                            <span>Fintech</span>
+                                                            <span>E-commerce</span>
                                                         </h2>
                                                     </div>
                                                     <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
@@ -824,19 +960,19 @@
                                                             <span class="ico align-middle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                            <span class="text text-white">Easy Money Transfer</span>
+                                                            <span class="text text-white">Fast Sales Processing</span>
                                                         </li>
                                                         <li class="list-group-item bg-transparent border-0 p-0 mb-2">
                                                             <span class="icon align-middle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                            <span class="text text-white">We'll provide a fully signed </span>
+                                                            <span class="text text-white">Easy Access</span>
                                                         </li>
                                                         <li class="list-group-item bg-transparent border-0 p-0 mb-2">
                                                             <span class="icon align-middle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                            <span class="text text-white">We'll provide a fully signed </span>
+                                                            <span class="text text-white">Intuitive Interface</span>
                                                         </li>
                                                     </ul>
                                                     
@@ -844,16 +980,8 @@
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-8">
                                                 <div class="col-wrap">
-                                                    <div class="expert mb-4">
-                                                        <p class="text-white text-capitalize">Decade-long experience in UI/UX designing, our creative team of designers The top-notch Preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice </p>
-                                                    </div>
-                                                    <div class="actionBtn">
-                                                        <a href="#" class="btn text-white ps-0 fw-bold">
-                                                            <span class="text">Learn More</span>
-                                                            <span class="icon align-middle d-inline-block bg-white ms-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#000" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
-                                                            </span>
-                                                        </a>
+                                                    <div class="expert">
+                                                        <p class="text-white text-capitalize">Leverage our designing, business development, and programming expertise in the eCommerce industry to build applications that bring a personalized experience to the end users. </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -863,21 +991,21 @@
                                         </figure>
 
                                     </div>
-                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                    <div class="tab-pane" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab" tabindex="0">
                                         <div class="heading text-white mb-1">
                                             <h2 class="display-5 text-capitalize fw-medium mb-3 lh-sm">
-                                                <span>Payment orchestration platformfor all types of business</span>
+                                                <span>Solutions for Every Industry and Vertical built with Expertise</span>
                                             </h2>
                                         </div>
                                         <div class="expert mb-5">
-                                            <p class="text-white text-capitalize fs-20">With sheer customer satisfaction in mind, we are profoundly dedicated to developing highly </p>
+                                            <p class="text-white text-capitalize fs-20">We rely on the industry’s best practices, growth strategies, and customer behavior to build relevant and performant solutions. </p>
                                         </div>
                                         <div class="row align-items-center">
                                             <div class="col-12 col-md-6 col-lg-4">
                                                 <div class="col-wrap">
                                                     <div class="heading text-white mb-1">
                                                         <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
-                                                            <span>Fintech</span>
+                                                            <span>Education</span>
                                                         </h2>
                                                     </div>
                                                     <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
@@ -885,19 +1013,19 @@
                                                             <span class="ico align-middle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                            <span class="text text-white">Easy Money Transfer</span>
+                                                            <span class="text text-white">Secure Communication</span>
                                                         </li>
                                                         <li class="list-group-item bg-transparent border-0 p-0 mb-2">
                                                             <span class="icon align-middle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                            <span class="text text-white">We'll provide a fully signed </span>
+                                                            <span class="text text-white">Online Classes</span>
                                                         </li>
                                                         <li class="list-group-item bg-transparent border-0 p-0 mb-2">
                                                             <span class="icon align-middle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                            <span class="text text-white">We'll provide a fully signed </span>
+                                                            <span class="text text-white">Management Systems</span>
                                                         </li>
                                                     </ul>
                                                     
@@ -905,16 +1033,8 @@
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-8">
                                                 <div class="col-wrap">
-                                                    <div class="expert mb-4">
-                                                        <p class="text-white text-capitalize">Decade-long experience in UI/UX designing, our creative team of designers The top-notch Preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice </p>
-                                                    </div>
-                                                    <div class="actionBtn">
-                                                        <a href="#" class="btn text-white ps-0 fw-bold">
-                                                            <span class="text">Learn More</span>
-                                                            <span class="icon align-middle d-inline-block bg-white ms-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#000" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
-                                                            </span>
-                                                        </a>
+                                                    <div class="expert">
+                                                        <p class="text-white text-capitalize">From building dedicated virtual classroom platforms to creating school management or learning management systems, we build empowering and enabling solutions.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -923,21 +1043,21 @@
                                             <img src="./assets/images/fintech.png" alt="uiux-apps" class="img-fluid" />
                                         </figure>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                                    <div class="tab-pane" id="nav-finance" role="tabpanel" aria-labelledby="nav-finance-tab" tabindex="0">
                                         <div class="heading text-white mb-1">
                                             <h2 class="display-5 text-capitalize fw-medium mb-3 lh-sm">
-                                                <span>Payment orchestration platformfor all types of business</span>
+                                                <span>Solutions for Every Industry and Vertical built with Expertise</span>
                                             </h2>
                                         </div>
                                         <div class="expert mb-5">
-                                            <p class="text-white text-capitalize fs-20">With sheer customer satisfaction in mind, we are profoundly dedicated to developing highly </p>
+                                            <p class="text-white text-capitalize fs-20">We rely on the industry’s best practices, growth strategies, and customer behavior to build relevant and performant solutions. </p>
                                         </div>
                                         <div class="row align-items-center">
                                             <div class="col-12 col-md-6 col-lg-4">
                                                 <div class="col-wrap">
                                                     <div class="heading text-white mb-1">
                                                         <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
-                                                            <span>Fintech</span>
+                                                            <span>Finance</span>
                                                         </h2>
                                                     </div>
                                                     <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
@@ -945,19 +1065,19 @@
                                                             <span class="ico align-middle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                            <span class="text text-white">Easy Money Transfer</span>
+                                                            <span class="text text-white">Encrypted Applications</span>
                                                         </li>
                                                         <li class="list-group-item bg-transparent border-0 p-0 mb-2">
                                                             <span class="icon align-middle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                            <span class="text text-white">We'll provide a fully signed </span>
+                                                            <span class="text text-white">Digital Wallets</span>
                                                         </li>
                                                         <li class="list-group-item bg-transparent border-0 p-0 mb-2">
                                                             <span class="icon align-middle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                            <span class="text text-white">We'll provide a fully signed </span>
+                                                            <span class="text text-white">Fast Payments Processing</span>
                                                         </li>
                                                     </ul>
                                                     
@@ -965,16 +1085,8 @@
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-8">
                                                 <div class="col-wrap">
-                                                    <div class="expert mb-4">
-                                                        <p class="text-white text-capitalize">Decade-long experience in UI/UX designing, our creative team of designers The top-notch Preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice </p>
-                                                    </div>
-                                                    <div class="actionBtn">
-                                                        <a href="#" class="btn text-white ps-0 fw-bold">
-                                                            <span class="text">Learn More</span>
-                                                            <span class="icon align-middle d-inline-block bg-white ms-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#000" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
-                                                            </span>
-                                                        </a>
+                                                    <div class="expert">
+                                                        <p class="text-white text-capitalize">We help fintech and financial institutions modernize their solutions and build better relationships with their customers as they reinvent their function.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -983,21 +1095,21 @@
                                             <img src="./assets/images/fintech.png" alt="uiux-apps" class="img-fluid" />
                                         </figure>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                                    <div class="tab-pane" id="nav-forex" role="tabpanel" aria-labelledby="nav-forex-tab" tabindex="0">
                                         <div class="heading text-white mb-1">
                                             <h2 class="display-5 text-capitalize fw-medium mb-3 lh-sm">
-                                                <span>Payment orchestration platformfor all types of business</span>
+                                                <span>Solutions for Every Industry and Vertical built with Expertise</span>
                                             </h2>
                                         </div>
                                         <div class="expert mb-5">
-                                            <p class="text-white text-capitalize fs-20">With sheer customer satisfaction in mind, we are profoundly dedicated to developing highly </p>
+                                            <p class="text-white text-capitalize fs-20">We rely on the industry’s best practices, growth strategies, and customer behavior to build relevant and performant solutions. </p>
                                         </div>
                                         <div class="row align-items-center">
                                             <div class="col-12 col-md-6 col-lg-4">
                                                 <div class="col-wrap">
                                                     <div class="heading text-white mb-1">
                                                         <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
-                                                            <span>Fintech</span>
+                                                            <span>Forex</span>
                                                         </h2>
                                                     </div>
                                                     <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
@@ -1005,19 +1117,19 @@
                                                             <span class="ico align-middle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                            <span class="text text-white">Easy Money Transfer</span>
+                                                            <span class="text text-white">Comprehensive Documentation</span>
                                                         </li>
                                                         <li class="list-group-item bg-transparent border-0 p-0 mb-2">
                                                             <span class="icon align-middle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                            <span class="text text-white">We'll provide a fully signed </span>
+                                                            <span class="text text-white">Intuitive App Interface</span>
                                                         </li>
                                                         <li class="list-group-item bg-transparent border-0 p-0 mb-2">
                                                             <span class="icon align-middle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                            <span class="text text-white">We'll provide a fully signed </span>
+                                                            <span class="text text-white">Multiple Functions</span>
                                                         </li>
                                                     </ul>
                                                     
@@ -1025,16 +1137,268 @@
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-8">
                                                 <div class="col-wrap">
-                                                    <div class="expert mb-4">
-                                                        <p class="text-white text-capitalize">Decade-long experience in UI/UX designing, our creative team of designers The top-notch Preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice </p>
+                                                    <div class="expert">
+                                                        <p class="text-white text-capitalize">Hire IConflux, the best <b>web, and mobile app development company,</b> to design, develop, and deploy Forex solutions boasting advanced features giving a seamless trading experience. </p>
                                                     </div>
-                                                    <div class="actionBtn">
-                                                        <a href="#" class="btn text-white ps-0 fw-bold">
-                                                            <span class="text">Learn More</span>
-                                                            <span class="icon align-middle d-inline-block bg-white ms-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#000" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <figure class="figure mb-0">
+                                            <img src="./assets/images/fintech.png" alt="uiux-apps" class="img-fluid" />
+                                        </figure>
+                                    </div>
+                                    <div class="tab-pane" id="nav-entertainment" role="tabpanel" aria-labelledby="nav-entertainment-tab" tabindex="0">
+                                        <div class="heading text-white mb-1">
+                                            <h2 class="display-5 text-capitalize fw-medium mb-3 lh-sm">
+                                                <span>Solutions for Every Industry and Vertical built with Expertise</span>
+                                            </h2>
+                                        </div>
+                                        <div class="expert mb-5">
+                                            <p class="text-white text-capitalize fs-20">We rely on the industry’s best practices, growth strategies, and customer behavior to build relevant and performant solutions. </p>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="col-wrap">
+                                                    <div class="heading text-white mb-1">
+                                                        <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
+                                                            <span>Entertainment</span>
+                                                        </h2>
+                                                    </div>
+                                                    <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="ico align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
                                                             </span>
-                                                        </a>
+                                                            <span class="text text-white">Digital Assets Management</span>
+                                                        </li>
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="icon align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">Online Streaming Solutions</span>
+                                                        </li>
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="icon align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">Subscription Management</span>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-8">
+                                                <div class="col-wrap">
+                                                    <div class="expert">
+                                                        <p class="text-white text-capitalize">We build customer-friendly and easy-to-use entertainment solutions for every type of customer. We want to give your customers a better service, a novel experience and bring a smile to their faces. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <figure class="figure mb-0">
+                                            <img src="./assets/images/fintech.png" alt="uiux-apps" class="img-fluid" />
+                                        </figure>
+                                    </div>
+                                    <div class="tab-pane" id="nav-fantasyGame" role="tabpanel" aria-labelledby="nav-fantasyGame-tab" tabindex="0">
+                                        <div class="heading text-white mb-1">
+                                            <h2 class="display-5 text-capitalize fw-medium mb-3 lh-sm">
+                                                <span>Solutions for Every Industry and Vertical built with Expertise</span>
+                                            </h2>
+                                        </div>
+                                        <div class="expert mb-5">
+                                            <p class="text-white text-capitalize fs-20">We rely on the industry’s best practices, growth strategies, and customer behavior to build relevant and performant solutions. </p>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="col-wrap">
+                                                    <div class="heading text-white mb-1">
+                                                        <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
+                                                            <span>Fantasy Game</span>
+                                                        </h2>
+                                                    </div>
+                                                    <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="ico align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">Interactive and immersive gameplay</span>
+                                                        </li>
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="icon align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">No-Lag Gaming</span>
+                                                        </li>
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="icon align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">Strategic Development</span>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-8">
+                                                <div class="col-wrap">
+                                                    <div class="expert">
+                                                        <p class="text-white text-capitalize">Want your game to get featured in the top charts? Hire the best fantasy game <b>mobile application development company in India.</b> We design and build games boasting unparalleled performance and amazing graphics.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <figure class="figure mb-0">
+                                            <img src="./assets/images/fintech.png" alt="uiux-apps" class="img-fluid" />
+                                        </figure>
+                                    </div>
+                                    <div class="tab-pane" id="nav-restaurant" role="tabpanel" aria-labelledby="nav-restaurant-tab" tabindex="0">
+                                        <div class="heading text-white mb-1">
+                                            <h2 class="display-5 text-capitalize fw-medium mb-3 lh-sm">
+                                                <span>Solutions for Every Industry and Vertical built with Expertise</span>
+                                            </h2>
+                                        </div>
+                                        <div class="expert mb-5">
+                                            <p class="text-white text-capitalize fs-20">We rely on the industry’s best practices, growth strategies, and customer behavior to build relevant and performant solutions. </p>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="col-wrap">
+                                                    <div class="heading text-white mb-1">
+                                                        <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
+                                                            <span>Restaurant</span>
+                                                        </h2>
+                                                    </div>
+                                                    <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="ico align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">Transformative Experiences</span>
+                                                        </li>
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="icon align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">In-App Payment Solutions</span>
+                                                        </li>
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="icon align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">Dining and Delivery</span>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-8">
+                                                <div class="col-wrap">
+                                                    <div class="expert">
+                                                        <p class="text-white text-capitalize">Bring effective digitalization into your restaurant business and make it more agile, performance-driven, and customer-centric. From creating an office management software to ordering portals, we can deliver everything you need. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <figure class="figure mb-0">
+                                            <img src="./assets/images/fintech.png" alt="uiux-apps" class="img-fluid" />
+                                        </figure>
+                                    </div>
+                                    <div class="tab-pane" id="nav-manufacturing" role="tabpanel" aria-labelledby="nav-manufacturing-tab" tabindex="0">
+                                        <div class="heading text-white mb-1">
+                                            <h2 class="display-5 text-capitalize fw-medium mb-3 lh-sm">
+                                                <span>Solutions for Every Industry and Vertical built with Expertise</span>
+                                            </h2>
+                                        </div>
+                                        <div class="expert mb-5">
+                                            <p class="text-white text-capitalize fs-20">We rely on the industry’s best practices, growth strategies, and customer behavior to build relevant and performant solutions. </p>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="col-wrap">
+                                                    <div class="heading text-white mb-1">
+                                                        <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
+                                                            <span>Manufacturing</span>
+                                                        </h2>
+                                                    </div>
+                                                    <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="ico align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">Improve Productivity</span>
+                                                        </li>
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="icon align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">Cost Reduction</span>
+                                                        </li>
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="icon align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">Digital Transformation</span>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-8">
+                                                <div class="col-wrap">
+                                                    <div class="expert">
+                                                        <p class="text-white text-capitalize">With digital transformation taking a crucial role in delivering success, manufacturing units can hire IConflux developers to deliver bespoke solutions for their manufacturing processes and operations. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <figure class="figure mb-0">
+                                            <img src="./assets/images/fintech.png" alt="uiux-apps" class="img-fluid" />
+                                        </figure>
+                                    </div>
+                                    <div class="tab-pane" id="nav-banking" role="tabpanel" aria-labelledby="nav-banking-tab" tabindex="0">
+                                        <div class="heading text-white mb-1">
+                                            <h2 class="display-5 text-capitalize fw-medium mb-3 lh-sm">
+                                                <span>Solutions for Every Industry and Vertical built with Expertise</span>
+                                            </h2>
+                                        </div>
+                                        <div class="expert mb-5">
+                                            <p class="text-white text-capitalize fs-20">We rely on the industry’s best practices, growth strategies, and customer behavior to build relevant and performant solutions. </p>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="col-wrap">
+                                                    <div class="heading text-white mb-1">
+                                                        <h2 class="display-5 text-capitalize fw-medium mb-4 lh-sm">
+                                                            <span>Banking</span>
+                                                        </h2>
+                                                    </div>
+                                                    <ul class="list-group list-group-horizontal flex-wrap mb-4 pb-2">
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="ico align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">Digital Wallets</span>
+                                                        </li>
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="icon align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">Secure and Fast Transactions</span>
+                                                        </li>
+                                                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                                            <span class="icon align-middle">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2.5 10a7.4998 7.4998 0 0 0 7.5 7.5A7.5 7.5 0 1 0 2.5 10Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7.5 10.0026 1.6667 1.6667L12.5 8.3359"/></g></svg>
+                                                            </span>
+                                                            <span class="text text-white">Customized Solutions</span>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-8">
+                                                <div class="col-wrap">
+                                                    <div class="expert">
+                                                        <p class="text-white text-capitalize">With the financial world taking a change for the better, we are at the forefront of designing and developing financial solutions for Indian and international clients. Our precision and targeted development approach brings effective results for every banking business. </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1051,30 +1415,30 @@
             </div>
             <div class="ico_11 position-relative bg-theme-light-300 py-100 ">
                 <div class="container">
-                    <div class="row">
+                    <div class="row align-items-stretch">
                         <div class="col-12 col-md-12 col-lg-12 mb-4 mb-md-0">
                             <div class="col-wrap text-center">
                                 <div class="heading text-black mb-1">
                                     <h2 class="h1 fw-semibold mb-4 lh-sm">
-                                        <span>Why choose IConflux for <br class="d-none d-md-block" />your next project</span>
+                                        <span>Why Choose IConflux for<br class="d-none d-md-block" />Outsourcing Your Next Project?</span>
                                     </h2>
                                 </div>
                                 <div class="expert mb-5">
-                                    <p class="text-secondary text-capitalize">Fraudulent activity by referring to the single accurate and complete data source</p>
+                                    <p class="text-secondary text-capitalize">We bring our experience, expertise, and innovative mindset into every project to deliver the best results. </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-                            <div class="col-wrap">
-                                <div class="card border-0">
+                            <div class="col-wrap h-100">
+                                <div class="card h-100 border-0">
                                     <div class="card-body">
                                         <div class="d-flex gap-4">
-                                            <div class="flex-col">
-                                                <img src="./assets/images/star_01.svg" alt="globe" class="img-fluid" />
+                                            <div class="flex-col flex-shrink-0">
+                                                <img src="./assets/images/star_01.svg" alt="globe" class="img-fluid" style="max-width:3.5rem" />
                                             </div>
                                             <div class="flex-col">
-                                                <h4 class="card-title text-black fw-semibold">Built-inTime Tracker</h4>
-                                                <p class="card-text mb-4">From biotech to breweries, on a mission to democratize </p>
+                                                <h4 class="card-title text-black fw-semibold">Agile Project Management</h4>
+                                                <p class="card-text mb-4">We work with an agile management approach delivering more than the customer’s expectations in record time.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1082,33 +1446,33 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-                            <div class="col-wrap">
-                                <div class="card border-0">
+                            <div class="col-wrap h-100">
+                                <div class="card h-100 border-0">
                                     <div class="card-body">
                                         <div class="d-flex gap-4">
-                                            <div class="flex-col">
-                                                <img src="./assets/images/star_01.svg" alt="globe" class="img-fluid" />
+                                            <div class="flex-col flex-shrink-0">
+                                                <img src="./assets/images/star_01.svg" alt="globe" class="img-fluid" style="max-width:3.5rem" />
                                             </div>
                                             <div class="flex-col">
-                                                <h4 class="card-title text-black fw-semibold">Built-inTime Tracker</h4>
-                                                <p class="card-text mb-4">From biotech to breweries, on a mission to democratize </p>
+                                                <h4 class="card-title text-black fw-semibold">Consistent Delivery</h4>
+                                                <p class="card-text mb-4">Our work approaches, strong principles, and core values allow us to remain consistent in our work and deliver performant solutions. </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-5">
-                            <div class="col-wrap">
-                                <div class="card border-0">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="col-wrap h-100">
+                                <div class="card h-100 border-0">
                                     <div class="card-body">
                                         <div class="d-flex gap-4">
-                                            <div class="flex-col">
-                                                <img src="./assets/images/star_01.svg" alt="globe" class="img-fluid" />
+                                            <div class="flex-col flex-shrink-0">
+                                                <img src="./assets/images/star_01.svg" alt="globe" class="img-fluid" style="max-width:3.5rem" />
                                             </div>
                                             <div class="flex-col">
-                                                <h4 class="card-title text-black fw-semibold">Built-inTime Tracker</h4>
-                                                <p class="card-text mb-4">From biotech to breweries, on a mission to democratize </p>
+                                                <h4 class="card-title text-black fw-semibold">Flexible and Fast Delivery</h4>
+                                                <p class="card-text mb-4">Using cloud technology, we build applications with the required flexibility while ensuring their timeline. </p>
                                             </div>
                                         </div>
                                     </div>
@@ -1116,11 +1480,11 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="col-wrap">
+                            <div class="col-wrap mt-5">
                                 <div class="actionBtn text-center">
-                                    <a href="#" class="btn text-black ps-0 fw-bold">
+                                    <a href="#" class="btn text-black btn-link fw-bold">
                                         <span class="text">Get a Free Quote </span>
-                                        <span class="icon align-middle d-inline-block bg-black ms-2">
+                                        <span class="icon align-middle d-inline-block ms-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
                                         </span>
                                     </a>
@@ -1161,7 +1525,7 @@
                                                     <a href="#" class="btn btn-theme-white rounded-0">
                                                         <span class="text">View Case Study</span>
                                                         <span class="icon align-middle d-inline-block ms-2">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
                                                         </span>
                                                     </a>
                                                 </div>
@@ -1204,7 +1568,7 @@
                                                     <a href="#" class="btn btn-theme-white rounded-0">
                                                         <span class="text">View Case Study</span>
                                                         <span class="icon align-middle d-inline-block ms-2">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
                                                         </span>
                                                     </a>
                                                 </div>
@@ -1247,7 +1611,7 @@
                                                     <a href="#" class="btn btn-theme-white rounded-0">
                                                         <span class="text">View Case Study</span>
                                                         <span class="icon align-middle d-inline-block ms-2">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
                                                         </span>
                                                     </a>
                                                 </div>
@@ -1353,13 +1717,27 @@
                             <div class="col-wrap">
                                 <div class="swiper trustedSwiper pb-4">
                                     <div class="swiper-wrapper">
-                                      <div class="swiper-slide"><img src="./assets/images/ubs.png" class="img-fluid" /></div>
-                                      <div class="swiper-slide"><img src="./assets/images/goldman-sach.png" class="img-fluid" /></div>
-                                      <div class="swiper-slide"><img src="./assets/images/bank-of-america.png" class="img-fluid" /></div>
-                                      <div class="swiper-slide"><img src="./assets/images/noaaura.png" class="img-fluid" /></div>
-                                      <div class="swiper-slide"><img src="./assets/images/jp_morgan.png" class="img-fluid" /></div>
-                                      <div class="swiper-slide"><img src="./assets/images/rbs.png" class="img-fluid" /></div>
-                                      <div class="swiper-slide"><img src="./assets/images/commerzbank.png" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-01.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-02.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-03.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-04.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-05.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-06.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-07.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-08.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-09.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-10.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-11.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-12.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-13.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-14.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-15.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-16.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-17.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-18.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-19.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-20.png" alt="trusted" class="img-fluid" /></div>
+                                      <div class="swiper-slide"><img src="./assets/images/trusted/trusted-21.png" alt="trusted" class="img-fluid" /></div>
                                     </div>
                                     <div class="swiper-pagination"></div>
                                 </div>
@@ -1382,7 +1760,7 @@
                                 <div class="actionBtn">
                                     <a href="#" class="btn btn-theme-white rounded-0">
                                         <span class="text">Schedule Demo</span>
-                                        <span class="icon align-middle d-inline-block bg-black ms-2">
+                                        <span class="icon align-middle d-inline-block ms-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
                                         </span>
                                     </a>
@@ -1393,7 +1771,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_16 position-relative py-100 ">
+            <div class="ico_16 blogs position-relative py-100 ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-10 col-lg-12 mb-4 mb-md-0">
@@ -1413,9 +1791,9 @@
                                         <h4 class="card-title text-black fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
                                         <p class="card-text mb-4">We offer a three-tier user-friendly and all device responsive...</p>
                                         <div class="actionBtn">
-                                            <a href="#" class="btn text-black ps-0 fw-bold">
+                                            <a href="#" class="btn text-black btn-link ps-0 fw-bold">
                                                 <span class="text">Read Article </span>
-                                                <span class="icon align-middle d-inline-block bg-black ms-2">
+                                                <span class="icon align-middle d-inline-block ms-2">
                                                     <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
                                                 </span>
                                             </a>
@@ -1432,9 +1810,9 @@
                                         <h4 class="card-title text-black fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
                                         <p class="card-text mb-4">We offer a three-tier user-friendly and all device responsive...</p>
                                         <div class="actionBtn">
-                                            <a href="#" class="btn text-black ps-0 fw-bold">
+                                            <a href="#" class="btn text-black btn-link ps-0 fw-bold">
                                                 <span class="text">Read Article </span>
-                                                <span class="icon align-middle d-inline-block bg-black ms-2">
+                                                <span class="icon align-middle d-inline-block ms-2">
                                                     <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
                                                 </span>
                                             </a>
@@ -1451,9 +1829,9 @@
                                         <h4 class="card-title text-black fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
                                         <p class="card-text mb-4">We offer a three-tier user-friendly and all device responsive...</p>
                                         <div class="actionBtn">
-                                            <a href="#" class="btn text-black ps-0 fw-bold">
+                                            <a href="#" class="btn text-black btn-link ps-0 fw-bold">
                                                 <span class="text">Read Article </span>
-                                                <span class="icon align-middle d-inline-block bg-black ms-2">
+                                                <span class="icon align-middle d-inline-block ms-2">
                                                     <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="#fff" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
                                                 </span>
                                             </a>
@@ -1571,7 +1949,7 @@
                                             <div class="col-12 col-lg-12">
                                                 <div class="form-wrap">
                                                     <button type="submit" class="btn btn-theme-primary withIcon w-100">
-                                                        <span>Submit Now</span>
+                                                        <span class="text">Submit Now</span>
                                                         <span class="icon d-inline-block align-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="none" viewBox="0 0 24 24"><g><path fill="currentColor" d="m13.1727 12.0046-4.95-4.95 1.414-1.414 6.364 6.364-6.364 6.364-1.414-1.414 4.95-4.95Z"/></g></svg></span>
                                                     </button>
                                                 </div>
@@ -1868,6 +2246,7 @@
                     </div>
                 </div>
             </footer>
+            <div class="icoCursor"></div>
         </main>
     </div>
 

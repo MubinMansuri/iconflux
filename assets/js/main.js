@@ -1,14 +1,30 @@
+'use strict';
+gsap.registerPlugin(ScrollTrigger);
+
 document.addEventListener("DOMContentLoaded", function () {
+  Splitting();
+
   let scrollContainer = document.querySelector("body");
-  imagesLoaded(scrollContainer, { background: true }, () => {
-    document.body.classList.add('img_loaded');
-  });
+  imagesLoaded(scrollContainer, { background: true }, () => {document.body.classList.add('img_loaded');});
   
-  window.addEventListener('scroll', () => document.querySelector('.site-header').classList.toggle('header-sticky', window.pageYOffset > 200));
-  window.addEventListener('scroll', () => document.querySelector('.site-header').classList.toggle('shadow-sm', window.pageYOffset > 200));
+  window.addEventListener('scroll', () => document.querySelector('.site-header').classList.toggle('header-sticky', window.pageYOffset > 100));
+  window.addEventListener('scroll', () => document.querySelector('.site-header').classList.toggle('shadow-sm', window.pageYOffset > 100));
 
   // logo slider
-  const trustedSwiper=new Swiper(".trustedSwiper",{slidesPerView:2,spaceBetween:10,autoplay:{delay:2500,disableOnInteraction:!1},pagination:{el:".swiper-pagination",clickable:!0},breakpoints:{414:{slidesPerView:2,spaceBetween:20},640:{slidesPerView:3,spaceBetween:20},768:{slidesPerView:5,spaceBetween:40},1024:{slidesPerView:6,spaceBetween:50}}});
+  const trustedSwiper = new Swiper(".trustedSwiper", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    autoplay: { delay: 2000, disableOnInteraction: !1 },
+    effect:'slide',
+    loop:!0,
+    // pagination: { el: ".swiper-pagination", clickable: !0 },
+    breakpoints: {
+      414: { slidesPerView: 2, spaceBetween: 20 },
+      640: { slidesPerView: 3, spaceBetween: 20 },
+      768: { slidesPerView: 5, spaceBetween: 40 },
+      1024: { slidesPerView: 6, spaceBetween: 50 },
+    },
+  });
 
   singeSlideSwiper(".caseStudy");
   singeSlideSwiper2(".testimonial");
@@ -30,51 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+  /* text scrolling */
+  gsap.set(".icoCursor", {xPercent: -50, yPercent: -50});  let xTo = gsap.quickTo(".icoCursor", "x", {duration: 0.6, ease: "power3"}),yTo = gsap.quickTo(".icoCursor", "y", {duration: 0.6, ease: "power3"});
+  window.addEventListener("mousemove", e => {xTo(e.clientX);yTo(e.clientY);});
 
-
-  // text scrolling
-  gsap.registerPlugin(ScrollTrigger);
-
-    const additionalX = { val: 0 };
-    let offset = 0;
-    let originalImages = gsap.utils.toArray(".o-big-title .o-big-title__inner .o-big-title__txt");
-    const container = document.querySelector(".o-big-title .o-big-title__inner");
-    const sliderWidth = container.offsetWidth;
-
-    // DUPLICATE IMAGES FOR LOOP
-    originalImages.forEach((image) => {
-      var clone = image.cloneNode(true);
-      clone.classList.add('o-big-title__txt--clone');
-      container.appendChild(clone);
-    });
-    let images = gsap.utils.toArray(".o-big-title .o-big-title__inner .o-big-title__txt");
-    // SET ANIMATION
-    images.forEach((item) => {
-      gsap.to(item, {
-        x: "-=" + Number(sliderWidth / 2),
-        duration: 30,
-        repeat: -1,
-        ease: "none",
-        modifiers: {
-          x: gsap.utils.unitize((x) => {
-            offset += additionalX.val;
-            x = (parseFloat(x) + offset) % -Number(sliderWidth * 0.5);
-            return x;
-          })
-        }
-      });
-    });
-    gsap.utils.toArray('.ico_05').forEach((section, index) => {
-      const w = section.querySelector('.o-big-title .o-big-title__inner');
-      const [x, xEnd] = (index % 2) ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
-      gsap.fromTo(w, {  x  }, {
-        x: xEnd,
-        scrollTrigger: { 
-          trigger: '.ico_04', 
-          scrub: 0.5 
-        }
-      });
-    });
 
 });
 // DOMContentLoaded  end
