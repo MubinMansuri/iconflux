@@ -29,6 +29,7 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script defer src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     
 </head>
@@ -113,14 +114,9 @@
                                     </div>
                                     <div class="heading text-black mb-1">
                                         <h1 class="display-3 fw-semibold mb-3 lh-sm">
-                                            <span>Intelligent Development,<br class="d-none d-lg-block" />New Experiences.</span>
+                                            <span>Intelligent Development,<br class="d-none d-lg-block" />New Experiences</span>
                                         </h1>
                                     </div>
-                                    <!-- <div class="d-flex align-items-center flex-wrap gap-4 mb-4 typeWriter" data-splitting>
-                                        <div class="flex-item position-relative">Mobile</div>
-                                        <div class="flex-item position-relative">Cloud</div>
-                                        <div class="flex-item position-relative">Web</div>
-                                    </div> -->
                                     <div class="keywords fs-30 text-theme-primary d-flex gap-3 mb-4" id="keywordsType" data-splitting>
                                         <span class="flex-item position-relative">Mobile</span>
                                         <span class="flex-item position-relative">·</span>
@@ -251,19 +247,19 @@
                                 <div class="tabs">
                                     <ul class="nav nav-pills" id="myTab" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link active" id="android-tab" data-bs-toggle="tab" data-bs-target="#android-tab-pane" type="button" role="tab" aria-controls="android-tab-pane" aria-selected="true">Android</button>
+                                          <button class="nav-link active" id="front-end-tab" data-bs-toggle="tab" data-bs-target="#front-end-tab-pane" type="button" role="tab" aria-controls="front-end-tab-pane" aria-selected="true">Front-end</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="iOS-tab" data-bs-toggle="tab" data-bs-target="#iOS-tab-pane" type="button" role="tab" aria-controls="iOS-tab-pane" aria-selected="false">iOS</button>
+                                          <button class="nav-link" id="back-end-tab" data-bs-toggle="tab" data-bs-target="#back-end-tab-pane" type="button" role="tab" aria-controls="back-end-tab-pane" aria-selected="false">Back-end</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="crossPlatform-tab" data-bs-toggle="tab" data-bs-target="#crossPlatform-tab-pane" type="button" role="tab" aria-controls="crossPlatform-tab-pane" aria-selected="false">Cross platform</button>
+                                          <button class="nav-link" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile-tab-pane" type="button" role="tab" aria-controls="mobile-tab-pane" aria-selected="false">Mobile</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
                                           <button class="nav-link" id="database-tab" data-bs-toggle="tab" data-bs-target="#database-tab-pane" type="button" role="tab" aria-controls="database-tab-pane" aria-selected="false">Database</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="designTools-tab" data-bs-toggle="tab" data-bs-target="#designTools-tab-pane" type="button" role="tab" aria-controls="designTools-tab-pane" aria-selected="false">Design Tools</button>
+                                          <button class="nav-link" id="devOpsCloud-tab" data-bs-toggle="tab" data-bs-target="#devOpsCloud-tab-pane" type="button" role="tab" aria-controls="devOpsCloud-tab-pane" aria-selected="false">DevOps/Cloud</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -273,128 +269,138 @@
                         <div class="col-12 col-md-12 col-lg-6">
                             <div class="col-wrap text-center text-lg-end">
                                 <div class="tab-content position-relative" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="android-tab-pane" role="tabpanel" aria-labelledby="android-tab" tabindex="0">
+                                    <div class="tab-pane show active" id="front-end-tab-pane" role="tabpanel" aria-labelledby="front-end-tab" tabindex="0">
                                         <div class="tab-contents position-relative">
-                                            <div class="tech_lang swift iOS">
-                                                <img src="./assets/images/tech_icon/swift.svg" alt="swift" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang android large">
-                                                <img src="./assets/images/tech_icon/android.svg" alt="android" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang html5 db designTools">
-                                                <img src="./assets/images/tech_icon/html5.svg" alt="html5" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang java db">
-                                                <img src="./assets/images/tech_icon/java.svg" alt="java" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang js crossPlatform">
-                                                <img src="./assets/images/tech_icon/js.svg" alt="js" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang kotline android large">
-                                                <img src="./assets/images/tech_icon/kotline.svg" alt="kotline" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang reactjs iOS crossPlatform">
-                                                <img src="./assets/images/tech_icon/reactjs.svg" alt="reactjs" class="img-fluid" />
+                                            <div class="tabWrap">
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/AngularJS.svg" alt="AngularJS" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/ReactJS.svg" alt="ReactJS" class="img-fluid" />
+                                                </div>
+                                                <!-- <div class="tech_lang visually-hidden">
+                                                    <img src="./assets/images/tech_icon/front-end/ReactJS.svg" alt="ReactJS" class="img-fluid" />
+                                                </div> -->
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/VueJS.svg" alt="VueJS" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/Bootstrap.svg" alt="Bootstrap" class="img-fluid" />
+                                                </div>
+                                                <!-- <div class="tech_lang visually-hidden">
+                                                    <img src="./assets/images/tech_icon/front-end/ReactJS.svg" alt="ReactJS" class="img-fluid" />
+                                                </div> -->
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/Typescript.svg" alt="Typescript" class="img-fluid" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="iOS-tab-pane" role="tabpanel" aria-labelledby="iOS-tab" tabindex="0">
+                                    <div class="tab-pane" id="back-end-tab-pane" role="tabpanel" aria-labelledby="back-end-tab" tabindex="0">
                                         <div class="tab-contents position-relative">
-                                            <div class="tech_lang swift iOS">
-                                                <img src="./assets/images/tech_icon/swift.svg" alt="swift" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang android large">
-                                                <img src="./assets/images/tech_icon/android.svg" alt="android" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang html5 db designTools">
-                                                <img src="./assets/images/tech_icon/html5.svg" alt="html5" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang java db">
-                                                <img src="./assets/images/tech_icon/java.svg" alt="java" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang js crossPlatform">
-                                                <img src="./assets/images/tech_icon/js.svg" alt="js" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang kotline android large">
-                                                <img src="./assets/images/tech_icon/kotline.svg" alt="kotline" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang reactjs iOS crossPlatform">
-                                                <img src="./assets/images/tech_icon/reactjs.svg" alt="reactjs" class="img-fluid" />
+                                            <div class="tabWrap">
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/JAVA.svg" alt="java" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/NodeJS.svg" alt="NodeJS" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/PHP.svg" alt="php" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/Laravel.svg" alt="Laravel" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/Python.svg" alt="Python" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/Golang.svg" alt="Golang" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/dotnet.svg" alt=".NET" class="img-fluid" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="crossPlatform-tab-pane" role="tabpanel" aria-labelledby="crossPlatform-tab" tabindex="0">
+                                    <div class="tab-pane" id="mobile-tab-pane" role="tabpanel" aria-labelledby="mobile-tab" tabindex="0">
                                         <div class="tab-contents position-relative">
-                                            <div class="tech_lang swift iOS">
-                                                <img src="./assets/images/tech_icon/swift.svg" alt="swift" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang android large">
-                                                <img src="./assets/images/tech_icon/android.svg" alt="android" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang html5 db designTools">
-                                                <img src="./assets/images/tech_icon/html5.svg" alt="html5" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang java db">
-                                                <img src="./assets/images/tech_icon/java.svg" alt="java" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang js crossPlatform">
-                                                <img src="./assets/images/tech_icon/js.svg" alt="js" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang kotline android large">
-                                                <img src="./assets/images/tech_icon/kotline.svg" alt="kotline" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang reactjs iOS crossPlatform">
-                                                <img src="./assets/images/tech_icon/reactjs.svg" alt="reactjs" class="img-fluid" />
+                                            <div class="tabWrap">
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/Android.svg" alt="android" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/IOS.svg" alt="IOS" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/Flutter.svg" alt="Flutter" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/ReactNative.svg" alt="ReactNative" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/Xamarin.svg" alt="Xamarin" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/Kotlin.svg" alt="kotline" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/Swift.svg" alt="swift" class="img-fluid" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="database-tab-pane" role="tabpanel" aria-labelledby="database-tab" tabindex="0">
+                                    <div class="tab-pane" id="database-tab-pane" role="tabpanel" aria-labelledby="database-tab" tabindex="0">
                                         <div class="tab-contents position-relative">
-                                            <div class="tech_lang swift iOS">
-                                                <img src="./assets/images/tech_icon/swift.svg" alt="swift" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang android large">
-                                                <img src="./assets/images/tech_icon/android.svg" alt="android" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang html5 db designTools">
-                                                <img src="./assets/images/tech_icon/html5.svg" alt="html5" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang java db">
-                                                <img src="./assets/images/tech_icon/java.svg" alt="java" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang js crossPlatform">
-                                                <img src="./assets/images/tech_icon/js.svg" alt="js" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang kotline android large">
-                                                <img src="./assets/images/tech_icon/kotline.svg" alt="kotline" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang reactjs iOS crossPlatform">
-                                                <img src="./assets/images/tech_icon/reactjs.svg" alt="reactjs" class="img-fluid" />
+                                            <div class="tabWrap">
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/MySQL.svg" alt="MySQL" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/SQLServer.svg" alt="SQL Server" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/MongoDB.svg" alt="MongoDB" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/MariaDB.svg" alt="MariaDB" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/DynamoDB.svg" alt="DynamoDB" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/Redis.svg" alt="Redis" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/Elasticsearch.svg" alt="Elasticsearch" class="img-fluid" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="designTools-tab-pane" role="tabpanel" aria-labelledby="designTools-tab" tabindex="0">
+                                    <div class="tab-pane" id="devOpsCloud-tab-pane" role="tabpanel" aria-labelledby="devOpsCloud-tab" tabindex="0">
                                         <div class="tab-contents position-relative">
-                                            <div class="tech_lang swift iOS">
-                                                <img src="./assets/images/tech_icon/swift.svg" alt="swift" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang android large">
-                                                <img src="./assets/images/tech_icon/android.svg" alt="android" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang html5 db designTools">
-                                                <img src="./assets/images/tech_icon/html5.svg" alt="html5" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang java db">
-                                                <img src="./assets/images/tech_icon/java.svg" alt="java" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang js crossPlatform">
-                                                <img src="./assets/images/tech_icon/js.svg" alt="js" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang kotline android large">
-                                                <img src="./assets/images/tech_icon/kotline.svg" alt="kotline" class="img-fluid" />
-                                            </div>
-                                            <div class="tech_lang reactjs iOS crossPlatform">
-                                                <img src="./assets/images/tech_icon/reactjs.svg" alt="reactjs" class="img-fluid" />
+                                            <div class="tabWrap">
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/AWS.svg" alt="AWS" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/Azure.svg" alt="Azure" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/GoogleCloud.svg" alt="GoogleCloud" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/Docker.svg" alt="Docker" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/Jenkins.svg" alt="Jenkins" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/Kubernetes.svg" alt="Kubernetes" class="img-fluid" />
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/Firebase.svg" alt="Firebase" class="img-fluid" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -432,42 +438,42 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-8 mx-auto col-lg-6 ms-lg-auto">
-                            <div class="col-wrap ps-lg-5">
+                            <div class="col-wrap">
                                 <div class="card-list">
                                     <div class="card rounded-pill p-3 mb-3">
                                         <div class="d-flex gap-3 align-items-center">
                                             <div class="flex-col">
-                                                <div class="icon"><img src="./assets/images/star_01.svg" alt="star" class="img-fluid" /></div>
+                                                <div class="icon"><img src="./assets/images/happy-clients.svg" alt="star" class="img-fluid" /></div>
                                             </div>
                                             <div class="flex-col flex-grow-1"><h2 class="display-4 fw-semibold text-black m-0">260+</h2></div>
-                                            <div class="flex-col flex-grow-1"><h6 class="fw-bold text-muted m-0">Happy<br class="" />Clients</h6></div>
+                                            <div class="flex-col flex-shrink-1"><h6 class="fw-bold text-muted m-0">Happy<br class="" />Clients</h6></div>
                                         </div>
                                     </div>
                                     <div class="card rounded-pill p-3 mb-3">
                                         <div class="d-flex gap-3 align-items-center">
                                             <div class="flex-col">
-                                                <div class="icon"><img src="./assets/images/search_01.svg" alt="star" class="img-fluid" /></div>
+                                                <div class="icon"><img src="./assets/images/finished-projects.svg" alt="star" class="img-fluid" /></div>
                                             </div>
                                             <div class="flex-col flex-grow-1"><h2 class="display-4 fw-semibold text-black m-0">500+</h2></div>
-                                            <div class="flex-col flex-grow-1"><h6 class="fw-bold text-muted m-0">Finished<br class="" />Projects</h6></div>
+                                            <div class="flex-col flex-shrink-1"><h6 class="fw-bold text-muted m-0">Finished<br class="" />Projects</h6></div>
                                         </div>
                                     </div>
                                     <div class="card rounded-pill p-3 mb-3">
                                         <div class="d-flex gap-3 align-items-center">
                                             <div class="flex-col">
-                                                <div class="icon"><img src="./assets/images/alert_01.svg" alt="star" class="img-fluid" /></div>
+                                                <div class="icon"><img src="./assets/images/hours-of-work.svg" alt="star" class="img-fluid" /></div>
                                             </div>
                                             <div class="flex-col flex-grow-1"><h2 class="display-4 fw-semibold text-black m-0">50,000+</h2></div>
-                                            <div class="flex-col flex-grow-1"><h6 class="fw-bold text-muted m-0">Hours<br class="" />of Work</h6></div>
+                                            <div class="flex-col flex-shrink-1"><h6 class="fw-bold text-muted m-0">Hours<br class="" />of Work</h6></div>
                                         </div>
                                     </div>
                                     <div class="card rounded-pill p-3">
                                         <div class="d-flex gap-3 align-items-center">
                                             <div class="flex-col">
-                                                <div class="icon"><img src="./assets/images/alert_01.svg" alt="star" class="img-fluid" /></div>
+                                                <div class="icon"><img src="./assets/images/investment.svg" alt="star" class="img-fluid" /></div>
                                             </div>
                                             <div class="flex-col flex-grow-1"><h2 class="display-4 fw-semibold text-black m-0">$50</h2></div>
-                                            <div class="flex-col flex-grow-1"><h6 class="fw-bold text-muted m-0">Million investment<br class="" />Raised for Startups</h6></div>
+                                            <div class="flex-col flex-shrink-1"><h6 class="fw-bold text-muted m-0">Million investment<br class="" />Raised for Startups</h6></div>
                                         </div>
                                     </div>
                                 </div>
@@ -552,11 +558,13 @@
                         <div class="col-12">
                             <div class="col-wrap">
                                 <figure class="figure position-relative">
-                                    <img src="./assets/images/video-thumbnail.jpg" alt="video-thumbnail" class="img-fluid" />
+                                    <img src="./assets/images/video-thumbnail.jpg" alt="video-thumbnail" class="img-fluid video-thumbnail" />
                                     <a href="#" class="col-2 d-inline-block end-0 mx-auto playbtn position-absolute start-0 text-center top-50">
                                         <img src="./assets/images/play-btn.svg" alt="play-btn" class="img-fluid" />
                                     </a>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RX3hvVB2abs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
                                 </figure>
+
                             </div>
                         </div>
                     </div>
@@ -901,7 +909,9 @@
                             <div class="col-wrap">
                                 <div class="card bg-transparent border-0">
                                     <div class="card-body p-md-0 pe-xl-4">
-                                        <img src="./assets/images/globe-y.png" alt="globe" class="img-fluid mb-4 pb-lg-1" />
+                                        <div class="mb-4 pb-lg-1">
+                                            <lottie-player src="./assets/images/lottie/whyChoose/HireTopTalent.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                        </div>
                                         <h4 class="card-title text-black fw-semibold">Hire Top 1% Talent</h4>
                                         <p class="card-text mb-4">Hire creative professionals who bring creativity, agility, and innovativeness to their work so that you can reap the benefits of a great product.</p>
                                         <div class="actionBtn">
@@ -920,7 +930,9 @@
                             <div class="col-wrap">
                                 <div class="card bg-transparent border-0">
                                     <div class="card-body p-md-0 pe-xl-4">
-                                        <img src="./assets/images/globe-b.png" alt="globe" class="img-fluid mb-4 pb-lg-1" />
+                                        <div class="mb-4 pb-lg-1">
+                                            <lottie-player src="./assets/images/lottie/whyChoose/TimezoneAligned.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                        </div>
                                         <h4 class="card-title text-black fw-semibold">Timezone Aligned</h4>
                                         <p class="card-text mb-4">As the top mobile app development company, we maintain constant communique with clients irrespective of their time zones.</p>
                                         <div class="actionBtn">
@@ -939,8 +951,10 @@
                             <div class="col-wrap">
                                 <div class="card bg-transparent border-0">
                                     <div class="card-body p-md-0 pe-xl-4">
-                                        <img src="./assets/images/globe-bd.png" alt="globe" class="img-fluid mb-4 pb-lg-1" />
-                                        <h4 class="card-title text-black fw-semibold">Certified Experienced Engineers’ Team</h4>
+                                        <div class="mb-4 pb-lg-1">
+                                            <lottie-player src="./assets/images/lottie/whyChoose/CertifiedExperienced.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                        </div>
+                                        <h4 class="card-title text-black fw-semibold">Certified Experienced Team</h4>
                                         <p class="card-text mb-4">You can trust us to add an amazing value to your project and team’s efforts towards building a unique product.</p>
                                         <div class="actionBtn">
                                             <a href="#" class="btn btn-link ps-0 fw-bold">
@@ -1540,7 +1554,7 @@
                                     <div class="card-body">
                                         <div class="d-flex gap-4">
                                             <div class="flex-col flex-shrink-0">
-                                                <img src="./assets/images/star_01.svg" alt="globe" class="img-fluid" style="max-width:3.5rem" />
+                                                <lottie-player src="./assets/images/lottie/outsourcing/AgileProjectManagement.json" background="transparent" speed="1" loop autoplay></lottie-player>
                                             </div>
                                             <div class="flex-col">
                                                 <h4 class="card-title text-black fw-semibold">Agile Project Management</h4>
@@ -1557,7 +1571,7 @@
                                     <div class="card-body">
                                         <div class="d-flex gap-4">
                                             <div class="flex-col flex-shrink-0">
-                                                <img src="./assets/images/star_01.svg" alt="globe" class="img-fluid" style="max-width:3.5rem" />
+                                                <lottie-player src="./assets/images/lottie/outsourcing/ConsistentDelivery.json" background="transparent" speed="1" loop autoplay></lottie-player>
                                             </div>
                                             <div class="flex-col">
                                                 <h4 class="card-title text-black fw-semibold">Consistent Delivery</h4>
@@ -1574,7 +1588,7 @@
                                     <div class="card-body">
                                         <div class="d-flex gap-4">
                                             <div class="flex-col flex-shrink-0">
-                                                <img src="./assets/images/star_01.svg" alt="globe" class="img-fluid" style="max-width:3.5rem" />
+                                                <lottie-player src="./assets/images/lottie/outsourcing/FlexibleandFastDelivery.json" background="transparent" speed="1" loop autoplay></lottie-player>
                                             </div>
                                             <div class="flex-col">
                                                 <h4 class="card-title text-black fw-semibold">Flexible and Fast Delivery</h4>

@@ -50,6 +50,17 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.set(".icoCursor", {xPercent: -50, yPercent: -50});  let xTo = gsap.quickTo(".icoCursor", "x", {duration: 0.6, ease: "power3"}),yTo = gsap.quickTo(".icoCursor", "y", {duration: 0.6, ease: "power3"});
   window.addEventListener("mousemove", e => {xTo(e.clientX);yTo(e.clientY);});
 
+  const playbtn = document.querySelector('.playbtn');
+  const videoThumbnail = document.querySelector('.video-thumbnail');
+  const video = document.querySelector('.video');
+
+  playbtn.addEventListener('click',function(e){
+    e.preventDefault();
+    e.target.classList.add('active');
+    videoThumbnail.classList.add('active');
+    video.classList.add('active');
+    video.src += '?autoplay=1';
+  });
 
 });
 // DOMContentLoaded  end
