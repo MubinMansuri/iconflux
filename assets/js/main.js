@@ -47,8 +47,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   /* text scrolling */
+  const icoCursor = document.querySelector('.icoCursor');
   gsap.set(".icoCursor", {xPercent: -50, yPercent: -50});  let xTo = gsap.quickTo(".icoCursor", "x", {duration: 0.6, ease: "power3"}),yTo = gsap.quickTo(".icoCursor", "y", {duration: 0.6, ease: "power3"});
   window.addEventListener("mousemove", e => {xTo(e.clientX);yTo(e.clientY);});
+  window.addEventListener("click", () => {
+    if (icoCursor.classList.contains("click")) {
+      icoCursor.classList.remove("click");
+      void icoCursor.offsetWidth; // trigger a DOM reflow
+      icoCursor.classList.add("click");
+    } else {
+      icoCursor.classList.add("click");
+    }
+  });
 
   const playbtn = document.querySelector('.playbtn');
   const videoThumbnail = document.querySelector('.video-thumbnail');
