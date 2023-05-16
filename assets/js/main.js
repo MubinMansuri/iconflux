@@ -111,6 +111,28 @@ function singeSlideSwiper2(e){
   });
 }
 
+function singeSlideSwiper3(e){
+  var twoBoxCenter = new Swiper(e, {
+    spaceBetween: 30,
+    slidesPerView: 3.5,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: "[class*='swiper-testimonial'] .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: "[class*='swiper-testimonial'] .swiper-button-next",
+      prevEl: "[class*='swiper-testimonial'] .swiper-button-prev",
+    },
+  });
+}
+singeSlideSwiper3(".twoBoxCenter");
+
 
 gsap.timeline({
   repeat: 0,
