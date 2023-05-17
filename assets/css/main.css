@@ -669,7 +669,11 @@
 .platform-types ul li{position: relative; padding-left: 25px; margin: 14px 0; font-weight: 500; font-size: 20px; line-height: 27px;}
 .platform-types ul li::before{content: ''; position: absolute; top: 4px; left: 0; width: 20px; height: 20px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' fill='none'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.3' stroke-width='2.083' d='m3.541 8.5 3.542 3.542 7.083-7.083'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h17v17H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");}
 
-.youcomm-slide .swiper-slide{ padding: 100px 0; background-position: bottom right; background-repeat: no-repeat; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='837' height='757' fill='none'%3E%3Cpath fill='%231FF06D' d='m0 116 245.159-87.02a500 500 0 0 1 327.522-2.423L837 116 699 757H176.073L0 116Z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right bottom;}
+.youcomm-slide .swiper-slide{padding: 100px 0; position: relative;}
+.youcomm-slide .swiper-slide::before{ content: ''; position: absolute; top: 0; right: 34px; width: 848px; height: 585px; background-position: bottom right; background-repeat: no-repeat; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='837' height='757' fill='none'%3E%3Cpath fill='%231FF06D' d='m0 116 245.159-87.02a500 500 0 0 1 327.522-2.423L837 116 699 757H176.073L0 116Z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-size: cover;}
+
+.youcomm-slide .swiper-slide .img-wrapper{position: absolute; bottom: 0; right: 50px; z-index: 1;}
+
 .youcomm-slide .yoe .d-flex .flex-item:not(:last-child)::after{display: none;}
 .youcomm-slide .pagination-wrapper{position: absolute; width: 100%; z-index: 2;}
 .youcomm-slide .swiper-pagination{position: static; text-align: left; display: inline-block; width: auto; transform: translateY(-70px);}
