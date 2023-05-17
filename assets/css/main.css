@@ -620,12 +620,18 @@
 .flutter-banner .content{padding: 3.625rem 0;}
 .flutter-banner{ position: relative;}
 .flutter-banner::before{content: ''; position: absolute; top: 0rem; right: 0rem; width: 60.438rem; height: 60.063rem;  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='967' height='961' fill='none'%3E%3Cmask id='a' width='967' height='961' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23D9D9D9' d='M0 0h967v961H0z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%23FF8E06' d='M342.16 187.437c-26.522 24.338-51.949 50.327-76.117 78.421a971.728 971.728 0 0 0-70.393 84.549 1018.345 1018.345 0 0 0-61.104 89.392 1080.147 1080.147 0 0 0-53.715 95.945l860.864 383.884L342.16 187.437Z'/%3E%3Cpath fill='%232417C0' d='M72.417 570.531c-11.66 33.791-21.584 68.506-29.412 104.464a964.968 964.968 0 0 0-21.518 107.111 1011.476 1011.476 0 0 0-11.115 106.95c-2.375 36.317-2.897 33.613-1.565 70.038l953.422-41.499L72.417 570.531Z'/%3E%3Cpath fill='%2331E7B6' d='M795.635 4.43c-35.297 7.065-70.513 16.11-105.743 27.606a971.542 971.542 0 0 0-104.025 35.812 1018.414 1018.414 0 0 0-98.592 44.769 1080.146 1080.146 0 0 0-95.671 54.203L928.78 941.35 795.635 4.43Z'/%3E%3C/g%3E%3C/svg%3E"); background-size: cover; background-position: right;transform: translate(90px, -100px) scale(1.25);}
+
+.ios-banner::before{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='788' height='560' fill='none'%3E%3Cmask id='a' width='788' height='560' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23D9D9D9' d='M0 0h788v560H0V0Z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%23FF8E06' d='M625.224 39.157c-42.181-3.099-84.896-3.928-128.4-1.983-43.095.176-86.179 2.8-129.046 7.858a1196.55 1196.55 0 0 0-125.723 19.716 1269.429 1269.429 0 0 0-125.394 31.326L480.234 1142.73 625.224 39.157Z'/%3E%3Cpath fill='%230049FD' d='M533.533 59.25a364.73 364.73 0 0 0-37.589-4.974 371.394 371.394 0 0 0-38.072-.825L453.81 1.79a396.423 396.423 0 0 1 44.134.797 423.12 423.12 0 0 1 43.723 5.438l-8.134 51.223Z'/%3E%3Cpath fill='%232417C0' d='M732.911 621.952a1474.317 1474.317 0 0 0-149.579-33.326 1501.035 1501.035 0 0 0-152.985-16.796l1.929-209.421a1602.111 1602.111 0 0 1 177.403 18.825 1710.018 1710.018 0 0 1 174.109 37.37l-50.877 203.348Z'/%3E%3Ccircle cx='591.5' cy='219.854' r='30.5' fill='%231BDB7F'/%3E%3Cpath fill='%23FFCE33' d='M346.868 369.013a1291.404 1291.404 0 0 0-130.723 30.59 1314.813 1314.813 0 0 0-127.125 44.93L10.89 278.524a1403.502 1403.502 0 0 1 147.168-52.617 1498.255 1498.255 0 0 1 151.621-36.728l37.189 179.834Z'/%3E%3C/g%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center bottom; width: 788px; height: 560px; bottom: 0; top: auto; right: 0; transform: translate(0px, 0px) scale(1) !important;}
+
+
 .bg_circle.reveal {
     transform: translate(200px, 0px);
 }
 .flutter-banner .img-wrapper .icon-wrp{top: 1rem; right: 5rem; width: 96px; aspect-ratio: 1/1;}
 .flutter-banner .img-wrapper .icon-wrp img{width: 100%;}
 
+.sec_02 .content-wrapper{position: sticky; top: 120px;}
+.sec_02 .info-box .icon-wrap{width: 50px;}
 .sec_02 .img-wrapper {position: relative;}
 .sec_02 .img-wrapper .img02{top: 50%; left: 50%; width: 150px; aspect-ratio: 1/1; transform: translate(-50%, -50%);}
 .sec_02 .img-wrapper .img02::before {content: ""; position: absolute; z-index: 0; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); display: block; width: 100%; height: 100%; background-color: var(--white); border-radius: 50%; animation: pulse-border 1500ms ease-out infinite;}
@@ -645,11 +651,22 @@
 .cta-version-01{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='799' height='313' fill='none'%3E%3Cpath fill='%23FF8E06' d='M1792.8-335.605c30.44 40.971 58.91 83.949 85.06 129.522a1377.535 1377.535 0 0 1 75.45 136.526 1442.242 1442.242 0 0 1 61.23 140.79 1531.224 1531.224 0 0 1 49.19 147.944L762.488 523.944 1792.8-335.605Z'/%3E%3Cpath fill='%23FFCE33' d='M514.191-710.834c-45.512 23.1-90.159 48.874-133.89 78.002a1377.743 1377.743 0 0 0-128.416 88.556 1443.96 1443.96 0 0 0-117.582 98.717A1531.281 1531.281 0 0 0 24.305-335.071L1053.12 517.955 514.191-710.834Z'/%3E%3Cpath fill='%23FFCE33' d='M1305.38-710.834c45.51 23.1 90.15 48.874 133.89 78.002a1378.053 1378.053 0 0 1 128.41 88.556 1442.74 1442.74 0 0 1 117.58 98.717 1530.702 1530.702 0 0 1 110 110.488L766.447 517.955 1305.38-710.834Z'/%3E%3C/svg%3E"); padding: 50px 0;}
 
 
-.benefits .box-wrapper .info-box{ padding: 35px; border: 1px solid #EEEEEE; border-radius: 5px; transition: all 300ms ease;}
+.benefits .box-wrapper .info-box{ padding: 35px; border: 1px solid #EEEEEE; border-radius: 5px; transition: all 300ms ease; min-height: 390px;}
 .benefits .box-wrapper .info-box:hover{border: 1px solid var(--theme-yellow-dark); transform: scale(1.02); box-shadow: 11px 1px 10px 0px #f5f5f5;}
 
+.benefits .img-wrp .icon{width: 90px; margin: auto; border: 2px solid var(--theme-primary-light); background-color: white; border-radius: 50%; padding: 15px; box-shadow: 0px 9px 5px 0px #0099FF26;}
+
+.benefits .img-wrp{background-size: cover; background-position: center;}
+
+.benefits .img-wrp.better-hardware{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='295' height='143' fill='none'%3E%3Cg clip-path='url(%23a)'%3E%3Cmask id='b' width='295' height='143' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:luminance'%3E%3Cpath fill='%23fff' d='M295 .713H0V142.59h295V.713Z'/%3E%3C/mask%3E%3Cg mask='url(%23b)'%3E%3Cpath stroke='%23F4F4F5' stroke-width='1.73' d='M-15.57 124.424h150.528M160.91 98.47h114.194M-15.57 70.787h195.08M-18.166 98.47h195.081M176.916 70.787h132.793M258.666 7.633v126.305M230.982 31.855v103.38M193.785 7.201V98.47M-13.84 39.643h296.73M96.893 12.824v84.78M134.092 39.643v84.78M19.898.713v134.091M57.963 40.506v90.836'/%3E%3Cpath fill='%23FFDA54' d='M57.963 73.814a3.028 3.028 0 1 0 0-6.056 3.028 3.028 0 0 0 0 6.056Z' opacity='.7'/%3E%3Cpath fill='%232417C0' d='M19.915 42.671a3.028 3.028 0 1 0 0-6.056 3.028 3.028 0 0 0 0 6.056Z' opacity='.7'/%3E%3Cpath fill='%2309F' d='M19.465 127.017a3.028 3.028 0 1 0 0-6.056 3.028 3.028 0 0 0 0 6.056Z' opacity='.7'/%3E%3Cpath fill='%230070E1' d='M258.667 42.671a3.027 3.027 0 1 0 0-6.055 3.027 3.027 0 0 0 0 6.055Z' opacity='.7'/%3E%3Cpath fill='%23FFA735' d='M230.985 73.814a3.028 3.028 0 1 0 0-6.057 3.028 3.028 0 0 0 0 6.056Z' opacity='.7'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 .709h295v141.877H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");}
+
+.benefits .img-wrp.robust-ecosystem{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='309' height='137' fill='none'%3E%3Cg stroke-width='1.73' clip-path='url(%23a)'%3E%3Cg opacity='.85'%3E%3Cpath stroke='%23EAEAEA' d='M172 107.822h51.174l29.014 28.831h19.288M189.303 59.45h24.574l16.165-16.063h34.773'/%3E%3Cpath stroke='%23F4F4F5' d='M199.695 21.426h46.512L267.423.344h19.551M212.988 93.732h27.904l10.643 10.562h37.215M187.402 78.067h46.984l6.882-6.838h52.853'/%3E%3C/g%3E%3Cg opacity='.85'%3E%3Cpath stroke='%23EAEAEA' d='M158.121 29.176h-51.174L77.933.345H58.645M140.818 77.548h-24.574l-16.165 16.063H65.306'/%3E%3Cpath stroke='%23F4F4F5' d='M130.426 115.572H83.914l-21.216 21.082h-19.55M117.133 43.266H89.229L78.586 32.704H41.37M142.719 58.93H95.735l-6.882 6.84H36'/%3E%3C/g%3E%3C/g%3E%3Cpath fill='%23FFDA54' d='M65.028 97.056a3.028 3.028 0 1 0 0-6.056 3.028 3.028 0 0 0 0 6.056Z' opacity='.7'/%3E%3Cpath fill='%232417C0' d='M41.028 36.056a3.028 3.028 0 1 0 0-6.056 3.028 3.028 0 0 0 0 6.056Z' opacity='.7'/%3E%3Cpath fill='%230070E1' d='M276.667 41.671a3.027 3.027 0 1 0 0-6.055 3.027 3.027 0 0 0 0 6.055Z' opacity='.7'/%3E%3Cpath fill='%23FFA735' d='M216.028 97.056a3.028 3.028 0 1 0 0-6.057 3.028 3.028 0 0 0 0 6.057Z' opacity='.7'/%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h309v137H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");}
+
+
+
+
 .coding-section {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='713' viewBox='0 0 1440 713' fill='none'%3E%3Cmask id='mask0_1_1756' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='1440' height='713'%3E%3Crect width='1440' height='713' fill='%232417C0'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_1_1756)'%3E%3Cpath d='M886.048 226.79C940.55 268.104 997.772 306.807 1058.51 342.442C1117.13 380.117 1177.89 414.46 1240.5 445.311C1301.55 476.553 1364.28 504.548 1428.41 529.169C1493.06 555.098 1559.04 577.733 1626.1 596.985L2053.64 -1142.88L886.048 226.79Z' fill='%2331E7B6'/%3E%3Cpath d='M1135.62 -891C1072.59 -864.457 1010.46 -834.253 949.236 -799.473C887.297 -767.542 827.175 -732.093 769.153 -693.298C711.569 -656.043 655.962 -615.719 602.573 -572.487C547.794 -529.467 495.202 -483.644 445 -435.197L1738 805L1135.62 -891Z' fill='%230049FE'/%3E%3C/g%3E%3C/svg%3E");}
-.coding-section .wrapper-box .info-box{max-width: 240px; transform: translateY(65px); transition: all 300ms ease; margin-top: 80px;}
+.coding-section .wrapper-box .info-box{max-width: 320px; transform: translateY(65px); transition: all 300ms ease; margin-top: 80px;}
 .coding-section .wrapper-box .info-box .actionBtn{ visibility: hidden; opacity: 0; transform: translateY(10px); transition: all 300ms ease;}
 .coding-section .wrapper-box .info-box:hover{transform: translateY(0px);}
 .coding-section .wrapper-box .info-box:hover .actionBtn{visibility: visible; opacity: 1; transform: translateY(0px);}
@@ -703,7 +720,7 @@
 .our-process .info-box .icon-wrp span{padding: 2px 15px; margin-right: 20px;}
 .our-process .info-box .icon-wrp{position: relative;}
 .our-process .info-box .icon-wrp::before{content: ''; position: absolute; top: 20px; right: 0; width: 77%; height: 1px; border-bottom: 2px dashed #CECECE;}
-.our-process .row div:last-child .info-box .icon-wrp::before{display: none;}
+
 
 
 .other-services{padding: 80px 0 120px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='404' fill='none'%3E%3Cmask id='a' width='1444' height='404' x='-2' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%232417C0' d='M-2 0h1444v404H-2z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cg filter='url(%23b)'%3E%3Cpath fill='%23150AA4' d='m-14 380 1497-63v76.87L-14 417.001V380Z'/%3E%3C/g%3E%3Cg filter='url(%23c)'%3E%3Cpath fill='%2331E7B6' d='m-7 397 1484-51v96.002H-7V397Z'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='b' width='1713' height='316.001' x='-122' y='209' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='54'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_1_1374'/%3E%3CfeBlend in='SourceGraphic' in2='effect1_backgroundBlur_1_1374' result='shape'/%3E%3C/filter%3E%3Cfilter id='c' width='1700' height='312.002' x='-115' y='238' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='54'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_1_1374'/%3E%3CfeBlend in='SourceGraphic' in2='effect1_backgroundBlur_1_1374' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E"); background-size: cover; background-position: bottom;}
@@ -727,20 +744,43 @@
 
 
 /*---------------------- Media Query start here ( Max width queries ) ----------------------*/
+@media (max-width:1499px){
+    .youcomm-slide .swiper-slide::before{right: -17px; width: 850px;}
+    .youcomm-slide .swiper-slide .img-wrapper{right: 0;}
+}
+
 @media (max-width: 1366px){
     .pb-100, .py-100{padding-bottom: 80px;}
     .flutter-banner::before{transform: translate(200px, -100px) scale(0.97);}
     .bg_circle.reveal{transform: translate(90px, 0px);}
+    .youcomm-slide .swiper-slide::before{right: -46px; width: 890px;}
+    .youcomm-slide .swiper-slide .img-wrapper{right: 0px; width: 780px;}
 }
-@media (max-width:1200px){
+@media (max-width:1280px){
+    .flutter-banner::before{transform: translate(340px, -100px) scale(1.1);}
+    .youcomm-slide .swiper-slide::before {right: 0px; width: 720px; height: 540px;}
+    .youcomm-slide .swiper-slide .img-wrapper{right: 30px; width: 647px;}
 }
+
 @media (max-width: 1280px) {.ico_04::before{background-size: cover;}}
-@media (max-width: 1024px) {.disappear{opacity: 1;}.ico_04::before{z-index: auto;}.ico_06 .figure.position-absolute.end-0{right: -120px !important;}}
+@media (max-width: 1024px) {.disappear{opacity: 1;}.ico_04::before{z-index: auto;}.ico_06 .figure.position-absolute.end-0{right: -120px !important;} .flutter-banner::before{transform: translate(410px, -100px) scale(0.97);} .bg_circle.reveal{transform: translate(0px, 0px);} .our-process .info-box .icon-wrp::before{width: 70%;} .youcomm-slide .swiper-slide::before{top: 120px; right: -13px; width: 550px; height: 498px;} .youcomm-slide .swiper-slide .img-wrapper{right: 0px; width: 519px;}}
+@media (min-width:992px){
+    .our-process .row div:last-child .info-box .icon-wrp::before{display: none;}
+}
 @media (max-width: 991px) {
     .ico_03 .tab-content{height: 480px;width: 100%;}
+    .flutter-banner::before{transform: translate(210px, 530px) scale(0.97);}
+    .yoe .d-flex .flex-item:not(:last-child)::after{right: -56px;}
+    .our-process .info-box .icon-wrp::before{right: 40px;}
+    .other-services ul li:nth-child(even){transform: translateY(20px);}
+    .youcomm-slide .swiper-slide{padding: 70px 0 0;}
+    .youcomm-slide .swiper-slide .img-wrapper{position: static; width: auto;}
+    .youcomm-slide .swiper-slide::before{top: auto; bottom: 0px; left: 0; right: 0; margin: auto; z-index: -1; width: 695px; height: 628px;}
 }
 @media (max-width: 768px) {
     .ico_06{padding-bottom: calc(20rem + 1.125vw) !important;}
+    .flutter-banner::before{transform: translate(230px, 500px) scale(0.87);}
+    .yoe .d-flex .flex-item:not(:last-child)::after{right: -40px;}
 }
 @media (max-width: 767px) {
     .container {--bs-gutter-x: 3rem;}
@@ -755,8 +795,24 @@
     .ico_03 .tab-content .tech_lang:nth-child(5){top:0px;left:80px;}
     .ico_03 .tab-content .tech_lang:nth-child(6){top:180px;left:0px;right: 0px;margin: 0px auto;}
     .ico_03 .tab-content .tech_lang:nth-child(7){top:130px;left:0px;}
+    .flutter-banner::before{transform: translate(440px, 530px) scale(0.83);}
+    .yoe .d-flex .flex-item:not(:last-child)::after{right: -55px;}
+    .yoe .flex-item{width: 150px;}
+    .youcomm-slide .swiper-slide::before{width: 488px; height: 442px;}
 }
-@media (max-width: 476px) {}
+@media (max-width: 476px) {
+    .yoe .flex-item{width: 135px;}
+    .sec_01 .content .keywords{font-size: 25px;}
+    .testimonialTwoRow .testimonial-wrapper{margin-left: 60px}
+    .flutter_CTA-02 .wrapper{padding: 0 20px;}
+    .flutter_CTA-02 .wrapper .content-wrapper{padding: 30px 0 45px;}
+    .customAccordion02 .accordion-item button::after{width: 20px; height: 20px;}
+    .youcomm-slide .swiper-slide::before{width: 377px; height: 343px;}
+}
+
+@media (max-width:360px){
+    .youcomm-slide .swiper-slide::before{width: 302px; height: 273px;}
+}
 /*  */
 @media (min-width: 1400px){.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {max-width: 1140px;}}
 @media(min-width:1700px){.ico_01 .bannerSlider #carouselExampleIndicators{width: 747px !important;margin-left: 0px;margin-right: auto;}}
