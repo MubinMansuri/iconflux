@@ -63,14 +63,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const playbtn = document.querySelector('.playbtn');
   const videoThumbnail = document.querySelector('.video-thumbnail');
   const video = document.querySelector('.video');
-
-  playbtn.addEventListener('click',function(e){
-    e.preventDefault();
-    e.target.classList.add('active');
-    videoThumbnail.classList.add('active');
-    video.classList.add('active');
-    video.src += '?autoplay=1';
-  });
+  if(playbtn){
+    playbtn.addEventListener('click',function(e){
+      e.preventDefault();
+      e.target.classList.add('active');
+      videoThumbnail.classList.add('active');
+      video.classList.add('active');
+      video.src += '?autoplay=1';
+    });
+  }
 
 });
 // DOMContentLoaded  end
