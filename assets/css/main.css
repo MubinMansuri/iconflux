@@ -176,13 +176,18 @@
 .btn.btn-link>.icon svg path{fill: var(--white);}
 .btn.btn-link:hover>.icon svg path{fill: var(--theme-primary);}
 .btn.btn-link:hover>.icon::before{background-color:var(--theme-primary-light);opacity: 0.25;}
-.btn.btn-link.text-white .icon::before{background-color:var(--theme-primary-light);}
-.btn.btn-link.text-white:hover>.icon::before{background-color:var(--black);opacity: 0.25;}
 
+.btn.btn-link.text-white>.icon svg path{fill: var(--black);}
+.btn.btn-link.text-white:hover>.icon svg path{fill: var(--white);}
+.btn.btn-link.text-white .icon::before{background-color:var(--white);}
+.btn.btn-link.text-white:hover>.icon::before{background-color:var(--theme-primary);opacity: 1;}
+/* .btn.btn-link.text-white:hover>span{color:var(--black);opacity: 1;} */
+.other-services .btn.btn-link.text-white:hover>.icon::before{background-color:var(--black);opacity: 1;}
+/*
 .btn.btn-link.icon-white .icon::before{background-color:var(--white);}
 .btn.btn-link.text-white:not(:hover) .icon svg path{fill:var(--black);}
 .btn.btn-link.text-white:hover .icon svg path{fill: var(--black);}
-.btn.btn-link.icon-white:hover>.icon::before{background-color:var(--black);}
+.btn.btn-link.icon-white:hover>.icon::before{background-color:var(--black);} */
 
 /* .btn,.btn *{transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55),color 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);}*/
 .btn,.btn *{transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out !important} 
