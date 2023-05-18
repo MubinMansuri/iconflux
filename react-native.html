@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Native | Iconflux</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" /> <!-- css files  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <!-- <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope&display=swap" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" /> <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/js/swiper-bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script defer src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <div class="site-wrapper position-relative">
+        <header class="site-header position-sticky top-0 z-3">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container"> <a class="navbar-brand" href="./index.html"> <span class="visually-hidden">Iconflux Technologies Pvt. Ltd.</span> <img src="./assets/images/iconflux_logo.svg" alt="iconflux_logo" class="img-fluid pe-none" /> </a> <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"> <span class="navbar-toggler-icon"></span> </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header"> <a class="navbar-brand offcanvas-title" href="./index.html"> <span class="visually-hidden">Iconflux Technologies Pvt. Ltd.</span> <img src="./assets/images/iconflux_logo.svg" alt="iconflux_logo" class="img-fluid pe-none" /> </a> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+                                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Service </a>
+                                    <ul class="dropdown-menu ">
+                                        <div class="dropdown-menu-bg"></div>
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Hire Team</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Portfolio</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">About us</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Blog</a> </li>
+                            </ul>
+                            <div class="extraBtn"> <a href="#" class="btn btn-theme-black withIcon py-2"> <span class="text">Get a Free Quote</span> <span class="icon align-middle"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24px" width="24px" viewBox="0 0 24 24">
+                                            <g>
+                                                <path fill="currentColor" d="m13.1727 11.9997-4.95-4.95 1.414-1.414 6.364 6.364-6.364 6.364-1.414-1.414 4.95-4.95Z" />
+                                            </g>
+                                        </svg> </span> </a> </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Section 01 Start -->
+            <section class="sec_01 flutter-banner react-native overflow-hidden position-relative">
+                <div class="container position-static">
+                    <div class="row align-items-end position-static">
+                        <div class="col-12 col-lg-6">
+                            <div class="content px-lg-3 px-sm-0 position-relative z-1">
+                                <div class="eyebrow text-black">
+                                    <h6 class="fs-14 text-uppercase fw-bold ls-2 font-inter mb-4">Hire React Native Developers</h6>
+                                </div>
+                                <div class="heading text-black mb-1">
+                                    <h1 class="display-3 fw-semibold text-capitalize mb-3 lh-sm"> <span>Cross-Platform Applications <br class="d-none d-lg-block" /> with Flutter</span> </h1>
+                                </div>
+                                <div class="keywords fs-30 text-theme-primary d-flex flex-wrap gap-3 mb-4" id="keywordsType" data-splitting> <span class="flex-item position-relative">Open Source</span> <span class="flex-item position-relative">·</span> <span class="flex-item position-relative">Multi-Platform</span> <span class="flex-item position-relative">·</span> <span class="flex-item position-relative">Powerful</span> <span class="flex-item position-relative">·</span> <span class="flex-item position-relative">UI Framework</span> </div>
+                                <div class="expert">
+                                    <p class="text-secondary text-capitalize lh-base mb-4 pb-md-2">Experience the true beauty of immersive UI and powerful performance delivered by the best Flutter app development company in India.</p>
+                                </div>
+                                <div class="actionBtn mb-4 pb-3"> <a href="#" class="btn btn-theme-yellow"> <span class="text">Let’s Get Started</span> <span class="icon align-middle"> <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30">
+                                                <g>
+                                                    <path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z" />
+                                                </g>
+                                            </svg> </span> </a> </div>
+                                <div class="yoe">
+                                    <div class="d-flex align-items-center flex-wrap gap-4 gap-lg-5">
+                                        <div class="flex-item position-relative">
+                                            <h4 class="fs-42 fw-medium text-secondary mb-0">200+</h4>
+                                            <p class="text-secondary text-capitalize mb-4 pb-md-2">Professionals <br class="d-none d-lg-block" />Developer</p>
+                                        </div>
+                                        <div class="flex-item position-relative">
+                                            <h4 class="fs-42 fw-medium text-secondary mb-0">05+</h4>
+                                            <p class="text-secondary text-capitalize mb-4 pb-md-2">Years of Average <br class="d-none d-lg-block" />Experience</p>
+                                        </div>
+                                        <div class="flex-item position-relative">
+                                            <h4 class="fs-42 fw-medium text-secondary mb-0">100M+</h4>
+                                            <p class="text-secondary text-capitalize mb-4 pb-md-2">Investment Received<br class="d-none d-lg-block" />Clients</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 position-static">
+                            <div class="bg_circle reveal text-center">
+                                <div class="img-wrapper position-relative d-inline-block text-center"> <img src="./assets/images/flutter/flutter-bg.png" class="img-fluid" alt="" id="fade-in">
+                                    <div class="icon-wrp position-absolute"> <img src="./assets/images/flutter/flutter-logo.svg" class="flutter_logo rounded-pill" alt=""> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 01 End -->
+            <!-- Section 02 Start -->
+            <section class="sec_02 py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-6">
+                            <div class="content-wrapper">
+                                <div class="heading text-black mb-1">
+                                    <h2 class="display-5 fw-medium mb-4 lh-sm"> <span>IConflux Flutter App <br class="d-none d-lg-block">Development Services</span> </h2>
+                                </div>
+                                <div class="expert pe-lg-5 mb-4">
+                                    <p class="text-secondary text-capitalize lh-base">We are the leading Flutter app development service provider building performant, scalable, and seamless applications delivering next-gen user experiences.</p>
+                                </div>
+                                <div class="actionBtn"> <a href="#" class="btn btn-link ps-0 fw-bold"> <span class="text">Discuss your goals with us</span> <span class="icon align-middle d-inline-block ms-2"> <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30">
+                                                <g>
+                                                    <path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z" />
+                                                </g>
+                                            </svg> </span> </a> </div>
+                                <div class="img-wrapper d-inline-block">
+                                    <div class="img01"><img src="./assets/images/flutter/two-color-bg.svg" class="img-fluid" alt=""></div>
+                                    <div class="img02 position-absolute"><img src="./assets/images/flutter/flutter-logo.svg" class="img-fluid flutter_logo rounded-pill" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
+                            <div class="info-box">
+                                <div class="icon-wrap mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/flutter-app-development.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h4 class="fs-20 fw-semibold text-black mb-2 lh-sm">Flutter App Development</h4>
+                                    <p class="text-body-color mb-3 lh-base pb-3">We take a customized approach to designing, building, and deploying Flutter applications for our clients. Beginning with comprehensive evaluation and PoC development, we design high-fidelity layouts rendered with scalable coding to deliver innovative solutions.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="info-box">
+                                <div class="icon-wrap mt-3 pt-3 mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/flutter-app-consultation.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h4 class="fs-20 fw-semibold text-black mb-2 lh-sm">Flutter App Consultation</h4>
+                                    <p class="text-body-color mb-3 lh-base pb-3">Not sure how to move forward with your idea? We can help you understand the scope of work, technical setup, and how to leverage Flutter for modern-day businesses. With us, explore Flutter’s capabilities and harness them for your business benefit.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="info-box">
+                                <div class="icon-wrap mt-3 pt-3 mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/flutter-api-and-integration.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h4 class="fs-20 fw-semibold text-black mb-2 lh-sm">Flutter API and Integration</h4>
+                                    <p class="text-body-color mb-3 lh-base pb-3">When your product or solution requires a specific functionality, we can build REST APIs with Flutter to fulfill your project requirements. Well-built APIs and Integration solutions can increase the capabilities of an existing solution.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="info-box">
+                                <div class="icon-wrap mt-3 pt-3 mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/flutter-app-uiux-design.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h4 class="fs-20 fw-semibold text-black mb-2 lh-sm">Flutter App UI/UX Design</h4>
+                                    <p class="text-body-color mb-3 lh-base pb-3">Google built Flutter to help developers revamp the meaning of a beautiful interface, and our developers grab this opportunity to deliver stunning interfaces. We use Flutter’s capabilities to sketch intelligent and customer-friendly interfaces.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="info-box">
+                                <div class="icon-wrap mt-3 pt-3 mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/flutter-app-upgrades.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h4 class="fs-20 fw-semibold text-black mb-2 lh-sm">Flutter App Upgrades</h4>
+                                    <p class="text-body-color mb-3 lh-base pb-3">Do you want to upgrade from an existing operating system? IConflux, the best Flutter app development company in India, provides upgrade services making your application compatible with the latest iOS and Android versions.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="info-box">
+                                <div class="icon-wrap mt-3 pt-3 mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/support-and-maintenance.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h4 class="fs-20 fw-semibold text-black mb-2 lh-sm">Flutter App Maintenance and Support</h4>
+                                    <p class="text-body-color mb-3 lh-base pb-3">We provide monitoring, maintenance, and support services for existing Flutter applications. We assure you that you provide the best user experience to your customers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 02 End -->
+            <!-- Section 03 Start -->
+            <section class="sec_03 bg-clr-F7F9FB py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-10">
+                            <div class="content-wrapper pb-3 pb-lg-0">
+                                <div class="heading text-black mb-1">
+                                    <h2 class="display-5 fw-medium mb-4 lh-sm"> <span>Solutions for Multiple Industry Verticals</span> </h2>
+                                </div>
+                                <div class="expert pe-lg-5 pb-3">
+                                    <p class="text-secondary text-capitalize lh-base mb-4">As businesses continue to realize the amazing benefits of Flutter, we continue to provide bespoke industry-specific solutions allowing them to harness the true capabilities of this technology.<br class="d-none d-lg-block"> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row box-wrapper">
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="info-box bg-white py-4 px-2 px-md-4 mb-4 rounded-4 text-center">
+                                <div class="img-wrapper mb-3"> <img src="./assets/images/flutter/expertise-box-01.svg" alt=""> </div>
+                                <div class="heading-wrapper">
+                                    <h4 class="fs-18 fw-semibold">M-commerce</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="info-box bg-white py-4 px-2 px-md-4 mb-4 rounded-4 text-center">
+                                <div class="img-wrapper mb-3"> <img src="./assets/images/flutter/expertise-box-02.svg" alt=""> </div>
+                                <div class="heading-wrapper">
+                                    <h4 class="fs-18 fw-semibold">Banking</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="info-box bg-white py-4 px-2 px-md-4 mb-4 rounded-4 text-center">
+                                <div class="img-wrapper mb-3"> <img src="./assets/images/flutter/expertise-box-03.svg" alt=""> </div>
+                                <div class="heading-wrapper">
+                                    <h4 class="fs-18 fw-semibold">Entertainment</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="info-box bg-white py-4 px-2 px-md-4 mb-4 rounded-4 text-center">
+                                <div class="img-wrapper mb-3"> <img src="./assets/images/flutter/expertise-box-01.svg" alt=""> </div>
+                                <div class="heading-wrapper">
+                                    <h4 class="fs-18 fw-semibold">Taxi booking app</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="info-box bg-white py-4 px-2 px-md-4 mb-4 rounded-4 text-center">
+                                <div class="img-wrapper mb-3"> <img src="./assets/images/flutter/expertise-box-02.svg" alt=""> </div>
+                                <div class="heading-wrapper">
+                                    <h4 class="fs-18 fw-semibold">eLearning</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="info-box bg-white py-4 px-2 px-md-4 mb-4 rounded-4 text-center">
+                                <div class="img-wrapper mb-3"> <img src="./assets/images/flutter/expertise-box-01.svg" alt=""> </div>
+                                <div class="heading-wrapper">
+                                    <h4 class="fs-18 fw-semibold">News</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="info-box bg-white py-4 px-2 px-md-4 mb-4 rounded-4 text-center">
+                                <div class="img-wrapper mb-3"> <img src="./assets/images/flutter/expertise-box-01.svg" alt=""> </div>
+                                <div class="heading-wrapper">
+                                    <h4 class="fs-18 fw-semibold">Social Networking</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="info-box bg-white py-4 px-2 px-md-4 mb-4 rounded-4 text-center">
+                                <div class="img-wrapper mb-3"> <img src="./assets/images/flutter/expertise-box-02.svg" alt=""> </div>
+                                <div class="heading-wrapper">
+                                    <h4 class="fs-18 fw-semibold">Sports & Gaming</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="info-box bg-white py-4 px-2 px-md-4 mb-4 rounded-4 text-center">
+                                <div class="img-wrapper mb-3"> <img src="./assets/images/flutter/expertise-box-03.svg" alt=""> </div>
+                                <div class="heading-wrapper">
+                                    <h4 class="fs-18 fw-semibold">Online magazing</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="info-box bg-white py-4 px-2 px-md-4 mb-4 rounded-4 text-center">
+                                <div class="img-wrapper mb-3"> <img src="./assets/images/flutter/expertise-box-01.svg" alt=""> </div>
+                                <div class="heading-wrapper">
+                                    <h4 class="fs-18 fw-semibold">Collaboration Sites</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="info-box bg-white py-4 px-2 px-md-4 mb-4 rounded-4 text-center">
+                                <div class="img-wrapper mb-3"> <img src="./assets/images/flutter/expertise-box-02.svg" alt=""> </div>
+                                <div class="heading-wrapper">
+                                    <h4 class="fs-18 fw-semibold">Healthcare Websites</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="info-box bg-white py-4 px-2 px-md-4 mb-4 rounded-4 text-center">
+                                <div class="img-wrapper mb-3"> <img src="./assets/images/flutter/expertise-box-01.svg" alt=""> </div>
+                                <div class="heading-wrapper">
+                                    <h4 class="fs-18 fw-semibold">Management System</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 03 End -->
+            <!-- Section 04 Start -->
+            <section class="sec_04 cta-version-01 bg-clr-FF8E06 py-5 bg-auto bg-right-top bg-no-repeat">
+                <div class="container">
+                    <div class="row align-items-center flex-column-reverse flex-md-row">
+                        <div class="col-12 col-md-8">
+                            <div class="content-wrapper">
+                                <div class="heading text-black">
+                                    <h2 class="fs-38 fw-semibold pb-3 mb-3 lh-sm"> <span>Need the Perfect Solution? Hire the Best Flutter App Development Company in Ahmedabad.</span> </h2>
+                                </div>
+                                <div class="extraBtn"> <a href="#" class="btn btn-theme-black"> <span class="text">Schedule a Meeting</span> <span class="icon align-middle"> <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none">
+                                                <circle cx="17.304" cy="17.012" r="17.012" />
+                                                <path fill="currentColor" d="m21.15 15.469-5.59-5.592 1.473-1.474 8.108 8.108-8.107 8.108-1.474-1.474 5.59-5.591H8.464v-2.085H21.15Z" />
+                                            </svg> </span> </a> </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="img-wrapper mb-4">
+                                <div class="img01"> <img src="./assets/images/flutter/flutter-cta.png" class="img-fluid" alt=""> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 04 End -->
+            <!-- Section 04 Start -->
+            <section class="benefits py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-10">
+                            <div class="content-wrapper">
+                                <div class="eyebrow text-black">
+                                    <h6 class="fs-14 text-uppercase fw-bold ls-2 font-inter mb-4">Benefits</h6>
+                                </div>
+                                <div class="heading text-black mb-1">
+                                    <h2 class="display-5 fw-medium mb-4 lh-sm"> <span>Reasons Why Businesses Consider Flutter - A Technology for Success</span> </h2>
+                                </div>
+                                <div class="expert pe-lg-5 mb-4">
+                                    <p class="text-secondary text-capitalize lh-base">Complete with a rich widget, framework & tool Flutter comes with remarkable perks allows developers.</p>
+                                </div>
+                                <div class="actionBtn"> <a href="#" class="btn btn-link ps-0 fw-bold"> <span class="text">Hire Flutter App Developers</span> <span class="icon align-middle d-inline-block ms-2"> <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30">
+                                                <g>
+                                                    <path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path>
+                                                </g>
+                                            </svg> </span> </a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5 box-wrapper">
+                        <div class="col-12 col-md-4">
+                            <div class="info-box blueOne mb-4 mb-md-0">
+                                <div class="img-wrp">
+                                    <div class="icon">
+                                        <lottie-player src="./assets/images/flutter/lottie/single-codebase.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                    </div>
+                                </div>
+                                <div class="content-wrp mt-3 pt-1">
+                                    <h4 class="fs-20 fw-semibold text-black mb-3">Single Codebase</h4>
+                                    <p class="fs-16 fw-normal text-body-color lh-base mb-0">Developers have to write a single codebase for an iOS and Android application, saving development time, effort, and costs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="info-box yellowTwo mb-4 mb-md-0">
+                                <div class="img-wrp">
+                                    <div class="icon">
+                                        <lottie-player src="./assets/images/flutter/lottie/faster-development.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                    </div>
+                                </div>
+                                <div class="content-wrp mt-3 pt-1">
+                                    <h4 class="fs-20 fw-semibold text-black mb-3">Faster Development</h4>
+                                    <p class="fs-16 fw-normal text-body-color lh-base mb-0">Hot reload and the development freedom provided by Flutter to build cross-platform applications significantly reduce the time-to-market.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="info-box greenThree mb-4 mb-md-0">
+                                <div class="img-wrp">
+                                    <div class="icon">
+                                        <lottie-player src="./assets/images/flutter/lottie/bespokeuI.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                    </div>
+                                </div>
+                                <div class="content-wrp mt-3 pt-1">
+                                    <h4 class="fs-20 fw-semibold text-black mb-3">Bespoke UI</h4>
+                                    <p class="fs-16 fw-normal text-body-color lh-base mb-0">Flutter gives designers an adaptable and feature-rich system to sketch out responsive interfaces with Material and Cupertino to give an amazing experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 04 End -->
+            <!-- Section 05 Start -->
+            <section class="key-benefits bg-theme-primary-002060 py-100 bg-cover bg-right-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="content-wrapper">
+                                <div class="eyebrow text-white">
+                                    <h6 class="fs-14 text-uppercase fw-bold ls-2 font-inter mb-4">Fascinating and Appealing</h6>
+                                </div>
+                                <div class="heading text-white">
+                                    <h2 class="display-5 fw-medium mb-4 lh-sm"> Why do Developers and Businesses Love Flutter?</span> </h2>
+                                </div>
+                                <div class="expert pe-lg-5 mb-4">
+                                    <p class="text-white fs-20 fw-light text-capitalize lh-base">Flutter helps build aesthetically pleasing app designs with seamless animation and impressive performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row wrapper-box">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="info-box">
+                                <div class="iconBox mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/next-gen-applications.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrp">
+                                    <h4 class="text-theme-primary-light fs-20 fw-semibold mb-3">Next-Gen Applications</h4>
+                                    <p class="text-white fw-light lh-base">High-performance capabilities combined with features like smooth, natural scrolling and rich motions help build apps of the future.</p>
+                                    <div class="actionBtn"> <a href="#" class="btn btn-link fw-bold ps-0 text-white"> <span class="text">Learn More</span> <span class="icon align-middle d-inline-block ms-2"> <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30">
+                                                    <g>
+                                                        <path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path>
+                                                    </g>
+                                                </svg> </span> </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="info-box">
+                                <div class="iconBox mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/open-source-format.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrp">
+                                    <h4 class="text-theme-primary-light fs-20 fw-semibold mb-3">Open-Source Format</h4>
+                                    <p class="text-white fw-light lh-base">Flutter’s impact and outreach extend beyond your expectations as it's an open-source technology.</p>
+                                    <div class="actionBtn"> <a href="#" class="btn btn-link fw-bold ps-0 text-white"> <span class="text">Learn More</span> <span class="icon align-middle d-inline-block ms-2"> <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30">
+                                                    <g>
+                                                        <path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path>
+                                                    </g>
+                                                </svg> </span> </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="info-box">
+                                <div class="iconBox mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/dart-Programming.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrp">
+                                    <h4 class="text-theme-primary-light fs-20 fw-semibold mb-3">Dart Programming</h4>
+                                    <p class="text-white fw-light lh-base">Going beyond the mobile application segment, we can use Flutter to write and deploy applications for Smart TVs, wearables, and the web.</p>
+                                    <div class="actionBtn"> <a href="#" class="btn btn-link fw-bold ps-0 text-white"> <span class="text">Learn More</span> <span class="icon align-middle d-inline-block ms-2"> <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30">
+                                                    <g>
+                                                        <path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path>
+                                                    </g>
+                                                </svg> </span> </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 05 End -->
+            <!-- Section 06 Start -->
+            <section class="overview-accordion py-100">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-12 col-lg-6">
+                            <div class="content-wrapper mb-5">
+                                <div class="icon-wrp mb-3 pb-3"> <img src="./assets/images/flutter/flutter-black.svg" alt=""> </div>
+                                <div class="heading-wrp">
+                                    <h3 class="fs-45 fw-medium text-black lh-sm mb-4 pb-3">Reasons to Choose Flutter for App Development</h3>
+                                </div>
+                                <div class="decs-wrp mb-4 pb-2">
+                                    <p class="fw-semibold fs-20 lh-base">As a leading Flutter app development company in India, we recommend businesses to choose Flutter.</p>
+                                </div>
+                                <div class="extraBtn"> <a href="#" class="btn btn-theme-primary-dark"> <span class="text">Let’s Get Started</span> <span class="icon align-middle"> <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none">
+                                                <circle cx="17.304" cy="17.012" r="17.012" />
+                                                <path fill="currentColor" d="m21.15 15.469-5.59-5.592 1.473-1.474 8.108 8.108-8.107 8.108-1.474-1.474 5.59-5.591H8.464v-2.085H21.15Z" />
+                                            </svg> </span> </a> </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 offset-lg-1">
+                            <div class="customAccordion">
+                                <div class="accordion" id="flutter01">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header"> <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Support of Google </button> </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#flutter01">
+                                            <div class="accordion-body">
+                                                <p class="fs-20 fw-normal lh-base text-body-color">What’s more left to say here when Google is backing Flutter and continuously improving the technology’s capabilities and infrastructure?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Rendering Engine </button> </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#flutter01">
+                                            <div class="accordion-body">
+                                                <p class="fs-20 fw-normal lh-base text-body-color">Flutter uses the Skia rendering model, which provides a low-level implementation of Flutter’s core APIs resulting in impressive graphics and layout.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Scalability & Extensibility </button> </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#flutter01">
+                                            <div class="accordion-body">
+                                                <p class="fs-20 fw-normal lh-base text-body-color">The core designing of Flutter makes it scalable and extensible to the extent that any type and size of business can use this technology for their solutions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> Customization Freedom </button> </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#flutter01">
+                                            <div class="accordion-body">
+                                                <p class="fs-20 fw-normal lh-base text-body-color">Using Flutter, our developers get a free hand when creating bespoke widgets and integrations. This allows us to deliver highly customized customer experiences.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 06 End -->
+            <!-- Section 07 Start -->
+            <section class="account-type py-100 bg-theme-primary-002060 bg-cover bg-left-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="heading-wrappper">
+                                <div class="heading-wrp text-center">
+                                    <h3 class="fs-45 fw-semibold text-white lh-sm mb-3">Why Choose Flutter for App Development</h3>
+                                </div>
+                                <div class="horizontal-list mb-4 pb-2">
+                                    <div class="fs-18 text-white d-flex flex-wrap fw-normal justify-content-center gap-3 mb-4" id="keywordsType"> <span class="flex-item position-relative">Simple & Transparent Pricing</span> <span class="flex-item position-relative">·</span> <span class="flex-item position-relative">Fully Signed NDA</span> <span class="flex-item position-relative">·</span> <span class="flex-item position-relative">Code Security</span> <span class="flex-item position-relative">·</span> <span class="flex-item position-relative">Easy Exit Policy</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row wrapper-box">
+                        <div class="col-12 col-lg-4">
+                            <div class="price-box mb-5 bg-white">
+                                <div class="top">
+                                    <div class="title-type d-flex justify-content-center align-items-center gap-3 mb-4 pb-1"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" fill="none">
+                                            <g clip-path="url(#a)">
+                                                <path fill="#FFCE33" d="M24.967 0c.039.144.043 28.992.016 29-.027.008-1.917-3.228-4.188-7.195-2.27-3.966-4.178-7.212-4.2-7.221-.02-.01-3.771-.024-8.324-.022-4.553.002-8.267 0-8.275-.035-.008-.035 5.604-3.315 12.478-7.311C19.27 3.253 24.87.021 24.964 0" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="a">
+                                                    <path fill="#fff" d="M0 0h25v29H0z" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <p class="text-black fs-16 text-uppercase fw-semibold mb-0 ls-widest">Standard</p>
+                                    </div>
+                                    <div class="doller-title text-center">
+                                        <h3 class="fw-semibold text-black fs-60 m-0">$20</h3>
+                                        <p class="m-0 fs-16 fw-semibold text-black">Hourly (USD)</p>
+                                    </div>
+                                </div>
+                                <hr style="border-top: 2px solid; color: #EEEEEE; opacity: 1;">
+                                <div class="bottom">
+                                    <div class="desc-text text-center mb-4">
+                                        <p class="fs-20 fw-semibold mb-0 text-theme-2E2E2E">We’ll provide a fully signed NDA for your Project’s confidentiality</p>
+                                    </div>
+                                    <div class="extraBtn"> <a href="#" class="btn btn-theme-black d-block"> <span class="text">Schedule Demo</span> <span class="icon align-middle"> <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none">
+                                                    <circle cx="17.304" cy="17.012" r="17.012" />
+                                                    <path fill="currentColor" d="m21.15 15.469-5.59-5.592 1.473-1.474 8.108 8.108-8.107 8.108-1.474-1.474 5.59-5.591H8.464v-2.085H21.15Z" />
+                                                </svg> </span> </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="price-box mb-4 bg-theme-primary-dark position-relative">
+                                <p class="mostPopular bg-clr-1FF06D fs-12 fw-bold py-2 text-center text-uppercase ls-widest">Most Popular</p>
+                                <div class="top">
+                                    <div class="title-type d-flex justify-content-center align-items-center gap-3 mb-4 pb-1"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" fill="none">
+                                            <g clip-path="url(#a)">
+                                                <path fill="#1FF06D" d="M24.967 0c.039.144.043 28.992.016 29-.027.008-1.917-3.228-4.188-7.195-2.27-3.966-4.178-7.212-4.2-7.221-.02-.01-3.771-.024-8.324-.022-4.553.002-8.267 0-8.275-.035-.008-.035 5.604-3.315 12.478-7.311C19.27 3.253 24.87.021 24.964 0" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="a">
+                                                    <path fill="#fff" d="M0 0h25v29H0z" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <p class="text-white fs-16 text-uppercase fw-semibold mb-0 ls-widest">elite</p>
+                                    </div>
+                                    <div class="doller-title text-center">
+                                        <h3 class="fw-semibold text-white fs-60 m-0">$2880</h3>
+                                        <p class="m-0 fs-16 fw-semibold text-white">Hourly (USD)</p>
+                                    </div>
+                                </div>
+                                <hr style="border-top: 2px solid; color: #685DF0; opacity: 1;">
+                                <div class="bottom">
+                                    <div class="desc-text text-center mb-4">
+                                        <p class="fs-20 fw-semibold mb-0 text-white">4+ Years of Exp. Flutter Developer 160 hours per month</p>
+                                    </div>
+                                    <div class="extraBtn"> <a href="#" class="btn btn-theme-white d-block"> <span class="text">Schedule Demo</span> <span class="icon align-middle"> <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none">
+                                                    <circle cx="17.304" cy="17.012" r="17.012" />
+                                                    <path fill="currentColor" d="m21.15 15.469-5.59-5.592 1.473-1.474 8.108 8.108-8.107 8.108-1.474-1.474 5.59-5.591H8.464v-2.085H21.15Z" />
+                                                </svg> </span> </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="price-box mb-4 bg-white">
+                                <div class="top">
+                                    <div class="title-type d-flex justify-content-center align-items-center gap-3 mb-4 pb-1"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" fill="none">
+                                            <g clip-path="url(#a)">
+                                                <path fill="#2C00C8" d="M24.967 0c.039.144.043 28.992.016 29-.027.008-1.917-3.228-4.188-7.195-2.27-3.966-4.178-7.212-4.2-7.221-.02-.01-3.771-.024-8.324-.022-4.553.002-8.267 0-8.275-.035-.008-.035 5.604-3.315 12.478-7.311C19.27 3.253 24.87.021 24.964 0" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="a">
+                                                    <path fill="#fff" d="M0 0h25v29H0z" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <p class="text-black fs-16 text-uppercase fw-semibold mb-0 ls-widest">Enterprise</p>
+                                    </div>
+                                    <div class="doller-title text-center">
+                                        <h3 class="fw-semibold text-black fs-60 m-0">$14000</h3>
+                                        <p class="m-0 fs-16 fw-semibold text-black">Hourly (USD)</p>
+                                    </div>
+                                </div>
+                                <hr style="border-top: 2px solid; color: #EEEEEE; opacity: 1;">
+                                <div class="bottom">
+                                    <div class="desc-text text-center mb-4">
+                                        <p class="fs-20 fw-semibold mb-0 text-theme-2E2E2E">Build a SCRUM Team of 5 Developers </p>
+                                    </div>
+                                    <div class="extraBtn"> <a href="#" class="btn btn-theme-black d-block"> <span class="text">Schedule Demo</span> <span class="icon align-middle"> <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none">
+                                                    <circle cx="17.304" cy="17.012" r="17.012" />
+                                                    <path fill="currentColor" d="m21.15 15.469-5.59-5.592 1.473-1.474 8.108 8.108-8.107 8.108-1.474-1.474 5.59-5.591H8.464v-2.085H21.15Z" />
+                                                </svg> </span> </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 07 End -->
+            <!-- Section 08 Start -->
+            <section class="we-app-development bg-clr-F7F9FB py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="heading-wrp">
+                                <div class="heading text-black mb-1">
+                                    <h2 class="display-5 fw-medium mb-4 lh-sm"> <span>IConflux is the Best Flutter App Development Services Provider - Here’s Why?</span> </h2>
+                                </div>
+                                <div class="expert pe-lg-5 mb-5">
+                                    <p class="text-secondary fs-16 fw-normal text-capitalize lh-base">Choose us to experience the true potential of Flutter, the Next-Gen Cross-Platform Technology.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="info-box d-flex pb-5 gap-4">
+                                <div class="icon-wrap">
+                                    <div class="iconBox rounded-pill">
+                                        <lottie-player src="./assets/images/flutter/lottie/in-house-experts.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                    </div>
+                                </div>
+                                <div class="content-wrp">
+                                    <h4 class="text-black fs-25 fw-medium mb-3">In-House Experts</h4>
+                                    <p>We have in-house Flutter developers working collectively to build bespoke applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="info-box d-flex pb-5 gap-4">
+                                <div class="icon-wrap">
+                                    <div class="iconBox rounded-pill">
+                                        <lottie-player src="./assets/images/flutter/lottie/agile-methodology.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                    </div>
+                                </div>
+                                <div class="content-wrp">
+                                    <h4 class="text-black fs-25 fw-medium mb-3">Agile Development Methodology</h4>
+                                    <p>We use agile development methodology, which allows us to build applications with speed and accuracy, delivering the best results.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="info-box d-flex pb-5 gap-4">
+                                <div class="icon-wrap rounded-pill">
+                                    <div class="iconBox">
+                                        <lottie-player src="./assets/images/flutter/lottie/affordable-pricing.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                    </div>
+                                </div>
+                                <div class="content-wrp">
+                                    <h4 class="text-black fs-25 fw-medium mb-3">Affordable Pricing</h4>
+                                    <p>Working with agile methodology, we can bring down the development cost substantially, benefiting our customers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="info-box d-flex pb-5 gap-4">
+                                <div class="icon-wrap">
+                                    <div class="iconBox">
+                                        <lottie-player src="./assets/images/flutter/lottie/experience-and-expertise.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                    </div>
+                                </div>
+                                <div class="content-wrp">
+                                    <h4 class="text-black fs-25 fw-medium mb-3">Experience and Expertise</h4>
+                                    <p>From the first version of Flutter to the latest iteration (3.7.1), we have decades of experience of building, debugging, and deploying Flutter applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 08 End -->
+            <!-- Section 09 Start -->
+            <section class="platform-types py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="heading-wrapper text-center pb-3 mb-4">
+                                <div class="heading text-black mb-1">
+                                    <h2 class="display-5 fw-medium mb-4 lh-sm"> <span>Our Technological Proficiency</span> </h2>
+                                </div>
+                                <div class="expert pe-lg-5 mb-5">
+                                    <p class="text-secondary fs-20 fw-normal text-capitalize lh-base">We use the Latest and Relevant Technologies for Every Project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="list-wrapper d-flex justify-content-between flex-wrap row-cols-1 row-cols-sm-2 row-cols-md-auto">
+                                <div class="ios mb-4 mb-md-0">
+                                    <h4 class="fs-25 mb-3 text-capitalize fw-semibold text-black d-flex align-items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+                                            <circle cx="9" cy="9" r="9" fill="#FFA735" />
+                                        </svg> <span>iOS</span></h4>
+                                    <ul class="list-unstyled">
+                                        <li>Swift</li>
+                                        <li>Objective-c</li>
+                                        <li>X-Code</li>
+                                    </ul>
+                                </div>
+                                <div class="android mb-4 mb-md-0">
+                                    <h4 class="fs-25 mb-3 text-capitalize fw-semibold text-black d-flex align-items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+                                            <circle cx="9" cy="9" r="9" fill="#09F" />
+                                        </svg> <span>Android</span></h4>
+                                    <ul class="list-unstyled">
+                                        <li>Flutter</li>
+                                        <li>React Native</li>
+                                        <li>Ionic</li>
+                                        <li>JavaScript</li>
+                                        <li>HTML5</li>
+                                    </ul>
+                                </div>
+                                <div class="cross-platform mb-4 mb-md-0">
+                                    <h4 class="fs-25 mb-3 text-capitalize fw-semibold text-black d-flex align-items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+                                            <circle cx="9" cy="9" r="9" fill="#2417C0" />
+                                        </svg> <span>Cross platform</span></h4>
+                                    <ul class="list-unstyled">
+                                        <li>Firebase</li>
+                                        <li>Redis</li>
+                                        <li>PostgreSQL</li>
+                                        <li>MongoDB</li>
+                                        <li>MySQL</li>
+                                        <li>DynamoDB</li>
+                                        <li>Oracle</li>
+                                        <li>SQLite</li>
+                                    </ul>
+                                </div>
+                                <div class="database mb-4 mb-md-0">
+                                    <h4 class="fs-25 mb-3 text-capitalize fw-semibold text-black d-flex align-items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+                                            <circle cx="9" cy="9" r="9" fill="#31E7B6" />
+                                        </svg> <span>Database</span></h4>
+                                    <ul class="list-unstyled">
+                                        <li>Firebase</li>
+                                        <li>Redis</li>
+                                        <li>PostgreSQL</li>
+                                        <li>MongoDB</li>
+                                        <li>MySQL</li>
+                                        <li>DynamoDB</li>
+                                        <li>Oracle</li>
+                                        <li>SQLite</li>
+                                    </ul>
+                                </div>
+                                <div class="design-tools mb-4 mb-md-0">
+                                    <h4 class="fs-25 mb-3 text-capitalize fw-semibold text-black d-flex align-items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+                                            <circle cx="9" cy="9" r="9" fill="#FFCE33" />
+                                        </svg> <span>Design Tools</span></h4>
+                                    <ul class="list-unstyled">
+                                        <li>Firebase</li>
+                                        <li>Redis</li>
+                                        <li>PostgreSQL</li>
+                                        <li>MongoDB</li>
+                                        <li>MySQL</li>
+                                        <li>DynamoDB</li>
+                                        <li>Oracle</li>
+                                        <li>SQLite</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 09 End -->
+            <!-- Section 10 Start -->
+            <div class="youcomm-slide bg-clr-00BF72">
+                <div class="swiper caseStudy">
+                    <div class="swiper-wrapper">
+                        <!-- slide start -->
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="col-wrap">
+                                            <div class="slide-content">
+                                                <div class="expert">
+                                                    <h5 class="h4 lh-base text-black mb-4 pb-3 text-capitalize">Flutter App Projects Built to Accelerate <br class="d-none d-lg-block"> Business Revenue</h5>
+                                                </div>
+                                                <div class="heading">
+                                                    <h2 class="display-5 text-black fw-bold lh-sm"> <span>YouComm</span> </h2>
+                                                </div>
+                                                <div class="expert">
+                                                    <p class="text-black text-capitalize fs-18 mb-4 pb-2">Transforming in-hospital patient communication <br class="d-none d-lg-block"> by providing real-time access to medical help.</p>
+                                                </div>
+                                                <div class="yoe">
+                                                    <div class="d-flex align-items-center gap-5">
+                                                        <div class="flex-item position-relative">
+                                                            <h4 class="display-5 fw-semibold text-black mb-0">$2.1M</h4>
+                                                            <p class="text-white text-capitalize mb-4 pb-md-2">Funding Received</p>
+                                                        </div>
+                                                        <div class="flex-item position-relative">
+                                                            <h4 class="display-5 fw-semibold text-black mb-0">150K</h4>
+                                                            <p class="text-white text-capitalize mb-4 pb-md-2">Jobseekers Places</p>
+                                                        </div>
+                                                        <div class="flex-item position-relative">
+                                                            <h4 class="display-5 fw-semibold text-black mb-0">30s</h4>
+                                                            <p class="text-white text-capitalize mb-4 pb-md-2">Submission</p>
+                                                        </div>
+                                                    </div>
+                                                </div> <a href="#" class="btn btn-link text-white ps-0 fw-bold icon-white"> <span class="text">Read Full Study</span> <span class="icon align-middle d-inline-block ms-2 "> <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30">
+                                                            <g>
+                                                                <path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path>
+                                                            </g>
+                                                        </svg> </span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="img-wrapper mt-5 mt-lg-0"> <img src="./assets/images/flutter/youcomm-flutter-slide-01.png" class="img-fluid" alt=""> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                    <div class="pagination-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Section 10 End -->
+            <!-- Section 11 Start -->
+            <section class="testimonial-02 pt-100 bg-clr-F7F9FB">
+                <div class="container">
+                    <div class="row justify-content-lg-center">
+                        <div class="col-12 col-lg-8">
+                            <div class="desc-wrapper text-center mb-3 pb-3">
+                                <h2 class="display-5 fw-medium mb-4 lh-sm"> <span>When Our Client Speaks</span> </h2>
+                                <p class="fs-16 fw-normal text-body-color lh-base">A small glimpse of how IConflux has helped businesses earn higher revenue, build a loyal customer base, and make an impact.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper twoBoxCenter">
+                    <div class="testimonial-wrapper swiper-wrapper">
+                        <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                            <div class="text-content">
+                                <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                            </div>
+                            <div class="author-box d-flex gap-4 align-items-center">
+                                <div class="imgWrap"> <img src="./assets/images/flutter/review-01.png" alt=""> </div>
+                                <div class="headingWrap">
+                                    <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                    <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                            <div class="text-content">
+                                <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                            </div>
+                            <div class="author-box d-flex gap-4 align-items-center">
+                                <div class="imgWrap"> <img src="./assets/images/flutter/review-01.png" alt=""> </div>
+                                <div class="headingWrap">
+                                    <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                    <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                            <div class="text-content">
+                                <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                            </div>
+                            <div class="author-box d-flex gap-4 align-items-center">
+                                <div class="imgWrap"> <img src="./assets/images/flutter/review-01.png" alt=""> </div>
+                                <div class="headingWrap">
+                                    <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                    <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                            <div class="text-content">
+                                <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                            </div>
+                            <div class="author-box d-flex gap-4 align-items-center">
+                                <div class="imgWrap"> <img src="./assets/images/flutter/review-01.png" alt=""> </div>
+                                <div class="headingWrap">
+                                    <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                    <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                            <div class="text-content">
+                                <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                            </div>
+                            <div class="author-box d-flex gap-4 align-items-center">
+                                <div class="imgWrap"> <img src="./assets/images/flutter/review-01.png" alt=""> </div>
+                                <div class="headingWrap">
+                                    <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                    <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                            <div class="text-content">
+                                <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                            </div>
+                            <div class="author-box d-flex gap-4 align-items-center">
+                                <div class="imgWrap"> <img src="./assets/images/flutter/review-01.png" alt=""> </div>
+                                <div class="headingWrap">
+                                    <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                    <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper twoBoxCenter testimonialTwoRow pt-4 pb-lg-5">
+                    <div class="testimonial-wrapper swiper-wrapper">
+                        <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                            <div class="text-content">
+                                <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                            </div>
+                            <div class="author-box d-flex gap-4 align-items-center">
+                                <div class="imgWrap"> <img src="./assets/images/flutter/review-01.png" alt=""> </div>
+                                <div class="headingWrap">
+                                    <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                    <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                            <div class="text-content">
+                                <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                            </div>
+                            <div class="author-box d-flex gap-4 align-items-center">
+                                <div class="imgWrap"> <img src="./assets/images/flutter/review-01.png" alt=""> </div>
+                                <div class="headingWrap">
+                                    <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                    <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                            <div class="text-content">
+                                <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                            </div>
+                            <div class="author-box d-flex gap-4 align-items-center">
+                                <div class="imgWrap"> <img src="./assets/images/flutter/review-01.png" alt=""> </div>
+                                <div class="headingWrap">
+                                    <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                    <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                            <div class="text-content">
+                                <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                            </div>
+                            <div class="author-box d-flex gap-4 align-items-center">
+                                <div class="imgWrap"> <img src="./assets/images/flutter/review-01.png" alt=""> </div>
+                                <div class="headingWrap">
+                                    <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                    <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                            <div class="text-content">
+                                <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                            </div>
+                            <div class="author-box d-flex gap-4 align-items-center">
+                                <div class="imgWrap"> <img src="./assets/images/flutter/review-01.png" alt=""> </div>
+                                <div class="headingWrap">
+                                    <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                    <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                            <div class="text-content">
+                                <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                            </div>
+                            <div class="author-box d-flex gap-4 align-items-center">
+                                <div class="imgWrap"> <img src="./assets/images/flutter/review-01.png" alt=""> </div>
+                                <div class="headingWrap">
+                                    <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                    <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 11 End -->
+            <!-- Section 12 Start -->
+            <section class="flutter_CTA position-relative z-1">
+                <div class="container flutter_CTA-02">
+                    <div class="wrapper mt-5 bg-clr-FF8E06 bg-cover bg-no-repeat bg-right-bottom">
+                        <div class="row align-items-end">
+                            <div class="col-12 col-lg-7">
+                                <div class="content-wrapper">
+                                    <h3 class="fs-35 lh-base fw-semibold text-white text-capitalize">Want to learn more about our global payments solution?</h3> <a href="#" class="btn btn-link text-white ps-0 fw-bold icon-white"> <span class="text">Hire Developer now</span> <span class="icon align-middle d-inline-block ms-2 "> <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30">
+                                                <g>
+                                                    <path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path>
+                                                </g>
+                                            </svg> </span> </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="img-wrapper d-flex justify-content-center justify-content-lg-end"> <img src="./assets/images/flutter/japa-club.png" class="img01 img-fluid" alt=""> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 12 End -->
+            <!-- Section 13 Start -->
+            <section class="source-libraries py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="heading-wrapper mb-3 pb-3">
+                                <h2 class="display-5 fw-medium text-black mb-3 pb-1">Open Source Libraries</h2>
+                                <p class="text-body-color fw-normal fs-20 lh-base">The top-notch and preeminent Web and Mobile App Development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="info_box-01 mb-4 mb-lg-0">
+                                <div class="icon-wrp mb-4 pb-3"> <img src="./assets/images/flutter/flutter-logo.svg" class="img-fluid" alt=""> </div>
+                                <div class="heading-wrp">
+                                    <h4 class="fs-25 lh-base fw-semibold">Animated Segment</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="info_box-02 mb-4 mb-lg-0">
+                                <div class="icon-wrp mb-4 pb-3"> <img src="./assets/images/flutter/flutter-logo.svg" class="img-fluid" alt=""> </div>
+                                <div class="heading-wrp">
+                                    <h4 class="fs-25 lh-base fw-semibold">Clock <br class="d-none d-lg-block"> Loader</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="info_box-03 mb-4 mb-lg-0">
+                                <div class="icon-wrp mb-4 pb-3"> <img src="./assets/images/flutter/flutter-logo.svg" class="img-fluid" alt=""> </div>
+                                <div class="heading-wrp">
+                                    <h4 class="fs-25 lh-base fw-semibold">Draggable Gridview</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="info_box-04 mb-4 mb-lg-0">
+                                <div class="icon-wrp mb-4 pb-3"> <img src="./assets/images/flutter/flutter-logo.svg" class="img-fluid" alt=""> </div>
+                                <div class="heading-wrp">
+                                    <h4 class="fs-25 lh-base fw-semibold">Floating Buttom Bar</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 13 End -->
+            <!-- Section 13 Start -->
+            <section class="our-process pb-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <div class="heading-wrapper pb-4">
+                                <h2 class="display-5 fw-medium text-capitalize text-black mb-3 pb-1">Our Development Methodology</h2>
+                                <p class="text-body-color fw-normal fs-20 lh-base">Learn how a highly experienced Flutter app development company in India crafts a masterpiece of your application.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="info-box">
+                                <div class="icon-wrp mb-3 pb-1"> <span class="fs-26 fw-bold text-white lh-base d-inline-block rounded-2 bg-theme-primary-dark">1</span> </div>
+                                <div class="content-wrp">
+                                    <h4 class="fs-20 fw-medium text-black">Product Discovery</h4>
+                                    <p class="fs-16 fw-normal text-body-color">We understand your product and gather the basic requirements, followed by a competitive analysis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="info-box">
+                                <div class="icon-wrp mb-3 pb-1"> <span class="fs-26 fw-bold text-white lh-base d-inline-block rounded-2 bg-clr-0049FE">2</span> </div>
+                                <div class="content-wrp">
+                                    <h4 class="fs-20 fw-medium text-black">Strategy and Planning</h4>
+                                    <p class="fs-16 fw-normal text-body-color">We create a flawless strategy, including the selection of technology, features, interactions, APIs, design elements, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="info-box">
+                                <div class="icon-wrp mb-3 pb-1"> <span class="fs-26 fw-bold text-white lh-base d-inline-block rounded-2 bg-theme-yellow-dark">3</span> </div>
+                                <div class="content-wrp">
+                                    <h4 class="fs-20 fw-medium text-black">Design and Development</h4>
+                                    <p class="fs-16 fw-normal text-body-color">Our designers sketch a high-fidelity design of the application, followed as the developers work on the coding.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="info-box">
+                                <div class="icon-wrp mb-3 pb-1"> <span class="fs-26 fw-bold text-white lh-base d-inline-block rounded-2 bg-theme-green">4</span> </div>
+                                <div class="content-wrp">
+                                    <h4 class="fs-20 fw-medium text-black">Deploy, Monitor, and Maintain</h4>
+                                    <p class="fs-16 fw-normal text-body-color">We help you deploy the application on any platform and continuously monitor its performance for effective maintenance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 13 End -->
+            <!-- Section 14 Start -->
+            <section class="other-services bg-clr-0049FE">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-4">
+                            <div class="content-wrapper mb-5 mb-lg-0">
+                                <h3 class="fs-45 lh-base text-white fw-medium">Interested in Something Else</h3>
+                                <p class="text-white fw-normal fs-16 lh-base">As a prominent mobile app development company in India, we have expertise in other technologies as well.</p> <a href="#" class="btn btn-link text-white ps-0 fw-bold icon-white"> <span class="text">Our Services</span> <span class="icon align-middle d-inline-block ms-2 "> <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30">
+                                            <g>
+                                                <path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path>
+                                            </g>
+                                        </svg> </span> </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <ul class="services list-unstyled d-flex justify-content-end gap-2">
+                                <li class="bg-theme-primary-dark px-3 py-4 text-center">
+                                    <div class="iconBox mb-3"> <img src="./assets/images/flutter/react-white.png" alt=""> </div>
+                                    <div class="contentBox">
+                                        <p class="text-white fs-15 fw-normal">React Native Development</p>
+                                    </div>
+                                </li>
+                                <li class="bg-theme-primary-dark px-3 py-4 text-center">
+                                    <div class="iconBox mb-3"> <img src="./assets/images/flutter/loni-white.png" alt=""> </div>
+                                    <div class="contentBox">
+                                        <p class="text-white fs-15 fw-normal">lonic <br class="d-none d-lg-block"> Development</p>
+                                    </div>
+                                </li>
+                                <li class="bg-theme-primary-dark px-3 py-4 text-center">
+                                    <div class="iconBox mb-3"> <img src="./assets/images/flutter/apple-white.png" alt=""> </div>
+                                    <div class="contentBox">
+                                        <p class="text-white fs-15 fw-normal">IOS<br class="d-none d-lg-block"> Development</p>
+                                    </div>
+                                </li>
+                                <li class="bg-theme-primary-dark px-3 py-4 text-center">
+                                    <div class="iconBox mb-3"> <img src="./assets/images/flutter/android-white.png" alt=""> </div>
+                                    <div class="contentBox">
+                                        <p class="text-white fs-15 fw-normal">Android Development</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 14 End -->
+            <!-- Section 15 Start -->
+            <section class="accordion-FAQ pt-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="heading-wrapper text-center pb-4">
+                                <h3 class="fs-45 fw-medium lh-base text-black">Frequently Asked Questions</h3>
+                                <p class="fs-20 fw-normal text-body-color">The top-notch and preeminent Web and Mobile App</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="accordion customAccordion02" id="flutterFAQ-01">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header"> <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> What's new in Flutter 2.0? </button> </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#flutterFAQ-01">
+                                        <div class="accordion-body">
+                                            <p>Flutter 2 is a major upgrade to Flutter that allows developers to build fast and portable applications for any platform. Flutter 2 enables apps to run on multiple platforms including desktop and web with little or no change.</p>
+                                            <p>Flutter is an app development framework that becomes quite popular among developers across the world. It has all the elements to develop robust mobile apps in minimal time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Is Flutter good for mobile app development? </button> </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#flutterFAQ-01">
+                                        <div class="accordion-body">
+                                            <p>Flutter 2 is a major upgrade to Flutter that allows developers to build fast and portable applications for any platform. Flutter 2 enables apps to run on multiple platforms including desktop and web with little or no change.</p>
+                                            <p>Flutter is an app development framework that becomes quite popular among developers across the world. It has all the elements to develop robust mobile apps in minimal time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Is Flutter better than React Native? </button> </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#flutterFAQ-01">
+                                        <div class="accordion-body">
+                                            <p>Flutter 2 is a major upgrade to Flutter that allows developers to build fast and portable applications for any platform. Flutter 2 enables apps to run on multiple platforms including desktop and web with little or no change.</p>
+                                            <p>Flutter is an app development framework that becomes quite popular among developers across the world. It has all the elements to develop robust mobile apps in minimal time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> What are the benefits of outsourcing Flutter app development? </button> </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#flutterFAQ-01">
+                                        <div class="accordion-body">
+                                            <p>Flutter 2 is a major upgrade to Flutter that allows developers to build fast and portable applications for any platform. Flutter 2 enables apps to run on multiple platforms including desktop and web with little or no change.</p>
+                                            <p>Flutter is an app development framework that becomes quite popular among developers across the world. It has all the elements to develop robust mobile apps in minimal time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> How much does it cost to develop a Flutter app? </button> </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#flutterFAQ-01">
+                                        <div class="accordion-body">
+                                            <p>Flutter 2 is a major upgrade to Flutter that allows developers to build fast and portable applications for any platform. Flutter 2 enables apps to run on multiple platforms including desktop and web with little or no change.</p>
+                                            <p>Flutter is an app development framework that becomes quite popular among developers across the world. It has all the elements to develop robust mobile apps in minimal time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"> Is Flutter good for mobile app development? </button> </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#flutterFAQ-01">
+                                        <div class="accordion-body">
+                                            <p>Flutter 2 is a major upgrade to Flutter that allows developers to build fast and portable applications for any platform. Flutter 2 enables apps to run on multiple platforms including desktop and web with little or no change.</p>
+                                            <p>Flutter is an app development framework that becomes quite popular among developers across the world. It has all the elements to develop robust mobile apps in minimal time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section 15 End -->
+            <div class="ico_16 blogs position-relative py-100 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-10 col-lg-12 mb-4 mb-md-0">
+                            <div class="col-wrap">
+                                <div class="heading text-black mb-1">
+                                    <h2 class="h1 fw-semibold text-capitalize mb-5 lh-sm"> <span>Resources for growing your product</span> </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0"> <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-4" />
+                                    <div class="card-body p-md-0 pe-md-4">
+                                        <h4 class="card-title text-black fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                        <p class="card-text mb-4">We offer a three-tier user-friendly and all device responsive...</p>
+                                        <div class="actionBtn"> <a href="#" class="btn btn-link ps-0 fw-bold"> <span class="text">Read Article </span> <span class="icon align-middle d-inline-block ms-2"> <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30">
+                                                        <g>
+                                                            <path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z" />
+                                                        </g>
+                                                    </svg> </span> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                            <div class="col-wrap"> <img src="./assets/images/post-2.png" alt="globe" class="img-fluid mb-4" />
+                                <div class="card bg-transparent border-0">
+                                    <div class="card-body p-md-0 pe-md-4">
+                                        <h4 class="card-title text-black fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                        <p class="card-text mb-4">We offer a three-tier user-friendly and all device responsive...</p>
+                                        <div class="actionBtn"> <a href="#" class="btn btn-link ps-0 fw-bold"> <span class="text">Read Article </span> <span class="icon align-middle d-inline-block ms-2"> <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30">
+                                                        <g>
+                                                            <path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z" />
+                                                        </g>
+                                                    </svg> </span> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 ">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0"> <img src="./assets/images/post-3.png" alt="globe" class="img-fluid mb-4" />
+                                    <div class="card-body p-md-0 pe-md-4">
+                                        <h4 class="card-title text-black fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                        <p class="card-text mb-4">We offer a three-tier user-friendly and all device responsive...</p>
+                                        <div class="actionBtn"> <a href="#" class="btn btn-link ps-0 fw-bold"> <span class="text">Read Article </span> <span class="icon align-middle d-inline-block ms-2"> <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30">
+                                                        <g>
+                                                            <path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z" />
+                                                        </g>
+                                                    </svg> </span> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ico_17 position-relative py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="heading text-black pt-4">
+                                    <h2 class="h1 fw-semibold mb-5 lh-sm"> <span>Let's Talk Business!</span> </h2>
+                                </div>
+                                <div class="expert mb-5">
+                                    <p class="fs-18 text-secondary text-capitalize">Have questions about your idea? </p>
+                                    <p class="fs-18 text-secondary text-capitalize">Drop in your details to discuss with our solution consultants. We look forward to hear from you.</p>
+                                </div>
+                                <div class="card-list">
+                                    <div class="card bg-light rounded-0 border-0 mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center gap-3 ps-2">
+                                                <div class="flex-col flex-grow-0"> <img src="./assets/images/skype-logo.svg" alt="skype" class="img-fluid" /> </div>
+                                                <div class="flex-col">
+                                                    <p class="mb-0 text-secondary">Our Skype ID</p>
+                                                    <h3 class="fs-25 fw-semibold text-dark">live:iconflux</h3> <a href="skype:iconflux?chat" class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-light rounded-0 border-0 mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center gap-3 ps-2">
+                                                <div class="flex-col flex-grow-0"> <img src="./assets/images/email-logo.svg" alt="email" class="img-fluid" /> </div>
+                                                <div class="flex-col">
+                                                    <p class="mb-0 text-secondary">Email us on</p>
+                                                    <h3 class="fs-25 fw-semibold text-dark">info@iconflux.com</h3> <a href="mailto:info@iconflux.com" class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-light rounded-0 border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center gap-3 ps-2">
+                                                <div class="flex-col flex-grow-0"> <img src="./assets/images/phone-logo.svg" alt="phone" class="img-fluid" /> </div>
+                                                <div class="flex-col">
+                                                    <p class="mb-0 text-secondary">Call us on</p>
+                                                    <h3 class="fs-25 fw-semibold text-dark">+1-409-358-8781</h3> <a href="tel:+1-409-358-8781" class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 ">
+                            <div class="col-wrap ps-lg-5">
+                                <div class="form-wrapper card-form bg-light">
+                                    <div class="heading text-black mb-1">
+                                        <h2 class="h1 fw-semibold mb-5 lh-sm"> <span>Get A Free Quote</span> </h2>
+                                    </div>
+                                    <div class="expert mb-5">
+                                        <p class="fs-18 text-secondary text-capitalize">Contact us to discover how we can help you succeed</p>
+                                    </div>
+                                    <form action="#" method="post">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-wrap"> <label for="fname" class="form-label">First Name</label> <input type="text" class="form-control" id="fname" placeholder="Enter your First name" /> </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-wrap"> <label for="fname" class="form-label">Last Name</label> <input type="text" class="form-control" id="fname" placeholder="Enter your Last name" /> </div>
+                                            </div>
+                                            <div class="col-12 col-lg-12">
+                                                <div class="form-wrap"> <label for="email" class="form-label">Email address</label> <input type="email" class="form-control" id="email" placeholder="What's your email ID" /> </div>
+                                            </div>
+                                            <div class="col-12 col-lg-12">
+                                                <div class="form-wrap"> <label for="phoneNo" class="form-label">Phone No</label> <input type="text" class="form-control" id="phoneNo" placeholder="Type your number" /> </div>
+                                            </div>
+                                            <div class="col-12 col-lg-12">
+                                                <div class="form-wrap"> <label for="message" class="form-label">Message</label> <textarea class="form-control" id="message" rows="3"></textarea> </div>
+                                            </div>
+                                            <div class="col-12 col-lg-12">
+                                                <div class="form-wrap"> <button type="submit" class="btn btn-theme-primary withIcon w-100"> <span class="text">Submit Now</span> <span class="icon d-inline-block align-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="none" viewBox="0 0 24 24">
+                                                                <g>
+                                                                    <path fill="currentColor" d="m13.1727 12.0046-4.95-4.95 1.414-1.414 6.364 6.364-6.364 6.364-1.414-1.414 4.95-4.95Z" />
+                                                                </g>
+                                                            </svg></span> </button> </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="presence position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-wrap">
+                                <div class="heading text-white text-center">
+                                    <h2 class="h1 fw-medium mb-5 lh-sm"> <span>Our Presence</span> </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <div class="crd-header mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col"> <img src="./assets/images/flags/india.svg" alt="flag" class="img-fluid" /> </div>
+                                            <div class="flex-col">
+                                                <h5 class="h5 fw-bold text-white text-uppercase">HQ India</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crd-body">
+                                        <p class="card-text mb-3 pb-1 font-manrope fs-15 fw-medium text-white">1002-1004, Avdhesh House, 10th Floor,Opp. Gurudwara, S.G. Road, Bodakdev,Ahmedabad, India-380054</p> <a href="tel:+91-95127 87877" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none mb-2"> <span class="d-inline-block icon align-bottom me-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15px" width="15px" viewBox="0 0 15 15">
+                                                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M2.5294 1h3.0588l1.5295 3.8235-1.9118 1.147a8.4118 8.4118 0 0 0 3.8235 3.8236l1.1471-1.9118L14 9.4118v3.0588a1.529 1.529 0 0 1-.448 1.0814 1.529 1.529 0 0 1-1.0814.448A12.2356 12.2356 0 0 1 1 2.5294 1.5294 1.5294 0 0 1 2.5294 1Z" />
+                                                </svg> </span> <span>+91 - 95127 87877</span> </a> <br /> <a href="mailto:info@iconflux.com" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none"> <span class="d-inline-block icon align-bottom me-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="19px" width="16px" viewBox="0 0 16 19">
+                                                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1035" d="M12.6667 4.2656H3.3333C2.597 4.2656 2 4.9346 2 5.76v7.4712c0 .8253.597 1.4943 1.3333 1.4943h9.3334c.7363 0 1.3333-.669 1.3333-1.4943V5.7599c0-.8253-.597-1.4943-1.3333-1.4943Z" />
+                                                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1035" d="m2 5.7578 6 4.4828 6-4.4828" />
+                                                </svg> </span> <span>info@iconflux.com</span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <div class="crd-header mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col"> <img src="./assets/images/flags/dubai.svg" alt="flag" class="img-fluid" /> </div>
+                                            <div class="flex-col">
+                                                <h5 class="h5 fw-bold text-white text-uppercase">Dubai</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crd-body">
+                                        <p class="card-text mb-3 pb-1 font-manrope fs-15 fw-medium text-white">ACISIT DIP-1 ,Al Asmawi 605,Dubai, P.O. Box 392177, UAE</p> <a href="tel:+91-95127 87877" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none mb-2"> <span class="d-inline-block icon align-bottom me-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15px" width="15px" viewBox="0 0 15 15">
+                                                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M2.5294 1h3.0588l1.5295 3.8235-1.9118 1.147a8.4118 8.4118 0 0 0 3.8235 3.8236l1.1471-1.9118L14 9.4118v3.0588a1.529 1.529 0 0 1-.448 1.0814 1.529 1.529 0 0 1-1.0814.448A12.2356 12.2356 0 0 1 1 2.5294 1.5294 1.5294 0 0 1 2.5294 1Z" />
+                                                </svg> </span> <span>+91 - 95127 87877</span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <div class="crd-header mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col"> <img src="./assets/images/flags/dubai.svg" alt="flag" class="img-fluid" /> </div>
+                                            <div class="flex-col">
+                                                <h5 class="h5 fw-bold text-white text-uppercase">Germany</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crd-body">
+                                        <p class="card-text mb-3 pb-1 font-manrope fs-15 fw-medium text-white">Diessen Am Ammersee-Bayern,Munich south, Germany,Post Code 86911</p> <a href="tel:+91-95127 87877" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none mb-2"> <span class="d-inline-block icon align-bottom me-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15px" width="15px" viewBox="0 0 15 15">
+                                                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M2.5294 1h3.0588l1.5295 3.8235-1.9118 1.147a8.4118 8.4118 0 0 0 3.8235 3.8236l1.1471-1.9118L14 9.4118v3.0588a1.529 1.529 0 0 1-.448 1.0814 1.529 1.529 0 0 1-1.0814.448A12.2356 12.2356 0 0 1 1 2.5294 1.5294 1.5294 0 0 1 2.5294 1Z" />
+                                                </svg> </span> <span>+91 - 95127 87877</span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <div class="crd-header mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col"> <img src="./assets/images/flags/dubai.svg" alt="flag" class="img-fluid" /> </div>
+                                            <div class="flex-col">
+                                                <h5 class="h5 fw-bold text-white text-uppercase">Canada</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crd-body">
+                                        <p class="card-text mb-3 pb-1 font-manrope fs-15 fw-medium text-white">22 Red Plant Crescent,Brampton ON L7A 2J8</p> <a href="tel:+91-95127 87877" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none mb-2"> <span class="d-inline-block icon align-bottom me-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15px" width="15px" viewBox="0 0 15 15">
+                                                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M2.5294 1h3.0588l1.5295 3.8235-1.9118 1.147a8.4118 8.4118 0 0 0 3.8235 3.8236l1.1471-1.9118L14 9.4118v3.0588a1.529 1.529 0 0 1-.448 1.0814 1.529 1.529 0 0 1-1.0814.448A12.2356 12.2356 0 0 1 1 2.5294 1.5294 1.5294 0 0 1 2.5294 1Z" />
+                                                </svg> </span> <span>+91 - 95127 87877</span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrap position-relative bg-light">
+                <div class="container">
+                    <nav class="navbar pb-4 border-bottom border-1 border-light-subtle">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0">
+                                <div class="col-wrap"> <a class="navbar-brand" href="./index.html"> <span class="visually-hidden">Iconflux Technologies Pvt. Ltd.</span> <img src="./assets/images/iconflux_logo.svg" alt="iconflux_logo" class="img-fluid pe-none" /> </a> </div>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg-9">
+                                <div class="col-wrap">
+                                    <h5 class="h5 fw-medium text-secondary">Founded in 2012, IConflux is leading IT solutions provider company in India specialized in Mobile app, Flutter, AI & ML, RPA development.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="space-y" style="--space-y:2.125rem"></div>
+                    <div class="row border-bottom border-1 border-light-subtle">
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="menu">
+                                    <div class="menu-title">
+                                        <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Technologies</p>
+                                    </div>
+                                    <div class="menu-list">
+                                        <ul class="list-unstyled">
+                                            <li class="list-item"><a href="#" class="menu-link">Payments</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Checkout</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Payouts</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Batch payouts</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Routing & Cascading</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Currency conversion</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Merchant management</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="menu">
+                                    <div class="menu-title">
+                                        <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Company</p>
+                                    </div>
+                                    <div class="menu-list">
+                                        <ul class="list-unstyled">
+                                            <li class="list-item"><a href="#" class="menu-link">About us</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Team</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Roadmap</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Brand assets</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Contacts</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Careers &nbsp; <span class="badge text-bg-warning fw-medium">We`re hiring!</span></a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="menu">
+                                    <div class="menu-title">
+                                        <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Solution</p>
+                                    </div>
+                                    <div class="menu-list">
+                                        <ul class="list-unstyled">
+                                            <li class="list-item"><a href="#" class="menu-link">Enterprise Mobility Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Intranet Portal Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">HRMS Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Forex Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Vtiger CRM Solutions</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Field Force System Solutions</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Assets Management Solutions</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="getInTouch mb-5 pb-md-4">
+                                    <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Get in touch</p> <a href="tel:+91-95127 87877" class="text-secondary th-accent-black fs-15 fw-medium text-decoration-none"> <span>+91 - 95127 87877</span> </a>
+                                </div>
+                                <div class="followus">
+                                    <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Follow us on</p>
+                                    <div class="d-flex align-items-center gap-2 flex-wrap"> <a href="#" class="text-decoration-none"> <img src="./assets/images/facebook.svg" alt="social" class="img-fluid" /> </a> <a href="#" class="text-decoration-none"> <img src="./assets/images/instagram.svg" alt="social" class="img-fluid" /> </a> <a href="#" class="text-decoration-none"> <img src="./assets/images/linkedin.svg" alt="social" class="img-fluid" /> </a> <a href="#" class="text-decoration-none"> <img src="./assets/images/twitter.svg" alt="social" class="img-fluid" /> </a> <a href="#" class="text-decoration-none"> <img src="./assets/images/youtube.svg" alt="social" class="img-fluid" /> </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="12">
+                            <div class="col-wrap">
+                                <div class="d-flex gap-2 flex-wrap align-items-center my-4 pb-md-2 mt-md-5">
+                                    <div class=""><img src="./assets/images/iso.png" alt="copyright" class="img-fluid" /></div>
+                                    <div class=""><img src="./assets/images/dmca.png" alt="copyright" class="img-fluid" /></div>
+                                    <div class=""><img src="./assets/images/copyscape.png" alt="copyright" class="img-fluid" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y" style="--space-y:2.125rem"></div>
+                    <div class="row justify-content-md-between">
+                        <div class="col-12 col-md-auto">
+                            <div class="col-wrap">
+                                <p class="text-secondary text-capitalize m-0">&copy; Iconflux technologies pvt ltd, 2023.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-auto">
+                            <div class="col-wrap"> <a href="#" class="fs-14 text-uppercase text-secondary fw-medium th-accent-black text-decoration-none">Terms</a> <a href="#" class="fs-14 text-uppercase text-secondary fw-medium th-accent-black text-decoration-none mx-2 mx-md-3 mx-lg-4">Privacy Notice</a> <a href="#" class="fs-14 text-uppercase text-secondary fw-medium th-accent-black text-decoration-none">Cookie Settings</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- script files  -->
+    <script defer src="./assets/js/main.js"></script>
+</body>
+
+</html>
