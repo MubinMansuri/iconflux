@@ -115,9 +115,9 @@ function singeSlideSwiper2(e){
 function singeSlideSwiper3(e) {
   var twoBoxCenter = new Swiper(e, {
     spaceBetween: 30,
-    slidesPerView: 3.5,
+    slidesPerView: 4,
     loop: true,
-    centeredSlides: true,
+    // centeredSlides: true,
     slidesPerView: 1,
     spaceBetween: 10,
     // Responsive breakpoints
@@ -129,12 +129,12 @@ function singeSlideSwiper3(e) {
       },
       // when window width is >= 480px
       768: {
-        slidesPerView: 1.5,
+        slidesPerView: 3,
         spaceBetween: 30
       },
       // when window width is >= 640px
       1024: {
-        slidesPerView: 3.5,
+        slidesPerView: 4,
         spaceBetween: 40
       }
     },
