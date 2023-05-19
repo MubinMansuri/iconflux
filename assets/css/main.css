@@ -19,7 +19,6 @@
     --body-text:#687086;
     --clr-F7F9FB:#F7F9FB;
     --clr-00BF72: #00BF72;
-
     --font-family-inter: 'Inter', sans-serif;
     --font-family-manrope: 'Manrope', sans-serif;
     
@@ -751,8 +750,8 @@ padding: 9px;}
 
 .customAccordion02 .accordion-item{border: 0px; }
 .customAccordion02 .accordion-item button{background-color: transparent; box-shadow:0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color); font-size: 18px; font-weight: 600; line-height: 28.8px; color: var(--black); padding: 19px 10px; border-radius: 0 !important;}
-.customAccordion02 .accordion-item button::after{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='none'%3E%3Ccircle cx='15' cy='15' r='14.5' stroke='%23D9D9D9'/%3E%3Cpath stroke='%23949494' stroke-linecap='round' stroke-linejoin='round' d='M15 9.166v11.667M9.167 15h11.667'/%3E%3C/svg%3E"); width: 30px; height: 30px; background-size: cover;}
-.customAccordion02 .accordion-item button[aria-expanded="true"]::after{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='none'%3E%3Ccircle cx='15' cy='15' r='15' fill='%23134EF4'/%3E%3Cpath stroke='%23fff' stroke-linecap='round' d='M8.5 15.5h13'/%3E%3C/svg%3E"); transform: rotate(0);}
+.customAccordion02{--bs-accordion-btn-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='none'%3E%3Ccircle cx='15' cy='15' r='14.5' stroke='%23D9D9D9'/%3E%3Cpath stroke='%23949494' stroke-linecap='round' stroke-linejoin='round' d='M15 9.166v11.667M9.167 15h11.667'/%3E%3C/svg%3E");--bs-accordion-btn-active-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='none'%3E%3Ccircle cx='15' cy='15' r='15' fill='%23134EF4'/%3E%3Cpath stroke='%23fff' stroke-linecap='round' d='M8.5 15.5h13'/%3E%3C/svg%3E");--bs-accordion-btn-icon-width:30px;--bs-accordion-btn-icon-transform:none;}
+/*  width: 30px; height: 30px; background-size: cover; */
 .customAccordion02 .accordion-item .accordion-body{padding: 0 10px;}
 .customAccordion02 .accordion-item .accordion-body p{font-size: 18px; color: var(--body-text); line-height: 28.8px; font-weight: 400;}
 
@@ -772,7 +771,9 @@ padding: 9px;}
     .sec_02 .content-wrapper{top: 100px;}
 }
 @media (max-width:1536px){
+    .bg_circle.reveal{transform: translate(0px, 0px);}
     .flutter-banner::before{transform: translate(230px, -160px) scale(0.85);}
+    .sec_02 .content-wrapper .img-wrapper{transform: scale(0.85);}
 }
 @media (max-width:1499px){
     .youcomm-slide .swiper-slide::before{right: -17px; width: 850px;}
