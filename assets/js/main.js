@@ -155,19 +155,6 @@ function singeSlideSwiper3(e) {
 singeSlideSwiper3(".twoBoxCenter");
 
 
-gsap.timeline({
-  repeat: 0,
-})
-  .add('fade-in')
-  .to('#fade-in', {
-    delay: 0.1,
-    duration: 3,
-    opacity: 1,
-  }, 0)
-  .add(loadingTimeline, 0);
-
-
-
 // for jQuery
 (function () {
   // add Jquery code here

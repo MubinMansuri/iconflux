@@ -616,7 +616,6 @@
 
 
 /* GSAP Animation */
-#fade-in {opacity: 0;}
 
 .flutter_logo{box-shadow: -2px 7px 12px 0px #0000002B;}
 
@@ -628,6 +627,8 @@
 .ios-banner::before{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='694' height='559' fill='none'%3E%3Cmask id='a' width='694' height='559' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23D9D9D9' d='M0 0h694v559H0V0Z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%23FF8E06' d='M535.224 38.157c-42.181-3.099-84.896-3.928-128.4-1.983-43.095.176-86.179 2.8-129.046 7.858a1196.55 1196.55 0 0 0-125.723 19.716A1269.392 1269.392 0 0 0 26.661 95.074L390.234 1141.73 535.224 38.157Z'/%3E%3Cpath fill='%230049FD' d='M443.533 58.25a364.73 364.73 0 0 0-37.589-4.974 371.394 371.394 0 0 0-38.072-.825L363.81.79a396.423 396.423 0 0 1 44.134.797 423.12 423.12 0 0 1 43.723 5.438l-8.134 51.223Z'/%3E%3Cpath fill='%232417C0' d='M642.911 620.952a1474.317 1474.317 0 0 0-149.579-33.326 1501.035 1501.035 0 0 0-152.985-16.796l1.929-209.421a1602.111 1602.111 0 0 1 177.403 18.825 1710.018 1710.018 0 0 1 174.109 37.37l-50.877 203.348Z'/%3E%3Ccircle cx='501.5' cy='218.854' r='30.5' fill='%231BDB7F'/%3E%3Cpath fill='%23FFCE33' d='M336.868 368.013a1291.404 1291.404 0 0 0-130.723 30.59 1314.813 1314.813 0 0 0-127.125 44.93L.89 277.524a1403.488 1403.488 0 0 1 147.168-52.617 1498.255 1498.255 0 0 1 151.621-36.728l37.189 179.834Z'/%3E%3C/g%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center bottom; width: 43.375rem; height: 34.938rem; bottom: 0; top: auto; right: 0; transform: translate(-140px, 0px) !important;}
 
 .react-native::before{width: 53.125rem; height: 42.379rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='850' height='679' fill='none'%3E%3Cmask id='a' width='768' height='662' x='82' y='17' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23D9D9D9' d='M82 17h768v662H82V17Z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%2331E7B6' d='M849.506 276.721c-30.82-12.982-62.618-24.396-95.714-33.929a901.572 901.572 0 0 0-98.704-26.711 945.7 945.7 0 0 0-99.233-16.978 1004.157 1004.157 0 0 0-101.944-8.188l5.897 876.835 389.698-791.029Z'/%3E%3Cellipse cx='682' cy='211.5' fill='%23FF8E06' rx='35' ry='34.5'/%3E%3Cpath fill='%232417C0' d='M712.36 66.66c-48.183-6.838-97.153-11.113-147.241-12.268a1313.674 1313.674 0 0 0-148.736-1.03 1377.041 1377.041 0 0 0-145.827 12.83 1460.282 1460.282 0 0 0-146.337 26.175L461.546 1321.24 712.36 66.66Z'/%3E%3C/g%3E%3Cmask id='b' width='717' height='663' x='0' y='16' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23D9D9D9' d='M0 16h717v663H0V16Z'/%3E%3C/mask%3E%3Cg mask='url(%23b)'%3E%3Cpath fill='%23FF8E06' d='M506.225 17.892c-42.294-.263-84.968 1.774-128.244 6.632a1141.042 1141.042 0 0 0-128.228 16.493A1196.554 1196.554 0 0 0 125.635 69.12 1269.262 1269.262 0 0 0 2.624 108.784L435.565 1128.7l70.66-1110.808Z'/%3E%3C/g%3E%3Cpath fill='%2331E7B6' d='M190.801 77.213a293.177 293.177 0 0 0-30.225 3.948 298.58 298.58 0 0 0-29.737 7.269l-13.888-39.273a318.67 318.67 0 0 1 34.439-8.552 340.09 340.09 0 0 1 35.085-4.861l4.326 41.469Z'/%3E%3C/svg%3E"); transform: translate(-30px, 50px) scale(1.1);}
+
+.android-banner::before{width: 39.875rem; height: 31rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='638' height='496' fill='none'%3E%3Cmask id='a' width='638' height='496' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23D9D9D9' d='M0 0h638v496H0V0Z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%23FFCE33' d='M636.708 474.27a974 974 0 0 0-101.144 5.164 992.155 992.155 0 0 0-100.397 16.293L399.448 362.01a1058.875 1058.875 0 0 1 116.306-19.31 1130.043 1130.043 0 0 1 117.481-6.916l3.473 138.486Z'/%3E%3Cpath fill='%23FF8E06' d='M280.871 116.792a833.968 833.968 0 0 0-84.445 19.728 849.08 849.08 0 0 0-82.124 28.991L63.876 58.262a906.687 906.687 0 0 1 95.071-33.951A967.747 967.747 0 0 1 256.893.623l23.978 116.169Z'/%3E%3Cpath fill='%230049FE' d='M312.512 367.275a1169.809 1169.809 0 0 0-115.481 38.076 1191.102 1191.102 0 0 0-111.085 50.725L2.154 312.573a1271.233 1271.233 0 0 1 128.55-59.266 1356.62 1356.62 0 0 1 133.842-45.289l47.966 159.257Z'/%3E%3Cpath fill='%231BDB7F' d='M562.376 184.781a815.851 815.851 0 0 0-83.742 13.455 830.537 830.537 0 0 0-82.113 22.652l-41.842-108.096a886.633 886.633 0 0 1 95.086-26.604 946.526 946.526 0 0 1 97.185-16.392l15.426 114.985Z'/%3E%3Cpath fill='%230C8A4E' d='M493.003 105.242a210.282 210.282 0 0 0-21.68-2.868 213.908 213.908 0 0 0-21.958-.476l-2.342-29.795c8.486-.32 16.984-.167 25.454.459a244.045 244.045 0 0 1 25.218 3.136l-4.692 29.544Z'/%3E%3C/g%3E%3C/svg%3E"); transform: translate(-220px, 140px) scale(1);}
 
 
 .bg_circle.reveal {
@@ -649,8 +650,8 @@
 
 .sec_02 .img-wrapper .img02 img{width: 100%;}
 
-.sec_03 .box-wrapper .info-box{min-height: 171px; transition: transform 100ms ease, box-shadow 200ms ease-out;}
-.sec_03 .box-wrapper .info-box:hover{transform: scale(1.2); box-shadow: 1px 1px 20px 0 #e7e7e7;}
+.sec_03 .box-wrapper .info-box{min-height: 171px; transition: all 200ms ease}
+.sec_03 .box-wrapper .info-box:hover{transform: scale(1.05); box-shadow: 1px 1px 20px 0 #e7e7e7;}
 
 
 .we-app-development .info-box .iconBox{width: 44px; background-color: #FF8E06; padding: 7px;}
@@ -756,6 +757,10 @@
 
 .swiper-pagination-bullet{width: 14px; height: 14px; background-color: transparent; border: 2px solid var(--white); opacity: 1;}
 .swiper-pagination-bullet-active{background-color: var(--white);}
+
+
+
+
 /* Custom C O D E End */
 
 
@@ -857,6 +862,8 @@
     .customAccordion02 .accordion-item button::after{width: 20px; height: 20px;}
     .youcomm-slide .swiper-slide::before{width: 365px; height: 328px;}
     .other-services ul li{width: 100%;}
+    .flutter-banner .content{padding: 3.45rem 0;}
+    .flutter-banner::before{transform: translate(390px, 420px) scale(0.63);}
 }
 
 @media (max-width:360px){
