@@ -789,7 +789,7 @@
 
 @media (max-width: 1366px){
     .pb-100, .py-100{padding-bottom: 80px;}
-    .flutter-banner::before{transform: translate(260px, -110px) scale(0.77);}
+    .flutter-banner::before{transform: translate(240px, -140px) scale(0.87);}
     .bg_circle.reveal{transform: translate(90px, 0px);}
     .youcomm-slide .swiper-slide::before{right: -19px; width: 824px;}
     .youcomm-slide .swiper-slide .img-wrapper{right: 0px; width: 780px;}
@@ -798,7 +798,7 @@
     .react-native::before{transform: translate(160px, 70px) scale(1);}
 }
 @media (max-width:1280px){
-    .flutter-banner::before{transform: translate(340px, -100px) scale(1.1);}
+    .flutter-banner::before{transform: translate(250px, -140px) scale(0.8);}
     .youcomm-slide .swiper-slide::before {right: 0px; width: 720px; height: 540px;}
     .youcomm-slide .swiper-slide .img-wrapper{right: 30px; width: 647px;}.ico_04::before{background-size: cover;} .react-native::before{transform: translate(120px, 100px) scale(1);}}
 
@@ -864,6 +864,8 @@
     .other-services ul li{width: 100%;}
     .flutter-banner .content{padding: 3.45rem 0;}
     .flutter-banner::before{transform: translate(390px, 420px) scale(0.63);}
+    .key-benefits{background-size: 230% !important; background-repeat: no-repeat;}
+    .our-process .info-box .icon-wrp::before{right: 30px;}
 }
 
 @media (max-width:360px){
