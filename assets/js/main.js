@@ -155,6 +155,14 @@ function singeSlideSwiper3(e) {
 singeSlideSwiper3(".twoBoxCenter");
 
 
+
+var tl = gsap.timeline({});
+tl.fromTo(".flutter-banner #fade-in", {opacity: 0, y: 250}, {opacity: 1, duration: 1,  y: 0});
+tl.fromTo(".flutter-banner .icon-wrp", {opacity: 1, scale: 0}, {opacity: 1, duration: 1,  scale: 1});
+
+// var rule = CSSRulePlugin.getRule(".flutter-banner:before"); //get the rule
+// gsap.to(rule, {opacity: 1, scale: 0}, {opacity: 1, duration: 1,  scale: 1});
+
 // for jQuery
 (function () {
   // add Jquery code here
