@@ -155,18 +155,13 @@ function singeSlideSwiper3(e) {
 singeSlideSwiper3(".twoBoxCenter");
 
 
-gsap.timeline({
-  repeat: 0,
-})
-  .add('fade-in')
-  .to('#fade-in', {
-    delay: 0.1,
-    duration: 3,
-    opacity: 1,
-  }, 0)
-  .add(loadingTimeline, 0);
 
+var tl = gsap.timeline({});
+tl.fromTo(".flutter-banner #fade-in", {opacity: 0, y: 250}, {opacity: 1, duration: 1,  y: 0});
+tl.fromTo(".flutter-banner .icon-wrp", {opacity: 1, scale: 0}, {opacity: 1, duration: 1,  scale: 1});
 
+// var rule = CSSRulePlugin.getRule(".flutter-banner:before"); //get the rule
+// gsap.to(rule, {opacity: 1, scale: 0}, {opacity: 1, duration: 1,  scale: 1});
 
 // for jQuery
 (function () {
