@@ -157,11 +157,14 @@ singeSlideSwiper3(".twoBoxCenter");
 
 
 var tl = gsap.timeline({});
-tl.fromTo(".flutter-banner #fade-in", {opacity: 0, y: 250}, {opacity: 1, duration: 1,  y: 0});
-tl.fromTo(".flutter-banner .icon-wrp", {opacity: 1, scale: 0}, {opacity: 1, duration: 1,  scale: 1});
+var rule = CSSRulePlugin.getRule(".flutter-banner:before"); //get the rule
+tl.fromTo(rule, { opacity: 0, xPercent: '0px' }, { opacity: 1, xPercent: '330px', duration: 1 }),
+  tl.fromTo(".flutter-banner #fade-in", { opacity: 0, y: 50 }, { opacity: 1, duration: 1, y: 0 }),
+  tl.fromTo(".flutter-banner .icon-wrp", { opacity: 1, scale: 0 }, { opacity: 1, duration: 0.5, scale: 1 });
 
 // var rule = CSSRulePlugin.getRule(".flutter-banner:before"); //get the rule
 // gsap.to(rule, {opacity: 1, scale: 0}, {opacity: 1, duration: 1,  scale: 1});
+
 
 // for jQuery
 (function () {
