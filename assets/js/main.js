@@ -75,25 +75,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 // DOMContentLoaded  end
-function singeSlideSwiper(e){
+function singeSlideSwiper(e){/* for single slide banner*/
   var caseStudy = new Swiper(e, {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
       delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+      disableOnInteraction: false,},
+    pagination: {el: ".swiper-pagination", clickable: true,},
+    navigation: {nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev",},
   });
 }
-function singeSlideSwiper2(e){
+function singeSlideSwiper2(e){/* for home page*/
   var testimonial = new Swiper(e, {
     spaceBetween: 30,
     centeredSlides: true,
@@ -101,18 +94,12 @@ function singeSlideSwiper2(e){
       delay: 2500,
       disableOnInteraction: false,
     },
-    pagination: {
-      el: "[class*='swiper-testimonial'] .swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: "[class*='swiper-testimonial'] .swiper-button-next",
-      prevEl: "[class*='swiper-testimonial'] .swiper-button-prev",
-    },
+    pagination: {el: "[class*='swiper-testimonial'] .swiper-pagination", clickable: true,},
+    navigation: {nextEl: "[class*='swiper-testimonial'] .swiper-button-next", prevEl: "[class*='swiper-testimonial'] .swiper-button-prev",},
   });
 }
 
-function singeSlideSwiper3(e) {
+function singeSlideSwiper3(e) {/* for three slide*/
   var twoBoxCenter = new Swiper(e, {
     spaceBetween: 30,
     slidesPerView: 3,
@@ -123,36 +110,43 @@ function singeSlideSwiper3(e) {
     // Responsive breakpoints
     breakpoints: {
       // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
+      320: {slidesPerView: 1, spaceBetween: 20},
       // when window width is >= 480px
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30
-      },
+      768: {slidesPerView: 2, spaceBetween: 30},
       // when window width is >= 640px
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 40
-      }
+      1024: {slidesPerView: 3, spaceBetween: 40}
     },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+    autoplay: {delay: 2500, disableOnInteraction: false,
     },
-    pagination: {
-      el: "[class*='swiper-testimonial'] .swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: "[class*='swiper-testimonial'] .swiper-button-next",
-      prevEl: "[class*='swiper-testimonial'] .swiper-button-prev",
-    },
+    pagination: {el: "[class*='swiper-testimonial'] .swiper-pagination", clickable: true,},
+    navigation: {nextEl: "[class*='swiper-testimonial'] .swiper-button-next", prevEl: "[class*='swiper-testimonial'] .swiper-button-prev",},
   });
 }
 singeSlideSwiper3(".twoBoxCenter");
+
+
+function singeSlideSwiper6(e) {/* for three slide*/
+  var testingSlider = new Swiper(e, {
+    spaceBetween: 30,
+    centeredSlides: true,
+    slidesPerView: 3,
+    loop: 1,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {slidesPerView: 1, spaceBetween: 20},
+      // when window width is >= 480px
+      768: {slidesPerView: 2, spaceBetween: 30},
+      // when window width is >= 640px
+      1024: {slidesPerView: 3, spaceBetween: 40}
+    },
+    autoplay: {delay: 2500, disableOnInteraction: false,
+    },
+    pagination: {el: "[class*='swiper-testimonial'] .swiper-pagination", clickable: true,},
+    navigation: {nextEl: "[class*='swiper-testimonial'] .swiper-button-next", prevEl: "[class*='swiper-testimonial'] .swiper-button-prev",},
+  });
+}
+singeSlideSwiper6(".testingSlider");
 
 
 
