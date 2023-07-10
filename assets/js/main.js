@@ -73,6 +73,80 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+
+  /* About Us ScrollTrigger Slide Horizontal */
+    // gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({markers: false,});
+    var points = gsap.utils.toArray(".point");
+    var indicators = gsap.utils.toArray(".indicator");
+    var indicators_elem = document.querySelector(".indicators");
+    var philosophie = document.querySelector(".philosophie");
+    var height = 100 * points.length;
+
+    if(indicators_elem){gsap.set(".indicators", { display: "flex" });}
+    if(points && philosophie){
+    var tl = gsap.timeline({
+        duration: points.length,
+        scrollTrigger: {
+        trigger: philosophie,
+        start: "top bottom",
+        end: "+=" + height + "%",
+        toggleClass: "active",
+        scrub: true,
+        id: "points",
+        markers: false,
+        },
+    });
+    }
+    var philosophie_wrapper = document.querySelector(".philosophie .wrapper");
+    if(philosophie_wrapper){
+    var pinner = gsap.timeline({
+        scrollTrigger: {
+        trigger: philosophie_wrapper,
+        start: "30% center",
+        end: "+="+height+"%",
+        // end: "+=100%",
+        scrub: true,
+        pin: ".site-main",
+        id: "experience-pin",
+        pinSpacing:true,
+        markers: false,
+        toggleClass: "active",
+        },
+    });
+    }
+    var philosophie_wrapper_point = document.querySelector(".philosophie .wrapper .point");
+    if(philosophie_wrapper_point){
+    var pinnerEl = gsap.timeline({
+        scrollTrigger: {
+        trigger: philosophie_wrapper_point,
+        start: "30% center",
+        end: "+="+height+"%",
+        // end: "+=100%",
+        scrub: true,
+        // pin: ".site-main",
+        // id: "experience-pin",
+        markers: false,
+        toggleClass: "active",
+        },
+    });
+    }
+    if(points){
+    points.forEach(function (elem, i) {
+        gsap.set(elem, { position: "absolute", top: 0 });
+        tl.to(indicators[i], { backgroundColor: "orange", duration: 0.25 }, i);
+        tl.from(elem.querySelector(".img-wrapper"), { autoAlpha: 0 }, i);
+        tl.from( elem.querySelector(".content-wrapper"), { autoAlpha: 0, translateY: 100 },i);
+
+        if (i != points.length - 1) {
+        tl.to( indicators[i],{ backgroundColor: "#adadad", duration: 0.25 }, i + 0.75);
+        tl.to(elem.querySelector(".content-wrapper"), { autoAlpha: 0, translateY: -100 }, i + 0.75);
+        tl.to(elem.querySelector(".img-wrapper"), { autoAlpha: 0 }, i + 0.75);
+        }
+    });
+    }
+  /* About Us ScrollTrigger Slide Horizontal */
+
 });
 // DOMContentLoaded  end
 function singeSlideSwiper(e){/* for single slide banner*/
@@ -123,7 +197,7 @@ function singeSlideSwiper3(e) {/* for three slide*/
   });
 }
 singeSlideSwiper3(".twoBoxCenter");
-
+singeSlideSwiper3(".card-list-slider");
 
 function singeSlideSwiper6(e) {/* for three slide*/
   var testingSlider = new Swiper(e, {
