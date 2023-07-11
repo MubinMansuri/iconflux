@@ -39,6 +39,12 @@
 .py-80{padding: calc(10.25rem / 2 ) 0px}
 .py-74{padding: calc(9.25rem / 2 ) 0px}
 .py-66{padding: calc(8.25rem / 2 ) 0px}
+.py-90{padding-top: 5.625rem;padding-bottom: 5.625rem;}
+.py-80{padding-top: 5rem;padding-bottom: 5rem;}
+.py-60{padding-top: 3.75rem;padding-bottom: 3.75rem;}
+.pt-90{padding-top: 5.625rem;}.pb-90{padding-bottom: 5.625rem;}
+.pt-80{padding-top: 5rem;}.pb-80{padding-bottom: 5rem;}
+.pt-60{padding-top: 3.75rem;}.pb-60{padding-bottom: 3.75rem;}
 .btn{--bs-btn-padding-x: 1.563rem;--bs-btn-padding-y: 0.983rem;--bs-btn-border-radius: 0rem;}
 
 .btn-theme-primary {--bs-btn-color: var(--white); --bs-btn-bg: var(--theme-primary); --bs-btn-border-color: var(--theme-primary); --bs-btn-hover-color: var(--white); --bs-btn-hover-bg: var(--theme-primary-dark); --bs-btn-hover-border-color: var(--theme-primary-dark); --bs-btn-active-color: var(--white); --bs-btn-active-bg: var(--theme-primary-dark); --bs-btn-active-border-color: var(--theme-primary-dark); --bs-btn-active-shadow: inset 0 0px 0px rgba(0, 0, 0, 0); --bs-btn-disabled-color: var(--white); --bs-btn-disabled-bg: var(--theme-primary-light); --bs-btn-disabled-border-color: var(--theme-primary-light);}
@@ -668,7 +674,7 @@
 .swiper-pagination-bullet-active{background-color: var(--white);}
 
 
-.case-studies-detail::before{}
+/* .case-studies-detail::before{} */
 
 
 .our-role .info-box .icon-wrapper{height: 180px;}
@@ -771,30 +777,23 @@ lottie-player{max-width:6.25rem;}
 .desig-title{color: #687086;font-size:1.25rem;font-weight:600;line-height: normal;text-transform: uppercase;margin-bottom:20px;}
 .vacancyCard{--bs-card-bg:#fff;--bs-card-spacer-y:2rem;--bs-card-spacer-x:2.875rem;--bs-card-title-spacer-y:1.25rem;--bs-card-title-color:var(--black);--bs-card-border-width:0px;--bs-card-border-color:transparent;--bs-card-border-radius:0.5rem;position: relative;margin-bottom:20px;}
 .vacancyCard .btn{font-weight:500;}
+/* Life At Iconflux */
+.jointeam.lifeat{padding-top:100px;padding-bottom:247px;}
+.lifeatCulture .card{--bs-card-bg:#0099FF;--bs-card-spacer-y:3.75rem;--bs-card-spacer-x:3.875rem;--bs-card-title-spacer-y:0.625rem;--bs-card-title-color:var(--white);--bs-card-color:var(--white);--bs-card-border-width:0px;--bs-card-border-color:transparent;--bs-card-border-radius:0rem;position: relative;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 558 369'%3E%3Cmask id='a' width='558' height='369' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23FF8E06' d='M0 0h558v369H0z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%232417C0' d='M859-148 176 674 429-366a1382 1382 0 0 1 226 89c35 21 71 38 104 61 35 20 68 43 100 68Z'/%3E%3C/g%3E%3C/svg%3E");}
+.lifeatCulture .card.crd02{--bs-card-bg:#FFDA54;--bs-card-title-color:var(--black);--bs-card-color:var(--black);--bs-card-border-width:0px;--bs-card-border-color:transparent;--bs-card-border-radius:0rem;position: relative;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 555 369'%3E%3Cmask id='a' width='555' height='369' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23FFDA54' d='M0 0h555v369H0z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%23FF8E06' d='m630 98-217 908L208 94a992 992 0 0 1 212-18c35 3 70 3 105 7 35 3 70 8 105 15Z'/%3E%3C/g%3E%3C/svg%3E");}
+.lifeatCulture .card .icon{margin-bottom:2rem;}
+.eventsList .card{--bs-card-bg:var(--white);--bs-card-spacer-y:0rem;--bs-card-spacer-x:0rem;--bs-card-border-width:0px;--bs-card-border-color:transparent;--bs-card-border-radius:0rem;}
+.eventsList .card:not(:last-child){margin-bottom:6.25rem;}
+.cta-life{padding:3.375rem 0px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1440 241'%3E%3Cmask id='a' width='1440' height='241' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%232417C0' d='M0 0h1440v241H0z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%2331E7B6' d='M1149-62c-31 7-61 15-91 26a905 905 0 0 0-173 69c-28 14-55 29-81 46l503 584-158-725Z'/%3E%3Cpath fill='%232417C0' d='M1343-71c-31-10-63-19-96-25a783 783 0 0 0-196-21c-33 0-66 1-100 5l80 947 312-906Z'/%3E%3C/g%3E%3C/svg%3E");}
+@media(min-width:768px){.eventsList .card.imgFirst .figure{padding-right:30px;}.eventsList .card:not(.imgFirst) .figure{padding-left:30px;}}
+/* Life At Iconflux */
 
 
 /*---------------------- Media Query start here ( Max width queries ) ----------------------*/
-
-
-@media (min-width:1920px){
-    .container{max-width: 1440px;}
-}
-@media (max-width:1600px){
-    .flutter-banner::before{transform: translate(200px, -170px) scale(0.9);}
-    .sec_02 .content-wrapper{top: 100px;}
-    .ios-banner::before{transform: translate(10px, 10px) !important;}
-    .react-native::before{transform: translate(110px, 30px) scale(1.1);}
-}
-@media (max-width:1536px){
-    .bg_circle.reveal{transform: translate(0px, 0px);}
-    .flutter-banner::before{transform: translate(230px, -160px) scale(0.85);}
-    .sec_02 .content-wrapper .img-wrapper{transform: scale(0.85);}
-    .react-native::before{transform: translate(130px, 40px) scale(1.1);}
-}
-@media (max-width:1499px){
-    .youcomm-slide .swiper-slide::before{right: -17px; width: 850px;}
-    .youcomm-slide .swiper-slide .img-wrapper{right: 0;}
-}
+@media (min-width:1920px){.container{max-width: 1440px;}}
+@media (max-width:1600px){.flutter-banner::before{transform: translate(200px, -170px) scale(0.9);}.sec_02 .content-wrapper{top: 100px;}.ios-banner::before{transform: translate(10px, 10px) !important;}.react-native::before{transform: translate(110px, 30px) scale(1.1);}}
+@media (max-width:1536px){.bg_circle.reveal{transform: translate(0px, 0px);}.flutter-banner::before{transform: translate(230px, -160px) scale(0.85);}.sec_02 .content-wrapper .img-wrapper{transform: scale(0.85);}.react-native::before{transform: translate(130px, 40px) scale(1.1);}}
+@media (max-width:1499px){.youcomm-slide .swiper-slide::before{right: -17px; width: 850px;}.youcomm-slide .swiper-slide .img-wrapper{right: 0;}}
 
 @media (max-width: 1366px){
     .pb-100, .py-100{padding-bottom: 80px;}
@@ -821,6 +820,15 @@ lottie-player{max-width:6.25rem;}
     .our-process .row div:last-child .info-box .icon-wrp::before{display: none;}
 }
 @media (max-width: 991px) {
+    .py-100{padding-top:calc(6.25rem / 2.125);padding-bottom:calc(6.25rem / 2.125);}
+    .py-90{padding-top:calc(5.625rem / 1.115);padding-bottom:calc(5.625rem / 1.115);}
+    .py-80{padding-top:calc(5rem / 1.125);padding-bottom:calc(5rem / 1.125);}
+    .py-60{padding-top:calc(3.75rem / 1.25);padding-bottom:calc(3.75rem / 1.25);}
+    .pt-100{padding-top:calc(6.25rem / 2.125);}.pb-100{padding-bottom:calc(6.25rem / 2.125);}
+    .pt-90{padding-top:calc(5.625rem / 1.115);}.pb-90{padding-bottom:calc(5.625rem / 1.115);}
+    .pt-80{padding-top:calc(5rem / 1.125);}.pb-80{padding-bottom:calc(5rem / 1.125);}
+    .pt-60{padding-top:calc(3.75rem / 1.25);}.pb-60{padding-bottom:calc(3.75rem / 1.25);}
+    /*  */
     .ico_03 .tab-content{height: 480px;width: 100%;}
     .flutter-banner::before{transform: translate(210px, 530px) scale(0.97);}
     .yoe .d-flex .flex-item:not(:last-child)::after{right: -56px;}
@@ -839,7 +847,8 @@ lottie-player{max-width:6.25rem;}
     .vacancyCard{--bs-card-spacer-y:1.875rem;--bs-card-spacer-x:1.875rem;}
     .vacancyCard .btn{--bs-btn-padding-x:1.015rem;--bs-btn-padding-y:0.8rem;font-size:0.875rem;}
     .vacancyCard .btn .icon svg{height:20px;width:20px;}
-    
+    .lifeatCulture.translate-middle-y{transform:none !important;margin-top:-200px;}
+    .lifeatCulture .card{--bs-card-spacer-y:2.125rem;--bs-card-spacer-x:2.5rem;}
 }
 @media (max-width: 768px) {
     .ico_06{padding-bottom: calc(20rem + 1.125vw) !important;}
@@ -853,7 +862,6 @@ lottie-player{max-width:6.25rem;}
     .vision-mission .img-wrp .icon{width:7rem;height:7rem;}
     .vision-mission .missionBox .img-wrp .icon{transform:translate(-125%,-60%);}
     .vision-mission .visionBox .img-wrp .icon{transform:translate(-160%,-60%);}
-    
 }
 @media (max-width: 767px) {
     .container {--bs-gutter-x: 3rem;}
@@ -882,6 +890,9 @@ lottie-player{max-width:6.25rem;}
     .models .card{--bs-card-spacer-y:2rem;--bs-card-spacer-x:1.25rem;}
     .career-banner .content{padding-top:76px;padding-bottom:76px;}
     .career-banner.sec_01 .content .keywords{font-size:16px;}
+    .eventsList .card:not(.imgFirst) .row{flex-wrap:wrap-reverse;}
+    .eventsList .card .figure{margin-bottom:30px;}
+    .eventsList .card:not(:last-child){margin-bottom:calc(6.25rem / 2.125);}
 }
 @media (max-width: 476px){
     .sec_01 .actionBtn,
