@@ -761,17 +761,7 @@ lottie-player{max-width:6.25rem;}
 .career-banner .content{padding-top:84px;padding-bottom:97px;}
 .career-banner .img-wrp{position:absolute;top:0px;bottom:0px;}
 .career-banner .img-wrp>img{width:100%;height:100%;}
-.shareCV{
-    --bs-card-bg:#fff;
-    --bs-card-spacer-y:2.875rem;
-    --bs-card-spacer-x:2.5rem;
-    --bs-card-title-spacer-y:1.375rem;
-    --bs-card-title-color:var(--black);
-    --bs-card-border-width:0px;
-    --bs-card-border-color:transparent;
-    --bs-card-border-radius:1.625rem;
-    position: relative;
-}
+.shareCV{--bs-card-bg:#fff;--bs-card-spacer-y:2.875rem;--bs-card-spacer-x:2.5rem;--bs-card-title-spacer-y:1.375rem;--bs-card-title-color:var(--black);--bs-card-border-width:0px;--bs-card-border-color:transparent;--bs-card-border-radius:1.625rem;position: relative;}
 .shareCV::after{content:"";position:absolute;top:0px;bottom:0px;margin:auto 0px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 31 132'%3E%3Cmask id='a' width='31' height='132' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23fff' d='M0 0h31v132H0z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%231A49BA' d='M-221 110c0 10 8 18 17 18a1046 1046 0 0 1 183 19c9 1 18-4 20-13L29 23c2-9-4-19-13-21a1137 1137 0 0 0-217-23c-10 0-17 7-17 17l-3 114Z'/%3E%3C/g%3E%3C/svg%3E");height:132px;width:31px;right:-31px;pointer-events:none;}
 .btn-theme-light{--bs-btn-color:var(--black);--bs-btn-bg:#F2F2F2;--bs-btn-border-color:#F2F2F2;--bs-btn-hover-color:var(--black);--bs-btn-hover-bg:var(--theme-yellow);--bs-btn-hover-border-color:var(--theme-yellow);--bs-btn-active-color:var(--black);--bs-btn-active-bg:var(--theme-yellow);--bs-btn-active-border-color:var(--theme-yellow);--bs-btn-active-shadow:inset 0 0px 0px rgba(0, 0, 0, 0);--bs-btn-disabled-color:var(--white);--bs-btn-disabled-bg: var(--theme-primary-light);--bs-btn-disabled-border-color: var(--theme-primary-light);}
 .desig-title{color: #687086;font-size:1.25rem;font-weight:600;line-height: normal;text-transform: uppercase;margin-bottom:20px;}
@@ -787,6 +777,18 @@ lottie-player{max-width:6.25rem;}
 .cta-life{padding:3.375rem 0px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1440 241'%3E%3Cmask id='a' width='1440' height='241' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%232417C0' d='M0 0h1440v241H0z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%2331E7B6' d='M1149-62c-31 7-61 15-91 26a905 905 0 0 0-173 69c-28 14-55 29-81 46l503 584-158-725Z'/%3E%3Cpath fill='%232417C0' d='M1343-71c-31-10-63-19-96-25a783 783 0 0 0-196-21c-33 0-66 1-100 5l80 947 312-906Z'/%3E%3C/g%3E%3C/svg%3E");}
 @media(min-width:768px){.eventsList .card.imgFirst .figure{padding-right:30px;}.eventsList .card:not(.imgFirst) .figure{padding-left:30px;}}
 /* Life At Iconflux */
+/* hdr */
+.hdr.sec_01 {padding:0px;}
+.hdr.sec_01 .content{padding-top:40px;padding-bottom:66px;}
+.hdr.sec_01 .img-wrp{position:absolute;top:0px;}
+.hdr.sec_01 .img-wrp>img{width:100%;height:100%;}
+.hdr-02 .box-wrapper .info-box{min-height: 171px;transition: all 200ms ease;width:100%;}
+.hdr-02 .box-wrapper .info-box:hover{transform: scale(1.025);box-shadow:1px 1px 26px 0px #e0e0e0;}
+.cta-version-01.hdr-04{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1440 277'%3E%3Cmask id='a' width='1440' height='277' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23002060' d='M0 0h1440v277H0z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%232417C0' d='M-7 426a1329 1329 0 0 0-135-241L7 68a1444 1444 0 0 1 158 279L-7 426Z'/%3E%3Cpath fill='%2331E7B6' d='M1389 260A1732 1732 0 0 0 1149-9l155-191a1884 1884 0 0 1 282 310l-197 150Z'/%3E%3Cpath fill='%232417C0' d='M1584 310a1525 1525 0 0 0-257 186l-153-154a1658 1658 0 0 1 298-217l112 185Z'/%3E%3C/g%3E%3C/svg%3E");padding:0px !important;}
+.recentWork{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1440 979'%3E%3Cmask id='a' width='1440' height='979' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23134EF4' d='M0 0h1440v979H0z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%2331E7B6' d='M914 217c55 41 112 80 173 115 58 38 119 72 182 103a2053 2053 0 0 0 386 152l427-1740L914 217Z'/%3E%3Cpath fill='%232417C0' d='M1136-889c-63 27-126 57-187 92a1935 1935 0 0 0-347 227c-54 43-107 88-157 137L1738 807 1136-889Z'/%3E%3C/g%3E%3C/svg%3E");}
+/* hdr */
+
+
 
 
 /*---------------------- Media Query start here ( Max width queries ) ----------------------*/
@@ -902,7 +904,7 @@ lottie-player{max-width:6.25rem;}
     .testimonialTwoRow .testimonial-wrapper{margin-left: 60px}
     .flutter_CTA-02 .wrapper{padding: 0 20px;}
     .flutter_CTA-02 .wrapper .content-wrapper{padding: 30px 0 45px;}
-    .customAccordion02 .accordion-item button::after{width: 20px; height: 20px;}
+    .customAccordion02 .accordion-item button::after{width:20px;height:20px;background-size:cover;}
     .youcomm-slide .swiper-slide::before{width: 365px; height: 328px;}
     .other-services ul li{width: 100%;}
     .flutter-banner .content{padding: 3.45rem 0;}
