@@ -844,6 +844,11 @@ lottie-player{max-width:6.25rem;}
 .flutter_CTA.mad .wrapper{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1148 267'%3E%3Cmask id='a' width='1148' height='267' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%232417C0' d='M0 0h1148v267H0z'/%3E%3C/mask%3E%3Cg fill='%23FFCE33' mask='url(%23a)'%3E%3Cpath d='M77 119a767 767 0 0 0-159 11l-24-107A834 834 0 0 1 79 10l-2 109Zm144 202a1000 1000 0 0 0-205-35l2-142a1087 1087 0 0 1 238 39l-35 138Zm853-98a929 929 0 0 0-191-33l2-132a1010 1010 0 0 1 221 36l-32 129Z'/%3E%3Ccircle cx='196' cy='94' r='40'/%3E%3Ccircle cx='935' cy='267' r='40'/%3E%3C/g%3E%3C/svg%3E");}
 .bg-gradient.whiteLight{--bs-gradient: linear-gradient(0deg, rgba(247,249,251,1) 30%, rgba(255,255,255,0) 30%);}
 /* mad */
+/* Main Service */
+.serviceCard{--bs-card-spacer-y:2.5rem;--bs-card-spacer-x:2.5rem;--bs-card-title-spacer-y:1.25rem;--bs-card-title-color:var(--black);--bs-card-border-width:0rem;--bs-card-border-radius:.5rem;--bs-card-color:#687086;--bs-card-bg:#EFF2F6;}
+.serviceCard:hover{--bs-card-title-color:var(--white);--bs-card-color:#687086;--bs-card-bg:#002060;}
+.serviceCard .btn{padding:0px;height: 60px;width: 60px;display: flex;align-items: center;justify-content: center;}
+/* Main Service */
 
 
 
