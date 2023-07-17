@@ -60,20 +60,295 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
+                                <li class="nav-item dropdown has-megamenu">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-target="#serviceMegaMenu">
                                         Service
                                     </a>
-                                    <ul class="dropdown-menu ">
-                                        <div class="dropdown-menu-bg"></div>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                    <div class="dropdown-menu megamenu overflow-hidden" role="menu" id="serviceMegaMenu">
+                                        <div class="mega-menu-container container-fluid overflow-hidden">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-3">
+                                                    <div class="col-wrap">
+                                                        <div class="serviceTitle text-uppercase fs-6 small text-muted fw-bolder mb-4">Technology</div>
+                                                        <nav class="mb-0 mb-lg-5">
+                                                            <div class="nav nav-tabs list-group border-0 text-start" id="mm-nav-tab" role="tablist">
+                                                                <button class="nav-link active" id="nav-home-tab-2" data-bs-toggle="tab" data-bs-target="#nav-home-2" type="button" role="tab" aria-controls="nav-home-2" aria-selected="true">
+                                                                    <span class="text text-start">
+                                                                        Mobile Application Development
+                                                                    </span>
+                                                                </button>
+                                                                <button class="nav-link" id="nav-profile-tab-2" data-bs-toggle="tab" data-bs-target="#nav-profile-2" type="button" role="tab" aria-controls="nav-profile-2" aria-selected="false">
+                                                                    <span class="text text-start">
+                                                                        Web Application Development
+                                                                    </span>
+                                                                </button>
+                                                                <button class="nav-link" id="nav-contact-tab-2" data-bs-toggle="tab" data-bs-target="#nav-contact-2" type="button" role="tab" aria-controls="nav-contact-2" aria-selected="false">
+                                                                    <span class="text text-start">
+                                                                        Full Stack Development
+                                                                    </span>
+                                                                </button>
+                                                                <button class="nav-link" id="nav-disabled-tab-2" data-bs-toggle="tab" data-bs-target="#nav-disabled-2" type="button" role="tab" aria-controls="nav-disabled-2" aria-selected="false">
+                                                                    <span class="text text-start">
+                                                                        Custom Software Development
+                                                                    </span>
+                                                                </button>
+                                                                <button class="nav-link" id="nav-ddt-tab-2" data-bs-toggle="tab" data-bs-target="#nav-ddt-2" type="button" role="tab" aria-controls="nav-ddt-2" aria-selected="false">
+                                                                    <span class="text text-start">
+                                                                        Software Product Development
+                                                                    </span>
+                                                                </button>
+                                                                <button class="nav-link" id="nav-cd-tab-2" data-bs-toggle="tab" data-bs-target="#nav-cd-2" type="button" role="tab" aria-controls="nav-cd-2" aria-selected="false">
+                                                                    <span class="text text-start">
+                                                                        Hire Dedicated Developers
+                                                                    </span>
+                                                                </button>
+                                                                <button class="nav-link" id="nav-uiux-tab-2" data-bs-toggle="tab" data-bs-target="#nav-uiux-2" type="button" role="tab" aria-controls="nav-uiux-2" aria-selected="false">
+                                                                    <span class="text text-start">
+                                                                        UX/UI Design
+                                                                    </span>
+                                                                </button>
+                                                                <a class="nav-link" href="./about-us.html">
+                                                                    <span class="text text-start">
+                                                                        Trending Technologies
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-9">
+                                                    <div class="col-wrap">
+                                                        <div class="row">
+                                                            <div class="col-12 col-lg-8">
+                                                                <div class="col-wrap">
+                                                                    <div class="tab-content" id="nav-tabContent">
+                                                                        <div class="tab-pane show active" id="nav-home-2" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                                                            <div class="row">
+                                                                                <div class="col-12 col-lg-7">
+                                                                                    <a href="./flutter.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/flutter-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Flutter App Development</div>
+                                                                                    </a>
+                                                                                    <a href="./android.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/android-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Android App Development</div>
+                                                                                    </a>
+                                                                                    <a href="./ios.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/iphone-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">iPhone App Development</div>
+                                                                                    </a>
+                                                                                    <a href="./react-native.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/rn-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">React Native App Development</div>
+                                                                                    </a>
+                                                                                    <a href="./xamarin.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/x-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Xamarin Mobile App Development</div>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="col-12 col-lg-5 d-none d-lg-block">
+                                                                                    <div class="card menu-card position-relative">
+                                                                                        <img src="./assets/images/menus/mobile-dev-card-bg.jpg" alt="card-img" class="card-img" />
+                                                                                        <h4 class="h4">Mobile App Development</h4>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="tab-pane" id="nav-profile-2" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                                                            <div class="row">
+                                                                                <div class="col-12 col-lg-7">
+                                                                                    <a href="./angularjs.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/ang-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">AngularJS Development</div>
+                                                                                    </a>
+                                                                                    <a href="./android.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/rj-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">ReactJS Development</div>
+                                                                                    </a>
+                                                                                    <a href="./ios.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/vuj-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">VueJS Development</div>
+                                                                                    </a>
+                                                                                    <a href="./react-native.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/php-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">PHP Development</div>
+                                                                                    </a>
+                                                                                    <a href="./xamarin.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/net-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Dotnet Development</div>
+                                                                                    </a>
+                                                                                    <a href="./ios.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/java-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">JAVA Development</div>
+                                                                                    </a>
+                                                                                    <a href="./react-native.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/py-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Python Development</div>
+                                                                                    </a>
+                                                                                    <a href="./xamarin.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                        <div class="img"><img src="./assets/images/menus/go-menu.svg" alt="icon"/></div>
+                                                                                        <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Golang Development</div>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="col-12 col-lg-5 d-none d-lg-block">
+                                                                                    <div class="card menu-card position-relative">
+                                                                                        <img src="./assets/images/menus/mobile-dev-card-bg.jpg" alt="card-img" class="card-img" />
+                                                                                        <h4 class="h4">Web App Development</h4>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="tab-pane" id="nav-contact-2" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                                                                            <a href="./flutter.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/flutter-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Flutter App Development</div>
+                                                                            </a>
+                                                                            <a href="./android.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/android-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Android App Development</div>
+                                                                            </a>
+                                                                            <a href="./ios.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/iphone-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">iPhone App Development</div>
+                                                                            </a>
+                                                                            <a href="./react-native.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/rn-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">React Native App Development</div>
+                                                                            </a>
+                                                                            <a href="./xamarin.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/x-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Xamarin Mobile App Development</div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="tab-pane" id="nav-disabled-2" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                                                                            <a href="./flutter.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/flutter-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Flutter App Development</div>
+                                                                            </a>
+                                                                            <a href="./android.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/android-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Android App Development</div>
+                                                                            </a>
+                                                                            <a href="./ios.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/iphone-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">iPhone App Development</div>
+                                                                            </a>
+                                                                            <a href="./react-native.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/rn-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">React Native App Development</div>
+                                                                            </a>
+                                                                            <a href="./xamarin.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/x-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Xamarin Mobile App Development</div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="tab-pane" id="nav-ddt-2" role="tabpanel" aria-labelledby="nav-ddt-tab" tabindex="0">
+                                                                            <a href="./flutter.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/flutter-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Flutter App Development</div>
+                                                                            </a>
+                                                                            <a href="./android.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/android-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Android App Development</div>
+                                                                            </a>
+                                                                            <a href="./ios.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/iphone-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">iPhone App Development</div>
+                                                                            </a>
+                                                                            <a href="./react-native.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/rn-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">React Native App Development</div>
+                                                                            </a>
+                                                                            <a href="./xamarin.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/x-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Xamarin Mobile App Development</div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="tab-pane" id="nav-cd-2" role="tabpanel" aria-labelledby="nav-cd-tab" tabindex="0">
+                                                                            <a href="./flutter.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/flutter-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Flutter App Development</div>
+                                                                            </a>
+                                                                            <a href="./android.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/android-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Android App Development</div>
+                                                                            </a>
+                                                                            <a href="./ios.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/iphone-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">iPhone App Development</div>
+                                                                            </a>
+                                                                            <a href="./react-native.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/rn-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">React Native App Development</div>
+                                                                            </a>
+                                                                            <a href="./xamarin.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/x-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Xamarin Mobile App Development</div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="tab-pane" id="nav-uiux-2" role="tabpanel" aria-labelledby="nav-uiux-tab" tabindex="0">
+                                                                            <a href="./flutter.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/flutter-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Flutter App Development</div>
+                                                                            </a>
+                                                                            <a href="./android.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/android-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Android App Development</div>
+                                                                            </a>
+                                                                            <a href="./ios.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/iphone-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">iPhone App Development</div>
+                                                                            </a>
+                                                                            <a href="./react-native.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/rn-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">React Native App Development</div>
+                                                                            </a>
+                                                                            <a href="./xamarin.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/x-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Xamarin Mobile App Development</div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="tab-pane" id="nav-trend-2" role="tabpanel" aria-labelledby="nav-trend-tab" tabindex="0">
+                                                                            <a href="./flutter.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/flutter-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Flutter App Development</div>
+                                                                            </a>
+                                                                            <a href="./android.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/android-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Android App Development</div>
+                                                                            </a>
+                                                                            <a href="./ios.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/iphone-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">iPhone App Development</div>
+                                                                            </a>
+                                                                            <a href="./react-native.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/rn-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">React Native App Development</div>
+                                                                            </a>
+                                                                            <a href="./xamarin.html" class="pointer d-flex gap-2 align-items-center position-relative mb-3 pb-md-1">
+                                                                                <div class="img"><img src="./assets/images/menus/x-menu.svg" alt="icon"/></div>
+                                                                                <div class="fs-18 text-capitalize fw-medium lh-sm text-muted th-accent-primary">Xamarin Mobile App Development</div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-3 d-none d-lg-block">
+                                                                <div class="col-wrap">
+                                                                    <div class="card menu-card position-relative stick">
+                                                                        <img src="./assets/images/menus/lets-discuss.jpg" alt="card-img" class="card-img" />
+                                                                        <h4 class="h4">Let’s <br />Discuss your requirement</h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Hire Team</a>
@@ -99,6 +374,7 @@
                         </div>
                     </div>
                 </div>
+                
             </nav>
         </header>
         <main class="site-content">
@@ -199,7 +475,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_02 position-relative">
+            <div class="ico_02 position-relative overflow-hidden">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-10">
@@ -228,7 +504,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_03 position-relative bg-theme-light ">
+            <div class="ico_03 position-relative bg-theme-light overflow-hidden">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
@@ -411,7 +687,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_04 position-relative bg-theme-primary-dark py-100 ">
+            <div class="ico_04 position-relative bg-theme-primary-dark py-100 overflow-hidden">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
@@ -537,7 +813,7 @@
                     </div>
                 </div>
             </div> -->
-            <div class="ico_07 position-relative py-100 ">
+            <div class="ico_07 position-relative py-100 overflow-hidden">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-9">
@@ -570,7 +846,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ico_08 position-relative py-100 bg-theme-primary-dark ">
+            <div class="ico_08 position-relative py-100 bg-theme-primary-dark overflow-hidden">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12">
