@@ -283,6 +283,67 @@ function singeSlideSwiper3(e) {
 singeSlideSwiper3(".twoBoxCenter");
 singeSlideSwiper3(".card-list-slider");
 
+function slideSwiper2x225(e) {
+  /* for 2.5 slide*/
+  var twoBoxCenter = new Swiper(e, {
+    spaceBetween: 30,
+    slidesPerView: 1,
+    loop: true,
+    // centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: { slidesPerView: 1, spaceBetween: 20 },
+      // when window width is >= 480px
+      768: { slidesPerView: 2, spaceBetween: 30 },
+      // when window width is >= 640px
+      1024: { slidesPerView: 2.5, spaceBetween: 30 },
+    },
+    autoplay: { delay: 2500, disableOnInteraction: false },
+    // pagination: {
+    //   el: "[class*='swiper-testimonial'] .swiper-pagination",
+    //   clickable: true,
+    // },
+    // navigation: {
+    //   nextEl: "[class*='swiper-testimonial'] .swiper-button-next",
+    //   prevEl: "[class*='swiper-testimonial'] .swiper-button-prev",
+    // },
+  });
+}
+slideSwiper2x225(".devSlider");
+function slideSwiper3x325(e) {
+  /* for 2.5 slide*/
+  var twoBoxCenter = new Swiper(e, {
+    spaceBetween: 30,
+    slidesPerView: 1,
+    loop: true,
+    // centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: { slidesPerView: 1, spaceBetween: 20 },
+      // when window width is >= 480px
+      768: { slidesPerView: 2, spaceBetween: 30 },
+      // when window width is >= 640px
+      1024: { slidesPerView: 3.025, spaceBetween: 30 },
+    },
+    autoplay: { delay: 2500, disableOnInteraction: false },
+    // pagination: {
+    //   el: "[class*='swiper-testimonial'] .swiper-pagination",
+    //   clickable: true,
+    // },
+    // navigation: {
+    //   nextEl: "[class*='swiper-testimonial'] .swiper-button-next",
+    //   prevEl: "[class*='swiper-testimonial'] .swiper-button-prev",
+    // },
+  });
+}
+slideSwiper3x325(".indusSlider");
+
 function singeSlideSwiper6(e) {
   /* for three slide*/
   var testingSlider = new Swiper(e, {
