@@ -1,32 +1,32 @@
 "use strict";
 gsap.registerPlugin(ScrollTrigger);
 // Mega Menu start
-// document.addEventListener("DOMContentLoaded", function () {
-//   if (window.innerWidth > 992) {
-//     document.querySelectorAll(".navbar .nav-item").forEach(function (everyitem) {
-//         everyitem.addEventListener("mouseover", function (e) {
-//           let el_link = this.querySelector("a[data-bs-toggle]");
-//           if (el_link != null) {
-//             let nextEl = el_link.nextElementSibling;
-//             el_link.classList.add("show");
-//             nextEl.classList.add("show");
-//           }
-//         });
-//         everyitem.addEventListener("mouseleave", function (e) {
-//           let el_link = this.querySelector("a[data-bs-toggle]");
-//           if (el_link != null) {
-//             let nextEl = el_link.nextElementSibling;
-//             el_link.classList.remove("show");
-//             nextEl.classList.remove("show");
-//           }
-//         });
-//     });
-//   }
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth > 992) {
+    document.querySelectorAll(".navbar .nav-item").forEach(function (everyitem) {
+        everyitem.addEventListener("mouseover", function (e) {
+          let el_link = this.querySelector("a[data-bs-toggle]");
+          if (el_link != null) {
+            let nextEl = el_link.nextElementSibling;
+            el_link.classList.add("show");
+            nextEl.classList.add("show");
+          }
+        });
+        everyitem.addEventListener("mouseleave", function (e) {
+          let el_link = this.querySelector("a[data-bs-toggle]");
+          if (el_link != null) {
+            let nextEl = el_link.nextElementSibling;
+            el_link.classList.remove("show");
+            nextEl.classList.remove("show");
+          }
+        });
+    });
+  }
+});
 // DOMContentLoaded  end
 
 
-const triggerTabList = document.querySelectorAll('#mm-nav-tab>button')
+const triggerTabList = document.querySelectorAll('#mm-nav-tab>.nav-link')
 triggerTabList.forEach(triggerEl => {
   const tabTrigger = new bootstrap.Tab(triggerEl);
   triggerEl.addEventListener("mouseover", function (e) {
@@ -66,13 +66,28 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 10,
     autoplay: { delay: 2000, disableOnInteraction: !1 },
     effect: "slide",
-    loop: !0,
+    loop:true,
     // pagination: { el: ".swiper-pagination", clickable: !0 },
     breakpoints: {
       414: { slidesPerView: 2, spaceBetween: 20 },
       640: { slidesPerView: 3, spaceBetween: 20 },
       768: { slidesPerView: 5, spaceBetween: 40 },
       1024: { slidesPerView: 6, spaceBetween: 50 },
+    },
+  });
+  const trustedSwiperMad = new Swiper(".trustedSwiper.mad", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    autoplay: { delay: 2000, disableOnInteraction: !1 },
+    effect: "slide",
+    loop:true,
+    // pagination: { el: ".swiper-pagination", clickable: !0 },
+    breakpoints: {
+      414: { slidesPerView: 3, spaceBetween: 20 },
+      640: { slidesPerView: 5, spaceBetween: 20 },
+      768: { slidesPerView: 7, spaceBetween: 40 },
+      1024: { slidesPerView: 8, spaceBetween: 50 },
+      1200: { slidesPerView: 10, spaceBetween: 30 },
     },
   });
 
@@ -322,24 +337,12 @@ function slideSwiper3x325(e) {
     // centeredSlides: true,
     slidesPerView: 1,
     spaceBetween: 10,
-    // Responsive breakpoints
     breakpoints: {
-      // when window width is >= 320px
       320: { slidesPerView: 1, spaceBetween: 20 },
-      // when window width is >= 480px
       768: { slidesPerView: 2, spaceBetween: 30 },
-      // when window width is >= 640px
-      1024: { slidesPerView: 3.025, spaceBetween: 30 },
+      1024: { slidesPerView: 5, spaceBetween: 30 },
     },
     autoplay: { delay: 2500, disableOnInteraction: false },
-    // pagination: {
-    //   el: "[class*='swiper-testimonial'] .swiper-pagination",
-    //   clickable: true,
-    // },
-    // navigation: {
-    //   nextEl: "[class*='swiper-testimonial'] .swiper-button-next",
-    //   prevEl: "[class*='swiper-testimonial'] .swiper-button-prev",
-    // },
   });
 }
 slideSwiper3x325(".indusSlider");
