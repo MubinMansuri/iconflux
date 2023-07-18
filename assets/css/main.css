@@ -850,6 +850,10 @@ lottie-player{max-width:6.25rem;}
 .serviceCard .btn{padding:0px;height: 60px;width: 60px;display: flex;align-items: center;justify-content: center;}
 .cta-version-01.mad{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1440 277'%3E%3Cmask id='a' width='1443' height='277' x='-3' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23002060' d='M-3 0h1443v277H-3z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%23FF8E06' d='M2431-336c30 41 59 84 85 130a1445 1445 0 0 1 137 277c18 49 35 98 49 148L1401 524l1030-860ZM1043 54a1330 1330 0 0 0-135-241l148-117a1446 1446 0 0 1 159 279l-172 79ZM925 453a1329 1329 0 0 0-76-266l172-79a1444 1444 0 0 1 89 308l-185 37Z'/%3E%3Cpath fill='%230049FE' d='M1207 388a1524 1524 0 0 0-106-299l191-103a1657 1657 0 0 1 125 347l-210 55Z'/%3E%3C/g%3E%3C/svg%3E");padding:0px;}
 /* Main Service */
+/* cdop */
+.cdop.testimonial-02{margin-bottom:200px;}
+.cdop.testimonial-02::before{height:150px;bottom:-150px;}
+/* cdop */
 
 
 

@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud and DevOps | IConflux</title>
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+    <!-- css files  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope&display=swap" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/js/swiper-bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script defer src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="site-wrapper position-relative">
+        <header class="site-header position-sticky top-0 z-3">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html">
+                        <span class="visually-hidden">Iconflux Technologies Pvt. Ltd.</span>
+                        <img src="./assets/images/iconflux_logo.svg" alt="iconflux_logo" class="img-fluid pe-none" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand offcanvas-title" href="./index.html">
+                                <span class="visually-hidden">Iconflux Technologies Pvt. Ltd.</span>
+                                <img src="./assets/images/iconflux_logo.svg" alt="iconflux_logo" class="img-fluid pe-none" />
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu ">
+                                        <div class="dropdown-menu-bg"></div>
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Hire Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                            </ul>
+                            <div class="extraBtn">
+                                <a href="#" class="btn btn-theme-black withIcon py-2">
+                                    <span class="text">Get a Free Quote</span>
+                                    <span class="icon align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24px" width="24px" viewBox="0 0 24 24"><g><path fill="currentColor" d="m13.1727 11.9997-4.95-4.95 1.414-1.414 6.364 6.364-6.364 6.364-1.414-1.414 4.95-4.95Z"/></g></svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="site-main">
+            <!-- Section 01 Start -->
+            <section class="sec_01 mad madBanner overflow-hidden position-relative">
+                <div class="container">
+                    <div class="row align-items-end">
+                        <div class="col-12 col-lg-6">
+                            <div class="content px-sm-0 position-relative z-1">
+                                <span class="fw-bolder d-block mb-4 text-uppercase">OUR VALUE-BASED SERVICES</span>
+                                <div class="heading text-black mb-1">
+                                    <h1 class="display-3 fw-semibold text-capitalize mb-3 lh-sm">
+                                        <span>The One-Stop Agency For All<br class="d-none d-lg-block" /> Your Tech Needs</span>
+                                    </h1>
+                                </div>
+                                <div class="keywords fs-20 text-theme-primary d-flex flex-wrap gap-3 mb-4" id="keywordsType" data-splitting>
+                                    <span class="flex-item position-relative">Smart</span>
+                                    <span class="flex-item position-relative">·</span>
+                                    <span class="flex-item position-relative">Innovative</span>
+                                    <span class="flex-item position-relative">·</span>
+                                    <span class="flex-item position-relative">User-Friendly</span>
+                                    <span class="flex-item position-relative">·</span>
+                                    <span class="flex-item position-relative">Creative</span>
+                                </div>
+                                <div class="expert">
+                                    <p class="text-secondary text-capitalize lh-base mb-4 pb-md-3">Unlocking your software potential with expert development services tailored to your needs</p>
+                                </div>
+                                <div class="actionBtn mb-5">
+                                    <a href="#" class="btn btn-theme-yellow">
+                                        <span class="text">Let’s Discuss Your Project</span>
+                                        <span class="icon align-middle">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-none d-lg-block">
+                            <div class="img-wrp">
+                                <img src="./assets/images/cloud/cldo-banner.png" class="img-fluid" alt="banner" id="fade-in" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 01 End -->
+            <div class="ico_14 position-relative py-5">
+                <div class="container">
+                    <div class="swiper trustedSwiper mad">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-01.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-02.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-03.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-04.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-05.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-06.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-07.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-08.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-09.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-10.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-11.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-12.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-13.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-14.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-15.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-16.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-17.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-18.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-19.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-20.png" alt="trusted" class="img-fluid" /></div>
+                          <div class="swiper-slide"><img src="./assets/images/trusted/trusted-21.png" alt="trusted" class="img-fluid" /></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section 02 Start -->
+            <section class="we-creative py-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="content-wrp text-center">
+                                <span class="fw-bolder d-block mb-4 text-uppercase">Driven by Values and Integrity</span>
+                                <h2 class="fs-45 fw-medium text-black lh-sm mb-3 pb-3">IConflux builds affordable and award-winning solutions for Mobile, Web, and Cloud. </h2>
+                                <p class="fs-6 fw-normal text-body-color col-md-8 mx-auto">We are committed to delivering the best business solutions to our clients and desire to become the best <stong class="fw-bold">web and mobile app development agency in India.</stong></p>
+                                <a href="#" class="btn btn-link ps-0 fw-bold">
+                                    <span class="text">Know More About us </span>
+                                    <span class="icon align-middle d-inline-block ms-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 02 End -->
+            
+            <!-- Section 02 Start -->
+            <section class="sec_02 py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-6">
+                            <div class="content-wrapper">
+                                <div class="heading text-black mb-1">
+                                    <h2 class="display-5 fw-medium mb-4 lh-sm">
+                                        <span>Flutter App <br class="d-none d-lg-block">Development Services</span>
+                                    </h2>
+                                </div>
+                                <div class="expert pe-lg-5 mb-4">
+                                    <p class="text-secondary text-capitalize lh-base">We are the leading Flutter app development service provider building performant, scalable, and seamless applications delivering next-gen user experiences.</p>
+                                </div>
+                                <div class="actionBtn">
+                                    <a href="#" class="btn btn-link ps-0 fw-bold">
+                                        <span class="text">Discuss your goals with us</span>
+                                        <span class="icon align-middle d-inline-block ms-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="img-wrapper d-inline-block">
+                                    <div class="img01"><img src="./assets/images/flutter/two-color-bg.svg" class="img-fluid" alt=""></div>
+                                    <div class="img02 position-absolute"><img src="./assets/images/flutter/flutter-logo.svg"class="img-fluid flutter_logo rounded-pill" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
+                            <div class="info-box">
+                                <div class="icon-wrap mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/flutter-app-development.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h4 class="fs-20 fw-semibold text-black mb-2 lh-sm">Flutter App Development</h4>
+                                    <p class="text-body-color mb-3 lh-base pb-3">We take a customized approach to designing, building, and deploying Flutter applications for our clients. Beginning with comprehensive evaluation and PoC development, we design high-fidelity layouts rendered with scalable coding to deliver innovative solutions.</p>
+                                </div>
+                            </div>
+                            <hr class="text-theme-primary-light border-2 opacity-100">
+                            <div class="info-box">
+                                <div class="icon-wrap mt-3 pt-3 mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/flutter-app-consultation.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h4 class="fs-20 fw-semibold text-black mb-2 lh-sm">Flutter App Consultation</h4>
+                                    <p class="text-body-color mb-3 lh-base pb-3">Not sure how to move forward with your idea? We can help you understand the scope of work, technical setup, and how to leverage Flutter for modern-day businesses. With us, explore Flutter’s capabilities and harness them for your business benefit.</p>
+                                </div>
+                            </div>
+                            <hr class="text-theme-primary-light border-2 opacity-100">
+                            <div class="info-box">
+                                <div class="icon-wrap mt-3 pt-3 mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/flutter-api-and-integration.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h4 class="fs-20 fw-semibold text-black mb-2 lh-sm">Flutter API and Integration</h4>
+                                    <p class="text-body-color mb-3 lh-base pb-3">When your product or solution requires a specific functionality, we can build REST APIs with Flutter to fulfill your project requirements. Well-built APIs and Integration solutions can increase the capabilities of an existing solution.</p>
+                                </div>
+                            </div>
+                            <hr class="text-theme-primary-light border-2 opacity-100">
+                            <div class="info-box">
+                                <div class="icon-wrap mt-3 pt-3 mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/flutter-app-uiux-design.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h4 class="fs-20 fw-semibold text-black mb-2 lh-sm">Flutter App UI/UX Design</h4>
+                                    <p class="text-body-color mb-3 lh-base pb-3">Google built Flutter to help developers revamp the meaning of a beautiful interface, and our developers grab this opportunity to deliver stunning interfaces. We use Flutter’s capabilities to sketch intelligent and customer-friendly interfaces.</p>
+                                </div>
+                            </div>
+                            <hr class="text-theme-primary-light border-2 opacity-100">
+                            <div class="info-box">
+                                <div class="icon-wrap mt-3 pt-3 mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/flutter-app-upgrades.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h4 class="fs-20 fw-semibold text-black mb-2 lh-sm">Flutter App Upgrades</h4>
+                                    <p class="text-body-color mb-3 lh-base pb-3">Do you want to upgrade from an existing operating system? IConflux, the best Flutter app development company in India, provides upgrade services making your application compatible with the latest iOS and Android versions.</p>
+                                </div>
+                            </div>
+                            <hr class="text-theme-primary-light border-2 opacity-100">
+                            <div class="info-box">
+                                <div class="icon-wrap mt-3 pt-3 mb-4">
+                                    <lottie-player src="./assets/images/flutter/lottie/support-and-maintenance.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h4 class="fs-20 fw-semibold text-black mb-2 lh-sm">Flutter App Maintenance and Support</h4>
+                                    <p class="text-body-color mb-3 lh-base pb-3">We provide monitoring, maintenance, and support services for existing Flutter applications. We assure you that you provide the best user experience to your customers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 02 End -->
+            
+            <!-- Section 04 Start -->
+            <section class="sec_04 cta-version-01 mad bg-theme-primary-002060 bg-cover bg-center bg-no-repeat">
+                <div class="container">
+                    <div class="row align-items-center flex-column-reverse flex-md-row">
+                        <div class="col-12 col-md-8">
+                            <div class="content-wrapper">
+                                <div class="heading text-white">
+                                    <h2 class="fs-38 fw-semibold mb-3 lh-sm">
+                                        <span>Wish to Become a Leading Business<br class="d-none d-lg-block" /> in Your Industry?</span>
+                                    </h2>
+                                </div>
+                                <div class="extraBtn">
+                                    <a href="#" class="btn btn-link text-white ps-0 fw-bold icon-white">
+                                        <span class="text">Consult our Expert</span>
+                                        <span class="icon align-middle d-inline-block ms-2 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="img-wrapper my-3">
+                                <div class="img01">
+                                    <img src="./assets/images/flutter/flutter-cta.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 04 End -->
+            
+            
+            <!-- Section 09 START -->
+            <div class="position-relative technologiesPlatforms py-100 overflow-hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                            <div class="col-wrap text-center">
+                                <h2 class="fs-45 fw-medium lh-sm mb-5">Our Expertise in Technology</h2>
+                                <!-- <p class="fs-6 fw-light mb-5 pb-md-4">We know hiring and onboarding can potentially take a very long time and while developing product & application you</p> -->
+                                <!-- <h5 class="h5 text-muted small fw-semibold mb-4">Programming Languages</h5> -->
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-wrap">
+                                <div class="tabs">
+                                    <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="uiux-tab" data-bs-toggle="tab" data-bs-target="#uiux-tab-pane" type="button" role="tab" aria-controls="uiux-tab-pane" aria-selected="true">UX/UI Design</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile-tab-pane" type="button" role="tab" aria-controls="mobile-tab-pane" aria-selected="false">Mobile</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="front-end-tab" data-bs-toggle="tab" data-bs-target="#front-end-tab-pane" type="button" role="tab" aria-controls="front-end-tab-pane" aria-selected="false">Front-end</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="back-end-tab" data-bs-toggle="tab" data-bs-target="#back-end-tab-pane" type="button" role="tab" aria-controls="back-end-tab-pane" aria-selected="false">Back-end</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="database-tab" data-bs-toggle="tab" data-bs-target="#database-tab-pane" type="button" role="tab" aria-controls="database-tab-pane" aria-selected="false">Database</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="devOpsCloud-tab" data-bs-toggle="tab" data-bs-target="#devOpsCloud-tab-pane" type="button" role="tab" aria-controls="devOpsCloud-tab-pane" aria-selected="false">DevOps/Cloud</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="trendTech-tab" data-bs-toggle="tab" data-bs-target="#trendTech-tab-pane" type="button" role="tab" aria-controls="trendTech-tab-pane" aria-selected="false">Trending Technologies</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content position-relative" id="myTabContent">
+                                    <div class="tab-pane show active" id="uiux-tab-pane" role="tabpanel" aria-labelledby="uiux-tab" tabindex="0">
+                                        <div class="tab-contents position-relative">
+                                            <div class="tabWrap">
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/AngularJS.svg" alt="AngularJS" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Figma</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/ReactJS.svg" alt="ReactJS" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Invision</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/VueJS.svg" alt="VueJS" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Zeplin</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/Bootstrap.svg" alt="Bootstrap" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Illustrator</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/Typescript.svg" alt="Typescript" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Photoshop</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="front-end-tab-pane" role="tabpanel" aria-labelledby="front-end-tab" tabindex="0">
+                                        <div class="tab-contents position-relative">
+                                            <div class="tabWrap">
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/AngularJS.svg" alt="AngularJS" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Angular JS</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/ReactJS.svg" alt="ReactJS" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">React JS</div>
+                                                </div>
+                                                <!-- <div class="tech_lang visually-hidden">
+                                                    <img src="./assets/images/tech_icon/front-end/ReactJS.svg" alt="ReactJS" class="img-fluid" />
+                                                </div> -->
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/VueJS.svg" alt="VueJS" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Vue JS</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/Bootstrap.svg" alt="Bootstrap" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Bootstrap</div>
+                                                </div>
+                                                <!-- <div class="tech_lang visually-hidden">
+                                                    <img src="./assets/images/tech_icon/front-end/ReactJS.svg" alt="ReactJS" class="img-fluid" />
+                                                </div> -->
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/front-end/Typescript.svg" alt="Typescript" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Typescript</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="back-end-tab-pane" role="tabpanel" aria-labelledby="back-end-tab" tabindex="0">
+                                        <div class="tab-contents position-relative">
+                                            <div class="tabWrap">
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/JAVA.svg" alt="java" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">java</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/NodeJS.svg" alt="NodeJS" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">NodeJS</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/PHP.svg" alt="php" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">php</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/Laravel.svg" alt="Laravel" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Laravel</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/Python.svg" alt="Python" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Python</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/Golang.svg" alt="Golang" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Golang</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/back-end/dotnet.svg" alt=".NET" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">.NET</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="mobile-tab-pane" role="tabpanel" aria-labelledby="mobile-tab" tabindex="0">
+                                        <div class="tab-contents position-relative">
+                                            <div class="tabWrap">
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/Android.svg" alt="android" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">android</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/IOS.svg" alt="IOS" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">IOS</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/Flutter.svg" alt="Flutter" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Flutter</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/ReactNative.svg" alt="ReactNative" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">ReactNative</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/Xamarin.svg" alt="Xamarin" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Xamarin</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/Kotlin.svg" alt="kotline" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">kotline</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/mobile/Swift.svg" alt="swift" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">swift</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="database-tab-pane" role="tabpanel" aria-labelledby="database-tab" tabindex="0">
+                                        <div class="tab-contents position-relative">
+                                            <div class="tabWrap">
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/MySQL.svg" alt="MySQL" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">MySQL</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/SQLServer.svg" alt="SQL Server" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">SQL Server</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/MongoDB.svg" alt="MongoDB" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">MongoDB</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/MariaDB.svg" alt="MariaDB" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">MariaDB</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/DynamoDB.svg" alt="DynamoDB" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">DynamoDB</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/Redis.svg" alt="Redis" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Redis</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/databse/Elasticsearch.svg" alt="Elasticsearch" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Elasticsearch</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="devOpsCloud-tab-pane" role="tabpanel" aria-labelledby="devOpsCloud-tab" tabindex="0">
+                                        <div class="tab-contents position-relative">
+                                            <div class="tabWrap">
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/AWS.svg" alt="AWS" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">AWS</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/Azure.svg" alt="Azure" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Azure</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/GoogleCloud.svg" alt="GoogleCloud" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">GoogleCloud</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/Docker.svg" alt="Docker" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Docker</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/Jenkins.svg" alt="Jenkins" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Jenkins</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/Kubernetes.svg" alt="Kubernetes" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Kubernetes</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/Firebase.svg" alt="Firebase" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Firebase</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="trendTech-tab-pane" role="tabpanel" aria-labelledby="trendTech-tab" tabindex="0">
+                                        <div class="tab-contents position-relative">
+                                            <div class="tabWrap">
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/AWS.svg" alt="AWS" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">Dialogflow</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/Azure.svg" alt="Azure" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">RASA</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/GoogleCloud.svg" alt="GoogleCloud" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">TensorFlow</div>
+                                                </div>
+                                                <div class="tech_lang">
+                                                    <img src="./assets/images/tech_icon/DevOpsCloud/Docker.svg" alt="Docker" class="img-fluid" />
+                                                    <div class="text-black-50 text-center">OpenAI</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Section 09 End -->
+            <!-- Section 10 Start -->
+            <section class="recentWork py-100 bg-theme-primary bg-cover bg-right-top">
+                <div class="container">
+                    <div class="row mb-4 pb-2">
+                        <div class="col-12 col-md-8 mb-4 mb-md-0">
+                            <div class="heading-wrappper">
+                                <div class="heading-wrp">
+                                    <h3 class="fs-45 fw-semibold text-white lh-sm mb-3">Do You Have Your Dream Project? We Have a TEAM to Make It Live. </h3>
+                                </div>
+                                <!-- <div class="expert">
+                                    <p class="text-white fs-5 fw-normal text-capitalize lh-base">The top-notch and preeminent Web and Mobile App Development</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="col-wrap text-md-end">
+                                <div class="extraBtn">
+                                    <a href="#" class="btn btn-theme-white px-4">
+                                        <span class="text">Let’s Discuss</span>
+                                        <span class="icon align-middle">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="30" height="30" viewBox="0 0 35 35"><circle cx="17.3" cy="17" r="17"/><path fill="currentColor" d="m21.15 15.469-5.59-5.592 1.473-1.474 8.108 8.108-8.107 8.108-1.474-1.474 5.59-5.591H8.464v-2.085H21.15Z"/></svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-30">
+                        <div class="col-12 col-md-7">
+                            <figure class="figure mb-mb-0">
+                                <img src="./assets/images/hdr/work-01.jpg" alt="work" class="img-fluid rounded-2" />
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <figure class="figure mb-mb-0">
+                                <img src="./assets/images/hdr/work-02.jpg" alt="work" class="img-fluid rounded-2" />
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <figure class="figure mb-mb-0">
+                                <img src="./assets/images/hdr/work-03.jpg" alt="work" class="img-fluid rounded-2" />
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <figure class="figure mb-mb-0">
+                                <img src="./assets/images/hdr/work-04.jpg" alt="work" class="img-fluid rounded-2" />
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <figure class="figure mb-mb-0">
+                                <img src="./assets/images/hdr/work-05.jpg" alt="work" class="img-fluid rounded-2" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 10 End -->
+            <!-- Section 12 Start -->
+            <section class="testimonial-02 cdop py-100 bg-clr-F7F9FB">
+                <div class="container">
+                    <div class="row justify-content-lg-center">
+                        <div class="col-12 col-lg-8">
+                            <div class="desc-wrapper text-center mb-3 pb-3">
+                                <h2 class="display-5 fw-medium mb-4 lh-sm">
+                                    <span>When Our Client Speaks</span>
+                                </h2>
+                                <p class="fs-16 fw-normal text-body-color lh-base">A small glimpse of how IConflux has helped businesses earn higher revenue, build a loyal customer base, and make an impact.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="swiper twoBoxCenter">
+                                <div class="testimonial-wrapper swiper-wrapper">
+                                    <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                                        <div class="text-content">
+                                            <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                                        </div>
+                                        <div class="author-box d-flex gap-4 align-items-center">
+                                            <div class="imgWrap">
+                                                <img src="./assets/images/flutter/review-01.png" alt="">
+                                            </div>
+                                            <div class="headingWrap">
+                                                <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                                <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                                        <div class="text-content">
+                                            <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                                        </div>
+                                        <div class="author-box d-flex gap-4 align-items-center">
+                                            <div class="imgWrap">
+                                                <img src="./assets/images/flutter/review-01.png" alt="">
+                                            </div>
+                                            <div class="headingWrap">
+                                                <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                                <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                                        <div class="text-content">
+                                            <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                                        </div>
+                                        <div class="author-box d-flex gap-4 align-items-center">
+                                            <div class="imgWrap">
+                                                <img src="./assets/images/flutter/review-01.png" alt="">
+                                            </div>
+                                            <div class="headingWrap">
+                                                <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                                <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                                        <div class="text-content">
+                                            <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                                        </div>
+                                        <div class="author-box d-flex gap-4 align-items-center">
+                                            <div class="imgWrap">
+                                                <img src="./assets/images/flutter/review-01.png" alt="">
+                                            </div>
+                                            <div class="headingWrap">
+                                                <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                                <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                                        <div class="text-content">
+                                            <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                                        </div>
+                                        <div class="author-box d-flex gap-4 align-items-center">
+                                            <div class="imgWrap">
+                                                <img src="./assets/images/flutter/review-01.png" alt="">
+                                            </div>
+                                            <div class="headingWrap">
+                                                <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                                <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-box swiper-slide bg-white py-5 px-4 rounded-4">
+                                        <div class="text-content">
+                                            <p class="fs-18 fw-light mb-2 pb-1 text-body-color ">"Because all our transactions flow through Checkout.com’s unified API, we’re able to easily adapt the solution to our needs across each of our key markets without incurring any additional complexity.”</p>
+                                        </div>
+                                        <div class="author-box d-flex gap-4 align-items-center">
+                                            <div class="imgWrap">
+                                                <img src="./assets/images/flutter/review-01.png" alt="">
+                                            </div>
+                                            <div class="headingWrap">
+                                                <h5 class="fs-18 fw-medium text-black">Aurélien de Meaux</h5>
+                                                <p class="fs-15 fw-light m-0 text-body-color">CEO and Co-founder @ Cheerz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- Section 12 End -->
+
+            <!-- Section 08 Start -->
+            <section class="account-type py-100 bg-theme-primary-002060 bg-cover bg-left-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="heading-wrappper">
+                                <div class="heading-wrp text-center">
+                                    <h3 class="fs-45 fw-semibold text-white lh-sm mb-3">Build Your Own Extended Team </h3>
+                                </div>
+                                <div class="horizontal-list mb-4 pb-2">
+                                    <div class="fs-18 text-white d-flex flex-wrap fw-normal justify-content-center gap-3 mb-4" id="keywordsType">
+                                        <span class="flex-item position-relative">Simple & Transparent Pricing</span>
+                                        <span class="flex-item position-relative">·</span>
+                                        <span class="flex-item position-relative">Fully Signed NDA</span>
+                                        <span class="flex-item position-relative">·</span>
+                                        <span class="flex-item position-relative">Code Standard & Security</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row wrapper-box">
+                        <div class="col-12 col-lg-4">
+                            <div class="price-box mb-5 bg-white">
+                                <div class="top">
+                                    <div class="title-type d-flex justify-content-center align-items-center gap-3 mb-4 pb-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" fill="none"><g clip-path="url(#a)"><path fill="#FFCE33" d="M24.967 0c.039.144.043 28.992.016 29-.027.008-1.917-3.228-4.188-7.195-2.27-3.966-4.178-7.212-4.2-7.221-.02-.01-3.771-.024-8.324-.022-4.553.002-8.267 0-8.275-.035-.008-.035 5.604-3.315 12.478-7.311C19.27 3.253 24.87.021 24.964 0"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h25v29H0z"/></clipPath></defs></svg>
+                                        <p class="text-black fs-16 text-uppercase fw-semibold mb-0 ls-widest">Standard</p>
+                                    </div>
+                                    <div class="doller-title text-center">
+                                        <h3 class="fw-semibold text-black fs-60 m-0">$20</h3>
+                                        <p class="m-0 fs-16 fw-semibold text-black">Hourly (USD)</p>
+                                    </div>
+                                </div>
+                                <hr style="border-top: 2px solid; color: #EEEEEE; opacity: 1;">
+                                <div class="bottom">
+                                    <div class="desc-text text-center mb-4">
+                                        <p class="fs-20 fw-semibold mb-0 text-theme-2E2E2E">Signed the NDA and Start with Hourly Bases</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="price-box mb-4 bg-theme-primary-dark position-relative">
+                                <p class="mostPopular bg-clr-1FF06D fs-12 fw-bold py-2 text-center text-uppercase ls-widest">Most Popular</p>
+                                <div class="top">
+                                    <div class="title-type d-flex justify-content-center align-items-center gap-3 mb-4 pb-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" fill="none"><g clip-path="url(#a)"><path fill="#1FF06D" d="M24.967 0c.039.144.043 28.992.016 29-.027.008-1.917-3.228-4.188-7.195-2.27-3.966-4.178-7.212-4.2-7.221-.02-.01-3.771-.024-8.324-.022-4.553.002-8.267 0-8.275-.035-.008-.035 5.604-3.315 12.478-7.311C19.27 3.253 24.87.021 24.964 0"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h25v29H0z"/></clipPath></defs></svg>
+                                        <p class="text-white fs-16 text-uppercase fw-semibold mb-0 ls-widest">elite</p>
+                                    </div>
+                                    <div class="doller-title text-center">
+                                        <h3 class="fw-semibold text-white fs-60 m-0">$2880</h3>
+                                        <p class="m-0 fs-16 fw-semibold text-white">Hourly (USD)</p>
+                                    </div>
+                                </div>
+                                <hr style="border-top: 2px solid; color: #685DF0; opacity: 1;">
+                                <div class="bottom">
+                                    <div class="desc-text text-center mb-4">
+                                        <p class="fs-20 fw-semibold mb-0 text-white">4 to 6 Years of Experience developer with Monthly Dedicated</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="price-box mb-4 bg-white">
+                                <div class="top">
+                                    <div class="title-type d-flex justify-content-center align-items-center gap-3 mb-4 pb-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" fill="none"><g clip-path="url(#a)"><path fill="#2C00C8" d="M24.967 0c.039.144.043 28.992.016 29-.027.008-1.917-3.228-4.188-7.195-2.27-3.966-4.178-7.212-4.2-7.221-.02-.01-3.771-.024-8.324-.022-4.553.002-8.267 0-8.275-.035-.008-.035 5.604-3.315 12.478-7.311C19.27 3.253 24.87.021 24.964 0"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h25v29H0z"/></clipPath></defs></svg>
+                                        <p class="text-black fs-16 text-uppercase fw-semibold mb-0 ls-widest">Enterprise</p>
+                                    </div>
+                                    <div class="doller-title text-center">
+                                        <h3 class="fw-semibold text-black fs-60 m-0">$14000</h3>
+                                        <p class="m-0 fs-16 fw-semibold text-black">Hourly (USD)</p>
+                                    </div>
+                                </div>
+                                <hr style="border-top: 2px solid; color: #EEEEEE; opacity: 1;">
+                                <div class="bottom">
+                                    <div class="desc-text text-center mb-4">
+                                        <p class="fs-20 fw-semibold mb-0 text-theme-2E2E2E">Build a Scrum Team of 5 Developers </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="extraBtn text-center">
+                                <a href="#" class="btn btn-theme-white px-5">
+                                    <span class="text">Schedule an Interview With Developer</span>
+                                    <span class="icon align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none"><circle cx="17.304" cy="17.012" r="17.012" /><path fill="currentColor" d="m21.15 15.469-5.59-5.592 1.473-1.474 8.108 8.108-8.107 8.108-1.474-1.474 5.59-5.591H8.464v-2.085H21.15Z"/></svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 08 End -->
+
+            <!-- Section 15 Start -->
+            <section class="our-process py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="heading-wrapper pb-4">
+                                <h2 class="display-5 fw-medium text-capitalize text-black mb-3 pb-1">Step to Hire Developer</h2>
+                                <p class="text-body-color fw-normal fs-20 lh-base">Create Your Own Team with Our Dedicated Hiring Services</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="info-box mb-">
+                                <div class="icon-wrp mb-3 pb-1">
+                                    <span class="fs-26 fw-bold text-white lh-base d-inline-block rounded-2 bg-theme-primary-dark">1</span>
+                                </div>
+                                <div class="content-wrp">
+                                    <h4 class="fs-20 fw-medium text-black">Job Description and Screening</h4>
+                                    <p class="fs-16 fw-normal text-body-color">Define requirements and screen applications.</p>
+                                    <a href="#" class="btn btn-link text-black ps-0 fw-bold icon-white">
+                                        <span class="text">Hire Now</span>
+                                        <span class="icon align-middle d-inline-block ms-2 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="info-box mb-">
+                                <div class="icon-wrp mb-3 pb-1">
+                                    <span class="fs-26 fw-bold text-white lh-base d-inline-block rounded-2 bg-clr-0049FE">2</span>
+                                </div>
+                                <div class="content-wrp">
+                                    <h4 class="fs-20 fw-medium text-black">Technical Evaluation</h4>
+                                    <p class="fs-16 fw-normal text-body-color">Conduct interviews and assessments to evaluate skills</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="info-box mb-">
+                                <div class="icon-wrp mb-3 pb-1">
+                                    <span class="fs-26 fw-bold text-white lh-base d-inline-block rounded-2 bg-theme-yellow-dark">3</span>
+                                </div>
+                                <div class="content-wrp">
+                                    <h4 class="fs-20 fw-medium text-black">Practical Task</h4>
+                                    <p class="fs-16 fw-normal text-body-color">Assign small practical Task to developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="info-box mb-">
+                                <div class="icon-wrp mb-3 pb-1">
+                                    <span class="fs-26 fw-bold text-white lh-base d-inline-block rounded-2 bg-theme-green">4</span>
+                                </div>
+                                <div class="content-wrp">
+                                    <h4 class="fs-20 fw-medium text-black">On-boarding</h4>
+                                    <p class="fs-16 fw-normal text-body-color">On-board developer as per project’s Start Date</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 15 End -->
+
+
+            <!-- Section 16 Start -->
+            <section class="other-services bg-clr-0049FE">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-4">
+                            <div class="content-wrapper mb-5 mb-lg-0">
+                                <h3 class="fs-45 text-white fw-medium">Interested in Something Else</h3>
+                                <p class="text-white fw-normal fs-16 lh-base">As a prominent mobile app development company in India, we have expertise in other technologies as well.</p>
+                                <a href="#" class="btn btn-link text-white ps-0 fw-bold icon-white">
+                                    <span class="text">Explore All Services</span>
+                                    <span class="icon align-middle d-inline-block ms-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <ul class="services list-unstyled d-flex justify-content-between justify-content-lg-end flex-wrap gap-3">
+                                <li class="bg-theme-primary-dark px-3 py-4 text-center position-relative">
+                                    <div class="iconBox mb-3">
+                                        <img src="./assets/images/flutter/react-white.png" alt="">
+                                    </div>
+                                    <div class="contentBox">
+                                        <p class="text-white fs-15 fw-normal">React Native Development</p>
+                                    </div>
+                                    <a href="#" class="stretched-link"></a>
+                                </li>
+                                <li class="bg-theme-primary-dark px-3 py-4 text-center position-relative">
+                                    <div class="iconBox mb-3">
+                                        <img src="./assets/images/flutter/loni-white.png" alt="">
+                                    </div>
+                                    <div class="contentBox">
+                                        <p class="text-white fs-15 fw-normal">lonic <br class="d-none d-lg-block"> Development</p>
+                                    </div>
+                                    <a href="#" class="stretched-link"></a>
+                                </li>
+                                <li class="bg-theme-primary-dark px-3 py-4 text-center position-relative">
+                                    <div class="iconBox mb-3">
+                                        <img src="./assets/images/flutter/apple-white.png" alt="">
+                                    </div>
+                                    <div class="contentBox">
+                                        <p class="text-white fs-15 fw-normal">iOS<br class="d-none d-lg-block"> Development</p>
+                                    </div>
+                                    <a href="#" class="stretched-link"></a>
+                                </li>
+                                <li class="bg-theme-primary-dark px-3 py-4 text-center position-relative">
+                                    <div class="iconBox mb-3">
+                                        <img src="./assets/images/flutter/android-white.png" alt="">
+                                    </div>
+                                    <div class="contentBox">
+                                        <p class="text-white fs-15 fw-normal">Android Development</p>
+                                    </div>
+                                    <a href="#" class="stretched-link"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 16 End -->
+
+            <!-- Section 17 Start -->
+            <section class="accordion-FAQ pt-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="heading-wrapper text-center pb-4">
+                                <h3 class="fs-45 fw-medium lh-base text-black">Frequently Asked Questions</h3>
+                                <p class="fs-20 fw-normal text-body-color">The top-notch and preeminent Web and Mobile App</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="accordion customAccordion02" id="flutterFAQ-01">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            What's new in Flutter 2.0?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#flutterFAQ-01">
+                                        <div class="accordion-body">
+                                            <p>Flutter 2 is a major upgrade to Flutter that allows developers to build fast and portable applications for any platform. Flutter 2 enables apps to run on multiple platforms including desktop and web with little or no change.</p>
+                                            <p>Flutter is an app development framework that becomes quite popular among developers across the world. It has all the elements to develop robust mobile apps in minimal time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Is Flutter good for mobile app development?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#flutterFAQ-01">
+                                        <div class="accordion-body">
+                                            <p>Flutter 2 is a major upgrade to Flutter that allows developers to build fast and portable applications for any platform. Flutter 2 enables apps to run on multiple platforms including desktop and web with little or no change.</p>
+                                            <p>Flutter is an app development framework that becomes quite popular among developers across the world. It has all the elements to develop robust mobile apps in minimal time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Is Flutter better than React Native?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#flutterFAQ-01">
+                                        <div class="accordion-body">
+                                            <p>Flutter 2 is a major upgrade to Flutter that allows developers to build fast and portable applications for any platform. Flutter 2 enables apps to run on multiple platforms including desktop and web with little or no change.</p>
+                                            <p>Flutter is an app development framework that becomes quite popular among developers across the world. It has all the elements to develop robust mobile apps in minimal time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            What are the benefits of outsourcing Flutter app development?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#flutterFAQ-01">
+                                        <div class="accordion-body">
+                                            <p>Flutter 2 is a major upgrade to Flutter that allows developers to build fast and portable applications for any platform. Flutter 2 enables apps to run on multiple platforms including desktop and web with little or no change.</p>
+                                            <p>Flutter is an app development framework that becomes quite popular among developers across the world. It has all the elements to develop robust mobile apps in minimal time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            How much does it cost to develop a Flutter app?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#flutterFAQ-01">
+                                        <div class="accordion-body">
+                                            <p>Flutter 2 is a major upgrade to Flutter that allows developers to build fast and portable applications for any platform. Flutter 2 enables apps to run on multiple platforms including desktop and web with little or no change.</p>
+                                            <p>Flutter is an app development framework that becomes quite popular among developers across the world. It has all the elements to develop robust mobile apps in minimal time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            Is Flutter good for mobile app development?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#flutterFAQ-01">
+                                        <div class="accordion-body">
+                                            <p>Flutter 2 is a major upgrade to Flutter that allows developers to build fast and portable applications for any platform. Flutter 2 enables apps to run on multiple platforms including desktop and web with little or no change.</p>
+                                            <p>Flutter is an app development framework that becomes quite popular among developers across the world. It has all the elements to develop robust mobile apps in minimal time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 17 End -->
+
+            
+            <!-- Section 18 End -->
+            <div class="ico_16 blogs position-relative py-100 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-10 col-lg-12 mb-4 mb-md-0">
+                            <div class="col-wrap">
+                                <div class="heading text-black mb-1">
+                                    <h2 class="h1 fw-semibold text-capitalize mb-5 lh-sm">
+                                        <span>Resources for growing your product</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-4" />
+                                    <div class="card-body p-md-0 pe-md-4">
+                                        <h4 class="card-title text-black fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                        <p class="card-text mb-4">We offer a three-tier user-friendly and all device responsive...</p>
+                                        <div class="actionBtn">
+                                            <a href="#" class="btn btn-link ps-0 fw-bold">
+                                                <span class="text">Read Article </span>
+                                                <span class="icon align-middle d-inline-block ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <img src="./assets/images/post-2.png" alt="globe" class="img-fluid mb-4" />
+                                <div class="card bg-transparent border-0">
+                                    <div class="card-body p-md-0 pe-md-4">
+                                        <h4 class="card-title text-black fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                        <p class="card-text mb-4">We offer a three-tier user-friendly and all device responsive...</p>
+                                        <div class="actionBtn">
+                                            <a href="#" class="btn btn-link ps-0 fw-bold">
+                                                <span class="text">Read Article </span>
+                                                <span class="icon align-middle d-inline-block ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 ">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <img src="./assets/images/post-3.png" alt="globe" class="img-fluid mb-4" />
+                                    <div class="card-body p-md-0 pe-md-4">
+                                        <h4 class="card-title text-black fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                        <p class="card-text mb-4">We offer a three-tier user-friendly and all device responsive...</p>
+                                        <div class="actionBtn">
+                                            <a href="#" class="btn btn-link ps-0 fw-bold">
+                                                <span class="text">Read Article </span>
+                                                <span class="icon align-middle d-inline-block ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section 18 End -->
+
+            
+            <!-- Section 19 End -->
+            <div class="ico_17 position-relative pb-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="heading text-black pt-4">
+                                    <h2 class="h1 fw-semibold mb-5 lh-sm">
+                                        <span>Let's Talk Business!</span>
+                                    </h2>
+                                </div>
+                                <div class="expert mb-5">
+                                    <p class="fs-18 text-secondary text-capitalize">Have questions about your idea? </p>
+                                    <p class="fs-18 text-secondary text-capitalize">Drop in your details to discuss with our solution consultants. We look forward to hear from you.</p>
+                                </div>
+                                <div class="card-list">
+                                    <div class="card bg-light rounded-0 border-0 mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center gap-3 ps-2">
+                                                <div class="flex-col flex-grow-0">
+                                                    <img src="./assets/images/skype-logo.svg" alt="skype" class="img-fluid" />
+                                                </div>
+                                                <div class="flex-col">
+                                                    <p class="mb-0 text-secondary">Our Skype ID</p>
+                                                    <h3 class="fs-25 fw-semibold text-dark">live:iconflux</h3>
+                                                    <a href="skype:iconflux?chat" class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-light rounded-0 border-0 mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center gap-3 ps-2">
+                                                <div class="flex-col flex-grow-0">
+                                                    <img src="./assets/images/email-logo.svg" alt="email" class="img-fluid" />
+                                                </div>
+                                                <div class="flex-col">
+                                                    <p class="mb-0 text-secondary">Email us on</p>
+                                                    <h3 class="fs-25 fw-semibold text-dark">info@iconflux.com</h3>
+                                                    <a href="mailto:info@iconflux.com" class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-light rounded-0 border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center gap-3 ps-2">
+                                                <div class="flex-col flex-grow-0">
+                                                    <img src="./assets/images/phone-logo.svg" alt="phone" class="img-fluid" />
+                                                </div>
+                                                <div class="flex-col">
+                                                    <p class="mb-0 text-secondary">Call us on</p>
+                                                    <h3 class="fs-25 fw-semibold text-dark">+1-409-358-8781</h3>
+                                                    <a href="tel:+1-409-358-8781" class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-7 ">
+                            <div class="col-wrap ps-lg-5">
+                                <div class="form-wrapper card-form bg-light">
+                                    <div class="heading text-black mb-1">
+                                        <h2 class="h1 fw-semibold mb-5 lh-sm">
+                                            <span>Get A Free Quote</span>
+                                        </h2>
+                                    </div>
+                                    <div class="expert mb-5">
+                                        <p class="fs-18 text-secondary text-capitalize">Contact us to discover how we can help you succeed</p>
+                                    </div>
+                                    <form action="#" method="post">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-wrap">
+                                                    <label for="fname" class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" id="fname" placeholder="Enter your First name" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-wrap">
+                                                    <label for="fname" class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" id="fname" placeholder="Enter your Last name" /> 
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-12">
+                                                <div class="form-wrap">
+                                                    <label for="email" class="form-label">Email address</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="What's your email ID" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-12">
+                                                <div class="form-wrap">
+                                                    <label for="phoneNo" class="form-label">Phone No</label>
+                                                    <input type="text" class="form-control" id="phoneNo" placeholder="Type your number" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-12">
+                                                <div class="form-wrap">
+                                                    <label for="message" class="form-label">Message</label>
+                                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-12">
+                                                <div class="form-wrap">
+                                                    <button type="submit" class="btn btn-theme-primary withIcon w-100">
+                                                        <span class="text">Submit Now</span>
+                                                        <span class="icon d-inline-block align-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="none" viewBox="0 0 24 24"><g><path fill="currentColor" d="m13.1727 12.0046-4.95-4.95 1.414-1.414 6.364 6.364-6.364 6.364-1.414-1.414 4.95-4.95Z"/></g></svg></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section 19 End -->
+
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="presence position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-wrap">
+                                <div class="heading text-white text-center">
+                                    <h2 class="h1 fw-medium mb-5 lh-sm">
+                                        <span>Our Presence</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <div class="crd-header mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col">
+                                                <img src="./assets/images/flags/india.svg" alt="flag" class="img-fluid" />
+                                            </div>
+                                            <div class="flex-col">
+                                                <h5 class="h5 fw-bold text-white text-uppercase">HQ India</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crd-body">
+                                        <p class="card-text mb-3 pb-1 font-manrope fs-15 fw-medium text-white">1002-1004, Avdhesh House, 10th Floor,Opp. Gurudwara, S.G. Road, Bodakdev,Ahmedabad, India-380054</p>
+                                        <a href="tel:+91-95127 87877" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none mb-2">
+                                            <span class="d-inline-block icon align-bottom me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15px" width="15px" viewBox="0 0 15 15"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M2.5294 1h3.0588l1.5295 3.8235-1.9118 1.147a8.4118 8.4118 0 0 0 3.8235 3.8236l1.1471-1.9118L14 9.4118v3.0588a1.529 1.529 0 0 1-.448 1.0814 1.529 1.529 0 0 1-1.0814.448A12.2356 12.2356 0 0 1 1 2.5294 1.5294 1.5294 0 0 1 2.5294 1Z"/></svg>
+                                            </span>
+                                            <span>+91 - 95127 87877</span>
+                                        </a>
+                                        <br />
+                                        <a href="mailto:info@iconflux.com" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none">
+                                            <span class="d-inline-block icon align-bottom me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="19px" width="16px"  viewBox="0 0 16 19"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1035" d="M12.6667 4.2656H3.3333C2.597 4.2656 2 4.9346 2 5.76v7.4712c0 .8253.597 1.4943 1.3333 1.4943h9.3334c.7363 0 1.3333-.669 1.3333-1.4943V5.7599c0-.8253-.597-1.4943-1.3333-1.4943Z"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1035" d="m2 5.7578 6 4.4828 6-4.4828"/></svg>
+                                            </span>
+                                            <span>info@iconflux.com</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <div class="crd-header mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col">
+                                                <img src="./assets/images/flags/dubai.svg" alt="flag" class="img-fluid" />
+                                            </div>
+                                            <div class="flex-col">
+                                                <h5 class="h5 fw-bold text-white text-uppercase">Dubai</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crd-body">
+                                        <p class="card-text mb-3 pb-1 font-manrope fs-15 fw-medium text-white">ACISIT DIP-1 ,Al Asmawi 605,Dubai, P.O. Box 392177, UAE</p>
+                                        <a href="tel:+91-95127 87877" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none mb-2">
+                                            <span class="d-inline-block icon align-bottom me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15px" width="15px" viewBox="0 0 15 15"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M2.5294 1h3.0588l1.5295 3.8235-1.9118 1.147a8.4118 8.4118 0 0 0 3.8235 3.8236l1.1471-1.9118L14 9.4118v3.0588a1.529 1.529 0 0 1-.448 1.0814 1.529 1.529 0 0 1-1.0814.448A12.2356 12.2356 0 0 1 1 2.5294 1.5294 1.5294 0 0 1 2.5294 1Z"/></svg>
+                                            </span>
+                                            <span>+91 - 95127 87877</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <div class="crd-header mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col">
+                                                <img src="./assets/images/flags/dubai.svg" alt="flag" class="img-fluid" />
+                                            </div>
+                                            <div class="flex-col">
+                                                <h5 class="h5 fw-bold text-white text-uppercase">Germany</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crd-body">
+                                        <p class="card-text mb-3 pb-1 font-manrope fs-15 fw-medium text-white">Diessen Am Ammersee-Bayern,Munich south, Germany,Post Code 86911</p>
+                                        <a href="tel:+91-95127 87877" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none mb-2">
+                                            <span class="d-inline-block icon align-bottom me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15px" width="15px" viewBox="0 0 15 15"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M2.5294 1h3.0588l1.5295 3.8235-1.9118 1.147a8.4118 8.4118 0 0 0 3.8235 3.8236l1.1471-1.9118L14 9.4118v3.0588a1.529 1.529 0 0 1-.448 1.0814 1.529 1.529 0 0 1-1.0814.448A12.2356 12.2356 0 0 1 1 2.5294 1.5294 1.5294 0 0 1 2.5294 1Z"/></svg>
+                                            </span>
+                                            <span>+91 - 95127 87877</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <div class="crd-header mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col">
+                                                <img src="./assets/images/flags/dubai.svg" alt="flag" class="img-fluid" />
+                                            </div>
+                                            <div class="flex-col">
+                                                <h5 class="h5 fw-bold text-white text-uppercase">Canada</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crd-body">
+                                        <p class="card-text mb-3 pb-1 font-manrope fs-15 fw-medium text-white">22 Red Plant Crescent,Brampton ON L7A 2J8</p>
+                                        <a href="tel:+91-95127 87877" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none mb-2">
+                                            <span class="d-inline-block icon align-bottom me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15px" width="15px" viewBox="0 0 15 15"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M2.5294 1h3.0588l1.5295 3.8235-1.9118 1.147a8.4118 8.4118 0 0 0 3.8235 3.8236l1.1471-1.9118L14 9.4118v3.0588a1.529 1.529 0 0 1-.448 1.0814 1.529 1.529 0 0 1-1.0814.448A12.2356 12.2356 0 0 1 1 2.5294 1.5294 1.5294 0 0 1 2.5294 1Z"/></svg>
+                                            </span>
+                                            <span>+91 - 95127 87877</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrap position-relative bg-light">
+                <div class="container">
+                    <nav class="navbar pb-4 border-bottom border-1 border-light-subtle">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0">
+                                <div class="col-wrap">
+                                    <a class="navbar-brand" href="./index.html">
+                                        <span class="visually-hidden">Iconflux Technologies Pvt. Ltd.</span>
+                                        <img src="./assets/images/iconflux_logo.svg" alt="iconflux_logo" class="img-fluid pe-none" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg-9">
+                                <div class="col-wrap">
+                                    <h5 class="h5 fw-medium text-secondary">Founded in 2012, IConflux is leading IT solutions provider company in India specialized in Mobile app, Flutter, AI & ML, RPA development.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="space-y" style="--space-y:2.125rem"></div>
+                    <div class="row border-bottom border-1 border-light-subtle">
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="menu">
+                                    <div class="menu-title">
+                                        <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Technologies</p>
+                                    </div>
+                                    <div class="menu-list">
+                                        <ul class="list-unstyled">
+                                            <li class="list-item"><a href="#" class="menu-link">Payments</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Checkout</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Payouts</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Batch payouts</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Routing & Cascading</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Currency conversion</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Merchant management</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="menu">
+                                    <div class="menu-title">
+                                        <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Company</p>
+                                    </div>
+                                    <div class="menu-list">
+                                        <ul class="list-unstyled">
+                                            <li class="list-item"><a href="#" class="menu-link">About us</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Team</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Roadmap</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Brand assets</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Contacts</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Careers &nbsp; <span class="badge text-bg-warning fw-medium">We`re hiring!</span></a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="menu">
+                                    <div class="menu-title">
+                                        <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Solution</p>
+                                    </div>
+                                    <div class="menu-list">
+                                        <ul class="list-unstyled">
+                                            <li class="list-item"><a href="#" class="menu-link">Enterprise Mobility Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Intranet Portal Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">HRMS Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Forex Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Vtiger CRM Solutions</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Field Force System Solutions</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Assets Management Solutions</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="getInTouch mb-5 pb-md-4">
+                                    <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Get in touch</p>
+                                    <a href="tel:+91-95127 87877" class="text-secondary th-accent-black fs-15 fw-medium text-decoration-none">
+                                        <span>+91 - 95127 87877</span>
+                                    </a>
+                                </div>
+                                <div class="followus">
+                                    <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Follow us on</p>
+                                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/facebook.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/instagram.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/linkedin.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/twitter.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/youtube.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="12">
+                            <div class="col-wrap">
+                                <div class="d-flex gap-2 flex-wrap align-items-center my-4 pb-md-2 mt-md-5">
+                                    <div class=""><img src="./assets/images/iso.png" alt="copyright" class="img-fluid" /></div>
+                                    <div class=""><img src="./assets/images/dmca.png" alt="copyright" class="img-fluid" /></div>
+                                    <div class=""><img src="./assets/images/copyscape.png" alt="copyright" class="img-fluid" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y" style="--space-y:2.125rem"></div>
+                    <div class="row justify-content-md-between">
+                        <div class="col-12 col-md-auto">
+                            <div class="col-wrap">
+                                <p class="text-secondary text-capitalize m-0">&copy; Iconflux technologies pvt ltd, 2023.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-auto">
+                            <div class="col-wrap">
+                                <a href="#" class="fs-14 text-uppercase text-secondary fw-medium th-accent-black text-decoration-none">Terms</a>
+                                <a href="#" class="fs-14 text-uppercase text-secondary fw-medium th-accent-black text-decoration-none mx-2 mx-md-3 mx-lg-4">Privacy Notice</a>
+                                <a href="#" class="fs-14 text-uppercase text-secondary fw-medium th-accent-black text-decoration-none">Cookie Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <!-- script files  -->
+    <script defer src="./assets/js/main.js"></script>
+</body>
+
+</html>
