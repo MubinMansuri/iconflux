@@ -214,11 +214,11 @@
 .th-accent-yellow:hover{color: var(--theme-yellow) !important;}.th-accent-black:hover{color: var(--black) !important;}.th-accent-primary:hover{color: var(--theme-primary) !important;}.th-accent-primary-dark:hover{color: var(--theme-primary-dark) !important;}.th-accent-primary-light:hover{color: var(--theme-primary-light) !important;}.th-accent-green:hover{color: var(--theme-green) !important;}
 .followus a{transition: 0.3s ease-in-out all;}.followus a:hover{filter: invert(1);}
 .playbtn.top-50{margin-top: -30px;}
-.video-thumbnail ~ iframe{height: 35.75rem;position: absolute;top: 0px;left: 0px;z-index: -1;opacity: 0;transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) opacity;}
+.video-thumbnail ~ iframe{height:43.125rem;position: absolute;top: 0px;left: 0px;z-index: -1;opacity: 0;transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) opacity;}
 .video-thumbnail ~ iframe.active{opacity: 1;z-index: 10;}
 .playbtn.active,.video-thumbnail.active{opacity: 0;z-index: -10;}
 .ico_12{--swiper-pagination-color: #fff;--swiper-pagination-bullet-inactive-color: transparent;--swiper-pagination-bullet-inactive-opacity:1;--swiper-pagination-bullet-width:14px;--swiper-pagination-bullet-height:14px;}
-.ico_12 .swiper-pagination{text-align: left;left: calc(100% / 7 - 0.5vw);bottom: 40px;}
+.ico_12 .swiper-pagination{text-align: left;left: calc(100% / 7 + 0.5vw);bottom: 40px;}
 .ico_12 .swiper-pagination .swiper-pagination-bullet{border: 2px solid #fff;}
 .ico_13{padding-top: 100px;padding-bottom: 100px;--swiper-pagination-color: var(--theme-primary-light);--swiper-pagination-bullet-inactive-color: #EAEAEA;--swiper-pagination-bullet-inactive-opacity:1;--swiper-pagination-bullet-width:10px;--swiper-pagination-bullet-height:10px;}
 .ico_13 .testimonial{padding-top: 125px;padding-bottom: 100px;position: relative;}
@@ -900,7 +900,7 @@ lottie-player{max-width:6.25rem;}
 /* spd */
 
 /*---------------------- Media Query start here ( Max width queries ) ----------------------*/
-@media (min-width:1920px){.container{max-width: 1440px;}}
+/* @media (min-width:1920px){.container{max-width: 1440px;}} */
 @media (max-width:1600px){.flutter-banner::before{transform: translate(200px, -170px) scale(0.9);}.sec_02 .content-wrapper{top: 100px;}.ios-banner::before{transform: translate(10px, 10px) !important;}.react-native::before{transform: translate(110px, 30px) scale(1.1);}}
 @media (max-width:1536px){.bg_circle.reveal{transform: translate(0px, 0px);}.flutter-banner::before{transform: translate(230px, -160px) scale(0.85);}.sec_02 .content-wrapper .img-wrapper{transform: scale(0.85);}.react-native::before{transform: translate(130px, 40px) scale(1.1);}}
 @media (max-width:1499px){.youcomm-slide .swiper-slide::before{right: -17px; width: 850px;}.youcomm-slide .swiper-slide .img-wrapper{right: 0;}}
@@ -1025,7 +1025,28 @@ lottie-player{max-width:6.25rem;}
     .youcomm-slide .swiper-slide::before{width: 302px; height: 273px;}
 }
 /*  */
-@media (min-width: 1400px){.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 1140px;
-}}
 @media(min-width:1700px){.ico_01 .bannerSlider #carouselExampleIndicators{width: 747px !important;margin-left: 0px;margin-right: auto;}}
+/* new */
+@media(min-width:1540px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{max-width:1370px;}
+    .navbar .nav-item.dropdown-menu .nav-link:not([role='tab'])::before, .navbar .nav-item.has-megamenu .nav-link:not([role='tab'])::before{height:54px;}
+    .ico_13::after{background-size:auto;}body,:root{--bs-body-font-size:1.125rem}.ico_10 .nav-tabs .nav-link,.fs-16,.fs-6,.fs-15{font-size:var(--bs-body-font-size) !important;}
+    .site-header .navbar-nav{--bs-nav-link-font-size:var(--bs-body-font-size) !important} .btn{--bs-btn-font-size:var(--bs-body-font-size) !important}
+    .site-header .navbar{--bs-navbar-padding-y:2rem} .site-header.header-sticky .navbar{--bs-navbar-padding-y:1.125rem}
+    .vision-mission .visionBox .img-wrp .icon{transform: translate(-110%, -60%);}.vision-mission .missionBox .img-wrp .icon{transform: translate(20%, -60%);}
+    .lifeCalture .gallery .img-wrap.g01{height:580px;width:100%;}
+    .menu .menu-list .menu-link{font-size:var(--bs-body-font-size);line-height:1.875;}
+    .site-footer .menu a::before{bottom:-5px;}
+    .fs-18{font-size:1.25rem !important;}
+    .blogs .card img{width:100%;}
+    .source-libraries .row{align-items:stretch;}
+    .source-libraries .row div[class^="info_box"]{height:100%;}
+    .about-banner{padding:160px 0px 200px;}
+    .flutter-banner .content{padding:9.5rem 0;}
+    .hdr.sec_01 .content,.madBanner.sec_01 .content,.career-banner .content{padding:9.5rem 0;}
+    .hdr.sec_01 .img-wrp,.madBanner.sec_01 .img-wrp{top:60px;}
+    .madBanner.sec_01.spd .img-wrp{top:9rem;}
+    .eventsList .card .figure,.eventsList .card .figure img,.recentWork .figure,.recentWork .figure img{width:100%;}
+    .testimonial-02::before{bottom:-160px;}
+    .we-creative .info-box .icon-wrap lottie-player {max-width: 50px !important;}
+}

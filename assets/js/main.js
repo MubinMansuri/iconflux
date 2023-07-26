@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
       640: { slidesPerView: 3, spaceBetween: 20 },
       768: { slidesPerView: 5, spaceBetween: 40 },
       1024: { slidesPerView: 6, spaceBetween: 50 },
+      1440: { slidesPerView: 8, spaceBetween: 50 },
     },
   });
   const trustedSwiperMad = new Swiper(".trustedSwiper.mad", {
