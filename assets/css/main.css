@@ -940,9 +940,24 @@ lottie-player{max-width:6.25rem;}
     .card.cb{--bs-card-spacer-y:2.125rem;--bs-card-spacer-x:2rem;}
     .sec_04.cta-version-01 .fs-38{font-size:calc(2rem + 0.5vw);}
 }
-
 /* chatBot */
+/* Ai ML */
+.cta-version-01.tech{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1443 277'%3E%3Cmask id='a' width='1443' height='277' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23002060' d='M0 0h1443v277H0z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%232417C0' d='M-6.6 425.7a1328.8 1328.8 0 0 0-60.8-124 1353 1353 0 0 0-74.5-117L6.6 68a1541.5 1541.5 0 0 1 158.6 279L-6.7 425.6Z'/%3E%3Cpath fill='%2331E7B6' d='M1389.3 259.6A1732.1 1732.1 0 0 0 1276.5 119a1763.8 1763.8 0 0 0-128-127.9l155.8-190.7a1887.8 1887.8 0 0 1 149 147.7c46.8 51.8 91 106 132.2 162.4l-196.2 149.1Z'/%3E%3Cpath fill='%232417C0' d='M1584.3 310.4c-46 26.2-90.6 54.9-133.5 85.7-43 31.3-84.3 64.8-123.9 100.3l-152.6-154c45.5-41.5 93.3-80.5 143-116.8a1802.7 1802.7 0 0 1 154.5-100.8l112.5 185.6Z'/%3E%3C/g%3E%3C/svg%3E");background-size:cover !important;background-position:center center;padding: 0px !important;}.cta-version-01.tech .img-wrapper{transform:scale(0.8);}
+.ai.card{--bs-card-spacer-y:1.875rem;--bs-card-spacer-x:1.75rem;--bs-card-title-spacer-y:1.25rem;--bs-card-title-color:#000;--bs-card-border-width:0px;--bs-card-border-radius:.25rem;--bs-card-bg:#F7F9FB;}
+.ai.card:hover{--bs-card-bg:#FFA735;--bs-card-title-color:#fff;}
+.ai.card:hover svg{filter: brightness(0) invert(1) !important;}
+.aiTabs .tabs .nav {
+    --bs-nav-link-color: rgba(0, 0, 0, 0.57);
+    --bs-nav-link-hover-color: var(--bs-nav-link-color);
+    --bs-nav-link-font-weight: 500;
+}
 
+.aiTabs .tabs .nav.nav-pills {
+    --bs-nav-pills-border-radius:4rem;
+    --bs-nav-pills-link-active-color: var(--white);
+    --bs-nav-pills-link-active-bg: #000;
+}
+/* Ai ML */
 
 
 

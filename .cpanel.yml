@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/onexcell/public_html/clients/iconflux
-    - /bin/cp * $DEPLOYPATH
