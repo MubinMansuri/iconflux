@@ -782,7 +782,7 @@ lottie-player{max-width:6.25rem;}
 
 
 .cf-form .wrapper{margin-top: -250px;}
-.cf-form .form-wrapper{background-color: #FFFFFF; padding: 56px 46px 34px; border: 15px solid rgba(206, 206, 206, 0.10); border-radius: 12px;}
+.cf-form .form-wrapper{ padding: 56px 46px 34px; border-radius: 12px;box-shadow:0 0 0px 15px rgba(206, 206, 206, 0.10);}
 
 
 
