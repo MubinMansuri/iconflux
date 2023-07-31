@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | IConflux</title>
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+    <!-- css files  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope&display=swap" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/js/swiper-bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script defer src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="site-wrapper position-relative">
+        <header class="site-header position-sticky top-0 z-3">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html">
+                        <span class="visually-hidden">Iconflux Technologies Pvt. Ltd.</span>
+                        <img src="./assets/images/iconflux_logo.svg" alt="iconflux_logo" class="img-fluid pe-none" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand offcanvas-title" href="./index.html">
+                                <span class="visually-hidden">Iconflux Technologies Pvt. Ltd.</span>
+                                <img src="./assets/images/iconflux_logo.svg" alt="iconflux_logo"
+                                    class="img-fluid pe-none" />
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu ">
+                                        <div class="dropdown-menu-bg"></div>
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Hire Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                            </ul>
+                            <div class="extraBtn">
+                                <a href="#" class="btn btn-theme-black withIcon py-2">
+                                    <span class="text">Get a Free Quote</span>
+                                    <span class="icon align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24px" width="24px"
+                                            viewBox="0 0 24 24">
+                                            <g>
+                                                <path fill="currentColor"
+                                                    d="m13.1727 11.9997-4.95-4.95 1.414-1.414 6.364 6.364-6.364 6.364-1.414-1.414 4.95-4.95Z" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="site-main">
+            <!-- Section 01 Start -->
+            <section class="sec_01 contact-banner bg-img overflow-hidden position-relative bg-theme-light bg-cover bg-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-xl-6 mx-lg-auto">
+                            <div class="content px-sm-0 position-relative z-1 text-center">
+                                <span class="fw-bolder d-block mb-4 text-uppercase">contact us</span>
+                                <div class="heading text-black mb-1">
+                                    <h1 class="display-4 fw-semibold text-capitalize mb-3 lh-sm">
+                                        <span>Does your business <br class="d-none d-lg-block" />
+                                            have agile </span>
+                                    </h1>
+                                </div>
+                                <div class="expert">
+                                    <p class="text-secondary text-capitalize lh-base mb-4 pb-md-2">Create new capabilities and respond totechnology needs of tomorrow, today</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 01 End -->
+
+
+            <!-- Section 02 Start -->
+            <section class="quick-details bg-theme-light">
+                <!-- <div class="container">
+                    <div class="row bg-white contact-inquiry">
+                        <div class="col-12 col-lg-6">
+                            <div class="addressBox">
+                                <div>
+                                    <h4 class="text-theme-002060 fw-semibold fs-25">For work inquiry</h4>
+                                    <p class="text-theme-787878 fs-6 fw-normal">Our team will help with faster assistance regarding
+                                    </p>
+                                </div>
+                                <div class="connect-links d-flex align-items-start flex-column gap-3">
+                                    <a href="#" class="btn btn-link btn-link-black"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="25" height="26" fill="none">
+                                            <g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                clip-path="url(#a)">
+                                                <path
+                                                    d="M3.125 7.792A2.083 2.083 0 0 1 5.208 5.71h14.584a2.083 2.083 0 0 1 2.083 2.083V18.21a2.083 2.083 0 0 1-2.083 2.083H5.208a2.083 2.083 0 0 1-2.083-2.083V7.792Z" />
+                                                <path d="m3.125 7.791 9.375 6.25 9.375-6.25" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="a">
+                                                    <path fill="#fff" d="M0 .5h25v25H0z" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg> info@iconflux.com</a>
+                                    <a href="#" class="btn btn-link btn-link-black"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="25" height="26" fill="none">
+                                            <g clip-path="url(#a)">
+                                                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5.208 4.666h4.167l2.083 5.208-2.604 1.563a11.458 11.458 0 0 0 5.209 5.208l1.562-2.604 5.208 2.083v4.167a2.083 2.083 0 0 1-2.083 2.083A16.667 16.667 0 0 1 3.125 6.75a2.083 2.083 0 0 1 2.083-2.083Z" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="a">
+                                                    <path fill="#fff" d="M0 .5h25v25H0z" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg> +918585854521</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="addressBox">
+                                <div>
+                                    <h4 class="text-theme-002060 fw-semibold fs-25">Timing</h4>
+                                    <div class="d-flex gap-3 flex-wrap">
+                                        <p class="text-theme-787878 fs-6 fw-normal">Saturday - Friday</p>
+                                        <p class="text-theme-787878 fs-6 fw-normal">10:00 AM - 7:00 PM</p>
+                                    </div>
+                                </div>
+                                <h4 class="mb-4 fs-5 fw-semibold">Follow us on</h4>
+                                <ul class="list-unstyled socialMedia d-flex gap-3 align-items-center">
+                                    <li><a href="#"><img src="./assets/images/contact-us/facebook-cf.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="./assets/images/contact-us/instagram-cf.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="./assets/images/contact-us/linkedin-cf.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="./assets/images/contact-us/twitter-cf.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="./assets/images/contact-us/youtube-cf.svg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+            <!-- Section 02 End -->
+
+
+            <!-- Section 03 Start -->
+            <section class="cf-form bg-theme-primary-002060">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 mx-lg-auto wrapper">
+                            <div class="col-wrap text-center">
+                                <div class="heading text-black mb-1">
+                                    <h2 class="h1 fw-semibold mb-4 lh-sm">
+                                        <span>Let’s talk.</span>
+                                    </h2>
+                                </div>
+                                <div class="expert">
+                                    <p class="text-secondary text-capitalize">If you have any questions about the subscription or are not sure which plan is right for you, contact our team and let’s schedule a call.</p>
+                                </div>
+                            </div>
+                            <div class="form-wrapper card-form rounded-3">
+                                <form action="#" method="post">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-wrap">
+                                                <label for="fname" class="form-label">First Name</label>
+                                                <input type="text" class="form-control" id="fname" placeholder="Enter your First name" />
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-wrap">
+                                                <label for="fname" class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" id="fname" placeholder="Enter your Last name" /> 
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-12">
+                                            <div class="form-wrap">
+                                                <label for="email" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" id="email" placeholder="What's your email ID" />
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-12">
+                                            <div class="form-wrap">
+                                                <label for="phoneNo" class="form-label">Phone No</label>
+                                                <input type="text" class="form-control" id="phoneNo" placeholder="Type your number" />
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-12">
+                                            <div class="form-wrap">
+                                                <label for="message" class="form-label">Message</label>
+                                                <textarea class="form-control" id="message" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-12">
+                                            <div class="form-wrap">
+                                                <button type="submit" class="btn btn-theme-primary withIcon w-100">
+                                                    <span class="text">Submit Now</span>
+                                                    <span class="icon d-inline-block align-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="none" viewBox="0 0 24 24"><g><path fill="currentColor" d="m13.1727 12.0046-4.95-4.95 1.414-1.414 6.364 6.364-6.364 6.364-1.414-1.414 4.95-4.95Z"/></g></svg></span>
+                                                </button>
+                                            </div>
+                                            <p class="text-center fs-6 text-black-50 mt-4 mb-0">by submitting this form, you agree to our  <a href="#" class="btn btn-link btn-link-black">Privacy Policy</a></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 03 End -->
+
+
+            <!-- Section 04 Start -->
+            <section class="bg-theme-primary-002060 py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="content-wrp pb-5">
+                                <h3 class="fs-45 pb-3 fw-semibold text-white">Come and visit our offices around the world</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="country-box mb-5">
+                                <div class="crd-header mb-3">
+                                    <div class="d-flex gap-3 align-items-center mb-3 pb-1">
+                                        <div class="flex-col">
+                                            <img src="./assets/images/contact-us/india-contact.svg" alt="flag"
+                                                class="img-fluid" />
+                                        </div>
+                                        <div class="flex-col">
+                                            <h5 class="fw-bold text-theme-primary-light mb-0 fs-5 text-uppercase">HQ India</h5>
+                                        </div>
+                                    </div>
+                                    <p class="text-white fw-normal fs-15">1002-1004, Avdhesh House, 10th Floor,Opp. Gurudwara, S.G. Road, Bodakdev,Ahmedabad, India-380054</p>
+
+                                    <div class="d-flex flex-wrap gap-5">
+                                        <p class="text-white fw-normal fs-15"><img src="./assets/images/contact-us/call-cf.svg" alt=""> Phone <a href="#" class="d-block text-white text-decoration-none mt-2">+91 - 95127 87877</a></p>
+
+                                        <p class="text-white fw-normal fs-15"><img src="./assets/images/contact-us/message-cf.svg" alt=""> Email us <a href="#" class="d-block text-white text-decoration-none mt-2">info@iconflux.com</a></p>
+                                    </div>
+                                </div>
+                                <hr style="width: 80%; color: rgb(255 255 255 / 34%);">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="country-box mb-5">
+                                <div class="crd-header mb-3">
+                                    <div class="d-flex gap-3 align-items-center mb-3 pb-1">
+                                        <div class="flex-col">
+                                            <img src="./assets/images/contact-us/dubai-contact.svg" alt="flag"
+                                                class="img-fluid" />
+                                        </div>
+                                        <div class="flex-col">
+                                            <h5 class="fw-bold text-theme-primary-light mb-0 fs-5 text-uppercase">Dubai</h5>
+                                        </div>
+                                    </div>
+                                    <p class="text-white fw-normal fs-15">1002-1004, Avdhesh House, 10th Floor,Opp. Gurudwara, S.G. Road, Bodakdev,Ahmedabad, India-380054</p>
+
+                                    <div class="d-flex flex-wrap gap-5">
+                                        <p class="text-white fw-normal fs-15"><img src="./assets/images/contact-us/call-cf.svg" alt=""> Phone <a href="#" class="d-block text-white text-decoration-none mt-2">+91 - 95127 87877</a></p>
+
+                                        <p class="text-white fw-normal fs-15"><img src="./assets/images/contact-us/message-cf.svg" alt=""> Email us <a href="#" class="d-block text-white text-decoration-none mt-2">info@iconflux.com</a></p>
+                                    </div>
+                                </div>
+                                <hr style="width: 80%; color: rgb(255 255 255 / 34%);">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="country-box mb-5">
+                                <div class="crd-header mb-3">
+                                    <div class="d-flex gap-3 align-items-center mb-3 pb-1">
+                                        <div class="flex-col">
+                                            <img src="./assets/images/contact-us/canada-contact.svg" alt="flag"
+                                                class="img-fluid" />
+                                        </div>
+                                        <div class="flex-col">
+                                            <h5 class="fw-bold text-theme-primary-light mb-0 fs-5 text-uppercase">Canada</h5>
+                                        </div>
+                                    </div>
+                                    <p class="text-white fw-normal fs-15">1002-1004, Avdhesh House, 10th Floor,Opp. Gurudwara, S.G. Road, Bodakdev,Ahmedabad, India-380054</p>
+
+                                    <div class="d-flex flex-wrap gap-5">
+                                        <p class="text-white fw-normal fs-15"><img src="./assets/images/contact-us/call-cf.svg" alt=""> Phone <a href="#" class="d-block text-white text-decoration-none mt-2">+91 - 95127 87877</a></p>
+
+                                        <p class="text-white fw-normal fs-15"><img src="./assets/images/contact-us/message-cf.svg" alt=""> Email us <a href="#" class="d-block text-white text-decoration-none mt-2">info@iconflux.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="country-box mb-5">
+                                <div class="crd-header mb-3">
+                                    <div class="d-flex gap-3 align-items-center mb-3 pb-1">
+                                        <div class="flex-col">
+                                            <img src="./assets/images/contact-us/german-contact.svg" alt="flag"
+                                                class="img-fluid" />
+                                        </div>
+                                        <div class="flex-col">
+                                            <h5 class="fw-bold text-theme-primary-light mb-0 fs-5 text-uppercase">German</h5>
+                                        </div>
+                                    </div>
+                                    <p class="text-white fw-normal fs-15">1002-1004, Avdhesh House, 10th Floor,Opp. Gurudwara, S.G. Road, Bodakdev,Ahmedabad, India-380054</p>
+
+                                    <div class="d-flex flex-wrap gap-5">
+                                        <p class="text-white fw-normal fs-15"><img src="./assets/images/contact-us/call-cf.svg" alt=""> Phone <a href="#" class="d-block text-white text-decoration-none mt-2">+91 - 95127 87877</a></p>
+
+                                        <p class="text-white fw-normal fs-15"><img src="./assets/images/contact-us/message-cf.svg" alt=""> Email us <a href="#" class="d-block text-white text-decoration-none mt-2">info@iconflux.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 04 End -->
+
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-wrap position-relative bg-light">
+                <div class="container">
+                    <nav class="navbar pb-4 border-bottom border-1 border-light-subtle">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0">
+                                <div class="col-wrap">
+                                    <a class="navbar-brand" href="./index.html">
+                                        <span class="visually-hidden">Iconflux Technologies Pvt. Ltd.</span>
+                                        <img src="./assets/images/iconflux_logo.svg" alt="iconflux_logo"
+                                            class="img-fluid pe-none" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg-9">
+                                <div class="col-wrap">
+                                    <h5 class="h5 fw-medium text-secondary">Founded in 2012, IConflux is leading IT
+                                        solutions provider company in India specialized in Mobile app, Flutter, AI & ML,
+                                        RPA development.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="space-y" style="--space-y:2.125rem"></div>
+                    <div class="row border-bottom border-1 border-light-subtle">
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="menu">
+                                    <div class="menu-title">
+                                        <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Technologies</p>
+                                    </div>
+                                    <div class="menu-list">
+                                        <ul class="list-unstyled">
+                                            <li class="list-item"><a href="#" class="menu-link">Payments</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Checkout</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Payouts</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Batch payouts</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Routing & Cascading</a>
+                                            </li>
+                                            <li class="list-item"><a href="#" class="menu-link">Currency conversion</a>
+                                            </li>
+                                            <li class="list-item"><a href="#" class="menu-link">Merchant management</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="menu">
+                                    <div class="menu-title">
+                                        <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Company</p>
+                                    </div>
+                                    <div class="menu-list">
+                                        <ul class="list-unstyled">
+                                            <li class="list-item"><a href="#" class="menu-link">About us</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Team</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Roadmap</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Brand assets</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Contacts</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Careers &nbsp; <span
+                                                        class="badge text-bg-warning fw-medium">We`re hiring!</span></a>
+                                            </li>
+                                            <li class="list-item"><a href="#" class="menu-link">Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="menu">
+                                    <div class="menu-title">
+                                        <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Solution</p>
+                                    </div>
+                                    <div class="menu-list">
+                                        <ul class="list-unstyled">
+                                            <li class="list-item"><a href="#" class="menu-link">Enterprise Mobility
+                                                    Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Intranet Portal
+                                                    Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">HRMS Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Forex Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Vtiger CRM Solutions</a>
+                                            </li>
+                                            <li class="list-item"><a href="#" class="menu-link">Field Force System
+                                                    Solutions</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Assets Management
+                                                    Solutions</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="getInTouch mb-5 pb-md-4">
+                                    <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Get in touch</p>
+                                    <a href="tel:+91-95127 87877"
+                                        class="text-secondary th-accent-black fs-15 fw-medium text-decoration-none">
+                                        <span>+91 - 95127 87877</span>
+                                    </a>
+                                </div>
+                                <div class="followus">
+                                    <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Follow us on</p>
+                                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/facebook.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/instagram.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/linkedin.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/twitter.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/youtube.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="12">
+                            <div class="col-wrap">
+                                <div class="d-flex gap-2 flex-wrap align-items-center my-4 pb-md-2 mt-md-5">
+                                    <div class=""><img src="./assets/images/iso.png" alt="copyright"
+                                            class="img-fluid" /></div>
+                                    <div class=""><img src="./assets/images/dmca.png" alt="copyright"
+                                            class="img-fluid" /></div>
+                                    <div class=""><img src="./assets/images/copyscape.png" alt="copyright"
+                                            class="img-fluid" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y" style="--space-y:2.125rem"></div>
+                    <div class="row justify-content-md-between">
+                        <div class="col-12 col-md-auto">
+                            <div class="col-wrap">
+                                <p class="text-secondary text-capitalize m-0">&copy; Iconflux technologies pvt ltd,
+                                    2023.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-auto">
+                            <div class="col-wrap">
+                                <a href="#"
+                                    class="fs-14 text-uppercase text-secondary fw-medium th-accent-black text-decoration-none">Terms</a>
+                                <a href="#"
+                                    class="fs-14 text-uppercase text-secondary fw-medium th-accent-black text-decoration-none mx-2 mx-md-3 mx-lg-4">Privacy
+                                    Notice</a>
+                                <a href="#"
+                                    class="fs-14 text-uppercase text-secondary fw-medium th-accent-black text-decoration-none">Cookie
+                                    Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <!-- script files  -->
+    <script defer src="./assets/js/main.js"></script>
+</body>
+
+</html>
