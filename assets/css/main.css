@@ -217,6 +217,7 @@
 .site-footer .footer-wrap{padding-top: 4rem;padding-bottom: 3.5rem;}.menu .menu-list .menu-link{font-weight: 500;font-size: 14px;line-height: 28px;color: var(--body-text);text-decoration: none;transition: 0.3s ease-in-out all;}.menu .menu-list .menu-link:hover{color: var(--black);}
 .th-accent-yellow:hover{color: var(--theme-yellow) !important;}.th-accent-black:hover{color: var(--black) !important;}.th-accent-primary:hover{color: var(--theme-primary) !important;}.th-accent-primary-dark:hover{color: var(--theme-primary-dark) !important;}.th-accent-primary-light:hover{color: var(--theme-primary-light) !important;}.th-accent-green:hover{color: var(--theme-green) !important;}
 .followus a{transition: 0.3s ease-in-out all;}.followus a:hover{filter: invert(1);}
+.shareus a{transition: 0.3s ease-in-out all;filter: invert(1) opacity(0.5);}.shareus a:hover{filter:none;}
 .playbtn.top-50{margin-top: -30px;}
 .video-thumbnail ~ iframe{height:43.125rem;position: absolute;top: 0px;left: 0px;z-index: -1;opacity: 0;transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) opacity;}
 .video-thumbnail ~ iframe.active{opacity: 1;z-index: 10;}
@@ -1039,6 +1040,19 @@ lottie-player{max-width:6.25rem;}
     .blogCTA .card{--bs-card-spacer-y:1.5rem;--bs-card-spacer-x:1.5rem;background-size:cover;}
 }
 /* blogs */
+/* blogs detail */
+.singleBlog.blog-hero{background-image: url("../images/single-blog-banner-img.png");padding:39px 0px 66px;}
+.single-bd .blog-content p{color: #333;font-family: var(--font-family-manrope);font-size: 18px;font-style: normal;font-weight: 400;line-height: 32px;margin-bottom:26px;}
+.single-bd .blog-content p a{color: #0049FE;text-decoration:none;}
+.single-bd .blog-content p a:hover{color: #000;text-decoration:underline;}
+.single-bd .blog-content p b{color: #000;}
+.single-bd .blog-content img{margin-bottom:60px;width:100%;}
+
+.single-bd .blog-content h1,.single-bd .blog-content h2,
+.single-bd .blog-content h3,.single-bd .blog-content h4,
+.single-bd .blog-content h5,.single-bd .blog-content h6{margin:40px 0px 24px;}
+.tar .card{--bs-card-spacer-y:1.25rem;}
+/* blogs detail */
 
 
 /*---------------------- Media Query start here ( Max width queries ) ----------------------*/
