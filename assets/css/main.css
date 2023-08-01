@@ -977,8 +977,68 @@ lottie-player{max-width:6.25rem;}
     --bs-nav-pills-link-active-bg: #000;
 }
 /* Ai ML */
+/* blogs */
+.bg-0B0089{background-color:#0B0089 !important;}
+.blog-hero{padding:87px 0px 70px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1440 782'%3E%3Cmask id='a' width='1440' height='782' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%232417C0' d='M0 0h1440v782H0V0Z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%230049FE' d='M1306.7 275.2c18.1-42.7 38.5-84.5 60.9-125.1 22.8-40.7 47.6-80 74.4-118.2L1293.6-85.8A1560.2 1560.2 0 0 0 1135 195.7l171.7 79.5Z'/%3E%3Cpath fill='%231003B1' d='M1425.2 677.6a1352 1352 0 0 1 30.3-136c12.9-44.8 28-89 45.2-132.3l-171.4-79.8a1567.1 1567.1 0 0 0-89.5 311l185.4 37Z'/%3E%3Cpath fill='%230049FE' fill-opacity='.1' d='M1143 612.7a1571 1571 0 0 1 44.7-153.7c17.9-50.5 38.4-100 61.3-148.4l-190.8-104c-27 55.9-51 113.2-71.7 171.8a1798.6 1798.6 0 0 0-53.2 178.1l209.8 56.2Z'/%3E%3C/g%3E%3C/svg%3E");}
 
+.b-sidebar > .b-widget:not(:last-child){margin-bottom:42px;}
+.sidebar-cta > .card{
+    --bs-card-spacer-y:2.625rem;
+    --bs-card-spacer-x:2.625rem;
+    --bs-card-title-spacer-y:1.25rem;
+    --bs-card-title-color:#000;
+    --bs-card-border-width:0px;
+    --bs-card-border-radius:1rem;
+    --bs-card-bg:#FF8E06;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 362 461'%3E%3Cmask id='a' width='362' height='461' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23FFCE33' d='M0 0h362v461H0V0Z'/%3E%3C/mask%3E%3Cg fill='%23FFCE33' mask='url(%23a)'%3E%3Ccircle cx='133' cy='133' r='211'/%3E%3Ccircle cx='187' cy='216' r='247' fill-opacity='.3'/%3E%3C/g%3E%3C/svg%3E");
+}
+.search-blog .form-control{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+    letter-spacing: -0.18px;
 
+    background: #F9F9F9;
+    min-height: 49px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #F0F0F0;
+}
+.search-blog .form-control::placeholder{color: #B4B4B4;}
+.checkmark-circle li{position:relative;padding-left:30px;margin:14px 0;font-weight:500;font-size:20px;line-height:27px;}
+.checkmark-circle li::before{content:'';position:absolute;top:4px;left:0;width:20px;height:20px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath fill='%230070E1' d='M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z'/%3E%3Cpath stroke='%23fff' stroke-linecap='square' stroke-linejoin='round' stroke-width='1.5' d='m7 10 1.7 1.7L12 8.3'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h20v20H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");}
+.categories-wrap .nav-link{padding:12px;border-radius:4px;background:rgba(104, 112, 134, 0.02);}
+.categories-wrap .nav-link:hover{background:rgba(104, 112, 134, 0.05);}
+.pagination{
+    --bs-pagination-padding-x:1.25rem;
+    --bs-pagination-padding-y:0.875rem;
+    --bs-pagination-font-size:1.125rem;
+    --bs-pagination-color:rgba(var(--bs-black-rgb),0.5);
+    --bs-pagination-bg:transparent;
+    --bs-pagination-border-width:0px;
+    --bs-pagination-border-radius:0px;
+    --bs-pagination-hover-color:var(--white);
+    --bs-pagination-hover-bg:var(--bs-primary);
+    --bs-pagination-active-color:var(--bs-pagination-hover-color);
+    --bs-pagination-active-bg:var(--bs-pagination-hover-bg);
+}
+.lfpn,.rfpn{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 48 40'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21.5 14.5 27 20l-5.5 5.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:cover;background-position:center center;transform:rotate(180deg) scale(1.5);display: block;width: 30px;height: 27px;}
+.rfpn{transform:scale(1.5);}
+.page-link:hover .lfpn,.page-link:hover .rfpn{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 48 40'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21.5 14.5 27 20l-5.5 5.5'/%3E%3C/svg%3E");}
+@media(min-width:992px){.pagination > .page-item:nth-child(1){margin-right:70px;}.pagination > .page-item:last-child{margin-left:70px;}}
+.bg-orange{background-color:#FF8E06 !important;}
+.blogCTA .card{
+    --bs-card-spacer-y:2.25rem;
+    --bs-card-spacer-x:5rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1146 163'%3E%3Cmask id='a' width='1146' height='163' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%232417C0' d='M0 0h1146v163H0z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cmask id='b' width='1147' height='266' x='144' y='-52' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%232417C0' d='M144.8-52h1146v266h-1146z'/%3E%3C/mask%3E%3Cg mask='url(%23b)'%3E%3Cg filter='url(%23c)'%3E%3Cpath fill='%232417C0' d='m762-515 514.5 1050.5-123.1 71.2-605.7-997.8 214.2-124Z'/%3E%3C/g%3E%3Cg filter='url(%23d)'%3E%3Cpath fill='%23FFCE33' d='M449.3-569.5 976 324.7l-178.1 79.2-384.6-931.7 36.1-41.7Z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='c' width='944.8' height='1337.7' x='439.7' y='-623' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='54'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_1639_1795'/%3E%3CfeBlend in='SourceGraphic' in2='effect1_backgroundBlur_1639_1795' result='shape'/%3E%3C/filter%3E%3Cfilter id='d' width='778.7' height='1189.3' x='305.2' y='-677.5' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='54'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_1639_1795'/%3E%3CfeBlend in='SourceGraphic' in2='effect1_backgroundBlur_1639_1795' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+}
+@media(max-width:767px){
+    .pagination{--bs-pagination-font-size:1rem;flex-wrap:wrap;}
+    .blogCTA .card{--bs-card-spacer-y:1.5rem;--bs-card-spacer-x:1.5rem;background-size:cover;}
+}
+/* blogs */
 
 
 /*---------------------- Media Query start here ( Max width queries ) ----------------------*/

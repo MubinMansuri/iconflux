@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs | IConflux</title>
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+    <!-- css files  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope&display=swap" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/js/swiper-bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script defer src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="site-wrapper position-relative">
+        <header class="site-header position-sticky top-0 z-3">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html">
+                        <span class="visually-hidden">Iconflux Technologies Pvt. Ltd.</span>
+                        <img src="./assets/images/iconflux_logo.svg" alt="iconflux_logo" class="img-fluid pe-none" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand offcanvas-title" href="./index.html">
+                                <span class="visually-hidden">Iconflux Technologies Pvt. Ltd.</span>
+                                <img src="./assets/images/iconflux_logo.svg" alt="iconflux_logo" class="img-fluid pe-none" />
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu ">
+                                        <div class="dropdown-menu-bg"></div>
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Hire Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                            </ul>
+                            <div class="extraBtn">
+                                <a href="#" class="btn btn-theme-black withIcon py-2">
+                                    <span class="text">Get a Free Quote</span>
+                                    <span class="icon align-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24px" width="24px" viewBox="0 0 24 24"><g><path fill="currentColor" d="m13.1727 11.9997-4.95-4.95 1.414-1.414 6.364 6.364-6.364 6.364-1.414-1.414 4.95-4.95Z"/></g></svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="site-main">
+            <div class="blog-hero overflow-hidden position-relative bg-0B0089 text-white bg-no-repeat bg-contain bg-right-top" data-bs-theme="dark">
+                <div class="container">
+                    <div class="row g-30">
+                        <div class="col-12 col-md-10 col-xl-6">
+                            <div class="heading text-black pe-md-2 mb-5">
+                                <h1 class="display-3 fw-semibold text-capitalize mb-0 mb-md-3 lh-sm">
+                                    <span class="text-theme-yellow">Our Best Blogs</span><br class="d-none d-lg-block" />
+                                    <span>which guides a way to technology</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-2 col-xl-6 d-none d-lg-block">&nbsp;</div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card bl-card bg-transparent border-0">
+                                <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-4" />
+                                <div class="card-body px-0">
+                                    <h4 class="card-title fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                    <a href="#" class="btn btn-link ps-0 fw-bold stretched-link">
+                                        <span class="text visually-hidden">Read Article </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card bl-card bg-transparent border-0">
+                                <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-4" />
+                                <div class="card-body px-0">
+                                    <h4 class="card-title fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                    <a href="#" class="btn btn-link ps-0 fw-bold stretched-link">
+                                        <span class="text visually-hidden">Read Article </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card bl-card bg-transparent border-0">
+                                <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-4" />
+                                <div class="card-body px-0">
+                                    <h4 class="card-title fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                    <a href="#" class="btn btn-link ps-0 fw-bold stretched-link">
+                                        <span class="text visually-hidden">Read Article </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-list overflow-hidden py-100 position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 mb-5 mb-lg-0">
+                            <div class="row align-items-stretch g-30">
+                                <div class="col-12 col-md-6">
+                                    <div class="card bl-card bg-transparent border-0 h-100">
+                                        <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-3 pb-1 card-img" />
+                                        <div class="card-body px-0">
+                                            <div class="d-flex align-items-center justify-content-between fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="cat-name">Website Development</span>
+                                                <span class="read-time"> <span class="d-md-none">Reading time</span> 5 min</span>
+                                            </div>
+                                            <a href="#" class="btn btn-link p-0 text-start">
+                                                <h4 class="card-title fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                            </a>
+                                            <div class="d-flex align-items-center fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="date">May 22, 2023</span>
+                                                <span class="dot px-2"><svg xmlns="http://www.w3.org/2000/svg" height="4px" width="4px" fill="none" viewBox="0 0 4 4"><circle cx="2" cy="2" r="2" fill="#134EF4"/></svg></span>
+                                                <span class="author">By Tom Bensley</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="card bl-card bg-transparent border-0 h-100">
+                                        <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-3 pb-1 card-img" />
+                                        <div class="card-body px-0">
+                                            <div class="d-flex align-items-center justify-content-between fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="cat-name">Website Development</span>
+                                                <span class="read-time"> <span class="d-md-none">Reading time</span> 5 min</span>
+                                            </div>
+                                            <a href="#" class="btn btn-link p-0 text-start">
+                                                <h4 class="card-title fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                            </a>
+                                            <div class="d-flex align-items-center fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="date">May 22, 2023</span>
+                                                <span class="dot px-2"><svg xmlns="http://www.w3.org/2000/svg" height="4px" width="4px" fill="none" viewBox="0 0 4 4"><circle cx="2" cy="2" r="2" fill="#134EF4"/></svg></span>
+                                                <span class="author">By Tom Bensley</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="card bl-card bg-transparent border-0 h-100">
+                                        <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-3 pb-1 card-img" />
+                                        <div class="card-body px-0">
+                                            <div class="d-flex align-items-center justify-content-between fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="cat-name">Website Development</span>
+                                                <span class="read-time"> <span class="d-md-none">Reading time</span> 5 min</span>
+                                            </div>
+                                            <a href="#" class="btn btn-link p-0 text-start">
+                                                <h4 class="card-title fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                            </a>
+                                            <div class="d-flex align-items-center fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="date">May 22, 2023</span>
+                                                <span class="dot px-2"><svg xmlns="http://www.w3.org/2000/svg" height="4px" width="4px" fill="none" viewBox="0 0 4 4"><circle cx="2" cy="2" r="2" fill="#134EF4"/></svg></span>
+                                                <span class="author">By Tom Bensley</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="card bl-card bg-transparent border-0 h-100">
+                                        <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-3 pb-1 card-img" />
+                                        <div class="card-body px-0">
+                                            <div class="d-flex align-items-center justify-content-between fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="cat-name">Website Development</span>
+                                                <span class="read-time"> <span class="d-md-none">Reading time</span> 5 min</span>
+                                            </div>
+                                            <a href="#" class="btn btn-link p-0 text-start">
+                                                <h4 class="card-title fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                            </a>
+                                            <div class="d-flex align-items-center fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="date">May 22, 2023</span>
+                                                <span class="dot px-2"><svg xmlns="http://www.w3.org/2000/svg" height="4px" width="4px" fill="none" viewBox="0 0 4 4"><circle cx="2" cy="2" r="2" fill="#134EF4"/></svg></span>
+                                                <span class="author">By Tom Bensley</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="card bl-card bg-transparent border-0 h-100">
+                                        <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-3 pb-1 card-img" />
+                                        <div class="card-body px-0">
+                                            <div class="d-flex align-items-center justify-content-between fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="cat-name">Website Development</span>
+                                                <span class="read-time"> <span class="d-md-none">Reading time</span> 5 min</span>
+                                            </div>
+                                            <a href="#" class="btn btn-link p-0 text-start">
+                                                <h4 class="card-title fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                            </a>
+                                            <div class="d-flex align-items-center fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="date">May 22, 2023</span>
+                                                <span class="dot px-2"><svg xmlns="http://www.w3.org/2000/svg" height="4px" width="4px" fill="none" viewBox="0 0 4 4"><circle cx="2" cy="2" r="2" fill="#134EF4"/></svg></span>
+                                                <span class="author">By Tom Bensley</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="card bl-card bg-transparent border-0 h-100">
+                                        <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-3 pb-1 card-img" />
+                                        <div class="card-body px-0">
+                                            <div class="d-flex align-items-center justify-content-between fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="cat-name">Website Development</span>
+                                                <span class="read-time"> <span class="d-md-none">Reading time</span> 5 min</span>
+                                            </div>
+                                            <a href="#" class="btn btn-link p-0 text-start">
+                                                <h4 class="card-title fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                            </a>
+                                            <div class="d-flex align-items-center fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="date">May 22, 2023</span>
+                                                <span class="dot px-2"><svg xmlns="http://www.w3.org/2000/svg" height="4px" width="4px" fill="none" viewBox="0 0 4 4"><circle cx="2" cy="2" r="2" fill="#134EF4"/></svg></span>
+                                                <span class="author">By Tom Bensley</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="card bl-card bg-transparent border-0 h-100">
+                                        <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-3 pb-1 card-img" />
+                                        <div class="card-body px-0">
+                                            <div class="d-flex align-items-center justify-content-between fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="cat-name">Website Development</span>
+                                                <span class="read-time"> <span class="d-md-none">Reading time</span> 5 min</span>
+                                            </div>
+                                            <a href="#" class="btn btn-link p-0 text-start">
+                                                <h4 class="card-title fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                            </a>
+                                            <div class="d-flex align-items-center fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="date">May 22, 2023</span>
+                                                <span class="dot px-2"><svg xmlns="http://www.w3.org/2000/svg" height="4px" width="4px" fill="none" viewBox="0 0 4 4"><circle cx="2" cy="2" r="2" fill="#134EF4"/></svg></span>
+                                                <span class="author">By Tom Bensley</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="card bl-card bg-transparent border-0 h-100">
+                                        <img src="./assets/images/post-1.png" alt="globe" class="img-fluid mb-3 pb-1 card-img" />
+                                        <div class="card-body px-0">
+                                            <div class="d-flex align-items-center justify-content-between fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="cat-name">Website Development</span>
+                                                <span class="read-time"> <span class="d-md-none">Reading time</span> 5 min</span>
+                                            </div>
+                                            <a href="#" class="btn btn-link p-0 text-start">
+                                                <h4 class="card-title fw-semibold">Top 20 Web App Ideas That Will Work Wonders In 2023</h4>
+                                            </a>
+                                            <div class="d-flex align-items-center fs-12 text-black-50 fw-medium mb-3 pb-1">
+                                                <span class="date">May 22, 2023</span>
+                                                <span class="dot px-2"><svg xmlns="http://www.w3.org/2000/svg" height="4px" width="4px" fill="none" viewBox="0 0 4 4"><circle cx="2" cy="2" r="2" fill="#134EF4"/></svg></span>
+                                                <span class="author">By Tom Bensley</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation example" class="mt-5 pt-2 mb-0">
+                                <ul class="pagination align-items-center justify-content-md-center mb-0">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true" class="lfpn"></span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true" class="rfpn"></span>
+                                    </a>
+                                  </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                            <div class="b-sidebar ps-xl-5">
+                                <div class="b-widget">
+                                    <div class="sidebar-cta">
+                                        <div class="card bg-cover bg-no-repeat">
+                                            <div class="card-body">
+                                                <span class="icon mb-4 pb-1 d-block">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="31px" width="81px" viewBox="0 0 81 31"><path fill="#000" d="M15 .4h9.4L8.7 16.1l-4 4L0 15.6l15-15Zm0 14h9.5l-8.2 8-4.7-4.6 3.4-3.4Zm-8 8 4.6-4.6 4.7 4.6-4.7 4.7L7 22.4Z"/><path fill="#292929" d="m11.6 27.1 4.7-4.6 8.1 8h-9.1c-.2.1-.3 0-.4-.1L11.6 27Z"/><g clip-path="url(#a)"><path fill="#000" d="M64 18.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path stroke="#000" stroke-width="1.5" d="M64 21.7c9 0 16.3-2.8 16.3-6.2 0-3.4-7.3-6.2-16.3-6.2s-16.2 2.8-16.2 6.2c0 3.4 7.3 6.2 16.2 6.2Z"/><path stroke="#000" stroke-width="1.5" d="M58.7 18.6c4.5 7.8 10.5 12.7 13.5 11 3-1.8 1.7-9.4-2.8-17.2C65 4.6 59-.3 56 1.4c-3 1.8-1.7 9.4 2.8 17.2Z"/><path stroke="#000" stroke-width="1.5" d="M58.7 12.4c-4.5 7.8-5.7 15.4-2.8 17.1 3 1.8 9-3.1 13.5-10.9 4.5-7.8 5.7-15.4 2.8-17.2-3-1.7-9 3.2-13.5 11Z"/></g></svg>
+                                                </span>
+                                                <h6 class="card-subtitle fs-12 fw-medium mt-0 mb-3 pb-1">Looking For<br />Mobile app Developer </h6>
+                                                <h4 class="card-title fs-30 fw-bold mb-5 pb-3">on have a vision we have a way to get you there</h4>
+                                                <div class="actionBtn">
+                                                    <a href="#" class="btn btn-theme-black">
+                                                        <span class="text pe-2">Get a Quote Now!</span>
+                                                        <span class="icon align-middle">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"/></g></svg>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-widget">
+                                    <form class="search-blog">
+                                        <div class="position-relative">
+                                          <input type="text" class="form-control" id="search" placeholder="I want to read about" />
+                                          <button type="submit" class="btn bg-transparent text-body-color th-accent-primary border-0 position-absolute top-0 end-0 z-2 px-2 py-2 mt-1 me-1">
+                                            <span class="visually-hidden">search</span>
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="25px" width="25px" viewBox="0 0 25 25"><g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3.5 10.5a7 7 0 1 0 14 0 7 7 0 0 0-14 0Zm18 11-6-6"/></g></svg>
+                                            </span>
+                                          </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="b-widget">
+                                    <div class="categories-wrap">
+                                        <h5 class="h5 fw-medium mb-3">Categories</h5>
+                                        <div class="d-flex flex-column gap-3">
+                                            <a href="#" class="nav-link d-flex align-items-center gap-2 th-accent-primary fw-medium">
+                                                <span class="icon me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7 10 1.7 1.7L12 8.3"/></g></svg>
+                                                </span>
+                                                <span>Mobile App Development</span>
+                                            </a>
+                                            <a href="#" class="nav-link d-flex align-items-center gap-2 th-accent-primary fw-medium">
+                                                <span class="icon me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7 10 1.7 1.7L12 8.3"/></g></svg>
+                                                </span>
+                                                <span>Product Development</span>
+                                            </a>
+                                            <a href="#" class="nav-link d-flex align-items-center gap-2 th-accent-primary fw-medium">
+                                                <span class="icon me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7 10 1.7 1.7L12 8.3"/></g></svg>
+                                                </span>
+                                                <span>IoT App Development</span>
+                                            </a>
+                                            <a href="#" class="nav-link d-flex align-items-center gap-2 th-accent-primary fw-medium">
+                                                <span class="icon me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7 10 1.7 1.7L12 8.3"/></g></svg>
+                                                </span>
+                                                <span>Offshore Development</span>
+                                            </a>
+                                            <a href="#" class="nav-link d-flex align-items-center gap-2 th-accent-primary fw-medium">
+                                                <span class="icon me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7 10 1.7 1.7L12 8.3"/></g></svg>
+                                                </span>
+                                                <span>CRM</span>
+                                            </a>
+                                            <a href="#" class="nav-link d-flex align-items-center gap-2 th-accent-primary fw-medium">
+                                                <span class="icon me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7 10 1.7 1.7L12 8.3"/></g></svg>
+                                                </span>
+                                                <span>Information and Technology</span>
+                                            </a>
+                                            <a href="#" class="nav-link d-flex align-items-center gap-2 th-accent-primary fw-medium">
+                                                <span class="icon me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7 10 1.7 1.7L12 8.3"/></g></svg>
+                                                </span>
+                                                <span>Flutter App Development</span>
+                                            </a>
+                                            <a href="#" class="nav-link d-flex align-items-center gap-2 th-accent-primary fw-medium">
+                                                <span class="icon me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7 10 1.7 1.7L12 8.3"/></g></svg>
+                                                </span>
+                                                <span>Digital Transformation</span>
+                                            </a>
+                                            <a href="#" class="nav-link d-flex align-items-center gap-2 th-accent-primary fw-medium">
+                                                <span class="icon me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7 10 1.7 1.7L12 8.3"/></g></svg>
+                                                </span>
+                                                <span>NodeJS Development</span>
+                                            </a>
+                                            <a href="#" class="nav-link d-flex align-items-center gap-2 th-accent-primary fw-medium">
+                                                <span class="icon me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7 10 1.7 1.7L12 8.3"/></g></svg>
+                                                </span>
+                                                <span>firebase app development</span>
+                                            </a>
+                                            <a href="#" class="nav-link d-flex align-items-center gap-2 th-accent-primary fw-medium">
+                                                <span class="icon me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7 10 1.7 1.7L12 8.3"/></g></svg>
+                                                </span>
+                                                <span>AngularJs</span>
+                                            </a>
+                                            <a href="#" class="nav-link d-flex align-items-center gap-2 th-accent-primary fw-medium">
+                                                <span class="icon me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 20 20"><g><path fill="#0070E1" d="M2 10a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/><path stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="m7 10 1.7 1.7L12 8.3"/></g></svg>
+                                                </span>
+                                                <span>React Native</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 10 Start -->
+            
+            <div class="blogCTA">
+                <div class="container">
+                    <div class="card bg-orange border-0 bg-no-repeat bg-right-bottom">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-md-8">
+                                    <div class="content-wrapper">
+                                        <h3 class="fs-35 lh-sm fw-semibold text-white text-capitalize mb-md-0">Want to learn more about our global<br class="d-none d-lg-block" /> payments solution?</h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 text-md-end">
+                                    <a href="#" class="btn btn-theme-white">
+                                        <span class="text">Schedule Demo</span>
+                                        <span class="icon align-middle d-inline-block ms-2 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="none" viewBox="0 0 30 30"><g><path fill="currentColor" d="m18.3926 13.6399-4.9302-4.9301 1.2997-1.2996 7.1489 7.1489-7.1489 7.1488-1.2997-1.2996 4.9302-4.9301H7.2051v-1.8383h11.1875Z"></path></g></svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section 11 End -->
+
+            <!-- Section 19 End -->
+            <div class="ico_17 position-relative py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="heading text-black pt-4">
+                                    <h2 class="h1 fw-semibold mb-5 lh-sm">
+                                        <span>Let's Talk Business!</span>
+                                    </h2>
+                                </div>
+                                <div class="expert mb-5">
+                                    <p class="fs-18 text-secondary text-capitalize">Have questions about your idea? </p>
+                                    <p class="fs-18 text-secondary text-capitalize">Drop in your details to discuss with our solution consultants. We look forward to hear from you.</p>
+                                </div>
+                                <div class="card-list">
+                                    <div class="card bg-light rounded-0 border-0 mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center gap-3 ps-2">
+                                                <div class="flex-col flex-grow-0">
+                                                    <img src="./assets/images/skype-logo.svg" alt="skype" class="img-fluid" />
+                                                </div>
+                                                <div class="flex-col">
+                                                    <p class="mb-0 text-secondary">Our Skype ID</p>
+                                                    <h3 class="fs-25 fw-semibold text-dark">live:iconflux</h3>
+                                                    <a href="skype:iconflux?chat" class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-light rounded-0 border-0 mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center gap-3 ps-2">
+                                                <div class="flex-col flex-grow-0">
+                                                    <img src="./assets/images/email-logo.svg" alt="email" class="img-fluid" />
+                                                </div>
+                                                <div class="flex-col">
+                                                    <p class="mb-0 text-secondary">Email us on</p>
+                                                    <h3 class="fs-25 fw-semibold text-dark">info@iconflux.com</h3>
+                                                    <a href="mailto:info@iconflux.com" class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-light rounded-0 border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center gap-3 ps-2">
+                                                <div class="flex-col flex-grow-0">
+                                                    <img src="./assets/images/phone-logo.svg" alt="phone" class="img-fluid" />
+                                                </div>
+                                                <div class="flex-col">
+                                                    <p class="mb-0 text-secondary">Call us on</p>
+                                                    <h3 class="fs-25 fw-semibold text-dark">+1-409-358-8781</h3>
+                                                    <a href="tel:+1-409-358-8781" class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-7 ">
+                            <div class="col-wrap ps-lg-5">
+                                <div class="form-wrapper card-form bg-light">
+                                    <div class="heading text-black mb-1">
+                                        <h2 class="h1 fw-semibold mb-5 lh-sm">
+                                            <span>Get A Free Quote</span>
+                                        </h2>
+                                    </div>
+                                    <div class="expert mb-5">
+                                        <p class="fs-18 text-secondary text-capitalize">Contact us to discover how we can help you succeed</p>
+                                    </div>
+                                    <form action="#" method="post">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-wrap">
+                                                    <label for="fname" class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" id="fname" placeholder="Enter your First name" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-wrap">
+                                                    <label for="fname" class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" id="fname" placeholder="Enter your Last name" /> 
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-12">
+                                                <div class="form-wrap">
+                                                    <label for="email" class="form-label">Email address</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="What's your email ID" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-12">
+                                                <div class="form-wrap">
+                                                    <label for="phoneNo" class="form-label">Phone No</label>
+                                                    <input type="text" class="form-control" id="phoneNo" placeholder="Type your number" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-12">
+                                                <div class="form-wrap">
+                                                    <label for="message" class="form-label">Message</label>
+                                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-12">
+                                                <div class="form-wrap">
+                                                    <button type="submit" class="btn btn-theme-primary withIcon w-100">
+                                                        <span class="text">Submit Now</span>
+                                                        <span class="icon d-inline-block align-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="none" viewBox="0 0 24 24"><g><path fill="currentColor" d="m13.1727 12.0046-4.95-4.95 1.414-1.414 6.364 6.364-6.364 6.364-1.414-1.414 4.95-4.95Z"/></g></svg></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section 19 End -->
+
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="presence position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-wrap">
+                                <div class="heading text-white text-center">
+                                    <h2 class="h1 fw-medium mb-5 lh-sm">
+                                        <span>Our Presence</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <div class="crd-header mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col">
+                                                <img src="./assets/images/flags/india.svg" alt="flag" class="img-fluid" />
+                                            </div>
+                                            <div class="flex-col">
+                                                <h5 class="h5 fw-bold text-white text-uppercase">HQ India</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crd-body">
+                                        <p class="card-text mb-3 pb-1 font-manrope fs-15 fw-medium text-white">1002-1004, Avdhesh House, 10th Floor,Opp. Gurudwara, S.G. Road, Bodakdev,Ahmedabad, India-380054</p>
+                                        <a href="tel:+91-95127 87877" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none mb-2">
+                                            <span class="d-inline-block icon align-bottom me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15px" width="15px" viewBox="0 0 15 15"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M2.5294 1h3.0588l1.5295 3.8235-1.9118 1.147a8.4118 8.4118 0 0 0 3.8235 3.8236l1.1471-1.9118L14 9.4118v3.0588a1.529 1.529 0 0 1-.448 1.0814 1.529 1.529 0 0 1-1.0814.448A12.2356 12.2356 0 0 1 1 2.5294 1.5294 1.5294 0 0 1 2.5294 1Z"/></svg>
+                                            </span>
+                                            <span>+91 - 95127 87877</span>
+                                        </a>
+                                        <br />
+                                        <a href="mailto:info@iconflux.com" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none">
+                                            <span class="d-inline-block icon align-bottom me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="19px" width="16px"  viewBox="0 0 16 19"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1035" d="M12.6667 4.2656H3.3333C2.597 4.2656 2 4.9346 2 5.76v7.4712c0 .8253.597 1.4943 1.3333 1.4943h9.3334c.7363 0 1.3333-.669 1.3333-1.4943V5.7599c0-.8253-.597-1.4943-1.3333-1.4943Z"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1035" d="m2 5.7578 6 4.4828 6-4.4828"/></svg>
+                                            </span>
+                                            <span>info@iconflux.com</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <div class="crd-header mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col">
+                                                <img src="./assets/images/flags/dubai.svg" alt="flag" class="img-fluid" />
+                                            </div>
+                                            <div class="flex-col">
+                                                <h5 class="h5 fw-bold text-white text-uppercase">Dubai</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crd-body">
+                                        <p class="card-text mb-3 pb-1 font-manrope fs-15 fw-medium text-white">ACISIT DIP-1 ,Al Asmawi 605,Dubai, P.O. Box 392177, UAE</p>
+                                        <a href="tel:+91-95127 87877" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none mb-2">
+                                            <span class="d-inline-block icon align-bottom me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15px" width="15px" viewBox="0 0 15 15"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M2.5294 1h3.0588l1.5295 3.8235-1.9118 1.147a8.4118 8.4118 0 0 0 3.8235 3.8236l1.1471-1.9118L14 9.4118v3.0588a1.529 1.529 0 0 1-.448 1.0814 1.529 1.529 0 0 1-1.0814.448A12.2356 12.2356 0 0 1 1 2.5294 1.5294 1.5294 0 0 1 2.5294 1Z"/></svg>
+                                            </span>
+                                            <span>+91 - 95127 87877</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <div class="crd-header mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col">
+                                                <img src="./assets/images/flags/dubai.svg" alt="flag" class="img-fluid" />
+                                            </div>
+                                            <div class="flex-col">
+                                                <h5 class="h5 fw-bold text-white text-uppercase">Germany</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crd-body">
+                                        <p class="card-text mb-3 pb-1 font-manrope fs-15 fw-medium text-white">Diessen Am Ammersee-Bayern,Munich south, Germany,Post Code 86911</p>
+                                        <a href="tel:+91-95127 87877" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none mb-2">
+                                            <span class="d-inline-block icon align-bottom me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15px" width="15px" viewBox="0 0 15 15"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M2.5294 1h3.0588l1.5295 3.8235-1.9118 1.147a8.4118 8.4118 0 0 0 3.8235 3.8236l1.1471-1.9118L14 9.4118v3.0588a1.529 1.529 0 0 1-.448 1.0814 1.529 1.529 0 0 1-1.0814.448A12.2356 12.2356 0 0 1 1 2.5294 1.5294 1.5294 0 0 1 2.5294 1Z"/></svg>
+                                            </span>
+                                            <span>+91 - 95127 87877</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="col-wrap">
+                                <div class="card bg-transparent border-0">
+                                    <div class="crd-header mb-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="flex-col">
+                                                <img src="./assets/images/flags/dubai.svg" alt="flag" class="img-fluid" />
+                                            </div>
+                                            <div class="flex-col">
+                                                <h5 class="h5 fw-bold text-white text-uppercase">Canada</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crd-body">
+                                        <p class="card-text mb-3 pb-1 font-manrope fs-15 fw-medium text-white">22 Red Plant Crescent,Brampton ON L7A 2J8</p>
+                                        <a href="tel:+91-95127 87877" class="text-white th-accent-yellow font-manrope fs-15 fw-medium text-decoration-none mb-2">
+                                            <span class="d-inline-block icon align-bottom me-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15px" width="15px" viewBox="0 0 15 15"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M2.5294 1h3.0588l1.5295 3.8235-1.9118 1.147a8.4118 8.4118 0 0 0 3.8235 3.8236l1.1471-1.9118L14 9.4118v3.0588a1.529 1.529 0 0 1-.448 1.0814 1.529 1.529 0 0 1-1.0814.448A12.2356 12.2356 0 0 1 1 2.5294 1.5294 1.5294 0 0 1 2.5294 1Z"/></svg>
+                                            </span>
+                                            <span>+91 - 95127 87877</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrap position-relative bg-light">
+                <div class="container">
+                    <nav class="navbar pb-4 border-bottom border-1 border-light-subtle">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0">
+                                <div class="col-wrap">
+                                    <a class="navbar-brand" href="./index.html">
+                                        <span class="visually-hidden">Iconflux Technologies Pvt. Ltd.</span>
+                                        <img src="./assets/images/iconflux_logo.svg" alt="iconflux_logo" class="img-fluid pe-none" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg-9">
+                                <div class="col-wrap">
+                                    <h5 class="h5 fw-medium text-secondary">Founded in 2012, IConflux is leading IT solutions provider company in India specialized in Mobile app, Flutter, AI & ML, RPA development.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="space-y" style="--space-y:2.125rem"></div>
+                    <div class="row border-bottom border-1 border-light-subtle">
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="menu">
+                                    <div class="menu-title">
+                                        <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Technologies</p>
+                                    </div>
+                                    <div class="menu-list">
+                                        <ul class="list-unstyled">
+                                            <li class="list-item"><a href="#" class="menu-link">Payments</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Checkout</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Payouts</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Batch payouts</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Routing & Cascading</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Currency conversion</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Merchant management</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="menu">
+                                    <div class="menu-title">
+                                        <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Company</p>
+                                    </div>
+                                    <div class="menu-list">
+                                        <ul class="list-unstyled">
+                                            <li class="list-item"><a href="#" class="menu-link">About us</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Team</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Roadmap</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Brand assets</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Contacts</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Careers &nbsp; <span class="badge text-bg-warning fw-medium">We`re hiring!</span></a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="menu">
+                                    <div class="menu-title">
+                                        <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Solution</p>
+                                    </div>
+                                    <div class="menu-list">
+                                        <ul class="list-unstyled">
+                                            <li class="list-item"><a href="#" class="menu-link">Enterprise Mobility Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Intranet Portal Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">HRMS Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Forex Solution</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Vtiger CRM Solutions</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Field Force System Solutions</a></li>
+                                            <li class="list-item"><a href="#" class="menu-link">Assets Management Solutions</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="col-wrap">
+                                <div class="getInTouch mb-5 pb-md-4">
+                                    <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Get in touch</p>
+                                    <a href="tel:+91-95127 87877" class="text-secondary th-accent-black fs-15 fw-medium text-decoration-none">
+                                        <span>+91 - 95127 87877</span>
+                                    </a>
+                                </div>
+                                <div class="followus">
+                                    <p class="fs-6 text-uppercase text-secondary fw-bold mb-3 pb-1">Follow us on</p>
+                                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/facebook.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/instagram.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/linkedin.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/twitter.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="./assets/images/youtube.svg" alt="social" class="img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="12">
+                            <div class="col-wrap">
+                                <div class="d-flex gap-2 flex-wrap align-items-center my-4 pb-md-2 mt-md-5">
+                                    <div class=""><img src="./assets/images/iso.png" alt="copyright" class="img-fluid" /></div>
+                                    <div class=""><img src="./assets/images/dmca.png" alt="copyright" class="img-fluid" /></div>
+                                    <div class=""><img src="./assets/images/copyscape.png" alt="copyright" class="img-fluid" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y" style="--space-y:2.125rem"></div>
+                    <div class="row justify-content-md-between">
+                        <div class="col-12 col-md-auto">
+                            <div class="col-wrap">
+                                <p class="text-secondary text-capitalize m-0">&copy; Iconflux technologies pvt ltd, 2023.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-auto">
+                            <div class="col-wrap">
+                                <a href="#" class="fs-14 text-uppercase text-secondary fw-medium th-accent-black text-decoration-none">Terms</a>
+                                <a href="#" class="fs-14 text-uppercase text-secondary fw-medium th-accent-black text-decoration-none mx-2 mx-md-3 mx-lg-4">Privacy Notice</a>
+                                <a href="#" class="fs-14 text-uppercase text-secondary fw-medium th-accent-black text-decoration-none">Cookie Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <!-- script files  -->
+    <script defer src="./assets/js/main.js"></script>
+</body>
+
+</html>
