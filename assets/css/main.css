@@ -981,7 +981,7 @@ lottie-player{max-width:6.25rem;}
 /* blogs */
 .bg-0B0089{background-color:#0B0089 !important;}
 .blog-hero{padding:87px 0px 70px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1440 782'%3E%3Cmask id='a' width='1440' height='782' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%232417C0' d='M0 0h1440v782H0V0Z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%230049FE' d='M1306.7 275.2c18.1-42.7 38.5-84.5 60.9-125.1 22.8-40.7 47.6-80 74.4-118.2L1293.6-85.8A1560.2 1560.2 0 0 0 1135 195.7l171.7 79.5Z'/%3E%3Cpath fill='%231003B1' d='M1425.2 677.6a1352 1352 0 0 1 30.3-136c12.9-44.8 28-89 45.2-132.3l-171.4-79.8a1567.1 1567.1 0 0 0-89.5 311l185.4 37Z'/%3E%3Cpath fill='%230049FE' fill-opacity='.1' d='M1143 612.7a1571 1571 0 0 1 44.7-153.7c17.9-50.5 38.4-100 61.3-148.4l-190.8-104c-27 55.9-51 113.2-71.7 171.8a1798.6 1798.6 0 0 0-53.2 178.1l209.8 56.2Z'/%3E%3C/g%3E%3C/svg%3E");}
-
+.b-sidebar.sticky-top {top: 100px;}
 .b-sidebar > .b-widget:not(:last-child){margin-bottom:42px;}
 .sidebar-cta > .card{
     --bs-card-spacer-y:2.625rem;
