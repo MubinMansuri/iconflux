@@ -1054,6 +1054,84 @@ lottie-player{max-width:6.25rem;}
 .tar .card{--bs-card-spacer-y:1.25rem;}
 /* blogs detail */
 
+.madBanner.cs.sec_01 .img-wrp{bottom:0px;}
+.madBanner.cs.sec_01 .content{padding-top:200px;padding-bottom:180px;}
+.cs-challenges .card{
+    --bs-card-spacer-y:2.5rem;
+    --bs-card-spacer-x:2.5rem;
+    --bs-card-title-spacer-y:1.25rem;
+    --bs-card-title-color:#000;
+    --bs-card-border-width:0px;
+    --bs-card-border-radius:1rem;
+    --bs-card-box-shadow:none;
+    --bs-card-color:#687086;
+    --bs-card-bg:var(--white);
+}
+.usps .card{
+    --bs-card-spacer-y:4rem;
+    --bs-card-spacer-x:3.125rem;
+    --bs-card-title-spacer-y:0rem;
+    --bs-card-title-color:#000;
+    --bs-card-border-width:0px;
+    --bs-card-border-radius:1.25rem;
+    --bs-card-box-shadow:none;
+    --bs-card-color:#687086;
+    --bs-card-bg:#F7F9FB;
+    --bs-card-height: 217px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center right;
+}
+.usps .card.c1{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 556 217'%3E%3Cmask id='mask0_732_4084' width='556' height='217' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Crect width='556' height='217' fill='%23F7F9FB' rx='20'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_732_4084)'%3E%3Cpath fill='%23fff' d='M574.026 44.556c-12.772 2.808-25.477 6.261-38.141 10.514a379.174 379.174 0 0 0-37.357 13.168 387.892 387.892 0 0 0-35.2 16.012 400.953 400.953 0 0 0-33.954 19.049L640.48 348.365 574.026 44.557Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.usps .card.c2{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 556 217'%3E%3Cmask id='mask0_732_4094' width='556' height='217' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Crect width='556' height='217' fill='%23F7F9FB' rx='20'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_732_4094)'%3E%3Cpath fill='%23fff' d='M432.047 111.244c10.78 5.022 21.868 9.541 33.368 13.459a344.9 344.9 0 0 0 34.266 11.11 352.921 352.921 0 0 0 34.279 7.863 364.673 364.673 0 0 0 35.055 4.98l-17.256-293.657-119.712 256.245Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.usps .card.c3{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 556 217'%3E%3Cmask id='mask0_732_4088' width='556' height='217' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Crect width='556' height='217' fill='%23F7F9FB' rx='20'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_732_4088)'%3E%3Cpath fill='%23fff' d='M528.721-22.864 491.345 96.955a1664.642 1664.642 0 0 1-165.9-64.426l51.106-114.387a1491.346 1491.346 0 0 0 152.17 58.994Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.usps .card.c4{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 556 217'%3E%3Cmask id='mask0_732_4098' width='556' height='217' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Crect width='556' height='217' fill='%23F7F9FB' rx='20'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_732_4098)'%3E%3Cellipse cx='444.002' fill='%23fff' rx='96' ry='95'/%3E%3C/g%3E%3C/svg%3E");
+}
+.usps .card.c5{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 556 217'%3E%3Cmask id='mask0_732_4244' width='556' height='217' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Crect width='556' height='217' fill='%23F7F9FB' rx='20'/%3E%3C/mask%3E%3Cg fill='%23fff' mask='url(%23mask0_732_4244)'%3E%3Cpath d='m421.878 93.339-55.504 1.505a1664.63 1664.63 0 0 1 9.968-177.69l54.584 13.23a1491.293 1491.293 0 0 0-9.048 162.955Zm82.798 52.703-55.504 1.506a1664.632 1664.632 0 0 1 9.969-177.691l54.584 13.23a1491.047 1491.047 0 0 0-9.049 162.955Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.usps .card.c6{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 556 217'%3E%3Cmask id='mask0_732_4250' width='556' height='217' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23F7F9FB' d='M0 0h556v217H0V0Z'/%3E%3C/mask%3E%3Cg fill='%23fff' mask='url(%23mask0_732_4250)'%3E%3Cpath d='m507.429 111.205-30.03 20.523A474.115 474.115 0 0 1 449 87.998l32.279-16.854a470.02 470.02 0 0 0 26.15 40.061Zm84.326-17.835-45.887 31.197a470.174 470.174 0 0 1-26.194-40.038l48.856-25.51a375.663 375.663 0 0 0 23.225 34.352Zm-122.13-43.746-61.903 33.36A916.584 916.584 0 0 1 362-6.858l65.483-25.85a908.451 908.451 0 0 0 42.142 82.332ZM600.182 27.09l-94.558 50.66a908.754 908.754 0 0 1-42.231-82.296l99.111-39.126a726.459 726.459 0 0 0 37.678 70.762Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.cs-portfolio{
+    /* background-color:#F7F9FB; */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1440 1546'%3E%3Cpath fill='%23F7F9FB' d='M1410.67 468 1606 1444.65c-596.67 135.13-1193.333 135.13-1790 0L49.063 468H1410.67Z'/%3E%3Cpath fill='%23F7F9FB' d='M-41 0h1504v1374H-41z'/%3E%3C/svg%3E");
+    background-size:cover;
+    background-position:center center;
+    padding-top:245px;
+    padding-bottom:90px;
+}
+.cs-results .card{
+    --bs-card-spacer-y:1rem;
+    --bs-card-spacer-x:0rem;
+    --bs-card-title-spacer-y:0rem;
+    --bs-card-title-color:#000;
+    --bs-card-border-width:0px;
+    --bs-card-box-shadow:none;
+    --bs-card-color:#687086;
+    --bs-card-bg:transparent;
+}
+.cs-results .pointsCard{
+    --bs-card-spacer-y:2.75rem;
+    --bs-card-spacer-x:3rem;
+    --bs-card-title-spacer-y:0rem;
+    --bs-card-title-color:#000;
+    --bs-card-border-width:1px;
+    --bs-card-border-color:#F4F1F1;
+    --bs-card-border-radius:0.75rem;
+    --bs-card-box-shadow:none;
+    --bs-card-color:#000;
+    --bs-card-bg:#F7F9FB;
+}
+.mcs{border-color:#C7C7C7;}
+
 
 /*---------------------- Media Query start here ( Max width queries ) ----------------------*/
 /* @media (min-width:1920px){.container{max-width: 1440px;}} */
@@ -1159,6 +1237,12 @@ lottie-player{max-width:6.25rem;}
     .eventsList .card:not(.imgFirst) .row{flex-wrap:wrap-reverse;}
     .eventsList .card .figure{margin-bottom:30px;}
     .eventsList .card:not(:last-child){margin-bottom:calc(6.25rem / 2.125);}
+    .cs-portfolio,.madBanner.cs.sec_01 .content{padding-top:60px;padding-bottom:60px;}
+    .our-solution.bg-right{background-position: left !important;}
+    .usps .card{--bs-card-spacer-y:2.25rem;--bs-card-spacer-x:1.5rem;}
+    .cs-results .pointsCard{--bs-card-spacer-y:1.125rem;--bs-card-spacer-x:0.875rem;}
+    .cs-results  .checkmark-circle li:first-child{margin-top:0px;}
+    .cs-results  .row .col-12:last-child .checkmark-circle li:last-child{margin-bottom:0px;}
 }
 @media (max-width: 476px){
     .sec_01 .actionBtn,

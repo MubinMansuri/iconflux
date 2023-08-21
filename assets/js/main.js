@@ -348,6 +348,25 @@ function slideSwiper3x325(e) {
 }
 slideSwiper3x325(".indusSlider");
 
+function slideSwiper2x225_2(e) {
+  /* for 2.5 slide*/
+  var twoBoxCenter = new Swiper(e, {
+    spaceBetween: 30,
+    slidesPerView: 1,
+    loop: true,
+    // centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      320: { slidesPerView: 1, spaceBetween: 20 },
+      768: { slidesPerView: 2, spaceBetween: 30 },
+      1024: { slidesPerView: 2.5, spaceBetween: 30 },
+    },
+    autoplay: { delay: 2500, disableOnInteraction: false },
+  });
+}
+slideSwiper2x225_2(".cs-challenges");
+
 function singeSlideSwiper6(e) {
   /* for three slide*/
   var testingSlider = new Swiper(e, {
