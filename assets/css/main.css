@@ -1100,38 +1100,26 @@ lottie-player{max-width:6.25rem;}
 .usps .card.c6{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 556 217'%3E%3Cmask id='mask0_732_4250' width='556' height='217' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23F7F9FB' d='M0 0h556v217H0V0Z'/%3E%3C/mask%3E%3Cg fill='%23fff' mask='url(%23mask0_732_4250)'%3E%3Cpath d='m507.429 111.205-30.03 20.523A474.115 474.115 0 0 1 449 87.998l32.279-16.854a470.02 470.02 0 0 0 26.15 40.061Zm84.326-17.835-45.887 31.197a470.174 470.174 0 0 1-26.194-40.038l48.856-25.51a375.663 375.663 0 0 0 23.225 34.352Zm-122.13-43.746-61.903 33.36A916.584 916.584 0 0 1 362-6.858l65.483-25.85a908.451 908.451 0 0 0 42.142 82.332ZM600.182 27.09l-94.558 50.66a908.754 908.754 0 0 1-42.231-82.296l99.111-39.126a726.459 726.459 0 0 0 37.678 70.762Z'/%3E%3C/g%3E%3C/svg%3E");
 }
-.cs-portfolio{
-    /* background-color:#F7F9FB; */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1440 1546'%3E%3Cpath fill='%23F7F9FB' d='M1410.67 468 1606 1444.65c-596.67 135.13-1193.333 135.13-1790 0L49.063 468H1410.67Z'/%3E%3Cpath fill='%23F7F9FB' d='M-41 0h1504v1374H-41z'/%3E%3C/svg%3E");
-    background-size:cover;
-    background-position:center center;
-    padding-top:245px;
-    padding-bottom:90px;
-}
-.cs-results .card{
-    --bs-card-spacer-y:1rem;
-    --bs-card-spacer-x:0rem;
-    --bs-card-title-spacer-y:0rem;
-    --bs-card-title-color:#000;
-    --bs-card-border-width:0px;
-    --bs-card-box-shadow:none;
-    --bs-card-color:#687086;
-    --bs-card-bg:transparent;
-}
-.cs-results .pointsCard{
-    --bs-card-spacer-y:2.75rem;
-    --bs-card-spacer-x:3rem;
-    --bs-card-title-spacer-y:0rem;
-    --bs-card-title-color:#000;
-    --bs-card-border-width:1px;
-    --bs-card-border-color:#F4F1F1;
-    --bs-card-border-radius:0.75rem;
-    --bs-card-box-shadow:none;
-    --bs-card-color:#000;
-    --bs-card-bg:#F7F9FB;
-}
+.cs-portfolio{/* background-color:#F7F9FB; */background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1440 1546'%3E%3Cpath fill='%23F7F9FB' d='M1410.67 468 1606 1444.65c-596.67 135.13-1193.333 135.13-1790 0L49.063 468H1410.67Z'/%3E%3Cpath fill='%23F7F9FB' d='M-41 0h1504v1374H-41z'/%3E%3C/svg%3E");background-size:cover;background-position:center center;padding-top:245px;padding-bottom:90px;}
+.cs-results .card{--bs-card-spacer-y:1rem;--bs-card-spacer-x:0rem;--bs-card-title-spacer-y:0rem;--bs-card-title-color:#000;--bs-card-border-width:0px;--bs-card-box-shadow:none;--bs-card-color:#687086;--bs-card-bg:transparent;}
+.cs-results .pointsCard{--bs-card-spacer-y:2.75rem;--bs-card-spacer-x:3rem;--bs-card-title-spacer-y:0rem;--bs-card-title-color:#000;--bs-card-border-width:1px;--bs-card-border-color:#F4F1F1;--bs-card-border-radius:0.75rem;--bs-card-box-shadow:none;--bs-card-color:#000;--bs-card-bg:#F7F9FB;}
 .mcs{border-color:#C7C7C7;}
-
+.cslWrapper .csl-item{--bs-card-spacer-y:0rem;--bs-card-spacer-x:0rem;--bs-card-title-spacer-y:1.375rem;--bs-card-title-color:#000;--bs-card-border-width:0px;--bs-card-box-shadow:none;--bs-card-color:#000;--bs-card-bg:transparent;}
+.cslWrapper .csl-item .content{padding:1.875rem 0px;flex-flow:row wrap;}
+.cslWrapper .csl-item .content .card-title{font-weight:600;font-size:2.1875rem;text-transform:capitalize;}
+@media(min-width:768px){
+    .cslWrapper .col-12 .csl-item .content{justify-content:space-between;align-items:center;}
+    .cslWrapper .col-12:not(.col-md-6) .csl-item .content{--bs-card-title-spacer-y:0rem;}
+}
+@media(max-width:991px){
+    .cslWrapper .col-12 .csl-item .content{flex-direction:column;justify-content:flex-start;text-align:left;align-items:flex-start;}
+}
+.cslWrapper .col-12.col-md-6 .csl-item .content{flex-direction:column;text-align:left;align-items:flex-start;}
+.cta-csl{padding: 3.75rem 0px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1440 241'%3E%3Cmask id='mask0_2065_3080' width='1440' height='241' x='0' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%232417C0' d='M0 0h1440v241H0z'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_2065_3080)'%3E%3Cpath fill='%232417C0' d='M1307.69-71.795c-37.27-9.74-75.38-17.279-114.65-22.148a923.258 923.258 0 0 0-116.8-12.341 971.265 971.265 0 0 0-115.745.122 1040.088 1040.088 0 0 0-117.318 11.863L1000.06 1016.67 1307.69-71.795Z'/%3E%3Cpath fill='%230049FE' d='M1101.12 10.74c-25.98 5.71-51.82 12.732-77.57 21.382a771.048 771.048 0 0 0-75.974 26.779 789.011 789.011 0 0 0-71.587 32.564 815.512 815.512 0 0 0-69.052 38.741l429.333 498.395L1101.12 10.74Z'/%3E%3Cpath fill='%2331E7B6' d='M1362.17 174.761c-22.68-13.885-46.18-26.729-70.74-38.343a769.99 769.99 0 0 0-73.33-33.347 788.3 788.3 0 0 0-74.17-26.138 815.223 815.223 0 0 0-76.63-19.927l-35.9 656.834 330.77-539.079Z'/%3E%3C/g%3E%3C/svg%3E");}
+.sec_01.cslbanner{
+    padding:6.25rem 0px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1452 508'%3E%3Cmask id='mask0_2102_1126' width='1444' height='500' x='4' y='0' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23F7F9FB' d='M4 0h1444v500H4z'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_2102_1126)'%3E%3Cpath fill='%23FF8E06' d='M-5.81593 303.892c33.21473-6.428 66.26203-14.921 99.21073-25.966 33.0842-9.437 65.5362-20.975 97.2022-34.555 31.333-12.814 61.92-27.506 91.63-44.023 30.381-16.233 59.893-34.23 88.421-53.921l-545.897-820.428L-5.81593 303.892Z'/%3E%3Cg clip-path='url(%23clip0_2102_1126)'%3E%3Cpath fill='%23FFCE33' d='m287.001 144.354-21.384 124.649L230 147.44c4.675-1.154 9.405-2.056 14.172-2.702 4.716-.747 9.467-1.24 14.234-1.478 4.829 0 9.532-.321 14.297 0 4.783.072 9.557.438 14.298 1.094Z'/%3E%3C/g%3E%3Cpath fill='%23002060' d='M1541.43 281.128c-41.09-4.417-82.77-6.635-125.31-6.171-42.09-1.25-84.24-.108-126.27 3.416-41.34 2.84-82.53 7.879-123.41 15.105-41.54 6.708-82.75 15.536-123.47 26.452l320.49 1033.98 177.97-1072.782Z'/%3E%3Ccircle cx='1217' cy='286' r='32' fill='%2331E7B6'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2102_1126'%3E%3Cpath fill='%23fff' d='M230 143h57v126h-57z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
 
 /*---------------------- Media Query start here ( Max width queries ) ----------------------*/
 /* @media (min-width:1920px){.container{max-width: 1440px;}} */
@@ -1243,6 +1231,12 @@ lottie-player{max-width:6.25rem;}
     .cs-results .pointsCard{--bs-card-spacer-y:1.125rem;--bs-card-spacer-x:0.875rem;}
     .cs-results  .checkmark-circle li:first-child{margin-top:0px;}
     .cs-results  .row .col-12:last-child .checkmark-circle li:last-child{margin-bottom:0px;}
+    .cta-csl .fs-44,.cslWrapper .csl-item .content .card-title{font-size:26px;line-height:normal;}
+    .cslWrapper .csl-item .content{padding: 1.5rem 0px;--bs-card-title-spacer-y:1rem}
+    .cta-csl {background-position: center center !important;padding: 2rem 0px;}
+    .sec_01.cslbanner .display-3{font-size:34px;}
+    .sec_01.cslbanner{padding-top:4rem;background-position: 98% 130px !important;}
+    .ico_17 .card-form{padding:28px 24px;}
 }
 @media (max-width: 476px){
     .sec_01 .actionBtn,
